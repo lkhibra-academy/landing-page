@@ -23,8 +23,8 @@ function Header() {
           {/* Site branding */}
           <div className="flex-shrink-0">
             {/* Logo */}
-            <Link to="/" className="block" aria-label="Cruip">
-              <Logo className="w-32" />
+            <Link to="/" className="block" aria-label="lkhibra">
+              <Logo className="w-24 md:w-32" />
             </Link>
           </div>
 
