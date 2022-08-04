@@ -13,14 +13,12 @@ function Footer() {
 
           {/* 1st block */}
           <div className="sm:col-span-12 lg:col-span-9">
-            <div className="mb-2">
+            <div className="mb-2 flex gap-5">
               {/* Logo */}
               <Link to="/" className="inline-block" aria-label="Cruip">
                 <Logo className="w-20" />
-              </Link>
+              </Link> · 
               <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</Link> · <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</Link>
-            </div>
-            <div className="text-sm text-gray-600">
             </div>
           </div>
 
