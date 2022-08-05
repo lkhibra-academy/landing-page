@@ -4,18 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script src="http://localhost:8097"></script>
+    <title>Lkhibra</title>
+    <script>
+      var _mtm = (window._mtm = window._mtm || []);
+      _mtm.push({ "mtm.startTime": new Date().getTime(), event: "mtm.Start" });
+      var d = document,
+        g = d.createElement("script"),
+        s = d.getElementsByTagName("script")[0];
+      g.async = true;
+      g.src = "https://lkhibra.alwaysdata.net/stats/js/container_HpTcfsew.js";
+      s.parentNode.insertBefore(g, s);
+    </script>
   </head>
   <body class="font-inter antialiased bg-white text-gray-900 tracking-tight">
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <img referrerpolicy="no-referrer-when-downgrade" src="https://lkhibra.alwaysdata.net/stats/matomo.php?idsite=2&amp;rec=1" style="border:0" alt="" />
+      You need to enable JavaScript to run this app.</noscript>
     <script>
-        if (localStorage.getItem('sidebar-expanded') == 'true') {
-            document.querySelector('body').classList.add('sidebar-expanded');
-        } else {
-            document.querySelector('body').classList.remove('sidebar-expanded');
-        }
-    </script>   
+      if (localStorage.getItem("sidebar-expanded") == "true") {
+        document.querySelector("body").classList.add("sidebar-expanded");
+      } else {
+        document.querySelector("body").classList.remove("sidebar-expanded");
+      }
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

@@ -11,11 +11,14 @@ import './css/style.css';
 import AOS from 'aos';
 
 import Home from './pages/Home';
-import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
-import ResetPassword from './pages/ResetPassword';
+import Checkout from './pages/Checkout';
+import { useMatomo } from '@datapunt/matomo-tracker-react';
 
 function App() {
+  const { enableLinkTracking } = useMatomo()
+
+  enableLinkTracking()
+
 
   const location = useLocation();
 
@@ -41,10 +44,17 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/checkout" element={<Checkout />} />
+        {/* <Route path="/signup" element={<SignUp />} />
+        <Route path="/reset-password" element={<ResetPassword />} /> */}
       </Routes>
+      <a href="https://api.whatsapp.com/send?phone=&text=" class="whatsapp-button" target="_blank" style={{
+        position: 'fixed',
+        right: '15px',
+        bottom: '15px'
+      }}>
+        <img src="https://i.ibb.co/VgSspjY/whatsapp-button.png"/>
+      </a>
     </>
   );
 }

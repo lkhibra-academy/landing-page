@@ -11,7 +11,7 @@
 
 @import 'tailwindcss/utilities';
 
-h1, h2, h3, h4, h5, h6, p, a, ul ,summary, .f{
+h1, h2, h3, h4, h5, h6, p, a, li ,summary, .f{
     font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Modal from '../utils/Modal';
 
 import HeroImage from '../images/hero-image.png';
+import Button1 from './Button1';
 
 function HeroHome() {
 
@@ -39,10 +40,10 @@ function HeroHome() {
               <p className="text-xl md:text-3xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">تعلم البرمجة في 3 أشهر فقط وغير من دار عبر حصص عن بعد</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center text-xl" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">بغيت نتعلم</a>
+                  <Button1 />
                 </div>
                 <div>
-                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">محتوى التدريب</a>
+                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#content">محتوى التدريب</a>
                 </div>
               </div>
             </div>
