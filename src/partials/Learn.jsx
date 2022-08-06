@@ -1,14 +1,12 @@
 const Learn = () => (
-    <section className="relative mb-10">
-
-
-    <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-      <div className="pt-12 md:pt-20">
+    <section className="relative border-y-2 border-y-gray-200">
+    <div className="relative max-w-6xl mx-auto px-4 sm:px-6 ">
+      <div className="">
 
         {/* Section header */}
-        <div className="max-w-3xl mx-auto text-right pb-12 md:pb-16">
-          <h1 className="h2 mb-6">: شنو غادي تعلم</h1>
-          <ul dir="rtl" className="text-2xl text-black list-disc list-inside leading-normal">
+        <div className="max-w-3xl mx-auto text-right py-8 md:py-10 ">
+          <h2 className="h2 mb-6">: شنو غادي تعلم</h2>
+          <ul dir="rtl" className="text-xl md:text-2xl list-disc list-inside leading-normal">
             <li>الخوارزميات وهياكل البيانات (Algorithms &amp; Data Structure)</li>
             <li>أساسيات البرمجة بلغة البايثون</li>
             <li>أساسيات البرمجة كائنية التوجه (Object-Oriented Programming)</li>

@@ -18,7 +18,7 @@ function Footer() {
               <Link to="/" className="inline-block" aria-label="Cruip">
                 <Logo className="w-20" />
               </Link> · 
-              <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</Link> · <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</Link>
+              <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">إخلاء المسؤولية</Link> · <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">سياسة الخصوصية</Link> . <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">شروط الاستخدام</Link>
             </div>
           </div>
 

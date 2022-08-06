@@ -41,7 +41,7 @@ function Checkout() {
                 <div className={!ok ? 'grid grid-cols-1 md:grid-cols-2' : 'flex justify-center'}>
                     <div className="pt-20 bg-white md:py-24">
                         {!ok?
-                            <div className="max-w-lg px-4 mx-auto lg:px-8 p-8 rounded-lg border border-gray-200 shadow-md">
+                            <div className="max-w-lg px-4  lg:px-8 p-8 rounded-lg border border-gray-200 shadow-md  mx-4">
                                 <div className="flex justify-between" dir="rtl">
                                     <h1 className="ml-4 font-bold text-3xl">تدريب الخبرة فالبرمجة</h1>
                                     <p className="text-2xl font-medium tracking-tight">789dh</p>
@@ -89,13 +89,13 @@ function Checkout() {
                                                             عن طريق تحويل بنكي (virement bancaire) <br />
                                                             </p>
                                                             <p className="text-left">
-                                                                Bank : CIH Bank <br />
+                                                                Bank : CIH bank <br />
                                                                 Nom : Benennia El Mehdi <br />
-                                                                RIB : 9383828282828282 <br />
+                                                                RIB : 230810465787621100660083 <br />
                                                             </p>
                                                             <p>
-                                                            المرجو إرسال إثبات الدفع إلينا، بالإضافة إلى أسمك وبريدك الإلكتروني
-                                                            على الواتساب <a className="text-blue-600 hover:underline" href="https://wa.me/">066666666</a> <br />
+                                                            المرجو إرسال إثبات الدفع إلينا، بالإضافة إلى إسمك وبريدك الإلكتروني
+                                                            على الواتساب <a className="text-blue-600 hover:underline" href="https://api.whatsapp.com/send?phone=212708983350&text=Salam">0708983350</a> <br />
                                                             او العنوان <a className="text-blue-600 hover:underline" href="mailto:contact@lkhibra.ma">contact@lkhibra.ma</a>
                                                             </p>
                                                         </div>
@@ -110,7 +110,7 @@ function Checkout() {
                     </div>
                     <div className="py-12 bg-white md:py-24">
                     {!ok?
-                        <div className="max-w-lg px-4 mx-auto lg:px-8">
+                        <div className="max-w-lg px-4 mx-4 lg:px-8 rounded-lg border border-gray-200 shadow-md p-8 m-2">
                             <form className="grid grid-cols-6 gap-4">
                                 <div className="col-span-6">
                                     <label className="block mb-1 text-sm text-gray-600" htmlFor="name">
@@ -131,7 +131,7 @@ function Checkout() {
                                     <input  ref={phone} className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" type="tel" id="phone" />
                                 </div>
                                 <div className="col-span-6">
-                                    <button onClick={clickHandler} className="rounded-lg bg-black text-sm p-2.5 text-white w-full block" type="submit">
+                                    <button onClick={clickHandler} className="rounded-lg bg-black text-sm p-2.5 text-white bg-black-primary w-full block" type="submit">
                                         Pay Now
                                     </button>
                                 </div>

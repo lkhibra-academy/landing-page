@@ -23,9 +23,9 @@ function Features() {
   // }, [tab])
 
   return (
-    <section id="content" className="relative">
+    <section id="content" className="relative border-b-2 border-b-gray-200">
     <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-12 md:pt-20">
+        <div className="py-8 md:py-12 ">
 
           {/* Section content */}
           <div className="md:gap-6">
@@ -37,12 +37,11 @@ function Features() {
               </div>
               {/* Tabs buttons */}
               <div className="space-y-4">
-                <details className="p-6 border-l-4 border-red-500 border-y border-y-gray-200 group" open>
-                  <summary className="flex items-center justify-between cursor-pointer">
-                    <h5 className="text-lg font-medium text-gray-900">
-                      Lorem ipsum dolor sit amet consectetur adipisicing?
-                    </h5>
 
+                <details className="p-4 border-l-4 border-red-primary border-y border-y-gray-200 group">
+                  <summary className="flex items-center justify-between cursor-pointer">
+                    <h5 className="text-lg font-semibold text-gray-900">
+                    Project 1 : Conversion App <span className='ml-2 font-medium text-base'>(4 Weeks)</span></h5>
                     <span
                       className="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
                     >
@@ -61,20 +60,24 @@ function Features() {
                     </span>
                   </summary>
 
-                  <p className="mt-4 leading-relaxed text-gray-700">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                    molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                    voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                    earum similique!
+                  <p className="pl-3 mt-4 leading-relaxed text-gray-700">
+                    <span className='font-medium text-lg text-gray-800'>what we'll learn : </span> 
+                    <ul>                 
+                      <li>- Variables</li>
+                      <li>- Datatypes</li>
+                      <li>- Operators</li>
+                      <li>- User input and Output</li>
+                      <li>- Conditionals </li>
+                      <li>- Loops </li>
+                      <li>- Strings Formatting</li>
+                    </ul>
                   </p>
                 </details>
-            
-                <details className="p-6 border-l-4 border-red-500 border-y border-y-gray-200 group">
-                  <summary className="flex items-center justify-between cursor-pointer">
-                    <h5 className="text-lg font-medium text-gray-900">
-                      Lorem ipsum dolor sit amet consectetur adipisicing?
-                    </h5>
 
+                <details className="p-4 border-l-4 border-red-primary border-y border-y-gray-200 group">
+                  <summary className="flex items-center justify-between cursor-pointer">
+                    <h5 className="text-lg font-semibold text-gray-900">
+                    Project 2 : Bank Accounts management System <span className='ml-2 font-medium text-base'>(3 Weeks)</span></h5>
                     <span
                       className="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
                     >
@@ -93,19 +96,22 @@ function Features() {
                     </span>
                   </summary>
 
-                  <p className="mt-4 leading-relaxed text-gray-700">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                    molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                    voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                    earum similique!
+                  <p className="pl-3 mt-4 leading-relaxed text-gray-700">
+                    <span className='font-medium text-lg text-gray-800'>what we'll learn : </span> 
+                    <ul>                 
+                      <li>- Dictionnaries</li>
+                      <li>- Lists</li>
+                      <li>- Tuples</li>
+                      <li>- Login systems</li>
+                      <li>- Time module</li>
+                    </ul>
                   </p>
                 </details>
-                <details className="p-6 border-l-4 border-red-500 border-y border-y-gray-200 group">
-                  <summary className="flex items-center justify-between cursor-pointer">
-                    <h5 className="text-lg font-medium text-gray-900">
-                      Lorem ipsum dolor sit amet consectetur adipisicing?
-                    </h5>
 
+                <details className="p-4 border-l-4 border-red-primary border-y border-y-gray-200 group">
+                  <summary className="flex items-center justify-between cursor-pointer">
+                    <h5 className="text-lg font-semibold text-gray-900">
+                    Project 3 : Students management system <span className='ml-2 font-medium text-base'>(2 Weeks)</span></h5>
                     <span
                       className="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
                     >
@@ -124,20 +130,21 @@ function Features() {
                     </span>
                   </summary>
 
-                  <p className="mt-4 leading-relaxed text-gray-700">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                    molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                    voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                    earum similique!
+                  <p className="pl-3 mt-4 leading-relaxed text-gray-700">
+                    <span className='font-medium text-lg text-gray-800'>what we'll learn : </span> 
+                    <ul>                 
+                      <li>- Functions</li>
+                      <li>- Return statement</li>
+                      <li>- lambda functions</li>
+                      <li>- Strings management</li>
+                    </ul>
                   </p>
                 </details>
-            
-                <details className="p-6 border-l-4 border-red-500 border-y border-y-gray-200 group">
-                  <summary className="flex items-center justify-between cursor-pointer">
-                    <h5 className="text-lg font-medium text-gray-900">
-                      Lorem ipsum dolor sit amet consectetur adipisicing?
-                    </h5>
 
+                <details className="p-4 border-l-4 border-red-primary border-y border-y-gray-200 group">
+                  <summary className="flex items-center justify-between cursor-pointer">
+                    <h5 className="text-lg font-semibold text-gray-900">
+                    Project 4 : Cars Store management system<span className='ml-2 font-medium text-base'>(2 Weeks)</span></h5>
                     <span
                       className="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
                     >
@@ -156,19 +163,21 @@ function Features() {
                     </span>
                   </summary>
 
-                  <p className="mt-4 leading-relaxed text-gray-700">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                    molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                    voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                    earum similique!
+                  <p className="pl-3 mt-4 leading-relaxed text-gray-700">
+                    <span className='font-medium text-lg text-gray-800'>what we'll learn : </span> 
+                    <ul>                 
+                      <li>- what is OOP ?</li>
+                      <li>- when we use it ?</li>
+                      <li>- Class definition</li>
+                      <li>- Inheretence</li>
+                    </ul>
                   </p>
                 </details>
-                <details className="p-6 border-l-4 border-red-500 border-y border-y-gray-200 group">
-                  <summary className="flex items-center justify-between cursor-pointer">
-                    <h5 className="text-lg font-medium text-gray-900">
-                      Lorem ipsum dolor sit amet consectetur adipisicing?
-                    </h5>
 
+                <details className="p-4 border-l-4 border-red-primary border-y border-y-gray-200 group">
+                  <summary className="flex items-center justify-between cursor-pointer">
+                    <h5 className="text-lg font-semibold text-gray-900">
+                    Project 5 : Youtube video downloader and a whatsapp message automator <span className='ml-2 font-medium text-base'>(1 Week)</span></h5>
                     <span
                       className="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
                     >
@@ -187,13 +196,17 @@ function Features() {
                     </span>
                   </summary>
 
-                  <p className="mt-4 leading-relaxed text-gray-700">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-                    molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-                    voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-                    earum similique!
+                  <p className="pl-3 mt-4 leading-relaxed text-gray-700">
+                    <span className='font-medium text-lg text-gray-800'>what we'll learn : </span> 
+                    <ul>                 
+                      <li>- how to use python libraries ?</li>
+                      <li>- pyautogui</li>
+                      <li>- pywhatKit</li>
+                      <li>- wget</li>
+                    </ul>
                   </p>
                 </details>
+
               </div>
 
               {/* <div className="mb-8 md:mb-0">
@@ -221,7 +234,7 @@ function Features() {
                   href="#0"
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Project 2 : Bank Accounts management System (3 Sessions)</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Project 2 : Bank Accounts management System (3 Weeks)</div>
                     <div className="text-gray-600">What we'll learn : 
                       <ol className="list-decimal list-inside">
                         <li>Variables, Datatypes</li>

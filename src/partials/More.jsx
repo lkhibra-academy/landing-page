@@ -3,19 +3,26 @@ import React from 'react';
 
 function More() {
   return (
-      <div className=" text-white bg-gray-900">
+      <div className="border-b-2 border-b-gray-200">
 
         <section className="relative max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
             <div>
-              <h2 className="text-3xl font-bold sm:text-4xl text-center">What makes us special</h2>
+              <h2 className="text-3xl font-bold sm:text-4xl text-center">أكثر من مجرد تدريب</h2>
             </div>
 
             <div
               className="grid grid-cols-1 gap-8 mt-8 md:gap-12 md:mt-16 md:grid-cols-2 lg:grid-cols-3"
             >
+              
               <div className="flex items-start">
-                <span className="flex-shrink-0 p-4 bg-gray-800 rounded-lg">
+
+                <div dir="rtl" className="mr-4">
+                  <h2 className="text-xl font-semibold">متابعة شخصية</h2>
+                  <p className="mt-1 text-lg font-normal ">
+                  المدرس كايبقى معاك على اتصال فمجموعة واتساب باش يحل مشاكل لي اتطيح فيهم أثناء تعلم                  </p>
+                </div>
+                <span className="flex-shrink-0 p-4 bg-black-light rounded-lg">
                   <svg
                     className="w-5 h-5"
                     fill="none"
@@ -35,20 +42,16 @@ function More() {
                     ></path>
                   </svg>
                 </span>
-
-                <div className="ml-4">
-                  <h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
-
-                  <p className="mt-1 text-sm text-gray-300">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                    cumque tempore est ab possimus quisquam reiciendis tempora animi!
-                    Quaerat, saepe?
-                  </p>
-                </div>
               </div>
 
               <div className="flex items-start">
-                <span className="flex-shrink-0 p-4 bg-gray-800 rounded-lg">
+
+                <div dir="rtl" className="mr-4">
+                  <h2 className="text-xl font-semibold">مشاريع برمجية</h2>
+                  <p className="mt-1 text-lg font-normal ">
+                  التدريب تطبيقي 100٪ من اول حصة ونتا كاتخدم على مشاريع برمجية لي اتقدر تعاونك فحياتك العملية                   </p>
+                </div>
+                <span className="flex-shrink-0 p-4 bg-black-light rounded-lg">
                   <svg
                     className="w-5 h-5"
                     fill="none"
@@ -68,20 +71,17 @@ function More() {
                     ></path>
                   </svg>
                 </span>
-
-                <div className="ml-4">
-                  <h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
-
-                  <p className="mt-1 text-sm text-gray-300">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                    cumque tempore est ab possimus quisquam reiciendis tempora animi!
-                    Quaerat, saepe?
-                  </p>
-                </div>
               </div>
 
               <div className="flex items-start">
-                <span className="flex-shrink-0 p-4 bg-gray-800 rounded-lg">
+
+                <div dir="rtl" className="mr-4">
+                  <h2 className="text-xl font-semibold">شهادة معتمدة</h2>
+                  <p className="mt-1 text-lg font-normal ">
+                  مني كاتسالي تدريب كتاخد شهادة معتمدة من عندنا لي كاتفتح ليك ليك فرص جداد فحياتك 
+                  </p>
+                </div>
+                <span className="flex-shrink-0 p-4 bg-black-light rounded-lg">
                   <svg
                     className="w-5 h-5"
                     fill="none"
@@ -101,16 +101,6 @@ function More() {
                     ></path>
                   </svg>
                 </span>
-
-                <div className="ml-4">
-                  <h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
-
-                  <p className="mt-1 text-sm text-gray-300">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                    cumque tempore est ab possimus quisquam reiciendis tempora animi!
-                    Quaerat, saepe?
-                  </p>
-                </div>
               </div>
 
             </div>

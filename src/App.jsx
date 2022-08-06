@@ -48,7 +48,7 @@ function App() {
         {/* <Route path="/signup" element={<SignUp />} />
         <Route path="/reset-password" element={<ResetPassword />} /> */}
       </Routes>
-      <a href="https://api.whatsapp.com/send?phone=&text=" class="whatsapp-button" target="_blank" style={{
+      <a href="https://api.whatsapp.com/send?phone=212708983350&text=Salam" class="whatsapp-button" target="_blank" style={{
         position: 'fixed',
         right: '15px',
         bottom: '15px'

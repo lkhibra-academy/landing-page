@@ -6,6 +6,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        red: {
+          light: '#FF2151',
+          dark: '#78021B',
+          primary: '#C40630'
+        },
+        black: {
+          light: '#AFAFAF',
+          dark: '#686868',
+          primary: '#1C1D1F'
+        },
         gray: {
           100: '#FBFBFB',
           200: '#EAEAEA',
@@ -27,6 +37,9 @@ module.exports = {
           700: '#0064DA',
           800: '#0059C2',
           900: '#004391',
+          light: '#2151FF',
+          dark: '#021B78',
+          primary: '#0630C4'
         },
         teal: {
           100: '#E6FFFA',
@@ -56,6 +69,7 @@ module.exports = {
         '9/16': '56.25%',
         '3/4': '75%',
         '1/1': '100%',
+        'card':'10rem'
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif']
