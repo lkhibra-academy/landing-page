@@ -1,9 +1,7 @@
-import { useMatomo } from '@datapunt/matomo-tracker-react'
 import axios from 'axios'
 import Cleave from 'cleave.js/react'
 import CleavePhone from 'cleave.js/dist/addons/cleave-phone.ma'
 import React, { useRef, useState } from 'react'
-import Header from '../partials/Header'
 import { useNavigate } from 'react-router-dom'
 
 function Checkout() {

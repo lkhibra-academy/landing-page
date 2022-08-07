@@ -1,6 +1,4 @@
-import { useMatomo } from '@datapunt/matomo-tracker-react'
-import axios from 'axios'
-import React, { useRef, useState } from 'react'
+import React from 'react'
 import Header from '../partials/Header'
 
 function ThankYou() {

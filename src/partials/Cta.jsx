@@ -1,5 +1,5 @@
 import cert from '../images/certif.svg'
-import Checkout from '../pages/Checkout'
+import Checkout from './Checkout'
 
 const Cta = () => (
   //       <div className="border-b-2 border-b-gray-200">

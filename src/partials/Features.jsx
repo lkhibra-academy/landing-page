@@ -1,26 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
-import Transition from '../utils/Transition';
-
-import FeaturesBg from '../images/features-bg.png';
-import FeaturesElement from '../images/features-element.png';
-import Button1 from './Button1';
+import React, { useState } from 'react';
 
 function Features() {
-
-  const [tab, setTab] = useState(1);
-
-  // const tabs = useRef(null);
-
-  // const heightFix = () => {
-  //   if (tabs.current.children[tab]) {
-  //     tabs.current.style.height = tabs.current.children[tab - 1].offsetHeight + 'px'
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   heightFix()
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [tab])
 
   return (
     <section id="content" className="relative shadow-lkhibra">

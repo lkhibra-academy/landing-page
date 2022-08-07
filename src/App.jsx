@@ -11,19 +11,12 @@ import './css/style.css';
 import AOS from 'aos';
 
 import Home from './pages/Home';
-import Checkout from './pages/Checkout';
-import { useMatomo } from '@datapunt/matomo-tracker-react';
 import ThankYou from './pages/ThankYou';
 import Privacy from './pages/Privacy';
 import Termsofuse from './pages/Termsofuse';
 import Responsibility from './pages/Responsibility';
 
 function App() {
-  const { enableLinkTracking } = useMatomo()
-
-  enableLinkTracking()
-
-
   const location = useLocation();
 
   useEffect(() => {
