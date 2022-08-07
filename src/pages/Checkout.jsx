@@ -64,8 +64,8 @@ function Checkout() {
                     <Cleave onChange={ev => setPhone(ev.target.rawValue)} className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" options={{phone: true, phoneRegionCode: 'MA',prefix: '+212'}} required/>
                 </div>
                 <div className="col-span-6">
-                    <button onClick={clickHandler} className="rounded-lg bg-black text-sm p-2.5 text-white bg-black-primary w-full block" type="submit">
-                        Pay Now
+                    <button onClick={clickHandler} className="rounded-lg bg-black text-lg font-light p-2.5 text-white bg-red-primary w-full block" type="submit">
+                    تسجيل
                     </button>
                 </div>
             </form>

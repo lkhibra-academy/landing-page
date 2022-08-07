@@ -1,7 +1,7 @@
 const Feat = ({title,subtitle,li1,li2,li3,li4,li5}) => (
-  <div className="relative flex flex-col items-center px-5 py-4 bg-white rounded outline outline-1 outline-black-primary">
+  <div className="relative flex flex-col items-center px-5 py-4 bg-white rounded outline outline-1 outline-gray-100">
 
-    <h4 className="text-xl font-bold leading-snug tracking-tight text-center text-red-light h-15 mb-3">
+    <h4 className="text-xl font-bold leading-snug tracking-tight text-center text-red-primary h-15 mb-3">
       {title}
     </h4>
     <p className=" text-center text-lg font-medium mb-2">
