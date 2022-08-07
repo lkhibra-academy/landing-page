@@ -23,7 +23,7 @@ function Features() {
   // }, [tab])
 
   return (
-    <section id="content" className="relative border-b-2 border-b-gray-200">
+    <section id="content" className="relative shadow-lkhibra">
     <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-8 md:py-12 ">
 
@@ -38,7 +38,7 @@ function Features() {
               {/* Tabs buttons */}
               <div className="space-y-4">
 
-                <details className="p-4 border-l-4 border-red-primary border-y border-y-gray-200 group">
+                <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group" open>
                   <summary className="flex items-center justify-between cursor-pointer">
                     <h5 className="text-lg font-semibold text-gray-900">
                     Project 1 : Conversion App <span className='ml-2 font-medium text-base'>(4 Weeks)</span></h5>
@@ -61,10 +61,9 @@ function Features() {
                   </summary>
 
                   <div className="pl-3 mt-4 leading-relaxed text-gray-700">
-                    <span className='font-medium text-lg text-gray-800'>what we'll learn : </span> 
+                    <span className='font-medium text-lg text-gray-800'>What we'll learn : </span> 
                     <ul>                 
-                      <li>- Variables</li>
-                      <li>- Datatypes</li>
+                      <li>- Variables, Datatypes</li>
                       <li>- Operators</li>
                       <li>- User input and Output</li>
                       <li>- Conditionals </li>
@@ -74,7 +73,7 @@ function Features() {
                   </div>
                 </details>
 
-                <details className="p-4 border-l-4 border-red-primary border-y border-y-gray-200 group">
+                <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group">
                   <summary className="flex items-center justify-between cursor-pointer">
                     <h5 className="text-lg font-semibold text-gray-900">
                     Project 2 : Bank Accounts management System <span className='ml-2 font-medium text-base'>(3 Weeks)</span></h5>
@@ -97,7 +96,7 @@ function Features() {
                   </summary>
 
                   <div className="pl-3 mt-4 leading-relaxed text-gray-700">
-                    <span className='font-medium text-lg text-gray-800'>what we'll learn : </span> 
+                    <span className='font-medium text-lg text-gray-800'>What we'll learn : </span> 
                     <ul>                 
                       <li>- Dictionnaries</li>
                       <li>- Lists</li>
@@ -108,7 +107,7 @@ function Features() {
                   </div>
                 </details>
 
-                <details className="p-4 border-l-4 border-red-primary border-y border-y-gray-200 group">
+                <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group">
                   <summary className="flex items-center justify-between cursor-pointer">
                     <h5 className="text-lg font-semibold text-gray-900">
                     Project 3 : Students management system <span className='ml-2 font-medium text-base'>(2 Weeks)</span></h5>
@@ -131,17 +130,17 @@ function Features() {
                   </summary>
 
                   <div className="pl-3 mt-4 leading-relaxed text-gray-700">
-                    <span className='font-medium text-lg text-gray-800'>what we'll learn : </span> 
+                    <span className='font-medium text-lg text-gray-800'>What we'll learn : </span> 
                     <ul>                 
                       <li>- Functions</li>
                       <li>- Return statement</li>
-                      <li>- lambda functions</li>
+                      <li>- Lambda functions</li>
                       <li>- Strings management</li>
                     </ul>
                   </div>
                 </details>
 
-                <details className="p-4 border-l-4 border-red-primary border-y border-y-gray-200 group">
+                <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group">
                   <summary className="flex items-center justify-between cursor-pointer">
                     <h5 className="text-lg font-semibold text-gray-900">
                     Project 4 : Cars Store management system<span className='ml-2 font-medium text-base'>(2 Weeks)</span></h5>
@@ -164,17 +163,17 @@ function Features() {
                   </summary>
 
                   <div className="pl-3 mt-4 leading-relaxed text-gray-700">
-                    <span className='font-medium text-lg text-gray-800'>what we'll learn : </span> 
+                    <span className='font-medium text-lg text-gray-800'>What we'll learn : </span> 
                     <ul>                 
-                      <li>- what is OOP ?</li>
-                      <li>- when we use it ?</li>
+                      <li>- What is OOP ?</li>
+                      <li>- When we use it ?</li>
                       <li>- Class definition</li>
                       <li>- Inheretence</li>
                     </ul>
                   </div>
                 </details>
                 <div id="checkout"></div>
-                <details className="p-4 border-l-4 border-red-primary border-y border-y-gray-200 group">
+                <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group">
                   <summary className="flex items-center justify-between cursor-pointer">
                     <h5 className="text-lg font-semibold text-gray-900">
                     Project 5 : Youtube video downloader and a whatsapp message automator <span className='ml-2 font-medium text-base'>(1 Week)</span></h5>
@@ -197,9 +196,9 @@ function Features() {
                   </summary>
 
                   <div className="pl-3 mt-4 leading-relaxed text-gray-700">
-                    <span className='font-medium text-lg text-gray-800'>what we'll learn : </span> 
+                    <span className='font-medium text-lg text-gray-800'>What we'll learn : </span> 
                     <ul>                 
-                      <li>- how to use python libraries ?</li>
+                      <li>- How to use python libraries ?</li>
                       <li>- pyautogui</li>
                       <li>- pywhatKit</li>
                       <li>- wget</li>

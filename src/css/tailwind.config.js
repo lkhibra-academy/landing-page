@@ -64,6 +64,7 @@ module.exports = {
         inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.04)',
         outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
         none: 'none',
+        lkhibra:'0 1px 0 0 rgba(0, 0, 0, 0.05)',
       },
       spacing: {
         '9/16': '56.25%',

@@ -10,11 +10,11 @@ const Faq = () => (
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
                   
                   <div className=" mb-8">
-                    <h3 className="h3 mb-3 flex justify-between"><span>FAQ</span><span className="text-right">محتوى تدريب</span></h3>
+                    <h3 className="h3 mb-3 flex justify-between"><span>FAQ</span><span className="text-right">أسئلة متكررة</span></h3>
                   </div>
                   <div className="space-y-4">
 
-                    <details dir="rtl" className="group border-2 border-gray-300 rounded">
+                    <details dir="rtl" className="group rounded-lg border border-gray-200 shadow-md">
                       <summary
                         className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-100"
                       >
@@ -50,7 +50,7 @@ const Faq = () => (
                       </p>
                     </details>
 
-                    <details dir="rtl" className="group border-2 border-gray-300 rounded">
+                    <details dir="rtl" className="group rounded-lg border border-gray-200 shadow-md">
                       <summary
                         className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-100"
                       >
@@ -87,14 +87,13 @@ const Faq = () => (
                                                                 Bank : CIH bank <br />
                                                                 Nom : Benennia El Mehdi <br />
                                                                 RIB : 230810465787621100660083 <br />
-                                                            
-                                                            المرجو إرسال إثبات الدفع إلينا، بالإضافة إلى أسمك وبريدك الإلكتروني
+                                                            المرجو إرسال إثبات الدفع إلينا، بالإضافة إلى إسمك وبريدك الإلكتروني<br />
                                                             على الواتساب <a className="text-blue-600 hover:underline" href="https://api.whatsapp.com/send?phone=212708983350&text=Salam">0708983350</a> <br />
                                                             او العنوان <a className="text-blue-600 hover:underline" href="mailto:contact@lkhibra.ma">contact@lkhibra.ma</a>
                                                             </p>
                                                                                 </details>
 
-                    <details dir="rtl" className="group border-2 border-gray-300 rounded">
+                    <details dir="rtl" className="group rounded-lg border border-gray-200 shadow-md">
                       <summary
                         className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-100"
                       >
@@ -122,7 +121,7 @@ const Faq = () => (
                       الثلاثاء 16 غشت</p>
                     </details>
                     
-                    <details dir="rtl" className="group border-2 border-gray-300 rounded">
+                    <details dir="rtl" className="group rounded-lg border border-gray-200 shadow-md">
                       <summary
                         className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-100"
                       >
@@ -150,7 +149,7 @@ const Faq = () => (
 </p>
                     </details>
 
-                    <details dir="rtl" className="group border-2 border-gray-300 rounded">
+                    <details dir="rtl" className="group rounded-lg border border-gray-200 shadow-md">
                       <summary
                         className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-100"
                       >
@@ -175,7 +174,7 @@ const Faq = () => (
                       </summary>
 
                       <p className="px-4 my-3 leading-relaxed text-gray-800">
-                      لا، تدريب مصاوب باش اي واحد يقدر يتبعوا ويوصل لمستوى متقدم فالبرمجة، بلانا يحتاج يكون عارف اي حاجة من قبل</p>
+                      لا، تدريب مصاوب باش اي واحد يقدر يتبعوا ويوصل لمستوى متقدم فالبرمجة، بلاما يحتاج يكون عارف اي حاجة من قبل</p>
                     </details>
 
                   </div>

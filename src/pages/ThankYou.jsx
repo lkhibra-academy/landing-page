@@ -16,28 +16,27 @@ function ThankYou() {
                 <div className='flex justify-center'>
                     <div className="pt-20 bg-white md:py-24">
                             <div>
-                                <h1 className="ml-4 font-bold text-3xl p-4" dir="rtl">مرحبا بك في تدريب الخبرة فالبرمجة</h1>
-                                <div className="max-w-lg px-4 mx-auto lg:px-8 p-8 rounded-lg border border-gray-200 shadow-md">
-                                    <div className="flex justify-between border-b border-b-gray-200" dir="rtl">
-                                        <h2 className="ml-4 font-bold text-xl">طريقة الدفع</h2>
-                                        <br />&nbsp;
+                                <h1 className="font-bold text-3xl text-center p-5" dir="rtl">مرحبا بك في تدريب الخبرة فالبرمجة</h1>
+                                <div className="max-w-lg md:mx-auto mx-3 p-2 pr-3 rounded-lg border border-gray-200 shadow-md ">
+                                    <div className="flex justify-between border-b border-b-gray-200 " dir="rtl">
+                                        <h2 className="pt-2 pb-3 font-bold text-xl ">طريقة الدفع</h2>
+                                        <br />
                                     </div>
-                                    <div className="mt-4">
+                                    <div className="py-4 px-1  border-b border-b-gray-200">
                                         <div className="flow-root">
-                                            <ul className="-my-4 divide-y divide-gray-200" dir="rtl">
-                                                <li className="flex items-center justify-between py-4">
+                                            <ul className="divide-y divide-gray-200" dir="rtl">
+                                                <li className="flex items-center justify-between">
                                                     <div className="flex items-start">
-                                                        <div className="ml-4">
+                                                        <div className="">
                                                             <p>
-                                                            عن طريق تحويل بنكي (virement bancaire) <br />
+                                                            عن طريق تحويل بنكي (virement bancaire) <br /><br />
                                                             </p>
-                                                            <p className="text-left">
+                                                            <p className="text-center">
                                                                 Bank : CIH bank <br />
                                                                 Nom : Benennia El Mehdi <br />
-                                                                RIB : 230810465787621100660083 <br />
+                                                                RIB : 230810465787621100660083 <br /><br />
                                                             </p>
-                                                            <p>
-                                                            المرجو إرسال إثبات الدفع إلينا، بالإضافة إلى إسمك وبريدك الإلكتروني
+                                                            <p> المرجو إرسال إثبات الدفع إلينا، بالإضافة إلى إسمك وبريدك الإلكتروني<br />
                                                             على الواتساب <a className="text-blue-600 hover:underline" href="https://api.whatsapp.com/send?phone=212708983350&text=Salam">0708983350</a> <br />
                                                             او العنوان <a className="text-blue-600 hover:underline" href="mailto:contact@lkhibra.ma">contact@lkhibra.ma</a>
                                                             </p>
@@ -47,7 +46,13 @@ function ThankYou() {
                                             </ul>
                                         </div>
                                     </div>
+                                    <div className="flex justify-between " dir="rtl">
+                                        <h4 className="pt-3 pb-2 pr-1 font-medium text-lg ">المبلغ :<span className='font-bold  '> 789 د.م </span>
+                                         </h4>
+                                    </div>
                                 </div>
+                                <p className="md:text-right text-center font-light text-base my-3 mr-3" dir="rtl"><span className='text-red-primary text-base first-letter:font-semibold'>  *  </span>
+                                أخر أجل للدفع هو الإثنين 14 غشت</p>
                             </div>
                     </div>
                 </div>

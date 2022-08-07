@@ -1,5 +1,5 @@
 const Learn = () => (
-    <section className="relative border-y-2 border-y-gray-200">
+    <section className="relative shadow-lkhibra">
     <div className="relative max-w-6xl mx-auto px-4 sm:px-6 ">
       <div className="">
 
