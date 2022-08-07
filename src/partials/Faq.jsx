@@ -16,7 +16,7 @@ const Faq = () => (
 
                     <details dir="rtl" className="group rounded-lg border border-gray-200 shadow-md">
                       <summary
-                        className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-100"
+                        className="flex items-center justify-between p-4 rounded-lg cursor-pointer "
                       >
                         <h5 className="font-bold  text-gray-900">
                         خطوات باش نتسجل فالتدريب ؟
@@ -52,7 +52,7 @@ const Faq = () => (
 
                     <details dir="rtl" className="group rounded-lg border border-gray-200 shadow-md">
                       <summary
-                        className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-100"
+                        className="flex items-center justify-between p-4 rounded-lg cursor-pointer "
                       >
                         <h5 className="font-bold  text-gray-900">
                         طرق الدفع المتاحة ؟
@@ -95,7 +95,7 @@ const Faq = () => (
 
                     <details dir="rtl" className="group rounded-lg border border-gray-200 shadow-md">
                       <summary
-                        className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-100"
+                        className="flex items-center justify-between p-4 rounded-lg cursor-pointer "
                       >
                         <h5 className="font-bold  text-gray-900">
                         وقتاش ايبدا تدريب ؟                       
@@ -123,7 +123,7 @@ const Faq = () => (
                     
                     <details dir="rtl" className="group rounded-lg border border-gray-200 shadow-md">
                       <summary
-                        className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-100"
+                        className="flex items-center justify-between p-4 rounded-lg cursor-pointer "
                       >
                         <h5 className="font-bold  text-gray-900">
                         وقتاش ايسالي تسجيل ؟                        </h5>
@@ -151,7 +151,7 @@ const Faq = () => (
 
                     <details dir="rtl" className="group rounded-lg border border-gray-200 shadow-md">
                       <summary
-                        className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-100"
+                        className="flex items-center justify-between p-4 rounded-lg cursor-pointer "
                       >
                         <h5 className="font-bold  text-gray-900">
                         واش خاصني نكون فاهم شي حاجة قبل مانبدا تدريب؟
