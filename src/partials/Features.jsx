@@ -60,7 +60,7 @@ function Features() {
                     </span>
                   </summary>
 
-                  <p className="pl-3 mt-4 leading-relaxed text-gray-700">
+                  <div className="pl-3 mt-4 leading-relaxed text-gray-700">
                     <span className='font-medium text-lg text-gray-800'>what we'll learn : </span> 
                     <ul>                 
                       <li>- Variables</li>
@@ -71,7 +71,7 @@ function Features() {
                       <li>- Loops </li>
                       <li>- Strings Formatting</li>
                     </ul>
-                  </p>
+                  </div>
                 </details>
 
                 <details className="p-4 border-l-4 border-red-primary border-y border-y-gray-200 group">
@@ -96,7 +96,7 @@ function Features() {
                     </span>
                   </summary>
 
-                  <p className="pl-3 mt-4 leading-relaxed text-gray-700">
+                  <div className="pl-3 mt-4 leading-relaxed text-gray-700">
                     <span className='font-medium text-lg text-gray-800'>what we'll learn : </span> 
                     <ul>                 
                       <li>- Dictionnaries</li>
@@ -105,7 +105,7 @@ function Features() {
                       <li>- Login systems</li>
                       <li>- Time module</li>
                     </ul>
-                  </p>
+                  </div>
                 </details>
 
                 <details className="p-4 border-l-4 border-red-primary border-y border-y-gray-200 group">
@@ -130,7 +130,7 @@ function Features() {
                     </span>
                   </summary>
 
-                  <p className="pl-3 mt-4 leading-relaxed text-gray-700">
+                  <div className="pl-3 mt-4 leading-relaxed text-gray-700">
                     <span className='font-medium text-lg text-gray-800'>what we'll learn : </span> 
                     <ul>                 
                       <li>- Functions</li>
@@ -138,7 +138,7 @@ function Features() {
                       <li>- lambda functions</li>
                       <li>- Strings management</li>
                     </ul>
-                  </p>
+                  </div>
                 </details>
 
                 <details className="p-4 border-l-4 border-red-primary border-y border-y-gray-200 group">
@@ -163,7 +163,7 @@ function Features() {
                     </span>
                   </summary>
 
-                  <p className="pl-3 mt-4 leading-relaxed text-gray-700">
+                  <div className="pl-3 mt-4 leading-relaxed text-gray-700">
                     <span className='font-medium text-lg text-gray-800'>what we'll learn : </span> 
                     <ul>                 
                       <li>- what is OOP ?</li>
@@ -171,9 +171,9 @@ function Features() {
                       <li>- Class definition</li>
                       <li>- Inheretence</li>
                     </ul>
-                  </p>
+                  </div>
                 </details>
-
+                <div id="checkout"></div>
                 <details className="p-4 border-l-4 border-red-primary border-y border-y-gray-200 group">
                   <summary className="flex items-center justify-between cursor-pointer">
                     <h5 className="text-lg font-semibold text-gray-900">
@@ -196,7 +196,7 @@ function Features() {
                     </span>
                   </summary>
 
-                  <p className="pl-3 mt-4 leading-relaxed text-gray-700">
+                  <div className="pl-3 mt-4 leading-relaxed text-gray-700">
                     <span className='font-medium text-lg text-gray-800'>what we'll learn : </span> 
                     <ul>                 
                       <li>- how to use python libraries ?</li>
@@ -204,7 +204,7 @@ function Features() {
                       <li>- pywhatKit</li>
                       <li>- wget</li>
                     </ul>
-                  </p>
+                  </div>
                 </details>
 
               </div>

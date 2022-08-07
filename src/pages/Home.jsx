@@ -31,6 +31,7 @@ function Home() {
         
 
         <FeaturesHome />
+
         <Cta />
 
         <Faq />

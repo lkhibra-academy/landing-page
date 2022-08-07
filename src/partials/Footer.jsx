@@ -1,29 +1,45 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Button1 from './Button1';
-import Logo from './Logo';
+import React from "react";
+import { Link } from "react-router-dom";
+import Button1 from "./Button1";
+import Logo from "./Logo";
 
 function Footer() {
   return (
     <footer>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-
         {/* Top area: Blocks */}
         <div className="grid sm:grid-cols-12 gap-8 py-4 md:py-6 border-t border-gray-200">
-
           {/* 1st block */}
           <div className="sm:col-span-12 lg:col-span-9">
             <div className="mb-2 flex gap-5">
               {/* Logo */}
               <Link to="/" className="inline-block" aria-label="Cruip">
                 <Logo className="w-20" />
-              </Link> · 
-              <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">إخلاء المسؤولية</Link> · <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">سياسة الخصوصية</Link> . <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">شروط الاستخدام</Link>
+              </Link>{" "}
+              ·
+              <Link
+                to="/responsibilaty"
+                className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
+              >
+                إخلاء المسؤولية
+              </Link>{" "}
+              ·{" "}
+              <Link
+                to="/privacy"
+                className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
+              >
+                سياسة الخصوصية
+              </Link>{" "}
+              .{" "}
+              <Link
+                to="/termsofuse"
+                className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
+              >
+                شروط الاستخدام
+              </Link>
             </div>
           </div>
-
         </div>
-             
       </div>
     </footer>
   );

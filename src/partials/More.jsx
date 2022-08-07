@@ -78,7 +78,7 @@ function More() {
                 <div dir="rtl" className="mr-4">
                   <h2 className="text-xl font-semibold">شهادة معتمدة</h2>
                   <p className="mt-1 text-lg font-normal ">
-                  مني كاتسالي تدريب كتاخد شهادة معتمدة من عندنا لي كاتفتح ليك ليك فرص جداد فحياتك 
+                  مني كاتسالي تدريب كتاخد شهادة معتمدة من عندنا لي كاتفتح ليك فرص جداد فحياتك 
                   </p>
                 </div>
                 <span className="flex-shrink-0 p-4 bg-black-light rounded-lg">
