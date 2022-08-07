@@ -18,7 +18,7 @@ function Footer() {
               </Link>{" "}
               ·
               <Link
-                to="/responsibilaty"
+                to="/responsibility"
                 className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
               >
                 إخلاء المسؤولية

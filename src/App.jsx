@@ -16,7 +16,7 @@ import { useMatomo } from '@datapunt/matomo-tracker-react';
 import ThankYou from './pages/ThankYou';
 import Privacy from './pages/Privacy';
 import Termsofuse from './pages/Termsofuse';
-import Responsibilaty from './pages/Responsibilaty';
+import Responsibility from './pages/Responsibility';
 
 function App() {
   const { enableLinkTracking } = useMatomo()
@@ -51,7 +51,7 @@ function App() {
         <Route exact path="/thanks" element={<ThankYou />} />
         <Route exact path="/privacy" element={<Privacy />} />
         <Route exact path="/termsofuse" element={<Termsofuse />} />
-        <Route exact path="/responsibilaty" element={<Responsibilaty />} />
+        <Route exact path="/Responsibility" element={<Responsibility />} />
       </Routes>
       <a href="https://api.whatsapp.com/send?phone=212708983350&text=Salam" className="whatsapp-button" target="_blank" style={{
         position: 'fixed',
