@@ -29,7 +29,8 @@ function Checkout() {
             }
         ).then((rep) => {
             if(rep.data.ok){
-                navigate('/thanks')
+                fbq('track', 'Lead');
+                navigate('/thanks');
             }else{
                 setErr(true)
             }
