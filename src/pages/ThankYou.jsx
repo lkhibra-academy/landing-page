@@ -35,7 +35,7 @@ function ThankYou() {
                                                                 RIB : 230810465787621100660083 <br /><br />
                                                             </p>
                                                             <p> المرجو إرسال إثبات الدفع إلينا، بالإضافة إلى إسمك وبريدك الإلكتروني<br />
-                                                            على الواتساب <a className="text-blue-600 hover:underline" href="https://api.whatsapp.com/send?phone=212708983350&text=Salam">0708983350</a> <br />
+                                                            على الواتساب <a className="text-blue-600 hover:underline" href="https://api.whatsapp.com/send?phone=212708983350&text=%D9%84%D9%82%D8%AF%20%D8%AA%D8%B3%D8%AC%D9%84%D8%AA%20%D9%81%D9%8A%20%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%0A%D8%B3%D9%88%D9%81%20%D8%A3%D8%B1%D8%B3%D9%84%20%D8%A5%D8%AB%D8%A8%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AF%D9%81%D8%B9%20%D9%82%D8%B1%D9%8A%D8%A8%D8%A7">0708983350</a> <br />
                                                             او العنوان <a className="text-blue-600 hover:underline" href="mailto:contact@lkhibra.ma">contact@lkhibra.ma</a>
                                                             </p>
                                                         </div>

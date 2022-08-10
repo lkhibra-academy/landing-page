@@ -88,7 +88,7 @@ const Faq = () => (
                                                                 Nom : Benennia El Mehdi <br />
                                                                 RIB : 230810465787621100660083 <br />
                                                             المرجو إرسال إثبات الدفع إلينا، بالإضافة إلى إسمك وبريدك الإلكتروني<br />
-                                                            على الواتساب <a className="text-blue-600 hover:underline" href="https://api.whatsapp.com/send?phone=212708983350&text=Salam">0708983350</a> <br />
+                                                            على الواتساب <a className="text-blue-600 hover:underline" href="https://api.whatsapp.com/send?phone=212708983350&text=%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9">0708983350</a> <br />
                                                             او العنوان <a className="text-blue-600 hover:underline" href="mailto:contact@lkhibra.ma">contact@lkhibra.ma</a>
                                                             </p>
                                                                                 </details>
