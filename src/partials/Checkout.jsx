@@ -54,7 +54,7 @@ function Checkout() {
                     <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="phone">
                         <span>Phone</span><span>الهاتف</span>
                     </label>
-                    <Cleave onChange={ev => setPhone(ev.target.rawValue)} className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" options={{phone: true, phoneRegionCode: 'MA',prefix:'+212'}} required/>
+                    <Cleave onChange={ev => setPhone(ev.target.rawValue)} className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" options={{phone: true, phoneRegionCode: 'MA'}} required/>
                 </div>
                 <div className="col-span-6">
                     <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="email">
