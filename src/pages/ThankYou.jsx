@@ -51,6 +51,8 @@ function ThankYou() {
                                 </div>
                                 <p className="md:text-right text-center font-light text-base my-3 mr-3" dir="rtl"><span className='text-red-primary text-base first-letter:font-semibold'>  *  </span>
                                 أخر أجل للدفع هو الإثنين 14 غشت</p>
+                                <p className="md:text-right text-center font-light text-base my-3 mr-3" dir="rtl"><span className='text-red-primary text-base first-letter:font-semibold'>  *  </span>
+                                أول حصة سوف تكون التلاثاء 15 غشت</p>
                             </div>
                     </div>
                 </div>
