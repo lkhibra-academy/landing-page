@@ -11,8 +11,7 @@ import More from '../partials/More';
 import Cta from '../partials/Cta';
 import Faq from '../partials/Faq';
 
-
-function Home() {
+export default function Training() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
 
@@ -20,11 +19,25 @@ function Home() {
       <Header />
 
       {/*  Page content */}
+      <main className="flex-grow">
+
+        {/*  Page sections */}
+        <HeroHome />
+        <Learn />
+        <FeaturesBlocks />
+        <Need />
+        <More />
+        <FeaturesHome />
+        <Cta />
+        <Faq />
+        {/* <Testimonials /> */}
+        {/* <Newsletter /> */}
+
+      </main>
+
       {/*  Site footer */}
-      {/* <Footer /> */}
+      <Footer />
 
     </div>
   );
 }
-
-export default Home;

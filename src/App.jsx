@@ -15,6 +15,8 @@ import ThankYou from './pages/ThankYou';
 import Privacy from './pages/Privacy';
 import Termsofuse from './pages/Termsofuse';
 import Responsibility from './pages/Responsibility';
+import Training from './pages/Training';
+import Certificate from './pages/Certificate'
 
 function App() {
   const location = useLocation();
@@ -41,6 +43,8 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/Certificate" element={<Certificate />} />
+        <Route exact path="/Training" element={<Training />} />
         <Route exact path="/thanks" element={<ThankYou />} />
         <Route exact path="/privacy" element={<Privacy />} />
         <Route exact path="/termsofuse" element={<Termsofuse />} />
