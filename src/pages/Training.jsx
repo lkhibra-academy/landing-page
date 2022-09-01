@@ -10,12 +10,9 @@ import Need from '../partials/Need';
 import More from '../partials/More';
 import Cta from '../partials/Cta';
 import Faq from '../partials/Faq';
-import Testimonials from '../partials/Testimonials';
-import Newsletter from '../partials/Newsletter';
 
 
-
-function Home() {
+export default function Training() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
 
@@ -26,7 +23,7 @@ function Home() {
       <main className="flex-grow">
 
         {/*  Page sections */}
-        {/* <HeroHome />
+        <HeroHome />
         <Learn />
         <FeaturesBlocks />
         <Need />
@@ -37,11 +34,11 @@ function Home() {
 
         <Cta />
 
-        <Faq /> */}
+        <Faq />
 
 
-        {/* <Testimonials /> 
-         <Newsletter /> */}
+        {/* <Testimonials /> */}
+        {/* <Newsletter /> */}
 
       </main>
 
@@ -51,5 +48,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;
