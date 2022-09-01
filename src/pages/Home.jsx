@@ -40,8 +40,8 @@ function Home() {
         <Faq /> */}
 
 
-        {/* <Testimonials /> 
-         <Newsletter /> */}
+        <Testimonials /> 
+         <Newsletter />
 
       </main>
 
