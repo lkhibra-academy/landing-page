@@ -24,10 +24,14 @@ export default function Test() {
 
       {/*  Page content */}
       <main className="flex-grow">
+        <HeroHome />
         <Whoweare/>
         <TestComp/>
+        <Whoweare/>
+        <Testimonials />
+        <Whoweare/>
         {/*  Page sections */}
-        {/* <HeroHome />
+        {/* 
         <Learn />
         <FeaturesBlocks />
         <Need />
@@ -37,13 +41,13 @@ export default function Test() {
         <Faq /> */}
 
 {/* 
-        <Testimonials /> 
          <Newsletter /> */}
 
+         
       </main>
 
       {/*  Site footer */}
-      {/* <Footer /> */}
+      <Footer />
 
     </div>
   );

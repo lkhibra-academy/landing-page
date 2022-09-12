@@ -3,9 +3,9 @@ import React from 'react';
 export default function Whoweare() {
   return (
 
-      <section className="relative mx-auto px-4 sm:px-6">
-          <div className=" flex flex-col items-center px-4 py-16 mx-auto max-w-screen-xl sm:px-6 lg:px-8 sm:py-24">
-              <div className="flex flex-col w-full mb-8 prose text-left max-w-max lg:max-w-2xl">
+      <section className="relative ">
+          <div className=" flex flex-col items-center max-w-6xl mx-auto px-5 sm:px-6 py-8 ">
+              <div className="flex flex-col w-full prose text-left max-w-max lg:max-w-2xl ">
                   <div dir='rtl' className="w-full mx-auto text-center">
                       <h1 className='h2 mb-4'>من نحن ؟</h1>
                       <p className='text-xl font-normal'>أكاديمية اونلاين متخصصة في التدريبات عن بعد في مجالات البرمجة والتصميم. 
