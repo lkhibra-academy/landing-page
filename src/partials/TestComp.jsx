@@ -1,198 +1,45 @@
 import React from 'react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper';
-// Import Swiper styles
-import 'swiper/css';
 
-export default function TestComp() {
-    
+export default function TestComp() { 
       return (
-
-        <div class="max-w-6xl mx-auto px-5 sm:px-6 py-12  ">
-            <div dir='rtl' className="w-full mx-auto text-center">
-                <h1 className='h2 mb-8'>Testimonials</h1>
-            </div>
-            <Swiper
-                    modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
-                    autoplay={{delay:3000}}
-                    loop={'true'}
-                    // className={'bg-cyan-400 mb-4'}
-                    breakpoints= {{
-                        320: {
-                            slidesPerView: 1.2,
-                            spaceBetween: 5,
-                            
-                        },
-                        480: {
-                            slidesPerView: 1.5,
-                            spaceBetween: 7,
-                            
-                        },
-                        620: {
-                            slidesPerView: 1.7,
-                            spaceBetween: 10,
-                            
-                        },
-                        920: {
-                            slidesPerView: 3.2,
-                            spaceBetween: 20,
-                            
-                        }
-                    }}
+        //           flex justify-center items-center flex-row gap-12 bg-black-dark
+        <div className='relative max-w-6xl mx-auto px-5 sm:px-6 py-12'>
+            <a
+              class="overflow-hidden border border-gray-100 rounded-lg grid grid-cols-1 group sm:grid-cols-3"
+              href=""
                 >
+                <div class="relative">
+                    <img
+                    class="absolute inset-0 object-cover w-full h-full"
+                    src="https://www.hyperui.dev/photos/activity-1.jpeg"
+                    alt=""
+                    />
+                </div>
 
-                <SwiperSlide>
-                    <div>
-                    <blockquote class="px-3 py-4 bg-white">
-                        <div class="flex items-center">
-                        <img
-                            src="https://www.hyperui.dev/photos/man-4.jpeg"
-                            alt=""
-                            class="object-cover w-16 h-16 rounded-full"
-                        />
+                <div class="p-8 sm:col-span-2">
+                    <ul class="flex space-x-1">
+                    <li
+                        class="inline-block px-3 py-1 text-xs font-semibold text-white bg-blue-600 rounded-full"
+                    >
+                        Notice
+                    </li>
 
-                        <div class="ml-4 text-sm">
-                            <p class="font-medium">1</p>
-                            <p class="mt-1">CEO of Shipping Company</p>
-                        </div>
-                        </div>
+                    <li
+                        class="inline-block px-3 py-1 text-xs font-semibold text-white bg-blue-600 rounded-full"
+                    >
+                        Information
+                    </li>
+                    </ul>
 
-                        <p class="relative mt-4 text-gray-500">
-                        <span class="text-xl">&ldquo;</span>
+                    <h5 class="mt-4 font-bold">Lorem ipsum dolor sit amet.</h5>
 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        assumenda officiis sit amet itaque eveniet accusantium corporis
-                        tempora, soluta perspiciatis rerum, ratione animi nemo inventore
-                        repellat, commodi in esse quisquam.
+                    <p class="mt-2 text-sm text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+                    adipisci!
+                    </p>
+                </div>
+            </a>
 
-                        <span class="text-xl">&rdquo;</span>
-                        </p>
-                    </blockquote>
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div class="">
-                    <blockquote class="px-3 py-4 bg-white">
-                        <div class="flex items-center">
-                        <img
-                            src="https://www.hyperui.dev/photos/man-4.jpeg"
-                            alt=""
-                            class="object-cover w-16 h-16 rounded-full"
-                        />
-
-                        <div class="ml-4 text-sm">
-                            <p class="font-medium">2</p>
-                            <p class="mt-1">CEO of Shipping Company</p>
-                        </div>
-                        </div>
-
-                        <p class="relative mt-4 text-gray-500">
-                        <span class="text-xl">&ldquo;</span>
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        assumenda officiis sit amet itaque eveniet accusantium corporis
-                        tempora, soluta perspiciatis rerum, ratione animi nemo inventore
-                        repellat, commodi in esse quisquam.
-
-                        <span class="text-xl">&rdquo;</span>
-                        </p>
-                    </blockquote>
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div class="">
-                    <blockquote class="px-3 py-4 bg-white">
-                        <div class="flex items-center">
-                        <img
-                            src="https://www.hyperui.dev/photos/man-4.jpeg"
-                            alt=""
-                            class="object-cover w-16 h-16 rounded-full"
-                        />
-
-                        <div class="ml-4 text-sm">
-                            <p class="font-medium">3</p>
-                            <p class="mt-1">CEO of Shipping Company</p>
-                        </div>
-                        </div>
-
-                        <p class="relative mt-4 text-gray-500">
-                        <span class="text-xl">&ldquo;</span>
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        assumenda officiis sit amet itaque eveniet accusantium corporis
-                        tempora, soluta perspiciatis rerum, ratione animi nemo inventore
-                        repellat, commodi in esse quisquam.
-
-                        <span class="text-xl">&rdquo;</span>
-                        </p>
-                    </blockquote>
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div class="">
-                    <blockquote class="px-3 py-4 bg-white">
-                        <div class="flex items-center">
-                        <img
-                            src="https://www.hyperui.dev/photos/man-4.jpeg"
-                            alt=""
-                            class="object-cover w-16 h-16 rounded-full"
-                        />
-
-                        <div class="ml-4 text-sm">
-                            <p class="font-medium">4</p>
-                            <p class="mt-1">CEO of Shipping Company</p>
-                        </div>
-                        </div>
-
-                        <p class="relative mt-4 text-gray-500">
-                        <span class="text-xl">&ldquo;</span>
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        assumenda officiis sit amet itaque eveniet accusantium corporis
-                        tempora, soluta perspiciatis rerum, ratione animi nemo inventore
-                        repellat, commodi in esse quisquam.
-
-                        <span class="text-xl">&rdquo;</span>
-                        </p>
-                    </blockquote>
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div class="">
-                    <blockquote class="px-3 py-4 bg-white">
-                        <div class="flex items-center">
-                        <img
-                            src="https://www.hyperui.dev/photos/man-4.jpeg"
-                            alt=""
-                            class="object-cover w-16 h-16 rounded-full"
-                        />
-
-                        <div class="ml-4 text-sm">
-                            <p class="font-medium">5</p>
-                            <p class="mt-1">CEO of Shipping Company</p>
-                        </div>
-                        </div>
-
-                        <p class="relative mt-4 text-gray-500">
-                        <span class="text-xl">&ldquo;</span>
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        assumenda officiis sit amet itaque eveniet accusantium corporis
-                        tempora, soluta perspiciatis rerum, ratione animi nemo inventore
-                        repellat, commodi in esse quisquam.
-
-                        <span class="text-xl">&rdquo;</span>
-                        </p>
-                    </blockquote>
-                    </div>
-                </SwiperSlide>
-
-            </Swiper>
         </div>
   );
 }
