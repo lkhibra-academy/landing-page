@@ -1,29 +1,24 @@
 import React from 'react';
-
+import AccomplishmentCard from './AccomplishmentCard'
 
 export default function Accomplishment() {
     
       return (
         //           flex justify-center items-center flex-row gap-12 bg-black-dark
-        <div className='relative max-w-6xl mx-auto  px-5 sm:px-6 py-12'>
-            <div class=" grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start ">
-                <a href="" class="relative block p-6 border-t-4 border-red-primary rounded-sm shadow-xl text-center">
-                    <h5 class="text-5xl font-bold">66+</h5>
-                    <p class="mt-2 text-lg font-medium text-gray-500" dir='rtl'>
-                    عدد تلاميذ                    </p>
-                </a>
-                <a href="" class="relative block p-6 border-t-4 border-red-primary rounded-sm shadow-xl text-center">
-                    <h5 class="text-5xl font-bold">64+</h5>
-                    <p class="mt-2 text-lg font-medium text-gray-500" dir='rtl'>
-                    عدد ساعات التدريب                    </p>
-                </a>
-                <a href="" class="relative block p-6 border-t-4 border-red-primary rounded-sm shadow-xl text-center">
-                    <h5 class="text-5xl font-bold">32+</h5>
-                    <p class="mt-2 text-lg font-medium text-gray-500" dir='rtl'>
-                    عدد الحصص                    </p>
-                </a>
+        <div className='relative max-w-6xl mx-auto px-5 sm:px-6 py-12 
+        '>
+            {/* // sm:flex sm:justify-center sm:items-center */}
+            <div class=" 
+                grid gap-6 sm:grid-cols-3 grid-cols-1 
+                ">
+                        {/* bg-red-light     */}
+                {/*   */}
                 
-            </div>
+                <AccomplishmentCard num={"66+"} desc={" عدد تلاميذ"} />
+                <AccomplishmentCard num={"64+"} desc={" عدد ساعات التدريب "}/>
+                <AccomplishmentCard num={"32+"} desc={" عدد الحصص "}/>
+                
+             </div>
         </div>
   );
 }

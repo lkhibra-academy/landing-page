@@ -13,6 +13,10 @@ import Faq from '../partials/Faq';
 import Testimonials from '../partials/Testimonials';
 import Newsletter from '../partials/Newsletter';
 import Whoweare from '../partials/Whoweare';
+import OurTrainings from '../partials/OurTrainings';
+import Accomplishment from '../partials/Accomplishment';
+import JoinUs from '../partials/JoinUs';
+import Hero from '../partials/Hero';
 
 // Header test
 export default function Test() {
@@ -24,28 +28,16 @@ export default function Test() {
 
       {/*  Page content */}
       <main className="flex-grow">
-        <HeroHome />
+        {/* <HeroHome /> */}
+        <Hero/>
         <Whoweare/>
-        <TestComp/>
-        <Whoweare/>
-        <Testimonials />
-        <Whoweare/>
-        {/*  Page sections */}
-        {/* 
-        <Learn />
-        <FeaturesBlocks />
-        <Need />
-        <More />
-        <FeaturesHome />
-        <Cta />
-        <Faq /> */}
-
-{/* 
-         <Newsletter /> */}
-
-         
+        <Accomplishment/>
+        <Testimonials/>
+        <OurTrainings/>
+        <More/>
+        <JoinUs/>
+        <Faq/>
       </main>
-
       {/*  Site footer */}
       <Footer />
 

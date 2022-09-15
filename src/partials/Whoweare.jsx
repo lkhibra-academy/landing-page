@@ -2,7 +2,6 @@ import React from 'react';
 
 export default function Whoweare() {
   return (
-
       <section className="relative ">
           <div className=" flex flex-col items-center max-w-6xl mx-auto px-5 sm:px-6 py-8 ">
               <div className="flex flex-col w-full prose text-left max-w-max lg:max-w-2xl ">

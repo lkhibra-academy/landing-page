@@ -4,17 +4,18 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
+import TestimonyCard from './TestimonyCard';
 
 export default function Testimonials() {
     
       return (
-        <div class="max-w-6xl mx-auto px-5 sm:px-6 py-12  ">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6 py-12  ">
             <div dir='rtl' className="w-full mx-auto text-center">
                 <h1 className='h2 mb-8'>Testimonials</h1>
             </div>
             <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
-                    autoplay={{delay:8000}}
+                    autoplay={{delay:5000}}
                     loop={'true'}
                     // className={'bg-cyan-400 mb-4'}
                     breakpoints= {{
@@ -42,153 +43,39 @@ export default function Testimonials() {
                 >
 
                 <SwiperSlide>
-                    <div>
-                    <blockquote class="px-3 py-4 bg-white">
-                        <div class="flex items-center">
-                        <img
-                            src="https://www.hyperui.dev/photos/man-4.jpeg"
-                            alt=""
-                            class="object-cover w-16 h-16 rounded-full"
-                        />
-
-                        <div class="ml-4 text-sm">
-                            <p class="font-medium">1</p>
-                            <p class="mt-1">CEO of Shipping Company</p>
-                        </div>
-                        </div>
-
-                        <p class="relative mt-4 text-gray-500">
-                        <span class="text-xl">&ldquo;</span>
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        assumenda officiis sit amet itaque eveniet accusantium corporis
-                        tempora, soluta perspiciatis rerum, ratione animi nemo inventore
-                        repellat, commodi in esse quisquam.
-
-                        <span class="text-xl">&rdquo;</span>
-                        </p>
-                    </blockquote>
-                    </div>
+                    <TestimonyCard name={"mehdi"} 
+                    status={"CEO of Shipping Company"} pic={"https://www.hyperui.dev/photos/man-5.jpeg"}
+                    quote={"Lorem ipsum dolor sit ae repellat, commodi in esse quisquam."}
+                    />
+                    
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div class="">
-                    <blockquote class="px-3 py-4 bg-white">
-                        <div class="flex items-center">
-                        <img
-                            src="https://www.hyperui.dev/photos/man-4.jpeg"
-                            alt=""
-                            class="object-cover w-16 h-16 rounded-full"
-                        />
-
-                        <div class="ml-4 text-sm">
-                            <p class="font-medium">2</p>
-                            <p class="mt-1">CEO of Shipping Company</p>
-                        </div>
-                        </div>
-
-                        <p class="relative mt-4 text-gray-500">
-                        <span class="text-xl">&ldquo;</span>
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        assumenda officiis sit amet itaque eveniet accusantium corporis
-                        tempora, soluta perspiciatis rerum, ratione animi nemo inventore
-                        repellat, commodi in esse quisquam.
-
-                        <span class="text-xl">&rdquo;</span>
-                        </p>
-                    </blockquote>
-                    </div>
+                <TestimonyCard name={"simo"} 
+                    status={"CEO of Shipping Company"} pic={"https://www.hyperui.dev/photos/man-3.jpeg"}
+                    quote={"Lorem ipsum dolor sit s sit amet itaque evenietluta perspiciatis rerum, ratione animi nemo inventore repellat, commodi in esse quisquam."}
+                    />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div class="">
-                    <blockquote class="px-3 py-4 bg-white">
-                        <div class="flex items-center">
-                        <img
-                            src="https://www.hyperui.dev/photos/man-4.jpeg"
-                            alt=""
-                            class="object-cover w-16 h-16 rounded-full"
-                        />
-
-                        <div class="ml-4 text-sm">
-                            <p class="font-medium">3</p>
-                            <p class="mt-1">CEO of Shipping Company</p>
-                        </div>
-                        </div>
-
-                        <p class="relative mt-4 text-gray-500">
-                        <span class="text-xl">&ldquo;</span>
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        assumenda officiis sit amet itaque eveniet accusantium corporis
-                        tempora, soluta perspiciatis rerum, ratione animi nemo inventore
-                        repellat, commodi in esse quisquam.
-
-                        <span class="text-xl">&rdquo;</span>
-                        </p>
-                    </blockquote>
-                    </div>
+                <TestimonyCard name={"rachid"} 
+                    status={"CEO of Shipping Company"} pic={"https://www.hyperui.dev/photos/man-4.jpeg"}
+                    quote={"Lorem ipsum dolor officiis sit amet itaque eveniet accusantium corporis tempora, soluta perspiciatis rerum, ratione animi nemo inventore repellat, commodi in esse quisquam."}
+                    />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div class="">
-                    <blockquote class="px-3 py-4 bg-white">
-                        <div class="flex items-center">
-                        <img
-                            src="https://www.hyperui.dev/photos/man-4.jpeg"
-                            alt=""
-                            class="object-cover w-16 h-16 rounded-full"
-                        />
-
-                        <div class="ml-4 text-sm">
-                            <p class="font-medium">4</p>
-                            <p class="mt-1">CEO of Shipping Company</p>
-                        </div>
-                        </div>
-
-                        <p class="relative mt-4 text-gray-500">
-                        <span class="text-xl">&ldquo;</span>
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        assumenda officiis sit amet itaque eveniet accusantium corporis
-                        tempora, soluta perspiciatis rerum, ratione animi nemo inventore
-                        repellat, commodi in esse quisquam.
-
-                        <span class="text-xl">&rdquo;</span>
-                        </p>
-                    </blockquote>
-                    </div>
+                <TestimonyCard name={"abedsellam"} 
+                    status={"CEO of Shipping Company"} pic={"https://www.hyperui.dev/photos/man-2.jpeg"}
+                    quote={"Lorem ipsum drspiciatis rerum, ratione animi nemo inventore repellat, commodi in esse quisquam."}
+                    />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div class="">
-                    <blockquote class="px-3 py-4 bg-white">
-                        <div class="flex items-center">
-                        <img
-                            src="https://www.hyperui.dev/photos/man-4.jpeg"
-                            alt=""
-                            class="object-cover w-16 h-16 rounded-full"
-                        />
-
-                        <div class="ml-4 text-sm">
-                            <p class="font-medium">5</p>
-                            <p class="mt-1">CEO of Shipping Company</p>
-                        </div>
-                        </div>
-
-                        <p class="relative mt-4 text-gray-500">
-                        <span class="text-xl">&ldquo;</span>
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                        assumenda officiis sit amet itaque eveniet accusantium corporis
-                        tempora, soluta perspiciatis rerum, ratione animi nemo inventore
-                        repellat, commodi in esse quisquam.
-
-                        <span class="text-xl">&rdquo;</span>
-                        </p>
-                    </blockquote>
-                    </div>
+                <TestimonyCard name={"hamid"} 
+                    status={"CEO of Shipping Company"} pic={"https://www.hyperui.dev/photos/man-1.jpeg"}
+                    quote={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni assumenda officiis sit amet itaque eveniet accusantium corporis tempora, soluta perspiciatis rerum, ratione animi nemo inventore repellat, commodi in esse quisquam."}
+                    />
                 </SwiperSlide>
 
             </Swiper>

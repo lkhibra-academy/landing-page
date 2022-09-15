@@ -10,32 +10,13 @@ export default function Certificate() {
       {/*  Site header */}
       <Header />
 
-      <div className='text-center mt-40 text-5xl'>this is certificate page</div>
-      {/*  Page content 
+      {/*  Page content */}
       <main className="flex-grow">
-
-        {/*  Page sections 
-         <HeroHome /> 
-         <Learn />
-        <FeaturesBlocks />
-        <Need />
-        <More />
-        
-
-        <FeaturesHome />
-
-        <Cta />
-
-        <Faq /> */}
-
-
-        {/* <Testimonials /> */}
-        {/* <Newsletter /> */}
-
-      {/* </main> */}
-
+        <div className='text-center mt-40 text-5xl'>this is certificate page</div>
+        {/* <HeroHome /> */}
+      </main>
       {/*  Site footer */}
-      {/* <Footer /> */}
+      <Footer />
 
     </div>
   );

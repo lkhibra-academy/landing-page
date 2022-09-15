@@ -31,9 +31,9 @@ function Header() {
           {/* Site navigation */}
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center text-lg font-medium">
-              <li className='ml-3'><a href="">Home</a></li>
+              <li className='ml-3'><a href="./">Home</a></li>
               <li className='ml-3'><a href="./Training"><Dropdown title="Trainings" children={
-                <ul>
+                <ul className='text-right'>
                   <li className='rounded p-2  font-medium'><a href="/Training" dir='rtl'>تدريب الخبرة فالبرمجة</a>
                   
                   </li>
