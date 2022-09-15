@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import Transition from '../utils/Transition';
 
@@ -8,7 +8,19 @@ function Dropdown({
 }) {
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobile, setMobile] = useState(false);
 
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 768px)')
+    function updateM(e) {
+      setMobile(!e.matches)
+    }
+    mediaQuery.addEventListener('change',updateM)
+    return () => {
+      mediaQuery.removeEventListener('change',updateM)
+    }
+  }, [])
+  
   return (
     <li
       className="relative"
@@ -28,7 +40,9 @@ function Dropdown({
           <path d="M10.28 4.305L5.989 8.598 1.695 4.305A1 1 0 00.28 5.72l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z" />
         </svg>
       </a>
-      <Transition
+      {mobile ? 
+      children
+      :<Transition
         show={dropdownOpen}
         tag="ul"
         className="origin-top-right absolute top-full right-0 w-56 bg-white ml-4 rounded text-center border border-gray-200 shadow-md"
@@ -41,6 +55,7 @@ function Dropdown({
       >
         {children}
       </Transition>
+      }
     </li>
   );
 }
