@@ -6,14 +6,16 @@ function Header() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full bg-white shadow">
-      <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-        <div>
+
+    <nav className=" bg-white shadow-lkhibra w-full">
+      <div className="relative max-w-6xl mx-auto px-5 sm:px-6">
+      <div className="justify-between md:items-center md:flex">
+        <div className="bg-white">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="/" className="block" aria-label="lkhibra">
               <Logo className="w-20 md:w-28" />
             </Link>
-            <div className="md:hidden">
+            <div className="md:hidden bg-white">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
@@ -57,7 +59,7 @@ function Header() {
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-lg font-medium bg-white">
               <li className="ml-3">
                 <a href="./">Home</a>
               </li>
@@ -99,6 +101,7 @@ function Header() {
             </ul>
           </div>
         </div>
+      </div>
       </div>
     </nav>
   );

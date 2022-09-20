@@ -2,14 +2,10 @@ import React from 'react';
 
 export default function Hero() { 
       return ( 
-        <section>
-            <div class="
-            max-w-6xl mx-auto px-5 sm:px-6 
-            ">
-                {/* px-4 py-16 mx-auto max-w-screen-6xl sm:px-6 lg:px-8 */}
-
+        <section className='relative max-w-6xl mx-auto px-5 sm:px-6'>
                 <div class="grid grid-cols-1 gap-8 lg:gap-16 md:grid-cols-2 
-                pt-24 pb-4 md:pt-28 md:pb-6 ">
+                    pt-6 pb-2 md:pt-8
+                ">
                     {/* Titles */}
                     <div class=" md:order-last  
                     flex flex-col justify-center items-center flex-shrink-0
@@ -87,10 +83,7 @@ export default function Hero() {
                             </div>
 
                             </div>
-                        </div>
-            </div>
-         
-
+                    </div>
         </section>
 
   );
