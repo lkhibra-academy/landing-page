@@ -61,27 +61,27 @@ function Header() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-lg font-medium bg-white">
               <li className="ml-3">
-                <a href="./">Home</a>
+                <Link to="./">Home</Link>
               </li>
               <li className="ml-3">
-                <a href="./Training">
+                <div>
                   <Dropdown force={navbar} title="Trainings">
                     <ul className="text-right">
                       <li className="rounded p-2  font-medium">
-                        <a href="/Training" dir="rtl">
+                        <Link to="/Training" dir="rtl">
                           تدريب الخبرة فالبرمجة
-                        </a>
+                        </Link>
                       </li>
                       <li className="p-2 font-medium">
                         <span className="text-xs font-bold text-white rounded bg-red-700 px-2 mr-2">
                           قريبا
                         </span>
-                        <a href="./Training" dir="rtl">
+                        <Link to="./Training" dir="rtl">
                           تدريب الخبرة فالتصميم
-                        </a>
+                        </Link>
                       </li>
                       <li className="p-2 font-medium">
-                        <a href="./Training">
+                        <Link to="./Training">
                           <span className="text-xs font-bold text-white rounded bg-red-700 px-2 mr-2">
                             قريبا
                           </span>
@@ -89,14 +89,14 @@ function Header() {
                             Front-End 101
                           </span>{" "}
                           تدريب
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </Dropdown>
-                </a>
+                </div>
               </li>
               <li className="ml-3">
-                <a href="./Certificate">Certificate</a>
+                <Link to="./Certificate">Certificate</Link>
               </li>
             </ul>
           </div>
