@@ -24,10 +24,11 @@ function Dropdown({
   return (
     <li
       className="relative"
-      onMouseEnter={() => setDropdownOpen(true)}
-      onMouseLeave={() => setDropdownOpen(false)}
-      onFocus={() => setDropdownOpen(true)}
-      onBlur={() => setDropdownOpen(false)}
+      onMouseEnter={() => mobile || setDropdownOpen(true)}
+      onMouseLeave={() => mobile || setDropdownOpen(false)}
+      onFocus={() => mobile || setDropdownOpen(true)}
+      onBlur={() => mobile || setDropdownOpen(false)}
+      onClick={() => mobile && setDropdownOpen(!dropdownOpen)}
     >
       <a
         className=" hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
@@ -40,12 +41,10 @@ function Dropdown({
           <path d="M10.28 4.305L5.989 8.598 1.695 4.305A1 1 0 00.28 5.72l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z" />
         </svg>
       </a>
-      {mobile ? 
-      children
-      :<Transition
+      <Transition
         show={dropdownOpen}
         tag="ul"
-        className="origin-top-right absolute top-full right-0 w-56 bg-white ml-4 rounded text-center border border-gray-200 shadow-md"
+        className={`origin-top-right ${mobile?"":"z-10 absolute top-full right-0 w-56 bg-white ml-4 rounded text-center border border-gray-200 shadow-md"}`}
         enter="transition ease-out duration-200 transform"
         enterStart="opacity-0 -translate-y-2"
         enterEnd="opacity-100 translate-y-0"
@@ -55,7 +54,6 @@ function Dropdown({
       >
         {children}
       </Transition>
-      }
     </li>
   );
 }
