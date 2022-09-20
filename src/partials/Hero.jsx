@@ -13,10 +13,8 @@ export default function Hero() {
                         <div className='text-center lg:text-right  self-start p-4'>
                             <h2 class="text-3xl font-bold sm:text-4xl">تعلم البرمجة في 3 أشهر فقط</h2>
 
-                            <p class="mt-4 text-gray-600">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
-                            atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
-                            veniam tempora deserunt? Molestiae eius quidem quam repellat.
+                            <p class="mt-4 text-gray-600 text-lg">
+                            طور المهارات ديالك فمجال البرمجة عبر عدة تدريبات اونلاين من أجل فتح فرص جداد فحياتك.
                             </p>
                             <a href="#checkout" 
                                 className="btn text-white bg-red-primary
