@@ -15,6 +15,7 @@ function Dropdown({
     function updateM(e) {
       setMobile(!e.matches)
     }
+    setMobile(!e.matches)
     mediaQuery.addEventListener('change',updateM)
     return () => {
       mediaQuery.removeEventListener('change',updateM)
