@@ -14,9 +14,9 @@ export default function Accomplishment() {
                         {/* bg-red-light     */}
                 {/*   */}
                 
-                <AccomplishmentCard num={"66+"} desc={" عدد تلاميذ"} />
-                <AccomplishmentCard num={"64+"} desc={" عدد ساعات التدريب "}/>
-                <AccomplishmentCard num={"32+"} desc={" عدد الحصص "}/>
+                <AccomplishmentCard num={"45+"} desc={" عدد تلاميذ"} />
+                <AccomplishmentCard num={"38+"} desc={" عدد ساعات التدريب "}/>
+                <AccomplishmentCard num={"18+"} desc={" عدد الحصص "}/>
                 
              </div>
         </div>

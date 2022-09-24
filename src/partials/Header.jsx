@@ -6,7 +6,7 @@ function Header() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-
+    
     <nav className=" bg-white shadow-lkhibra w-full">
       <div className="relative max-w-6xl mx-auto px-5 sm:px-6">
       <div className="justify-between md:items-center md:flex">
@@ -61,7 +61,7 @@ function Header() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-lg font-medium bg-white">
               <li className="ml-3">
-                <Link to="./">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li className="ml-3">
                 <div>
@@ -76,12 +76,12 @@ function Header() {
                         <span className="text-xs font-bold text-white rounded bg-red-700 px-2 mr-2">
                           قريبا
                         </span>
-                        <Link to="./Training" dir="rtl">
+                        <Link to="/Training" dir="rtl">
                           تدريب الخبرة فالتصميم
                         </Link>
                       </li>
                       <li className="p-2 font-medium">
-                        <Link to="./Training">
+                        <Link to="/Training">
                           <span className="text-xs font-bold text-white rounded bg-red-700 px-2 mr-2">
                             قريبا
                           </span>
@@ -96,7 +96,7 @@ function Header() {
                 </div>
               </li>
               <li className="ml-3">
-                <Link to="./Certificate">Certificate</Link>
+                <Link to="/Certificate">Certificate</Link>
               </li>
             </ul>
           </div>
