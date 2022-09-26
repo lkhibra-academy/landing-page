@@ -10,6 +10,8 @@ import Need from '../partials/Need';
 import More from '../partials/More';
 import Cta from '../partials/Cta';
 import Faq from '../partials/Faq';
+import HeroTraining from '../partials/HeroTraining';
+import Plans from '../partials/Plans';
 
 
 export default function Training() {
@@ -23,7 +25,7 @@ export default function Training() {
       <main className="flex-grow">
 
         {/*  Page sections */}
-        <HeroHome />
+        <HeroTraining />
         <Learn />
         <FeaturesBlocks />
         <Need />
@@ -31,7 +33,7 @@ export default function Training() {
         
 
         <FeaturesHome />
-
+      <Plans/>
         <Cta />
 
         <Faq />
