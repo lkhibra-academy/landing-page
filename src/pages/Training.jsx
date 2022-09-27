@@ -8,10 +8,11 @@ import Footer from '../partials/Footer';
 import Learn from '../partials/Learn';
 import Need from '../partials/Need';
 import More from '../partials/More';
-import Cta from '../partials/Cta';
-import HeroTraining from '../partials/HeroTraining';
+import JoinUs from '../partials/JoinUs';
+import Hero from '../partials/Hero';
 import Plans from '../partials/Plans';
 import FaqTraining from '../partials/FaqTraining';
+import Testimonials from '../partials/Testimonials';
 
 export default function Training() {
   return (
@@ -24,19 +25,16 @@ export default function Training() {
       <main className="flex-grow">
 
         {/*  Page sections */}
-        <HeroTraining />
+        <Hero/>
         <Learn />
         <FeaturesBlocks />
         <Need />
         <More />
-        
-
         <FeaturesHome />
-      <Plans/>
-
+        <Plans/>
+        <Testimonials/>
+        <JoinUs/>
         <FaqTraining />
-
-
         {/* <Testimonials /> */}
         {/* <Newsletter /> */}
 
