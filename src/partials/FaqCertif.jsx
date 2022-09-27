@@ -1,6 +1,6 @@
 import FaqBlock from '../partials/FaqBlock';
 
-export default function TestComp() { 
+export default function FaqCertif() { 
     return ( 
     //       <div className="border-b-2 border-b-gray-200">
     // <section className="relative max-w-6xl mx-auto px-4 sm:px-6">

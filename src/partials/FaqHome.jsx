@@ -1,10 +1,7 @@
 import FaqBlock from '../partials/FaqBlock';
 
-export default function TestComp() { 
+export default function FeqHome() { 
     return ( 
-    //       <div className="border-b-2 border-b-gray-200">
-    // <section className="relative max-w-6xl mx-auto px-4 sm:px-6">
-    //<div className="max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8"> 
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="py-6 md:py-8">
               <div className="md:gap-6">

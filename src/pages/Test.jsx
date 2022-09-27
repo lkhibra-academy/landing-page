@@ -11,9 +11,8 @@ import JoinUs from '../partials/JoinUs';
 import Hero from '../partials/Hero';
 import TestComp from '../partials/TestComp';
 
-
 // Header test
-export default function Test() {
+export default function Home() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
 
@@ -23,7 +22,10 @@ export default function Test() {
       {/*  Page content */}
       <main className="flex-grow">
         {/* <HeroHome /> */}
+        <Hero/>
         <TestComp/>
+        <Whoweare/>
+        <Faq/>
       </main>
       {/*  Site footer */}
       <Footer />

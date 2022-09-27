@@ -1,7 +1,7 @@
 import React from 'react';
 import TrainingCard from './TrainingCard';
 
-export default function TestComp() { 
+export default function OurTrainings() { 
       return ( 
         //           flex justify-center items-center flex-row gap-12 bg-black-dark
         <div className='relative max-w-6xl mx-auto px-5 sm:px-6 py-12'>

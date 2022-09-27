@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from '../partials/Header';
 import Footer from '../partials/Footer';
 import More from '../partials/More';
-import Faq from '../partials/Faq';
+import FaqHome from '../partials/FaqHome';
 import Testimonials from '../partials/Testimonials';
 import Whoweare from '../partials/Whoweare';
 import OurTrainings from '../partials/OurTrainings';
@@ -28,7 +28,7 @@ export default function Home() {
         <OurTrainings/>
         <More/>
         <JoinUs/>
-        <Faq/>
+        <FaqHome/>
       </main>
       {/*  Site footer */}
       <Footer />

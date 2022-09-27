@@ -10,6 +10,7 @@ import Accomplishment from '../partials/Accomplishment';
 import JoinUs from '../partials/JoinUs';
 import HeroCertif from '../partials/HeroCertif';
 import Verify from '../partials/Verify';
+import FaqCertif from '../partials/FaqCertif';
 
 export default function Certificate() {
   return (
@@ -23,7 +24,7 @@ export default function Certificate() {
         {/* <HeroHome /> */}
         <HeroCertif/>
         <Verify/>
-        <Faq/>
+        <FaqCertif/>
       </main>
       {/*  Site footer */}
       <Footer />

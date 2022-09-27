@@ -1,23 +1,22 @@
 import React from 'react'
 import Header from '../partials/Header'
+import Footer from '../partials/Footer'
 
-function ThankYou() {
+export default function ThankYou() {
     return (
-        <div className="flex flex-col min-h-screen overflow-hidden">
-
+        <div className="">
       {/*  Site header */}
       <Header />
-
-        <section>
+        <section className='flex flex-col min-h-screen overflow-hidden mb-10'>
             <h1 className="sr-only">Checkout</h1>
             <div className="relative mx-auto max-w-screen-2xl">
                 <div className='flex justify-center'>
                     <div className="pt-20 bg-white md:py-24">
                             <div>
-                                <h1 className="font-bold text-3xl text-center p-5" dir="rtl">مرحبا بك في تدريب الخبرة فالبرمجة</h1>
+                                <h1 className="font-bold md:text-4xl text-3xl text-center px-2 pb-5 text-red-primary" dir="rtl">مرحبا بك في تدريب الخبرة فالبرمجة</h1>
                                 <div className="max-w-lg md:mx-auto mx-3 p-2 pr-3 rounded-lg border border-gray-200 shadow-md ">
                                     <div className="flex justify-between border-b border-b-gray-200 " dir="rtl">
-                                        <h2 className="pt-2 pb-3 font-bold text-xl ">طريقة الدفع</h2>
+                                        <h2 className="pt-2 pb-3 font-bold text-xl md:text-2xl text-center ">لقد تم التوصل بطلبك لكن … ! </h2>
                                         <br />
                                     </div>
                                     <div className="py-4 px-1  border-b border-b-gray-200">
@@ -26,10 +25,11 @@ function ThankYou() {
                                                 <li className="flex items-center justify-between">
                                                     <div className="flex items-start">
                                                         <div className="">
-                                                            <p>
-                                                            عن طريق تحويل بنكي (virement bancaire) <br /><br />
-                                                            </p>
-                                                            <p className="text-center">
+                                                            <p className='text-lg '>
+                                                              <span className='font-medium'>لم يتم حجز مقعدك بعد </span><br />
+للحجز الان المرجو اداء المبلغ بايداع بنكي على هذا الحساب                                                             
+                                                            </p><br />
+                                                            <p className="text-center text-base md:text-lg">
                                                                 Bank : CIH bank <br />
                                                                 Nom : Benennia El Mehdi <br />
                                                                 RIB : 230810465787621100660083 <br /><br />
@@ -44,22 +44,28 @@ function ThankYou() {
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="flex justify-between " dir="rtl">
-                                        <h4 className="pt-3 pb-2 pr-1 font-medium text-lg ">المبلغ :<span className='font-bold  '> 789 د.م </span>
+                                    <div className="flex justify-between flex-col pt-3 pb-2 space-y-3" dir="rtl">
+                                        <h4 className=" pr-1 font-medium text-lg ">المبلغ :<span className='font-bold  '> 789 د.م </span>
                                          </h4>
+                                         <h4 className="pr-1 font-normal text-base ">توقيت الحصص :<span className=''> كل خميس 19h  </span>
+                                         </h4> 
                                     </div>
                                 </div>
-                                <p className="md:text-right text-center font-light text-base my-3 mr-3" dir="rtl"><span className='text-red-primary text-base first-letter:font-semibold'>  *  </span>
-                                أخر أجل للدفع هو الإثنين 14 غشت</p>
-                                <p className="md:text-right text-center font-light text-base my-3 mr-3" dir="rtl"><span className='text-red-primary text-base first-letter:font-semibold'>  *  </span>
-                                أول حصة سوف تكون التلاثاء 15 غشت</p>
+                                <p className="flex items-center justify-center flex-col text-center font-light text-base my-3 mr-3 px-2 space-y-2" dir="rtl">
+                                  <span className=''>
+                                    <span className='text-red-primary text-base first-letter:font-semibold'>  *  </span>
+                                  سوف يتم إلغاء حجزك وإعطاء مكانك لشخص أخر ان لم يتم إيداع المبلغ بعد 3 أيام من توصلك بإيمايل الحجز. 
+                                  </span>
+                                  <span className="font-light text-sm" dir="rtl">
+                                  ( ان كان هناك اي استفسار يمكن تواصل معنا عبر الواتساب )
+                                  </span>
+                                </p>
                             </div>
                     </div>
                 </div>
             </div>
         </section>
+      <Footer/>
     </div>
     )
 }
-
-export default ThankYou

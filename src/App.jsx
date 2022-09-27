@@ -47,7 +47,7 @@ function App() {
         <Route exact path="/Test" element={<Test />} />
         <Route exact path="/Certificate" element={<Certificate />} />
         <Route exact path="/Training" element={<Training />} />
-        <Route exact path="/thanks" element={<ThankYou />} />
+        <Route exact path="/ThankYou" element={<ThankYou />} />
         <Route exact path="/privacy" element={<Privacy />} />
         <Route exact path="/termsofuse" element={<Termsofuse />} />
         <Route exact path="/Responsibility" element={<Responsibility />} />

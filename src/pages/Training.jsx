@@ -9,10 +9,9 @@ import Learn from '../partials/Learn';
 import Need from '../partials/Need';
 import More from '../partials/More';
 import Cta from '../partials/Cta';
-import Faq from '../partials/Faq';
 import HeroTraining from '../partials/HeroTraining';
 import Plans from '../partials/Plans';
-
+import FaqTraining from '../partials/FaqTraining';
 
 export default function Training() {
   return (
@@ -34,9 +33,8 @@ export default function Training() {
 
         <FeaturesHome />
       <Plans/>
-        <Cta />
 
-        <Faq />
+        <FaqTraining />
 
 
         {/* <Testimonials /> */}
