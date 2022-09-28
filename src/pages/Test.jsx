@@ -10,6 +10,7 @@ import Accomplishment from '../partials/Accomplishment';
 import JoinUs from '../partials/JoinUs';
 import Hero from '../partials/Hero';
 import TestComp from '../partials/TestComp';
+import LeadForm from '../partials/LeadForm';
 
 // Header test
 export default function Home() {
@@ -24,8 +25,7 @@ export default function Home() {
         {/* <HeroHome /> */}
         <Hero/>
         <TestComp/>
-        <Whoweare/>
-        <Faq/>
+        <LeadForm/>
       </main>
       {/*  Site footer */}
       <Footer />

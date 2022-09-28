@@ -13,6 +13,8 @@ import Hero from '../partials/Hero';
 import Plans from '../partials/Plans';
 import FaqTraining from '../partials/FaqTraining';
 import Testimonials from '../partials/Testimonials';
+import Checkout from '../partials/LeadForm';
+
 
 export default function Training() {
   return (
@@ -32,6 +34,7 @@ export default function Training() {
         <More />
         <FeaturesHome />
         <Plans/>
+        <Checkout/>
         <Testimonials/>
         <JoinUs/>
         <FaqTraining />

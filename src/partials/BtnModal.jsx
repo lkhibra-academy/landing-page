@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
 import Modal from '../utils/Modal';
-
-import HeroImage from '../images/hero-image.png';
 import LeadForm from './LeadForm';
 import Button1 from './Button1';
 
-function HeroHome() {
+export default function BtnModal() {
 
   const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   return (
     <section className="relative bg-red-600 p-3 h-56">
-      <button className=" p-3 bg-white shadow-md" 
+      <button className="p-3 bg-white shadow-md rounded-lg" 
       onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} 
       aria-controls="modal"
       >wrek hna</button>
@@ -25,4 +23,3 @@ function HeroHome() {
   );
 }
 
-export default HeroHome;

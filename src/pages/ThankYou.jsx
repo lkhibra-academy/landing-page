@@ -1,9 +1,13 @@
 import React from 'react'
 import Header from '../partials/Header'
 import Footer from '../partials/Footer'
+import { useLocation } from 'react-router-dom'
 
 export default function ThankYou() {
+    const loc=useLocation();
+    const price=loc.state?.price ?? 0;
     return (
+
         <div className="">
       {/*  Site header */}
       <Header />
@@ -45,7 +49,7 @@ export default function ThankYou() {
                                         </div>
                                     </div>
                                     <div className="flex justify-between flex-col pt-3 pb-2 space-y-3" dir="rtl">
-                                        <h4 className=" pr-1 font-medium text-lg ">المبلغ :<span className='font-bold  '> 789 د.م </span>
+                                        <h4 className=" pr-1 font-medium text-lg ">المبلغ :<span className='font-bold  '> {price} د.م </span>
                                          </h4>
                                          <h4 className="pr-1 font-normal text-base ">توقيت الحصص :<span className=''> كل خميس 19h  </span>
                                          </h4> 
