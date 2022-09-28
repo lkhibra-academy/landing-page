@@ -1,6 +1,10 @@
 import React from 'react';
-
-export default function HeroTraining() { 
+import fsr from '../images/logo/fsr1.png';
+import souissi from '../images/logo/souissi1.png';
+import lions from '../images/logo/lions1.png';
+import iscae from '../images/logo/iscae1.png';
+import heropic from '../images/heropic1.png';
+export default function Heroold() { 
       return ( 
         <section className='relative max-w-6xl mx-auto px-5 sm:px-6'>
                 <div class="grid grid-cols-1 gap-8 lg:gap-16 md:grid-cols-2 
@@ -13,7 +17,7 @@ export default function HeroTraining() {
                         <div className='text-center lg:text-right  self-start p-4'>
                             <h2 class="text-3xl font-bold sm:text-4xl">تعلم البرمجة في 3 أشهر فقط</h2>
 
-                            <p class="mt-4 text-gray-600 text-lg">
+                            <p class="mt-4 text-gray-600 text-lg"> hhhhhh training
                             طور المهارات ديالك فمجال البرمجة عبر عدة تدريبات اونلاين من أجل فتح فرص جداد فحياتك.
                             </p>
                             <a href="#checkout" 
@@ -29,18 +33,62 @@ export default function HeroTraining() {
 
                     {/* Picture */}
                     <div
-                        class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full my-auto
-                        hidden md:block
+                        class="relative h-80 overflow-hidden rounded-lg my-auto
+                        hidden md:block 
                         "
                     >
                         <img
-                        class="absolute inset-0 object-cover w-full h-full"
-                        src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                        alt="Man using a computer"
+                        class="absolute inset-0 h-full mx-auto min-w-fit"
+                        src={heropic}
+                        alt="woman smilling"
                         />
                     </div>
 
                 </div>
+
+                    <div className='  p-4 w-full'>
+                            <h1 className='h3 text-center text-relaxed mb-6'>وضعوا ثقتهم بنا</h1>
+                            {/* Items */}
+                            <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-4">
+                                
+                                {/* Item */}
+                                <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+                                <img
+                                    class="object-cover"
+                                    alt="logo 1" 
+                                    src={fsr}
+                                    width="150"
+                                />
+                                </div>
+                                {/* Item */}
+                                <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+                                <img
+                                    class="object-cover "
+                                    alt="logo 1" 
+                                    src={lions}
+                                    width="150"
+                                />
+                                </div>
+                                {/* Item */}
+                                <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+                                <img
+                                    class="object-cover"
+                                    alt="logo 1" 
+                                    src={souissi}
+                                    width="150"
+                                />
+                                </div>
+                                {/* Item */}
+                                <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+                                <img
+                                    class="object-cover"
+                                    alt="logo 1" 
+                                    src={iscae}
+                                    width="150"
+                                />
+                                </div>
+                            </div>
+                    </div>
         </section>
 
   );

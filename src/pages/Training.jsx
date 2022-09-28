@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Header from '../partials/Header';
-import HeroHome from '../partials/HeroHome';
 import FeaturesHome from '../partials/Features';
 import FeaturesBlocks from '../partials/FeaturesBlocks';
 import Footer from '../partials/Footer';
@@ -9,7 +8,7 @@ import Learn from '../partials/Learn';
 import Need from '../partials/Need';
 import More from '../partials/More';
 import JoinUs from '../partials/JoinUs';
-import Hero from '../partials/Hero';
+import HeroTraining from '../partials/HeroTraining';
 import Plans from '../partials/Plans';
 import FaqTraining from '../partials/FaqTraining';
 import Testimonials from '../partials/Testimonials';
@@ -27,7 +26,7 @@ export default function Training() {
       <main className="flex-grow">
 
         {/*  Page sections */}
-        <Hero/>
+        <HeroTraining/>
         <Learn />
         <FeaturesBlocks />
         <Need />

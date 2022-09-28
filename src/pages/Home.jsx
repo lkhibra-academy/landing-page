@@ -8,7 +8,7 @@ import Whoweare from '../partials/Whoweare';
 import OurTrainings from '../partials/OurTrainings';
 import Accomplishment from '../partials/Accomplishment';
 import JoinUs from '../partials/JoinUs';
-import Hero from '../partials/Hero';
+import HeroHome from '../partials/HeroHome';
 
 // Header test
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
       {/*  Page content */}
       <main className="flex-grow">
         {/* <HeroHome /> */}
-        <Hero/>
+        <HeroHome/>
         <Whoweare/>
         <Accomplishment/>
         <Testimonials/>

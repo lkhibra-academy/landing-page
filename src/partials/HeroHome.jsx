@@ -1,115 +1,102 @@
-import React, { useState } from 'react';
-import Modal from '../utils/Modal';
+import React from 'react';
+import fsr from '../images/logo/fsr1.png';
+import souissi from '../images/logo/souissi1.png';
+import lions from '../images/logo/lions1.png';
+import iscae from '../images/logo/iscae1.png';
+import heropic from '../images/heropic1.png';
+export default function HeroHome() { 
+      return ( 
+        <section className='relative max-w-6xl mx-auto px-5 sm:px-6'>
+                <div class="grid grid-cols-1 gap-8 lg:gap-16 md:grid-cols-2 
+                    pt-6 pb-2 md:pt-8
+                ">
+                    {/* Titles */}
+                    <div class=" md:order-last  
+                    flex flex-col justify-center items-center flex-shrink-0
+                    " dir='rtl'>
+                        <div className='text-center lg:text-right  self-start p-4'>
+                            <h2 class="text-3xl font-bold sm:text-4xl">تعلم البرمجة في 3 أشهر فقط</h2>
 
-import HeroImage from '../images/hero-image.png';
-import Button1 from './Button1';
+                            <p class="mt-4 text-gray-600 text-lg">hhhhhhhhhhhh home
+                            طور المهارات ديالك فمجال البرمجة عبر عدة تدريبات اونلاين من أجل فتح فرص جداد فحياتك.
+                            </p>
+                            <a href="#checkout" 
+                                className="btn text-white bg-red-primary
+                                
+                                w-full my-6 sm:w-auto sm:mb-0"
+                            >
+                                بغيت نتعلم
+                            </a>
+                        </div>
+                       
+                    </div>
 
-function HeroHome() {
+                    {/* Picture */}
+                    <div
+                        class="relative h-80 overflow-hidden rounded-lg my-auto
+                        hidden md:block 
+                        "
+                    >
+                        <img
+                        class="absolute inset-0 h-full mx-auto min-w-fit"
+                        src={heropic}
+                        alt="woman smilling"
+                        />
+                    </div>
 
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
-
-  return (
-    <section className="relative">
-
-      {/* Illustration behind hero content */}
-      {/* <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none" aria-hidden="true">
-        <svg width="1360" height="578" viewBox="0 0 1360 578" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-01">
-              <stop stopColor="#FFF" offset="0%" />
-              <stop stopColor="#EAEAEA" offset="77.402%" />
-              <stop stopColor="#DFDFDF" offset="100%" />
-            </linearGradient>
-          </defs>
-          <g fill="url(#illustration-01)" fillRule="evenodd">
-            <circle cx="1232" cy="128" r="128" />
-            <circle cx="155" cy="443" r="64" />
-          </g>
-        </svg>
-      </div> */}
-
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 shadow-lkhibra">
-
-        {/* Hero content */}
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20 ">
-
-          {/* Section header */}
-          <div className="text-center pb-12 md:pb-16 ">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">تدريب الخبرة <span 
-            className="
-            bg-clip-text text-transparent bg-gradient-to-r from-red-primary to-red-primary
-            "
-            >فالبرمجة</span></h1>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-xl md:text-3xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">تعلم البرمجة في 3 أشهر فقط</p>
-              <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center text-xl" data-aos="zoom-y-out" data-aos-delay="300">
-                <div>
-                  <Button1 />
                 </div>
-                <div>
-                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#content">محتوى التدريب</a>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          {/* Hero image */}
-          <div>
-            <div className="relative flex justify-center mb-8" data-aos="zoom-y-out" data-aos-delay="450">
-              <div className="flex flex-col justify-center">
-                <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} aria-controls="modal" ><img className="mx-auto" src={HeroImage} width="768" height="432" alt="Hero" />
-                </button>
-                {/* <svg className="absolute inset-0 max-w-full mx-auto md:max-w-none h-auto" width="768" height="432" viewBox="0 0 768 432" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-                  <defs>
-                    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="hero-ill-a">
-                      <stop stopColor="#FFF" offset="0%" />
-                      <stop stopColor="#EAEAEA" offset="77.402%" />
-                      <stop stopColor="#DFDFDF" offset="100%" />
-                    </linearGradient>
-                    <linearGradient x1="50%" y1="0%" x2="50%" y2="99.24%" id="hero-ill-b">
-                      <stop stopColor="#FFF" offset="0%" />
-                      <stop stopColor="#EAEAEA" offset="48.57%" />
-                      <stop stopColor="#DFDFDF" stopOpacity="0" offset="100%" />
-                    </linearGradient>
-                    <radialGradient cx="21.152%" cy="86.063%" fx="21.152%" fy="86.063%" r="79.941%" id="hero-ill-e">
-                      <stop stopColor="#4FD1C5" offset="0%" />
-                      <stop stopColor="#81E6D9" offset="25.871%" />
-                      <stop stopColor="#338CF5" offset="100%" />
-                    </radialGradient>
-                    <circle id="hero-ill-d" cx="384" cy="216" r="64" />
-                  </defs>
-                  <g fill="none" fillRule="evenodd">
-                    <circle fillOpacity=".04" fill="url(#hero-ill-a)" cx="384" cy="216" r="128" />
-                    <circle fillOpacity=".16" fill="url(#hero-ill-b)" cx="384" cy="216" r="96" />
-                    <g fillRule="nonzero">
-                      <use fill="#000" xlinkHref="#hero-ill-d" />
-                      <use fill="url(#hero-ill-e)" xlinkHref="#hero-ill-d" />
-                    </g>
-                  </g>
-                </svg> */}
-              </div>
-              <button className="absolute top-full flex items-center transform -translate-y-1/2 bg-white rounded-full font-medium group p-4 shadow-lg" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} aria-controls="modal">
-                <svg className="w-6 h-6 fill-current text-gray-400 group-hover:text-blue-600 flex-shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 2C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12z" />
-                  <path d="M10 17l6-5-6-5z" />
-                </svg>
-                <span className="ml-3">Watch the full video (2 min)</span>
-              </button>
-            </div>
+                    <div className='  p-4 w-full'>
+                            <h1 className='h3 text-center text-relaxed mb-6'>وضعوا ثقتهم بنا</h1>
+                            {/* Items */}
+                            <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-4">
+                                
+                                {/* Item */}
+                                <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+                                <img
+                                    class="object-cover"
+                                    alt="logo 1" 
+                                    src={fsr}
+                                    width="150"
+                                />
+                                </div>
+                                {/* Item */}
+                                <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+                                <img
+                                    class="object-cover "
+                                    alt="logo 1" 
+                                    src={lions}
+                                    width="150"
+                                />
+                                </div>
+                                {/* Item */}
+                                <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+                                <img
+                                    class="object-cover"
+                                    alt="logo 1" 
+                                    src={souissi}
+                                    width="150"
+                                />
+                                </div>
+                                {/* Item */}
+                                <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+                                <img
+                                    class="object-cover"
+                                    alt="logo 1" 
+                                    src={iscae}
+                                    width="150"
+                                />
+                                </div>
+                            </div>
+                    </div>
+        </section>
 
-            {/* Modal */}
-            <Modal id="modal" ariaLabel="modal-headline" show={videoModalOpen} handleClose={() => setVideoModalOpen(false)}>
-              <div className="relative pb-9/16">
-                <iframe className="absolute w-full h-full" src="https://www.youtube.com/embed/vDHKoTyKLnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              </div>
-            </Modal>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
   );
 }
 
-export default HeroHome;
+
+
+
+
+
+

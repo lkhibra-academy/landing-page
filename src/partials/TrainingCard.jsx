@@ -14,7 +14,7 @@ const TrainingCard = ({title,desc,li1,li2,li3,pic}) => (
         </div>
 
         <div className="p-8 sm:col-span-2 " dir='rtl'>
-            <ul className="flex space-x-1">
+            <ul className="flex md:space-x-1 flex-wrap space-y-1">
                 <li
                     className="inline-block px-3 py-1 text-xs font-semibold text-white bg-red-primary rounded-full ml-1" 
                 >

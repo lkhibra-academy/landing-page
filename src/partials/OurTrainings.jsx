@@ -1,5 +1,6 @@
 import React from 'react';
 import TrainingCard from './TrainingCard';
+import cardpic from '../images/cardpic.png';
 
 export default function OurTrainings() { 
       return ( 
@@ -9,11 +10,11 @@ export default function OurTrainings() {
             <div className='grid gap-5'>
             <TrainingCard title={"تدريب الخبرة فالبرمجة"} 
             desc={"Lorme ipsum dolor sit amet consectetur adipisicing elit. Voluptatem adipisci! Lorme ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, adipisci! <br /> Lorme ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, adipisci!"} 
-            li1={"Python"} li2={"Data Structure"} li3={"Algorithms"} pic={"https://www.hyperui.dev/photos/activity-1.jpeg"}
+            li1={"Python"} li2={"Data Structure"} li3={"Algorithms"} pic={cardpic}
             />
             <TrainingCard title={"تدريب الخبرة فالبرمجة"} 
             desc={"Lorme ipsum dolor sit amet consectetur adipisicing elit. Voluptatem adipisci! Lorme ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, adipisci! <br /> Lorme ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, adipisci!"} 
-            li1={"Python"} li2={"Data Structure"} li3={"Algorithms"} pic={"https://www.hyperui.dev/photos/activity-1.jpeg"}
+            li1={"Python"} li2={"Data Structure"} li3={"Algorithms"} pic={cardpic}
             />
             </div>
         </div>

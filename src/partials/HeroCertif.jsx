@@ -1,10 +1,11 @@
 import React from 'react';
+import heropic from '../images/heropic1.png';
 
 export default function HeroCertif() { 
       return ( 
         <section className='relative max-w-6xl mx-auto px-5 sm:px-6'>
                 <div class="grid grid-cols-1 gap-8 lg:gap-16 md:grid-cols-2 
-                    pt-6 pb-2 md:pt-8
+                    pt-6 pb-2 md:pt-8 
                 ">
                     {/* Titles */}
                     <div class=" md:order-last  
@@ -13,7 +14,7 @@ export default function HeroCertif() {
                         <div className='text-center lg:text-right  self-start p-4'>
                             <h2 class="text-3xl font-bold sm:text-4xl">تعلم البرمجة في 3 أشهر فقط</h2>
 
-                            <p class="mt-4 text-gray-600 text-lg">
+                            <p class="mt-4 text-gray-600 text-lg">hhhhhh certif
                             طور المهارات ديالك فمجال البرمجة عبر عدة تدريبات اونلاين من أجل فتح فرص جداد فحياتك.
                             </p>
                             <a href="#checkout" 
@@ -29,14 +30,14 @@ export default function HeroCertif() {
 
                     {/* Picture */}
                     <div
-                        class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full my-auto
-                        hidden md:block
+                        class="relative h-80 overflow-hidden rounded-lg my-auto
+                        hidden md:block 
                         "
                     >
                         <img
-                        class="absolute inset-0 object-cover w-full h-full"
-                        src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                        alt="Man using a computer"
+                        class="absolute inset-0 h-full mx-auto min-w-fit"
+                        src={heropic}
+                        alt="woman smilling"
                         />
                     </div>
 

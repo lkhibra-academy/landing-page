@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Verify() {
   return (
-      <section className="relative mt-4">
+      <section className="relative md:mt-4">
           <div className=" flex flex-col items-center max-w-6xl mx-auto px-5 sm:px-6 py-8 ">
               <div className="flex flex-col w-full prose text-left max-w-max lg:max-w-2xl ">
                   <div dir='rtl' className="w-full text-center ">
