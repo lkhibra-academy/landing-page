@@ -1,5 +1,5 @@
 import React from 'react';
-
+import verifypic from '../images/verifypic.png'
 export default function Verify() {
   return (
       <section className="relative md:mt-4">
@@ -7,10 +7,10 @@ export default function Verify() {
               <div className="flex flex-col w-full prose text-left max-w-max lg:max-w-2xl ">
                   <div dir='rtl' className="w-full text-center ">
                       <h1 className='h2 mb-6'>كيف يتم التحقق من الشهادة ؟</h1>
-                      <img 
-                        class="w-full h-full rounded-lg max-w-xl mx-auto m-2"
-                        src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" 
-                        alt="" 
+                      <img
+                        class="w-full h-full rounded-lg max-w-xl mx-auto"
+                        src={verifypic} 
+                        alt="hhhh" 
                        />
                       </div>
               </div>
