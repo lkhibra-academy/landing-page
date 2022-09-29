@@ -7,7 +7,7 @@ import Testimonials from '../partials/Testimonials';
 import Whoweare from '../partials/Whoweare';
 import OurTrainings from '../partials/OurTrainings';
 import Accomplishment from '../partials/Accomplishment';
-import JoinUs from '../partials/JoinUs';
+import JoinUsHome from '../partials/JoinUsHome';
 import HeroHome from '../partials/HeroHome';
 
 // Header test
@@ -27,7 +27,7 @@ export default function Home() {
         <Testimonials/>
         <OurTrainings/>
         <More/>
-        <JoinUs/>
+        <JoinUsHome/>
         <FaqHome/>
       </main>
       {/*  Site footer */}

@@ -1,7 +1,10 @@
-import React from 'react';
-import Feat from './Feat';
+import React, { useState } from 'react';
+import Modal from '../utils/Modal';
+import LeadForm from './LeadForm';import Feat from './Feat';
 
-function FeaturesBlocks() {
+function Plans() {
+    const [videoModalOpen, setVideoModalOpen] = useState(false);
+
   return (
     <section className='relative max-w-6xl mx-auto px-5 sm:px-6 mb-4'>
         <div className="relative items-center w-fit mx-auto md:px-12 lg:px-16 max-w-7xl">
@@ -90,7 +93,10 @@ function FeaturesBlocks() {
                     <p><span className='text-red-primary font-medium'> * </span>
                         مع امكانية الإنتقال إلى عرض 3 أشهر بعد انتهاء شهر الأول 
                     </p>
-                    <button className="rounded-lg text-lg font-normal p-2.5 text-red-primary bg-white w-full block text-center transition duration-500 ease-in-out transform border-2 border-white shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 " type="submit">
+                    <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} 
+                        aria-controls="modal"
+                        className="rounded-lg text-lg mt-2 font-normal p-2.5 bg-red-primary text-white w-full block text-center transition duration-500 ease-in-out transform border-2 border-white shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 " 
+                        type="submit">
                     تسجيل
                     </button>
                 </div>
@@ -177,7 +183,9 @@ function FeaturesBlocks() {
                 </div>
                 <div className="mt-4 rounded-lg">
                     {/* <a href="/pricing" type="highlight" className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white"> Get started </a> */}
-                    <button className="rounded-lg bg-black text-lg font-normal p-2.5 text-red-primary bg-white w-full block" type="submit">
+                    <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} 
+                        aria-controls="modal"
+                        className="rounded-lg bg-black text-lg font-normal  p-2.5 text-red-primary bg-white w-full block" type="submit">
                     تسجيل
                     </button>
                 </div>
@@ -185,11 +193,16 @@ function FeaturesBlocks() {
             </div>
             </div>
         </div>
+        <Modal id="modal" ariaLabel="modal-headline" show={videoModalOpen} handleClose={() => setVideoModalOpen(false)}>
+            <div className="relative ">
+            <LeadForm />
+            </div>
+        </Modal>
         </section>
   );
 }
 
-export default FeaturesBlocks;
+export default Plans;
 
 
 

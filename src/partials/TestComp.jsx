@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Modal from '../utils/Modal';
+import LeadForm from './LeadForm';
 
 import HeroImage from '../images/hero-image.png';
-import LeadForm from './LeadForm';
 import Button1 from './Button1';
 
 function HeroHome() {

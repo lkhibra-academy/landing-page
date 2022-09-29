@@ -1,9 +1,13 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 const TrainingCard = ({title,desc,li1,li2,li3,pic}) => (
     // {li1}
-    <a className="overflow-hidden rounded-xl 
+    <Link to="/Training" 
+    className="overflow-hidden rounded-xl 
     grid grid-cols-1 group sm:grid-cols-3 shadow-xl
     border border-gray-300"
-    href="">
+    >
 
         <div className="relative">
             <img
@@ -49,7 +53,7 @@ const TrainingCard = ({title,desc,li1,li2,li3,pic}) => (
                 اكتشف المزيد
             </div>
         </div>
-    </a>
+    </Link>
   );
   export default TrainingCard;
   

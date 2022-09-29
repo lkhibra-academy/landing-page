@@ -10,7 +10,7 @@ export default function Verify() {
                       <img
                         class="w-full h-full rounded-lg max-w-xl mx-auto"
                         src={verifypic} 
-                        alt="hhhh" 
+                        alt="How to verify Certificate" 
                        />
                       </div>
               </div>

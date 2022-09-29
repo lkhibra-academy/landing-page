@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Whoweare() {
+export default function JoinUsHome() {
   return (
       <section className="relative ">
           <div className=" flex flex-col items-center max-w-6xl mx-auto px-5 sm:px-6 py-8 ">
@@ -12,9 +13,9 @@ export default function Whoweare() {
                   </div>
               </div>
               <div class="flex flex-wrap justify-center mt-8 gap-4">
-                    <a class="block w-full px-12 py-3 text-base font-medium text-white bg-red-primary rounded shadow sm:w-auto " href="/get-started">
+                    <Link to='/Training' class="block w-full px-12 py-3 text-base font-medium text-white bg-red-primary rounded shadow sm:w-auto " href="/get-started">
                     Get Started
-                    </a>  
+                    </Link>  
                 </div>
           </div>
       </section>

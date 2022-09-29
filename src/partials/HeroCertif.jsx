@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import heropic from '../images/heropic1.png';
 
 export default function HeroCertif() { 
@@ -17,15 +18,14 @@ export default function HeroCertif() {
                             <p class="mt-4 text-gray-600 text-lg">hhhhhh certif
                             طور المهارات ديالك فمجال البرمجة عبر عدة تدريبات اونلاين من أجل فتح فرص جداد فحياتك.
                             </p>
-                            <a href="#checkout" 
+                            <Link to='/Training'
                                 className="btn text-white bg-red-primary
                                 
                                 w-full my-6 sm:w-auto sm:mb-0"
                             >
                                 بغيت نتعلم
-                            </a>
+                            </Link>
                         </div>
-                       
                     </div>
 
                     {/* Picture */}

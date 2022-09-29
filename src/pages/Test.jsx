@@ -7,7 +7,6 @@ import Testimonials from '../partials/Testimonials';
 import Whoweare from '../partials/Whoweare';
 import OurTrainings from '../partials/OurTrainings';
 import Accomplishment from '../partials/Accomplishment';
-import JoinUs from '../partials/JoinUs';
 import TestComp from '../partials/TestComp';
 import LeadForm from '../partials/LeadForm';
 
