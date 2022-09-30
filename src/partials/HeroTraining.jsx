@@ -4,8 +4,7 @@ import souissi from '../images/logo/souissi1.png';
 import lions from '../images/logo/lions1.png';
 import iscae from '../images/logo/iscae1.png';
 import heropic from '../images/heropic1.png';
-import { Link } from 'react-router-dom';
-export default function HeroHome() { 
+export default function Heroold() { 
       return ( 
         <section className='relative max-w-6xl mx-auto px-5 sm:px-6'>
                 <div class="grid grid-cols-1 gap-8 lg:gap-16 md:grid-cols-2 
@@ -15,19 +14,21 @@ export default function HeroHome() {
                     <div class=" md:order-last  
                     flex flex-col justify-center items-center flex-shrink-0
                     " dir='rtl'>
-                        <div className='text-center lg:text-right  self-start p-4'>
-                            <h2 class="text-3xl font-bold sm:text-4xl">تعلم المهارات الأكثر طلبا</h2>
+                        <div className='text-center lg:text-right self-start p-4 '>
+                            <h2 class="text-3xl font-bold sm:text-4xl">تعلم البرمجة في 3 أشهر فقط</h2>
 
                             <p class="mt-4 text-gray-600 text-lg">
-                            طور مهاراتك في مجالات البرمجة والتصميم عن طريق تدريبات 100٪ تطبيقية ومتابعة شخصية مع المدرب. 
-                            </p>
-                            <Link to="/Training"
-                                className="btn text-white bg-red-primary
-                                
-                                w-full my-6 sm:w-auto sm:mb-0"
-                            >
-                                بغيت نتعلم
-                            </Link>
+                            اختصر الوقت وتعلم جميع أساسيات البرمجة بالبايثون عن طريق خمس مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.                            </p>
+                            <div className='sm:max-w-xs mx-auto md:mx-0 max-w-none sm:flex sm:justify-start space-y-4 py-4 sm:space-y-0 sm:py-0'>
+                                <div>
+                                <a href="#checkout" 
+                                    className="btn text-white bg-red-primary w-full sm:my-6 sm:w-auto sm:mb-0"
+                                >                                بغيت نتعلم</a>
+                                </div> 
+                                <div> 
+                                    <a className="btn text-white bg-gray-900 w-full sm:my-6 sm:mb-0 sm:w-auto sm:mr-4" href="#content">محتوى التدريب</a>
+                                </div> 
+                            </div>
                         </div>
                        
                     </div>

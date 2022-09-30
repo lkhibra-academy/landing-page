@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from '../partials/Header';
 import Footer from '../partials/Footer';
 import More from '../partials/More';
-import FaqHome from '../partials/FaqHome';
+import Faq from '../partials/Faq';
 import Testimonials from '../partials/Testimonials';
 import Whoweare from '../partials/Whoweare';
 import OurTrainings from '../partials/OurTrainings';
 import Accomplishment from '../partials/Accomplishment';
-import JoinUsHome from '../partials/JoinUsHome';
-import HeroHome from '../partials/HeroHome';
+import HeroCertif from '../partials/HeroCertif';
+import Verify from '../partials/Verify';
+import FaqCertif from '../partials/FaqCertif';
 
-// Header test
-export default function Home() {
+export default function Certificate() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
 
@@ -21,14 +21,9 @@ export default function Home() {
       {/*  Page content */}
       <main className="flex-grow">
         {/* <HeroHome /> */}
-        <HeroHome/>
-        <Whoweare/>
-        <Accomplishment/>
-        <Testimonials/>
-        <OurTrainings/>
-        <More/>
-        <JoinUsHome/>
-        <FaqHome/>
+        <HeroCertif/>
+        <Verify/>
+        <FaqCertif/>
       </main>
       {/*  Site footer */}
       <Footer />

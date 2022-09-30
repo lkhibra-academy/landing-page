@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import Header from '../partials/Header';
 import Footer from '../partials/Footer';
 import More from '../partials/More';
-import FaqHome from '../partials/FaqHome';
+import Faq from '../partials/Faq';
 import Testimonials from '../partials/Testimonials';
 import Whoweare from '../partials/Whoweare';
 import OurTrainings from '../partials/OurTrainings';
 import Accomplishment from '../partials/Accomplishment';
-import JoinUsHome from '../partials/JoinUsHome';
-import HeroHome from '../partials/HeroHome';
+import TestComp from '../partials/TestComp';
+import LeadForm from '../partials/LeadForm';
 
 // Header test
 export default function Home() {
@@ -21,14 +21,8 @@ export default function Home() {
       {/*  Page content */}
       <main className="flex-grow">
         {/* <HeroHome /> */}
-        <HeroHome/>
-        <Whoweare/>
-        <Accomplishment/>
-        <Testimonials/>
-        <OurTrainings/>
-        <More/>
-        <JoinUsHome/>
-        <FaqHome/>
+        <TestComp/>
+        <LeadForm/>
       </main>
       {/*  Site footer */}
       <Footer />
