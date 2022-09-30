@@ -8,7 +8,9 @@ export default function FeqHome() {
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6">
                   
                   <div className=" mb-8">
-                    <h3 className="h3 mb-3 flex justify-between"><span>FAQ</span><span className="text-right">أسئلة متكررة</span></h3>
+                    <h3 className="h3 mb-3 flex justify-between">
+                      <span>FAQ</span>
+                      <span className="text-right">أسئلة متكررة</span></h3>
                   </div>
                   <div className="space-y-4">
                     
