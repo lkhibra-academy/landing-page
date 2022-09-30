@@ -29,7 +29,7 @@ export default function FeqHome() {
                     />
                     <FaqBlock 
                     qst=" وقتاش ايبدا تدريب ؟ " 
-                    rpns1="الخميس 6 شتنبر (septembre)"                    
+                    rpns1="الخميس 6 اكتوبر (Octobre)"                    
                     />
                     <FaqBlock 
                     qst="توقيت الحصص ؟ " 
