@@ -9,8 +9,7 @@ export default function HeroHome() {
       return ( 
         <section className='relative max-w-6xl mx-auto px-5 sm:px-6'>
                 <div class="grid grid-cols-1 gap-8 lg:gap-16 md:grid-cols-2 
-                    pt-6 pb-2 md:pt-8
-                ">
+                    pt-6 pb-2 md:pt-8 ">
                     {/* Titles */}
                     <div class=" md:order-last  
                     flex flex-col justify-center items-center flex-shrink-0
@@ -29,7 +28,6 @@ export default function HeroHome() {
                                 بغيت نتعلم
                             </Link>
                         </div>
-                       
                     </div>
 
                     {/* Picture */}
@@ -53,7 +51,7 @@ export default function HeroHome() {
                             <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-4">
                                 
                                 {/* Item */}
-                                <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+                                <div className="flex items-center justify-center py-2 md:col-auto">
                                 <img
                                     class="object-cover"
                                     alt="logo 1" 
@@ -62,7 +60,7 @@ export default function HeroHome() {
                                 />
                                 </div>
                                 {/* Item */}
-                                <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+                                <div className="flex items-center justify-center py-2 md:col-auto">
                                 <img
                                     class="object-cover "
                                     alt="logo 1" 
@@ -71,7 +69,7 @@ export default function HeroHome() {
                                 />
                                 </div>
                                 {/* Item */}
-                                <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+                                <div className="flex items-center justify-center py-2 md:col-auto">
                                 <img
                                     class="object-cover"
                                     alt="logo 1" 
@@ -80,7 +78,7 @@ export default function HeroHome() {
                                 />
                                 </div>
                                 {/* Item */}
-                                <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+                                <div className="flex items-center justify-center py-2 md:col-auto">
                                 <img
                                     class="object-cover"
                                     alt="logo 1" 

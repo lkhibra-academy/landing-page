@@ -13,21 +13,19 @@ import FaqCertif from '../partials/FaqCertif';
 
 export default function Certificate() {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
 
+    <div className="flex flex-col min-h-screen overflow-hidden">
       {/*  Site header */}
       <Header />
-
       {/*  Page content */}
       <main className="flex-grow">
         {/* <HeroHome /> */}
-        <HeroCertif/>
         <Verify/>
-        <FaqCertif/>
       </main>
       {/*  Site footer */}
       <Footer />
-
     </div>
+
+    
   );
 }

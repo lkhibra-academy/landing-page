@@ -71,9 +71,7 @@ export default function LeadForm() {
                         </label>
                         <select id="offer" ref={offer} class="mb-2  pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" required>
                             <option value="789" >
-                                    <span> 3 </span>
-                                    <span>أشهر كاملة</span>
-                                
+                                    <span>ثلاثة أشهر كاملة</span>
                             </option>
                             <option value="299">شهر فقط</option>
                         </select> 
