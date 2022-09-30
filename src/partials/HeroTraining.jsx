@@ -54,7 +54,7 @@ export default function Heroold() {
                             <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-4">
                                 
                                 {/* Item */}
-                                <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+                                <div className="flex items-center justify-center py-2 md:col-auto">
                                 <img
                                     class="object-cover"
                                     alt="logo 1" 
@@ -63,7 +63,7 @@ export default function Heroold() {
                                 />
                                 </div>
                                 {/* Item */}
-                                <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+                                <div className="flex items-center justify-center py-2 md:col-auto">
                                 <img
                                     class="object-cover "
                                     alt="logo 1" 
@@ -72,7 +72,7 @@ export default function Heroold() {
                                 />
                                 </div>
                                 {/* Item */}
-                                <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+                                <div className="flex items-center justify-center py-2 md:col-auto">
                                 <img
                                     class="object-cover"
                                     alt="logo 1" 
@@ -81,7 +81,7 @@ export default function Heroold() {
                                 />
                                 </div>
                                 {/* Item */}
-                                <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
+                                <div className="flex items-center justify-center py-2 md:col-auto">
                                 <img
                                     class="object-cover"
                                     alt="logo 1" 

@@ -6,7 +6,7 @@ function Plans() {
     const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   return (
-    <section className='relative max-w-6xl mx-auto px-5 sm:px-6 mb-4'>
+    <section className='relative max-w-6xl mx-auto px-5 sm:px-6 mb-4 mt-2'>
         <div className="relative items-center w-fit mx-auto md:px-12 lg:px-16 max-w-7xl">
             <div>
             <div className="relative lg:p-8 space-y-12 overflow-hidden lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 rounded-xl">
