@@ -38,7 +38,7 @@ const TrainingCard = ({title,desc,li1,li2,li3,pic}) => (
 
             <h5 className="my-2.5 text-2xl font-bold">{title}</h5>
 
-            <p className="mt-2 text-sm text-gray-500">
+            <p className="mt-2 text-lg text-gray-500">
             {desc}</p>
             {/* <a type="button" className=" border border-red-primary focus:outline-none 
             hover:bg-red-primary focus:ring-4 focus:ring-red-primary hover:text-white

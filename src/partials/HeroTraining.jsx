@@ -14,19 +14,21 @@ export default function Heroold() {
                     <div class=" md:order-last  
                     flex flex-col justify-center items-center flex-shrink-0
                     " dir='rtl'>
-                        <div className='text-center lg:text-right  self-start p-4'>
+                        <div className='text-center lg:text-right self-start p-4 '>
                             <h2 class="text-3xl font-bold sm:text-4xl">تعلم البرمجة في 3 أشهر فقط</h2>
 
-                            <p class="mt-4 text-gray-600 text-lg"> hhhhhh training
-                            طور المهارات ديالك فمجال البرمجة عبر عدة تدريبات اونلاين من أجل فتح فرص جداد فحياتك.
-                            </p>
-                            <a href="#checkout" 
-                                className="btn text-white bg-red-primary
-                                
-                                w-full my-6 sm:w-auto sm:mb-0"
-                            >
-                                بغيت نتعلم
-                            </a>
+                            <p class="mt-4 text-gray-600 text-lg">
+                            اختصر الوقت وتعلم جميع أساسيات البرمجة بالبايثون عن طريق خمس مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.                            </p>
+                            <div className='sm:max-w-xs mx-auto md:mx-0 max-w-none sm:flex sm:justify-start space-y-4 py-4 sm:space-y-0 sm:py-0'>
+                                <div>
+                                <a href="#checkout" 
+                                    className="btn text-white bg-red-primary w-full sm:my-6 sm:w-auto sm:mb-0"
+                                >                                بغيت نتعلم</a>
+                                </div> 
+                                <div> 
+                                    <a className="btn text-white bg-gray-900 w-full sm:my-6 sm:mb-0 sm:w-auto sm:mr-4" href="#content">محتوى التدريب</a>
+                                </div> 
+                            </div>
                         </div>
                        
                     </div>

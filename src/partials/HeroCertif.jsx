@@ -13,10 +13,10 @@ export default function HeroCertif() {
                     flex flex-col justify-center items-center flex-shrink-0
                     " dir='rtl'>
                         <div className='text-center lg:text-right  self-start p-4'>
-                            <h2 class="text-3xl font-bold sm:text-4xl">تعلم البرمجة في 3 أشهر فقط</h2>
+                            <h2 class="text-3xl font-bold sm:text-4xl"> احصل على شهادة معتمدة</h2>
 
-                            <p class="mt-4 text-gray-600 text-lg">hhhhhh certif
-                            طور المهارات ديالك فمجال البرمجة عبر عدة تدريبات اونلاين من أجل فتح فرص جداد فحياتك.
+                            <p class="mt-4 text-gray-600 text-lg">
+                            ضاعف فرص حصولك على عمل عن طريق شهادة ذات جودة عالية 
                             </p>
                             <Link to='/Training'
                                 className="btn text-white bg-red-primary
