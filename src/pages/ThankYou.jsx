@@ -12,10 +12,10 @@ export default function ThankYou() {
       {/*  Site header */}
       <Header />
         <section className='flex flex-col min-h-screen overflow-hidden mb-10'>
-            <h1 className="sr-only">Checkout</h1>
+            {/* <h1 className="sr-only">Checkout</h1> */}
             <div className="relative mx-auto max-w-screen-2xl">
                 <div className='flex justify-center'>
-                    <div className="pt-20 bg-white md:py-24">
+                    <div className="pt-8 bg-white md:py-10">
                             <div>
                                 <h1 className="font-bold md:text-4xl text-3xl text-center px-2 pb-5 text-red-primary" dir="rtl">مرحبا بك في تدريب الخبرة فالبرمجة</h1>
                                 <div className="max-w-lg md:mx-auto mx-3 p-2 pr-3 rounded-lg border border-gray-200 shadow-md ">
