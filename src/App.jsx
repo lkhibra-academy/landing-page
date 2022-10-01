@@ -56,7 +56,9 @@ function App() {
         position: 'fixed',
         right: '15px',
         bottom: '15px'
-      }}>
+      }} 
+      onClick="fbq('track', 'Contact')"
+      >
         <img src="https://i.ibb.co/VgSspjY/whatsapp-button.png"/>
       </a>
     </>

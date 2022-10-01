@@ -32,6 +32,7 @@ export default function LeadForm() {
             }
         ).then((rep) => {
             if(rep.data.ok){
+                fbq('track', 'Lead');
                 navigate('/ThankYou',{state:{price:offer.current.value}});
             }else{
                 setErr(true)
