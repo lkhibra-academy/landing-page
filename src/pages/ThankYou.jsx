@@ -6,7 +6,6 @@ import { useLocation } from 'react-router-dom'
 export default function ThankYou() {
     const loc=useLocation();
     const price=loc.state?.price ?? 0;
-    fbq('trackCustom', 'ThankYouPage', {content_name: 'ThankYou'});
     return (
 
         <div className="">

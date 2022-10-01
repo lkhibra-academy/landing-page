@@ -16,8 +16,7 @@ import Checkout from '../partials/LeadForm';
 
 
 export default function Training() {
-  fbq('trackCustom', 'TrainingPage', {content_name: 'Training'});
-
+  fbq('track', 'PageView');
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
 
