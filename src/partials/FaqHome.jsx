@@ -33,7 +33,7 @@ export default function FeqHome() {
                     />
                     <FaqBlock 
                     qst="توقيت الحصص ؟ " 
-                    rpns1=" كل خميس 19h"                 
+                    rpns1=" كل خميس 20h"                 
                     />
                   </div>
 

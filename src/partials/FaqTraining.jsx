@@ -29,11 +29,11 @@ export default function FaqTraining() {
                     />
                     <FaqBlock 
                     qst=" وقتاش ايبدا تدريب ؟ " 
-                    rpns1="الخميس 6 شتنبر (septembre)"                    
+                    rpns1="الخميس 6 شتنبر (Octobre)"                    
                     />
                     <FaqBlock 
                     qst="توقيت الحصص ؟ " 
-                    rpns1=" كل خميس 19h"                 
+                    rpns1=" كل خميس 20h"                 
                     />
                     <FaqBlock 
                     qst="واش 789 درهم كل شهر ؟" 
