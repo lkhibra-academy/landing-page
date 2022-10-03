@@ -51,13 +51,13 @@ export default function LeadForm() {
                         <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="name">
                             <span>Full Name</span><span>الإسم الكامل</span>
                         </label>
-                        <input ref={fullName} className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" type="text" id="name" required/>
+                        <input ref={fullName} maxLength='30' className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" type="text" id="name" required/>
                     </div>
                     <div className="">
                         <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="phone">
                             <span>Phone</span><span>الهاتف</span>
                         </label>
-                        <Cleave onChange={ev => setPhone(ev.target.rawValue)} className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" options={{phone: true, phoneRegionCode: 'MA'}} required/>
+                        <Cleave onChange={ev => setPhone(ev.target.rawValue)} className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" options={{phone: true, phoneRegionCode: 'MA'}} required />
                     </div>
                     <div className="">
                         <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="email">
