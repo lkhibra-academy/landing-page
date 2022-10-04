@@ -51,7 +51,7 @@ export default function ThankYou() {
                                     <div className="flex justify-between flex-col pt-3 pb-2 space-y-3" dir="rtl">
                                         <h4 className=" pr-1 font-medium text-lg ">المبلغ :<span className='font-bold  '> {price} د.م </span>
                                          </h4>
-                                         <h4 className="pr-1 font-normal text-base ">توقيت الحصص :<span className=''> كل خميس 19h  </span>
+                                         <h4 className="pr-1 font-normal text-base ">توقيت الحصص :<span className=''> كل خميس 20h  </span>
                                          </h4> 
                                     </div>
                                 </div>
