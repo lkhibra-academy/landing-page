@@ -46,7 +46,7 @@ export default function HeroHome() {
                 </div>
 
                     <div className='  p-4 w-full'>
-                            <h1 className='h3 text-center text-relaxed mb-6'>وضعوا ثقتهم بنا</h1>
+                    <p className='text-2xl font-bold leading-tight md:text-3xl text-center mb-6 md:mt-1 text-black-primary'>وضعوا ثقتهم بنا</p>
                             {/* Items */}
                             <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-4">
                                 
