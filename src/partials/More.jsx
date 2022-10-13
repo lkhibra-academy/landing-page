@@ -8,7 +8,7 @@ function More() {
         <section className="relative max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
             <div>
-              <h2 className="text-3xl font-bold sm:text-4xl text-center">أكثر من مجرد تدريب</h2>
+              <h2 className="font-bold text-3xl md:text-4xl text-center">أكثر من مجرد تدريب</h2>
             </div>
 
             <div

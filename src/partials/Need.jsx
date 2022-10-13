@@ -8,10 +8,10 @@ const Need = () => (
 
         {/* Section header */}
         <div className="max-w-3xl mx-auto py-10 md:py-18">
-            <h2 className="h2 text-3xl mb-10 text-center  md:text-4xl">شنو خاصك باش تعلم ؟</h2>
+            <h2 className="font-bold text-3xl md:text-4xl mb-10 text-center">شنو خاصك باش تعلم ؟</h2>
             {/* <div className=" px-7 ">
               <div className="h1 self-center">فقط</div> */}
-              <ul dir="rtl" className=" text-3xl text-black text-right leading-normal 
+              <ul dir="rtl" className=" text-2xl text-bold text-right leading-normal 
               max-w-sm mx-auto grid lg:gap-20 gap-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none
               sm:text-3xl w-fit
               ">
