@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import Header from '../partials/Header';
-import Footer from '../partials/Footer';
-import More from '../partials/More';
-import FaqHome from '../partials/FaqHome';
-import Testimonials from '../partials/Testimonials';
-import Whoweare from '../partials/Whoweare';
-import OurTrainings from '../partials/OurTrainings';
-import Accomplishment from '../partials/Accomplishment';
-import JoinUsHome from '../partials/JoinUsHome';
-import HeroHome from '../partials/HeroHome';
+import Header from '../partials/components/Header';
+import Footer from '../partials/components/Footer';
+import More from '../partials/components/More';
+import FaqHome from '../partials/home/FaqHome';
+import Testimonials from '../partials/components/Testimonials';
+import Whoweare from '../partials/home/Whoweare';
+import OurTrainings from '../partials/home/OurTrainings';
+import Accomplishment from '../partials/home/Accomplishment';
+import JoinUsHome from '../partials/home/JoinUsHome';
+import HeroHome from '../partials/home/HeroHome';
 
 // Header test
 export default function Home() {

@@ -1,14 +1,4 @@
 import React, { Component } from 'react';
-import Header from '../partials/Header';
-import Footer from '../partials/Footer';
-import More from '../partials/More';
-import Faq from '../partials/Faq';
-import Testimonials from '../partials/Testimonials';
-import Whoweare from '../partials/Whoweare';
-import OurTrainings from '../partials/OurTrainings';
-import Accomplishment from '../partials/Accomplishment';
-import TestComp from '../partials/TestComp';
-import LeadForm from '../partials/LeadForm';
 
 // Header test
 export default function Home() {
@@ -16,15 +6,15 @@ export default function Home() {
     <div className="flex flex-col min-h-screen overflow-hidden">
 
       {/*  Site header */}
-      <Header />
+      {/* <Header /> */}
 
       {/*  Page content */}
       <main className="flex-grow">
         {/* <HeroHome /> */}
-        <TestComp/>
+        {/* <TestComp/> */}
       </main>
       {/*  Site footer */}
-      <Footer />
+      {/* <Footer /> */}
 
     </div>
   );

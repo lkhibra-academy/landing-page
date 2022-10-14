@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Modal from '../utils/Modal';
-import LeadForm from './LeadForm';import Feat from './Feat';
+import Modal from '../../utils/Modal';
+import LeadForm from '../components/LeadForm';import Feat from './Feat';
 
 function Plans() {
     const [videoModalOpen, setVideoModalOpen] = useState(false);

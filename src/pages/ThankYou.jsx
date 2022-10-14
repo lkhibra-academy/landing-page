@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../partials/Header'
-import Footer from '../partials/Footer'
+import Header from '../partials/components/Header'
+import Footer from '../partials/components/Footer'
 import { useLocation } from 'react-router-dom'
 
 export default function ThankYou() {

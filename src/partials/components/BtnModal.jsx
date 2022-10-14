@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import Modal from '../utils/Modal';
-import LeadForm from './LeadForm';
-import Button1 from './Button1';
-
+import Modal from '../../../utils/Modal';
+import LeadForm from './components/LeadForm';
 export default function BtnModal() {
 
   const [videoModalOpen, setVideoModalOpen] = useState(false);

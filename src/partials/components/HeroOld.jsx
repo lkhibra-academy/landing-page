@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Modal from '../utils/Modal';
+import Modal from '../../utils/Modal';
 
-import HeroImage from '../images/hero-image.png';
+import HeroImage from '../../images/hero-image.png';
 import Button1 from './Button1';
 
 function HeroOld() {

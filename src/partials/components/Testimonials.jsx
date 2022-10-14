@@ -5,12 +5,12 @@ import { Autoplay } from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
 import TestimonyCard from './TestimonyCard';
-import nouhaila from '../images/nouhaila.jpg';
-import malak from '../images/malak.jpg';
-import hamza from '../images/hamza.jpg';
-import bahija from '../images/bahija.jpg';
-import youness from '../images/youness.jpg';
-import maryam from '../images/meryem.jpg';
+import nouhaila from '../../images/nouhaila.jpg';
+import malak from '../../images/malak.jpg';
+import hamza from '../../images/hamza.jpg';
+import bahija from '../../images/bahija.jpg';
+import youness from '../../images/youness.jpg';
+import maryam from '../../images/meryem.jpg';
 
 function nouhailaquote() {
     return <span>I'm very much impressed and satisfied with my experience in lkhibra because I got all the training and support that I was looking for, the tutor was very helpful, he took care of any needs I required. <br />

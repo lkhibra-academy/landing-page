@@ -16,8 +16,9 @@ import Privacy from './pages/Privacy';
 import Termsofuse from './pages/Termsofuse';
 import Responsibility from './pages/Responsibility';
 import Certificate from './pages/Certificate';
-import Training from './pages/Training';
 import Test from './pages/Test';
+import ProgrammingTraining from './pages/ProgrammingTraining';
+import FrontendTraining from './pages/FrontendTraining';
 
 function App() {
   const location = useLocation();
@@ -46,7 +47,9 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Test" element={<Test />} />
         <Route exact path="/Certificate" element={<Certificate />} />
-        <Route exact path="/Training" element={<Training />} />
+        {/* <Route exact path="/Training/Programming" element={<ProgrammingTraining />} /> */}
+        <Route exact path="/Programming" element={<ProgrammingTraining />} />
+        <Route exact path="/Frontend" element={<FrontendTraining />} />
         <Route exact path="/ThankYou" element={<ThankYou />} />
         <Route exact path="/privacy" element={<Privacy />} />
         <Route exact path="/termsofuse" element={<Termsofuse />} />

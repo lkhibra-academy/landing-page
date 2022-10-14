@@ -1,5 +1,5 @@
 import React from 'react';
-import verifypic from '../images/verifypic.png'
+import verifypic from '../../images/verifypic.png'
 export default function Verify() {
   return (
       <section className="relative md:mt-4">

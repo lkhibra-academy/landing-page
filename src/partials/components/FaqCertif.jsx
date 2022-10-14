@@ -1,4 +1,4 @@
-import FaqBlock from '../partials/FaqBlock';
+import FaqBlock from '../partials/components/FaqBlock';
 
 export default function FaqCertif() { 
     return ( 
