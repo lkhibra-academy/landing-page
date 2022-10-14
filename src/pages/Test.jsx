@@ -22,7 +22,6 @@ export default function Home() {
       <main className="flex-grow">
         {/* <HeroHome /> */}
         <TestComp/>
-        <LeadForm/>
       </main>
       {/*  Site footer */}
       <Footer />
