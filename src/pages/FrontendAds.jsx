@@ -14,7 +14,7 @@ import FaqTraining from '../partials/frontend/FaqTraining';
 import Testimonials from '../partials/components/Testimonials';
 
 
-export default function FrontendTraining() {
+export default function FrontendAds() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
 
@@ -31,11 +31,13 @@ export default function FrontendTraining() {
         <Need />
         <More />
         <FeaturesHome />
-        <Plans src1={"organic"}/>
+        <Plans src1={"ads"}/>
         <Testimonials/>
         <JoinUsTraining/>
         <FaqTraining />
-        
+        {/* <Testimonials /> */}
+        {/* <Newsletter /> */}
+
       </main>
 
       {/*  Site footer */}

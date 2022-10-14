@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import Modal from '../../utils/Modal';
-import LeadForm from '../components/LeadForm';import Feat from './Feat';
+import LeadForm from '../components/LeadForm';
 
-function Plans() {
+export default function Plans({src1}) {
     const [videoModalOpen, setVideoModalOpen] = useState(false);
-
   return (
-    <section className='relative max-w-6xl mx-auto px-5 sm:px-6 mb-4 mt-2'>
+    <section className='relative max-w-6xl mx-auto px-5 sm:px-6 mb-4 md:mt-2 mt-6'>
         <div className="relative items-center w-fit mx-auto md:px-12 lg:px-16 max-w-7xl">
             <div>
             <div className="relative lg:p-8 space-y-12 overflow-hidden lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 rounded-xl">
@@ -25,7 +24,7 @@ function Plans() {
                     <span className="text-base font-medium text-red-primary bg-white px-3 py-1 rounded-lg">3 أشهر كاملة</span>
                     </p>
                     <p className="text-white text-solitud py-1">
-                    تعلم كل ما يخص البرمجة بالبايثون لكي تفتح ابواب جديدة 
+                    تعلم أساسيات تطوير المواقع وابدأ رحلتك كمطور ويب 
                     </p>
                     {/* <!-- Feature list --> */}
                     <ul role="list" className="pt-3 mt-2 space-y-2 border-t">
@@ -54,10 +53,17 @@ function Plans() {
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             </div>
+                            <span className="mr-3 text-white">حصة كل اسبوع  
+                            </span>
+                        </li>
+                        <li className="flex">
+                            <div className="inline-flex items-center w-6 h-6 bg-white rounded-xl">
+                            <svg className="flex-shrink-0 w-4 h-4 mx-auto text-neutral-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            </div>
                             <span className="mr-3 text-white">عدد المشاريع البرمجية :
-                            <span className='font-medium'> 5 </span> 
-
-
+                            <span className='font-medium'> 3 </span> 
                             </span>
                         </li>
                         <li className="flex">
@@ -78,12 +84,11 @@ function Plans() {
                             </div>
                             <span className="mr-3 text-white space-y-1">ماذا سوف تتعلم :<br/>
                             
-                            <span className=''>- الخوارزميات </span><br />
-                            <span className=''>- أساسيات بايثون </span><br />
-                            <span className=''>- هياكل البيانات </span><br />
+                            <span className=''>- أساسيات HTML و CSS</span><br />
+                            <span className=''>- مفاهيم متقدمة في CSS</span><br />
+                            <span className=''>- أساسيات لغة Javascript</span><br />
                             <span className=''>- البرمجة كائنية التوجه </span><br />
-                            <span className=''>- البرمجة الوضيفية </span><br />
-                            <span className=''>- مكتبات بايثون</span><br />
+                            <span className=''>- تصميم صفحات الويب </span><br />
                             </span>
                         </li>
                         
@@ -112,15 +117,26 @@ function Plans() {
                     </p>
                     <p className='mb-3'>
                     <span className="text-base font-medium text-white bg-neutral-400 px-3 py-1 rounded-lg">
-                    شهر فقط 
+                    كل شهر 
                     </span>
                     </p>
                     <p className="text-neutral-600 text-solitud py-1">
-                    تعلم أساسيات البرمجة والمعارف المهمة لبدأ رحلتك في المجال 
+                    تعلم أساسيات تطوير المواقع وابدأ رحلتك كمطور ويب 
                     </p>
                     {/* <!-- Feature list --> */}
                     <ul role="list" className="pt-3 mt-2 space-y-2 border-t">
                     {/* <span className="text-xl font-medium text-white">ماذا يحتوي ؟</span> */}
+                        <li className="flex">
+                            <div className="inline-flex items-center w-6 h-6 bg-red-primary rounded-xl">
+                            <svg className="flex-shrink-0 w-4 h-4 mx-auto text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                d="M5 13l4 4L19 7">
+                                </path>
+                            </svg>
+                            </div>
+                            <span className="mr-3 text-neutral-600">شهادة معتدمة    
+                            </span>
+                        </li>
                         <li className="flex">
                             <div className="inline-flex items-center w-6 h-6 bg-red-primary rounded-xl">
                             <svg className="flex-shrink-0 w-4 h-4 mx-auto text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -140,8 +156,19 @@ function Plans() {
                                 </path>
                             </svg>
                             </div>
+                            <span className="mr-3 text-neutral-600">حصة كل اسبوع    
+                            </span>
+                        </li>
+                        <li className="flex">
+                            <div className="inline-flex items-center w-6 h-6 bg-red-primary rounded-xl">
+                            <svg className="flex-shrink-0 w-4 h-4 mx-auto text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                d="M5 13l4 4L19 7">
+                                </path>
+                            </svg>
+                            </div>
                             <span className="mr-3 text-text-neutral-600">عدد المشاريع البرمجية :
-                            <span className='font-medium'> 1 </span> 
+                            <span className='font-medium'> 3 </span> 
                             </span>
                         </li>
                         <li className="flex">
@@ -153,7 +180,7 @@ function Plans() {
                             </svg>
                             </div>
                             <span className="mr-3 text-neutral-600">عدد الحصص : 
-                            <span className='font-medium'> 4 </span> 
+                            <span className='font-medium'> 12 </span> 
                             </span>
                         </li>
                         <li className="flex">
@@ -165,14 +192,16 @@ function Plans() {
                             </svg>
                             </div>
                             <span className="mr-3 text-neutral-600 space-y-1">ماذا سوف تتعلم :<br/>
-                            
-                            <span className=''>- الخوارزميات </span><br />
-                            <span className=''>- أساسيات بايثون </span><br />
+                            <span className=''>- أساسيات HTML و CSS</span><br />
+                            <span className=''>- مفاهيم متقدمة في CSS</span><br />
+                            <span className=''>- أساسيات لغة Javascript</span><br />
+                            <span className=''>- البرمجة كائنية التوجه </span><br />
+                            <span className=''>- تصميم صفحات الويب </span><br />
                             </span>
                         </li>
                     </ul>
                 </div>
-                <div className="mt-4 rounded-lg">
+                <div className="mt-5 rounded-lg">
                     {/* <a href="#" type="highlight" className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white"> Get Started </a> */}
                     <p><span className='text-red-primary font-medium'> * </span>
                         مع امكانية الإنتقال إلى عرض 3 أشهر بعد انتهاء شهر الأول 
@@ -192,14 +221,12 @@ function Plans() {
         </div>
         <Modal id="modal" ariaLabel="modal-headline" show={videoModalOpen} handleClose={() => setVideoModalOpen(false)}>
             <div className="relative ">
-            <LeadForm />
+            <LeadForm src={src1}/>
             </div>
         </Modal>
         </section>
   );
 }
-
-export default Plans;
 
 
 

@@ -20,8 +20,8 @@ function Features() {
 
                 <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group" open>
                   <summary className="flex items-center justify-between cursor-pointer">
-                    <h5 className="text-lg font-semibold text-gray-900">
-                    Project 1 : Conversion App <span className='ml-2 font-medium text-base'>(4 Weeks)</span></h5>
+                  <h5 className="text-lg font-medium text-gray-900">
+                    Part 1 :<span className='ml-2 font-semibold text-lg'>Basics of HTML &amp; CSS</span></h5>
                     <span
                       className="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
                     >
@@ -39,24 +39,22 @@ function Features() {
                       </svg>
                     </span>
                   </summary>
-
-                  <div className="pl-3 mt-4 leading-relaxed text-gray-700">
-                    <span className='font-medium text-lg text-gray-800'>What we'll learn : </span> 
-                    <ul>                 
-                      <li>- Variables, Datatypes</li>
-                      <li>- Operators</li>
-                      <li>- User input and Output</li>
-                      <li>- Conditionals </li>
-                      <li>- Loops </li>
-                      <li>- Strings Formatting</li>
+                  <div className="pl-3 mt-1 leading-relaxed text-gray-700">
+                    {/* <span className='font-medium text-lg text-gray-800'>What we'll learn : </span>  */}
+                    <ul>
+                      <li>- HTML Structure</li>
+                      <li>- Basic HTML structure</li>
+                      <li>- CSS structure</li>
+                      <li>- CSS selectors</li>
+                      <li>- Basic CSS styling</li>
                     </ul>
                   </div>
                 </details>
 
                 <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group">
                   <summary className="flex items-center justify-between cursor-pointer">
-                    <h5 className="text-lg font-semibold text-gray-900">
-                    Project 2 : Bank Accounts management System <span className='ml-2 font-medium text-base'>(3 Weeks)</span></h5>
+                  <h5 className="text-lg font-medium text-gray-900">
+                    Part 2 :<span className='ml-2 font-semibold text-lg'>Responsive Web Design</span></h5>
                     <span
                       className="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
                     >
@@ -75,22 +73,21 @@ function Features() {
                     </span>
                   </summary>
 
-                  <div className="pl-3 mt-4 leading-relaxed text-gray-700">
-                    <span className='font-medium text-lg text-gray-800'>What we'll learn : </span> 
-                    <ul>                 
-                      <li>- Dictionnaries</li>
-                      <li>- Lists</li>
-                      <li>- Tuples</li>
-                      <li>- Login systems</li>
-                      <li>- Time module</li>
+                  <div className="pl-3 mt-1 leading-relaxed text-gray-700">
+                    {/* <span className='font-medium text-lg text-gray-800'>What we'll learn : </span>  */}
+                    <ul>
+                      <li>- Advanced HTML elements(Forms , Audio and video , IFrames).</li>
+                      <li>- Using CSS to size and space Elements</li>
+                      <li>- Text Formatting with CSS</li>
+                      <li>- Positionning and display with CSS</li>
                     </ul>
                   </div>
                 </details>
 
                 <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group">
                   <summary className="flex items-center justify-between cursor-pointer">
-                    <h5 className="text-lg font-semibold text-gray-900">
-                    Project 3 : Students management system <span className='ml-2 font-medium text-base'>(2 Weeks)</span></h5>
+                  <h5 className="text-lg font-medium text-gray-900">
+                    Part 3 :<span className='ml-2 font-semibold text-lg'>Interactive Web with Javascript</span></h5>
                     <span
                       className="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
                     >
@@ -109,21 +106,21 @@ function Features() {
                     </span>
                   </summary>
 
-                  <div className="pl-3 mt-4 leading-relaxed text-gray-700">
-                    <span className='font-medium text-lg text-gray-800'>What we'll learn : </span> 
-                    <ul>                 
-                      <li>- Functions</li>
-                      <li>- Return statement</li>
-                      <li>- Lambda functions</li>
-                      <li>- Strings management</li>
+                  <div className="pl-3 mt-1 leading-relaxed text-gray-700">
+                    {/* <span className='font-medium text-lg text-gray-800'>What we'll learn : </span>  */}
+                    <ul>
+                      <li>- Introduction to Interactive web with Javascript</li>
+                      <li>- Manipulating DOM with Javascript</li>
+                      <li>- Manipulating CSS with Javascript</li>
+                      <li>- Adding interactivity to websites</li>
                     </ul>
                   </div>
                 </details>
-
+                <div id="checkout"></div>
                 <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group">
                   <summary className="flex items-center justify-between cursor-pointer">
-                    <h5 className="text-lg font-semibold text-gray-900">
-                    Project 4 : Cars Store management system<span className='ml-2 font-medium text-base'>(2 Weeks)</span></h5>
+                  <h5 className="text-lg font-medium text-gray-900">
+                    Part 4 :<span className='ml-2 font-semibold text-lg'>3 Web Projects</span></h5>
                     <span
                       className="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
                     >
@@ -142,8 +139,8 @@ function Features() {
                     </span>
                   </summary>
 
-                  <div className="pl-3 mt-4 leading-relaxed text-gray-700">
-                    <span className='font-medium text-lg text-gray-800'>What we'll learn : </span> 
+                  <div className="pl-3 mt-1 leading-relaxed text-gray-700">
+                    {/* <span className='font-medium text-lg text-gray-800'>What we'll learn : </span>  */}
                     <ul>                 
                       <li>- What is OOP ?</li>
                       <li>- When we use it ?</li>
@@ -152,39 +149,8 @@ function Features() {
                     </ul>
                   </div>
                 </details>
-                <div id="checkout"></div>
-                <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group">
-                  <summary className="flex items-center justify-between cursor-pointer">
-                    <h5 className="text-lg font-semibold text-gray-900">
-                    Project 5 : Youtube video downloader and a whatsapp message automator <span className='ml-2 font-medium text-base'>(1 Week)</span></h5>
-                    <span
-                      className="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </span>
-                  </summary>
-
-                  <div className="pl-3 mt-4 leading-relaxed text-gray-700">
-                    <span className='font-medium text-lg text-gray-800'>What we'll learn : </span> 
-                    <ul>                 
-                      <li>- How to use python libraries ?</li>
-                      <li>- pyautogui</li>
-                      <li>- pywhatKit</li>
-                      <li>- wget</li>
-                    </ul>
-                  </div>
-                </details>
+                
+                
 
               </div>
 

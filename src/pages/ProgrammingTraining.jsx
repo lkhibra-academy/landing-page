@@ -31,12 +31,10 @@ export default function ProgrammingTraining() {
         <Need />
         <More />
         <FeaturesHome />
-        <Plans/>
+        <Plans src1={"organic"}/>
         <Testimonials/>
         <JoinUsTraining/>
         <FaqTraining />
-        {/* <Testimonials /> */}
-        {/* <Newsletter /> */}
 
       </main>
 

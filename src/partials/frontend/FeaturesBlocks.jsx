@@ -18,26 +18,26 @@ function FeaturesBlocks() {
             <Feat title="Graduates outside IT - الخريجين في غير المعلوميات" subtitle="Goal : Open New Opportunities" 
             li1="- No pre-requisites" 
             li2="- Certificate of Completion"
-            li3="- Automate your jobs with Python"
+            li3="- Build your own websites"
             li4="- Add new Skills to your resume"
-            li5="- Have the fundamentals to switch your career to IT"
+            li5="- Have the fundamental to switch your career into Web Development"
             li6="- 100% Practical Method"
             />
 
             <Feat title="Students - طلاب" subtitle="Goal : Start Your Career" 
-            li1="- Portfolio of 5 Projects" 
+            li1="- Portfolio of 3 Projects" 
             li2="- Certificate of Completion"
             li3="- 12 Weeks of learning"
             li4="- 100% Practical Method"
             li5="- No pre-requisites"
-            li6="- Have the fundamentals to dive into advanced topics such as: Data Science, AI.. etc"
+            li6="Have the fundamentals to dive into advanced topics such as: Javascript Frameworks, Backend.. etc"
             />
 
             <Feat title="Computer Science Graduates - خريجي المعلوميات" subtitle="Goal : Advance Your Skills"
-            li1="- Portfolio of 5 Projects" 
-            li2="- Add Python to your resume"
-            li3="- Automate your Tasks"
-            li4="- Have the fundamentals to dive into advanced technologies such as: Data Science, AI, Django.. etc"
+            li1="- Portfolio of 3 Projects" 
+            li2="- Build your own websites"
+            li3="- Add Front-End technologies to your resume"
+            li4="- Have the fundamentals to dive into advanced technologies such as: React, Vue, Angular.. etc"
             li5="- Certificate of Completion"
             />
 

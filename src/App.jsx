@@ -4,12 +4,9 @@ import {
   Route,
   useLocation
 } from 'react-router-dom';
-
 import 'aos/dist/aos.css';
 import './css/style.css';
-
 import AOS from 'aos';
-
 import Home from './pages/Home';
 import ThankYou from './pages/ThankYou';
 import Privacy from './pages/Privacy';
@@ -19,6 +16,8 @@ import Certificate from './pages/Certificate';
 import Test from './pages/Test';
 import ProgrammingTraining from './pages/ProgrammingTraining';
 import FrontendTraining from './pages/FrontendTraining';
+import FrontendAds from './pages/FrontendAds';
+import ProgrammingAds from './pages/ProgrammingAds';
 
 function App() {
   const location = useLocation();
@@ -47,9 +46,10 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Test" element={<Test />} />
         <Route exact path="/Certificate" element={<Certificate />} />
-        {/* <Route exact path="/Training/Programming" element={<ProgrammingTraining />} /> */}
         <Route exact path="/Programming" element={<ProgrammingTraining />} />
+        <Route exact path="/ProgrammingTraining" element={<ProgrammingAds />} />
         <Route exact path="/Frontend" element={<FrontendTraining />} />
+        <Route exact path="/FrontendTraining" element={<FrontendAds />} />
         <Route exact path="/ThankYou" element={<ThankYou />} />
         <Route exact path="/privacy" element={<Privacy />} />
         <Route exact path="/termsofuse" element={<Termsofuse />} />
