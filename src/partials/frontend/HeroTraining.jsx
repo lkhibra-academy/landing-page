@@ -15,10 +15,10 @@ export default function Heroold() {
                     flex flex-col justify-center items-center flex-shrink-0
                     " dir='rtl'>
                         <div className='text-center lg:text-right self-start p-4 '>
-                            <h2 class="text-3xl font-bold sm:text-4xl">تعلم البرمجة في 3 أشهر فقط</h2>
+                            <h2 class="text-3xl font-bold sm:text-4xl"> تعلم تطوير الويب في 3 أشهر فقط</h2>
 
                             <p class="mt-4 text-gray-600 text-lg">
-                            اختصر الوقت وتعلم جميع أساسيات البرمجة بالبايثون عن طريق خمس مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.                            </p>
+                            اختصر الوقت وتعلم جميع أساسيات تطوير الويب عن طريق خمس مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.                            </p>
                             <div className='sm:max-w-xs mx-auto md:mx-0 max-w-none sm:flex sm:justify-start space-y-4 py-4 sm:space-y-0 sm:py-0'>
                                 <div>
                                 <a href="#checkout" 

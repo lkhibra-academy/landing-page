@@ -51,11 +51,13 @@ export default function ThankYou() {
                                     <div className="flex justify-between flex-col pt-3 pb-2 space-y-3" dir="rtl">
                                         <h4 className=" pr-1 font-medium text-lg ">المبلغ :<span className='font-bold  '> {price} د.م </span>
                                          </h4>
-                                         <h4 className="pr-1 font-normal text-base ">توقيت الحصص :<span className=''> كل خميس 20h  </span>
+                                         <h4 className="pr-1 font-normal text-base ">توقيت الحصص :<span className=''> كل أربعاء 20h  </span>
+                                         </h4> 
+                                         <h4 className="pr-1 font-normal text-base ">أول حصة  :<span className=''> الأربعاء 9 أكتوبر</span>
                                          </h4> 
                                     </div>
                                 </div>
-                                <p className="flex items-center justify-center flex-col text-center font-light text-base my-3 mr-3 px-2 space-y-2" dir="rtl">
+                                {/* <p className="flex items-center justify-center flex-col text-center font-light text-base my-3 mr-3 px-2 space-y-2" dir="rtl">
                                   <span className=''>
                                     <span className='text-red-primary text-base first-letter:font-semibold'>  *  </span>
                                   سوف يتم إلغاء حجزك وإعطاء مكانك لشخص أخر ان لم يتم إيداع المبلغ بعد 3 أيام من توصلك بإيمايل الحجز. 
@@ -63,7 +65,7 @@ export default function ThankYou() {
                                   <span className="font-light text-sm" dir="rtl">
                                   ( ان كان هناك اي استفسار يمكن تواصل معنا عبر الواتساب )
                                   </span>
-                                </p>
+                                </p> */}
                             </div>
                     </div>
                 </div>

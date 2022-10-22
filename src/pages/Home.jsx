@@ -23,10 +23,10 @@ export default function Home() {
         <Whoweare/>
         <Accomplishment/>
         <Testimonials/>
-        <OurTrainings/>
         <More/>
+        <OurTrainings/>
         <JoinUsHome/>
-        <FaqHome/>
+        {/* <FaqHome/> */}
       </main>
       {/*  Site footer */}
       <Footer />

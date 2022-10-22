@@ -13,7 +13,10 @@ export default function FaqTraining() {
                     <h3 className="h3 mb-3 flex justify-between"><span>FAQ</span><span className="text-right">أسئلة متكررة</span></h3>
                   </div>
                   <div className="space-y-4">
-                    
+                    <FaqBlock 
+                    qst=" وقتاش ايبدا تدريب ؟ " 
+                    rpns1="الأربعاء 7 دجنبر(Decembre)"                    
+                    />
                     <FaqBlock 
                     qst=" خطوات باش نتسجل فالتدريب ؟ " 
                     rpns1="من مور ماكتعمر الإستمارة"
@@ -27,14 +30,11 @@ export default function FaqTraining() {
                     qst=" طرق الدفع المتاحة ؟ " 
                     rpns1="عن طريق تحويل بنكي (virement bancaire) "             
                     />
-                    <FaqBlock 
-                    qst=" وقتاش ايبدا تدريب ؟ " 
-                    rpns1="الخميس 6 شتنبر (Octobre)"                    
-                    />
-                    <FaqBlock 
+                    
+                    {/* <FaqBlock 
                     qst="توقيت الحصص ؟ " 
                     rpns1=" كل خميس 20h"                 
-                    />
+                    /> */}
                     <FaqBlock 
                     qst="واش 789 درهم كل شهر ؟" 
                     rpns1="لا، 789 هو ثمن تلات أشهر كاملة "             

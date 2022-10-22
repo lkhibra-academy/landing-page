@@ -120,7 +120,7 @@ function Features() {
                 <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group">
                   <summary className="flex items-center justify-between cursor-pointer">
                   <h5 className="text-lg font-medium text-gray-900">
-                    Part 4 :<span className='ml-2 font-semibold text-lg'>3 Web Projects</span></h5>
+                    Part 4 :<span className='ml-2 font-semibold text-lg'>4 Web Projects</span></h5>
                     <span
                       className="flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3"
                     >
@@ -142,10 +142,10 @@ function Features() {
                   <div className="pl-3 mt-1 leading-relaxed text-gray-700">
                     {/* <span className='font-medium text-lg text-gray-800'>What we'll learn : </span>  */}
                     <ul>                 
-                      <li>- What is OOP ?</li>
-                      <li>- When we use it ?</li>
-                      <li>- Class definition</li>
-                      <li>- Inheretence</li>
+                      <li>- Portfolio Website</li>
+                      <li>- E-Commerce Landing Page Website</li>
+                      <li>- Live Stream Page</li>
+                      <li>- Online Calculator</li>
                     </ul>
                   </div>
                 </details>

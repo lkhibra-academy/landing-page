@@ -63,7 +63,7 @@ export default function Plans({src1}) {
                             </svg>
                             </div>
                             <span className="mr-3 text-white">عدد المشاريع البرمجية :
-                            <span className='font-medium'> 3 </span> 
+                            <span className='font-medium'> 4 </span> 
                             </span>
                         </li>
                         <li className="flex">
@@ -167,8 +167,8 @@ export default function Plans({src1}) {
                                 </path>
                             </svg>
                             </div>
-                            <span className="mr-3 text-text-neutral-600">عدد المشاريع البرمجية :
-                            <span className='font-medium'> 3 </span> 
+                            <span className="mr-3 text-neutral-600">عدد المشاريع البرمجية :
+                            <span className='font-medium'> 4 </span> 
                             </span>
                         </li>
                         <li className="flex">
