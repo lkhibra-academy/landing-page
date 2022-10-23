@@ -25,16 +25,16 @@ function FeaturesBlocks() {
             />
 
             <Feat title="Students - طلاب" subtitle="Goal : Start Your Career" 
-            li1="- Portfolio of 3 Projects" 
+            li1="- Portfolio of 4 Projects" 
             li2="- Certificate of Completion"
             li3="- 12 Weeks of learning"
             li4="- 100% Practical Method"
             li5="- No pre-requisites"
-            li6="Have the fundamentals to dive into advanced topics such as: Javascript Frameworks, Backend.. etc"
+            li6="Have the fundamentals to dive into advanced topics such as: React, Vue, Angular.. etc"
             />
 
             <Feat title="Computer Science Graduates - خريجي المعلوميات" subtitle="Goal : Advance Your Skills"
-            li1="- Portfolio of 3 Projects" 
+            li1="- Portfolio of 4 Projects" 
             li2="- Build your own websites"
             li3="- Add Front-End technologies to your resume"
             li4="- Have the fundamentals to dive into advanced technologies such as: React, Vue, Angular.. etc"

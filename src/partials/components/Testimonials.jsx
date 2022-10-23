@@ -20,18 +20,16 @@ function malakquote() {
     return <span>Formation de haut niveau, cela m'a permis d'apprendre le langage de programmation python de manière simple (synthaxe, POO, principales bibliothèques de python), le plus important est que nous travaillions sur des projets avec la possibilité de contacter notre professeur tout le temps</span>;
 }
 function hamzaquote() {
-    return <span>I always have fears to do coding. After scrolling on Instagram, I found this page named " lkhibra ", proposing an immersive python training. The instructor, is great at explaining the concepts. Especially, he is very patient and helpful. I strongly recommend this training to those who want to learn Python coding from A to Z"</span>;
+    return <span>I always have fears to do coding. After scrolling on Instagram, I found this page named "lkhibra", proposing an immersive python training. The instructor, is great at explaining the concepts. Especially, he is very patient and helpful."</span>;
 }
 function bahijaquote() {
-    return <span>If you are procrastinating to start learning python, it's your chance to break that wall. <br />
-    Actually I learned a lot, the material was presented in a way that was easy to understand even if you don't really know the programming languages, because it starts from the beginning, moreover the training team was careful and patient with everybody's understanding level.</span>;
+    return <span>The material was presented in a way that was easy to understand, even if you don't really know programming languages. In addition, the training team was attentive and patient about everyone's level of understanding.</span>
 }
 function younessquote() {
     return <span>This course helped me grasp the basics of algorithmes and allowed me to use them with python, and this opened up my curiosity to learn more about programming and be as creative as i can.</span>;
 }
 function maryamquote() {
-    return <span>J'ai toujours voulu faire une formation de graphisme et découvrir ce domaine, mais les centres donnent des prix très chers, donc j'ai reculé beaucoup de fois jusqu'à ce que lkhibra lance son annonce sur insta, atelier de graphisme avec un prix raisonnable. 
-    Et finalement, j'y suis allé, tout était incroyable, les tuteurs étaient très utiles et nous ont donné toute l'attention dont nous avions besoin et le groupe whatsapp était très bénéfique.</span>;
+    return <span>J'ai toujours voulu découvrir ce domaine, mais les centres donnent des prix très chers, jusqu'à ce que je trouve que lkhibra lance un atelier de design graphique avec un prix raisonnable.Les tuteurs étaient très utiles et nous ont donné toute l'attention dont nous avions besoin.</span>;
 }
 
 
@@ -45,7 +43,7 @@ export default function Testimonials() {
       return (
         <div className="max-w-6xl mx-auto px-5 sm:px-6 py-12  ">
             <div dir='rtl' className="w-full mx-auto text-center">
-                <h1 className='h2 mb-8'>Testimonials</h1>
+                <h1 className='h2 mb-8'>Student Reviews</h1>
             </div>
             <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
