@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
-import Dropdown from "../utils/Dropdown";
+import Dropdown from "../../utils/Dropdown";
 function Header() {
   const [navbar, setNavbar] = useState(false);
 
@@ -68,27 +68,24 @@ function Header() {
                   <Dropdown force={navbar} title="Trainings">
                     <ul className="text-right">
                       <li className="rounded p-2  font-medium">
-                        <Link to="/Training" dir="rtl">
+                        <Link to="/Programming" dir="rtl">
                           تدريب الخبرة فالبرمجة
+                        </Link>
+                      </li>
+                      <li className="p-2 font-medium">
+                        <Link to="/Frontend">
+                          <span className="text-base font-medium">
+                            Front-End 101
+                          </span>{" "}
+                          تدريب
                         </Link>
                       </li>
                       <li className="p-2 font-medium">
                         <span className="text-xs font-bold text-white rounded bg-red-700 px-2 mr-2">
                           قريبا
                         </span>
-                        <Link to="/Training" dir="rtl">
+                        <Link to="" dir="rtl">
                           تدريب الخبرة فالتصميم
-                        </Link>
-                      </li>
-                      <li className="p-2 font-medium">
-                        <Link to="/Training">
-                          <span className="text-xs font-bold text-white rounded bg-red-700 px-2 mr-2">
-                            قريبا
-                          </span>
-                          <span className="text-base font-medium">
-                            Front-End 101
-                          </span>{" "}
-                          تدريب
                         </Link>
                       </li>
                     </ul>

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const TrainingCard = ({title,desc,li1,li2,li3,pic}) => (
+const TrainingCard = ({title,desc,li1,li2,li3,pic,link}) => (
     // {li1}
-    <Link to="/Training" 
+    <Link to={link} 
     className="overflow-hidden rounded-xl 
     grid grid-cols-1 group sm:grid-cols-3 shadow-xl
     border border-gray-300"
@@ -18,19 +18,19 @@ const TrainingCard = ({title,desc,li1,li2,li3,pic}) => (
         </div>
 
         <div className="p-8 sm:col-span-2 " dir='rtl'>
-            <ul className="flex md:space-x-1 flex-wrap space-y-1">
+            <ul className="flex md:space-x-1 flex-wrap space-y-1 ">
                 <li
-                    className="inline-block px-3 py-1 text-xs font-semibold text-white bg-red-primary rounded-full ml-1" 
+                    className="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-red-primary rounded-full mx-1" 
                 >
                     {li1}
                 </li>
                 <li
-                    className="inline-block px-3 py-1 text-xs font-semibold text-white bg-red-primary rounded-full"
+                    className="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-red-primary rounded-full mx-1"
                 >
                     {li2}
                 </li>
                 <li
-                    className="inline-block px-3 py-1 text-xs font-semibold text-white bg-red-primary rounded-full"
+                    className="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-red-primary rounded-full mx-1"
                 >
                     {li3}
                 </li>

@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../partials/Header";
+import Header from "../partials/components/Header";
 
 function Responsibility() {
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Modal from '../utils/Modal';
-import LeadForm from './LeadForm';
+import Modal from '../../utils/Modal';
+import LeadForm from '../components/LeadForm';
 
 export default function JoinUsTraining() {
     const [videoModalOpen, setVideoModalOpen] = useState(false);

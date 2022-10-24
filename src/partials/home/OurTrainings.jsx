@@ -1,6 +1,6 @@
 import React from 'react';
 import TrainingCard from './TrainingCard';
-import cardpic from '../images/cardpic.png';
+import cardpic from '../../images/cardpic.png';
 
 export default function OurTrainings() { 
       return ( 
@@ -10,10 +10,15 @@ export default function OurTrainings() {
             <div className='grid gap-5'>
             <TrainingCard title={"تدريب الخبرة فالبرمجة"} 
             desc={"اختصر الوقت وتعلم جميع أساسيات البرمجة بالبايثون عن طريق خمس مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة."} 
-            li1={"Python"} li2={"Data Structure"} li3={"Algorithms"} pic={cardpic}
-            />
-            
-            </div>
+            li1={"Python"} li2={"Data Structure"} li3={"Algorithms"} pic={cardpic} link={"/Programming"}
+            /> 
+            <TrainingCard title={"تدريب  Front-End 101"} 
+            desc={"اختصر الوقت وتعلم جميع أساسيات البرمجة بالبايثون عن طريق خمس مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة."} 
+            li1={"HTML"} li2={"CSS"} li3={"Javascript"} pic={cardpic} link={"/Frontend"}
+            />    
+        </div>
+
+        
         </div>
   );
 }

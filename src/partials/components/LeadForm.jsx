@@ -4,7 +4,7 @@ import CleavePhone from 'cleave.js/dist/addons/cleave-phone.ma'
 import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-export default function LeadForm() {
+export default function LeadForm({src}) {
     // const [ok, setOk] = useState(false)
     let navigate = useNavigate();
     const [err, setErr] = useState(false)
@@ -16,6 +16,10 @@ export default function LeadForm() {
     const form = useRef()
     /** @type {React.MutableRefObject<HTMLSelectElement>} */
     const offer = useRef()
+    /** @type {React.MutableRefObject<HTMLSelectElement>} */
+    const training = useRef()
+    /** @type {React.MutableRefObject<HTMLSelectElement>} */
+    const traffic = useRef()
     const [phone, setPhone] = useState('')
     // /** @type {React.MutableRefObject<HTMLInputElement>} */
     // const phone = useRef()
@@ -28,7 +32,9 @@ export default function LeadForm() {
                 name: fullName.current.value,
                 email: email.current.value,
                 phone: phone,
-                offer: offer.current.value
+                offer: offer.current.value,
+                training: training.current.value,
+                traffic: traffic.current.value,
             }
         ).then((rep) => {
             if(rep.data.ok){
@@ -67,15 +73,34 @@ export default function LeadForm() {
                     </div>
                     <div className="">
                         <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="email">
-                            <span>Choose the offer</span><span>البريد الإلكتروني</span>
+                            <span>Choose the Training</span><span>اختر التدريب </span>
                         </label>
-                        <select id="offer" ref={offer} class="mb-2  pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" required>
-                            <option value="789" >
-                                    <span>ثلاثة أشهر كاملة</span>
-                            </option>
-                            <option value="299">شهر فقط</option>
+                        <select id="training" ref={training} class="mb-2  pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" required>
+                            {/* <option value="Programming" >
+                            </option> */}
+                            <option value="Frontend">Front-End 101</option>
                         </select> 
                     </div>
+                    <div className="">
+                        <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="email">
+                            <span>Choose the offer</span><span>اختر العرض </span>
+                        </label>
+                        <select id="offer" ref={offer} class="mb-2  pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" required>
+                            <option value="789" selected>
+                                    789dh - 
+                                    ثلاثة أشهر كاملة
+                                    
+                            </option>
+                            <option value="299">
+                                299dh/mois - 
+                                كل شهر  
+                            </option>
+                        </select> 
+                    </div>
+                        <select id="traffic" ref={traffic} class="hidden">
+                            <option value={src} selected>
+                            </option>
+                        </select> 
                     <div className="">
                         <button onClick={clickHandler} className="rounded-lg bg-black text-lg font-light p-2.5 text-white bg-red-primary w-full block" type="submit">
                         تسجيل

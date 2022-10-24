@@ -1,4 +1,4 @@
-import FaqBlock from '../partials/FaqBlock';
+import FaqBlock from '../components/FaqBlock';
 
 export default function FeqHome() { 
     return ( 

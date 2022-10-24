@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import Modal from '../utils/Modal';
-import LeadForm from './LeadForm';import Feat from './Feat';
+import Modal from '../../utils/Modal';
+import LeadForm from '../components/LeadForm';
 
-function Plans() {
+export default function Plans({src1}) {
     const [videoModalOpen, setVideoModalOpen] = useState(false);
-
   return (
     <section className='relative max-w-6xl mx-auto px-5 sm:px-6 mb-4 mt-2'>
         <div className="relative items-center w-fit mx-auto md:px-12 lg:px-16 max-w-7xl">
@@ -192,14 +191,13 @@ function Plans() {
         </div>
         <Modal id="modal" ariaLabel="modal-headline" show={videoModalOpen} handleClose={() => setVideoModalOpen(false)}>
             <div className="relative ">
-            <LeadForm />
+            <LeadForm src={src1}/>
             </div>
         </Modal>
-        </section>
+    </section>
   );
 }
 
-export default Plans;
 
 
 

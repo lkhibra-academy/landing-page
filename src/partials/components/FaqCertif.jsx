@@ -1,6 +1,6 @@
-import FaqBlock from '../partials/FaqBlock';
+import FaqBlock from '../partials/components/FaqBlock';
 
-export default function FaqTraining() { 
+export default function FaqCertif() { 
     return ( 
     //       <div className="border-b-2 border-b-gray-200">
     // <section className="relative max-w-6xl mx-auto px-4 sm:px-6">
@@ -9,6 +9,7 @@ export default function FaqTraining() {
             <div className="py-6 md:py-8">
               <div className="md:gap-6">
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6">
+                  
                   <div className=" mb-8">
                     <h3 className="h3 mb-3 flex justify-between"><span>FAQ</span><span className="text-right">أسئلة متكررة</span></h3>
                   </div>
@@ -24,25 +25,16 @@ export default function FaqTraining() {
                     وكاتبدا الحصص ديالك"
                     />
                     <FaqBlock 
-                    qst=" طرق الدفع المتاحة ؟ " 
-                    rpns1="عن طريق تحويل بنكي (virement bancaire) "             
+                    qst=" خطوات باش نتسجل فالتدريب ؟ " 
+                    rpns1="من مور ماكتعمر الإستمارة"
+                    rpns2=" كانسيفطوا ليك RIB فين تقدر تخلص"                    
+                    
                     />
                     <FaqBlock 
-                    qst=" وقتاش ايبدا تدريب ؟ " 
-                    rpns1="الخميس 6 شتنبر (Octobre)"                    
-                    />
-                    <FaqBlock 
-                    qst="توقيت الحصص ؟ " 
-                    rpns1=" كل خميس 20h"                 
-                    />
-                    <FaqBlock 
-                    qst="واش 789 درهم كل شهر ؟" 
-                    rpns1="لا، 789 هو ثمن تلات أشهر كاملة "             
-                    />
-                    <FaqBlock 
-                    qst=" كيف استطيع انتقال الى عرض 3 أشهر ؟" 
-                    rpns1="تستطيع الاستافدة من العرض الأساسي لشهر الأول "
-                    rpns2=" موراها تخلص شهرين لي بقات ب 490 درهم"             
+                    qst=" خطوات باش نتسجل فالتدريب ؟ " 
+                    rpns1="من مور ماكتعمر الإستمارة"
+                    rpns2=" كانسيفطوا ليك RIB فين تقدر تخلص"                    
+                    
                     />
                   </div>
 

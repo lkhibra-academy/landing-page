@@ -1,4 +1,4 @@
-import cert from '../images/certif.svg'
+import cert from '../../images/certif.svg'
 import Checkout from './Checkout'
 
 const Cta = () => (
