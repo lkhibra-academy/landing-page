@@ -7,15 +7,27 @@ import heropic from '../../images/heropic1.png';
 export default function Heroold() { 
       return ( 
         <section className='relative max-w-6xl mx-auto px-5 sm:px-6'>
-                <div class="grid grid-cols-1 gap-8 lg:gap-16 md:grid-cols-2 
-                    pt-6 pb-2 md:pt-8
-                ">
+                <div class="grid grid-cols-1 gap-1 lg:gap-16 md:grid-cols-2 
+                    pt-2 md:pb-2 pb-0 md:pt-8 ">
+                    {/* Picture */}
+                    <div
+                        class="relative h-80 overflow-hidden rounded-lg my-auto
+                        max-h-56 md:max-h-full           
+                        "
+                        // hidden md:block 
+                    >
+                        <img
+                        class="absolute inset-0 h-full mx-auto min-w-fit"
+                        src={heropic}
+                        alt="woman smilling"
+                        />
+                    </div>
                     {/* Titles */}
                     <div class=" md:order-last  
                     flex flex-col justify-center items-center flex-shrink-0
                     " dir='rtl'>
-                        <div className='text-center lg:text-right self-start p-4 '>
-                            <h2 class="text-3xl font-bold sm:text-4xl"> تعلم تطوير الويب في 3 أشهر فقط</h2>
+                        <div className='text-center md:text-right self-start p-4 '>
+                            <h2 class="text-3xl font-bold sm:text-4xl"> تعلم تطوير الويب<br /> في 3 أشهر فقط</h2>
 
                             <p class="mt-4 text-gray-600 text-lg">
                             اختصر الوقت وتعلم جميع أساسيات تطوير الويب عن طريق خمس مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.                            </p>
@@ -33,18 +45,7 @@ export default function Heroold() {
                        
                     </div>
 
-                    {/* Picture */}
-                    <div
-                        class="relative h-80 overflow-hidden rounded-lg my-auto
-                        hidden md:block 
-                        "
-                    >
-                        <img
-                        class="absolute inset-0 h-full mx-auto min-w-fit"
-                        src={heropic}
-                        alt="woman smilling"
-                        />
-                    </div>
+                    
 
                 </div>
 
