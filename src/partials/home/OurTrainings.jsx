@@ -1,6 +1,7 @@
 import React from 'react';
 import TrainingCard from './TrainingCard';
 import cardpic from '../../images/cardpic.png';
+import cardpic2 from '../../images/cardpicfront.png';
 
 export default function OurTrainings() { 
       return ( 
@@ -11,7 +12,7 @@ export default function OurTrainings() {
             <TrainingCard title={"تدريب  Front-End 101"} 
             desc={
               "اختصر الوقت وتعلم جميع أساسيات تطوير الويب عن طريق أربعة مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة."            } 
-            li1={"HTML"} li2={"CSS"} li3={"Javascript"} pic={cardpic} link={"/Frontend"}
+            li1={"HTML"} li2={"CSS"} li3={"Javascript"} pic={cardpic2} link={"/Frontend"}
             /> 
             <TrainingCard title={"تدريب الخبرة فالبرمجة"} 
             desc={"اختصر الوقت وتعلم جميع أساسيات البرمجة بالبايثون عن طريق خمس مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة."} 
