@@ -34,7 +34,7 @@ export default function HeroHome() {
                             <p class="mt-4 text-gray-600 text-lg">
                             طور مهاراتك في مجالات البرمجة والتصميم عن طريق تدريبات 100٪ تطبيقية ومتابعة شخصية مع المدرب. 
                             </p>
-                            <Link to="/Training"
+                            <Link to="/Frontend#checkout"
                                 className="btn text-white bg-red-primary
                                 
                                 w-full my-6 sm:w-auto sm:mb-0"

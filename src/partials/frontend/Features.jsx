@@ -120,7 +120,6 @@ function Features() {
                     </ul>
                   </div>
                 </details>
-                <div id="checkout"></div>
                 <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group" open>
                   <summary className="flex items-center justify-between cursor-pointer">
                   <h5 className="text-lg font-medium text-gray-900">
@@ -153,10 +152,8 @@ function Features() {
                     </ul>
                   </div>
                 </details>
-                
-                
-
               </div>
+                <div id="checkout"></div>
 
               {/* <div className="mb-8 md:mb-0">
                 <div
