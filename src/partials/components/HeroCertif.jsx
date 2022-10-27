@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import heropic from '../../images/heropic1.png';
+import heropic from '../../images/heropic3.png';
 
 export default function HeroCertif() { 
       return ( 

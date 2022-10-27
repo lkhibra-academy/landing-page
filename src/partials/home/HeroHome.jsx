@@ -3,7 +3,7 @@ import fsr from '../../images/logo/fsr1.png';
 import souissi from '../../images/logo/souissi1.png';
 import lions from '../../images/logo/lions1.png';
 import iscae from '../../images/logo/iscae1.png';
-import heropic from '../../images/heropic1.png';
+import heropic from '../../images/heropic3.png';
 import { Link } from 'react-router-dom';
 export default function HeroHome() { 
       return ( 

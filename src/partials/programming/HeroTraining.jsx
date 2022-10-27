@@ -3,7 +3,7 @@ import fsr from '../../images/logo/fsr1.png';
 import souissi from '../../images/logo/souissi1.png';
 import lions from '../../images/logo/lions1.png';
 import iscae from '../../images/logo/iscae1.png';
-import heropic from '../../images/heropic1.png';
+import heropic from '../../images/heropic2.png';
 export default function Heroold() { 
       return ( 
         <section className='relative max-w-6xl mx-auto px-5 sm:px-6'>
