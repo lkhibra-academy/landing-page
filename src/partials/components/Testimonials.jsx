@@ -43,7 +43,7 @@ export default function Testimonials() {
       return (
         <div className="max-w-6xl mx-auto px-5 sm:px-6 py-12  ">
             <div dir='rtl' className="w-full mx-auto text-center">
-                <h1 className='h2 mb-8'>Student Reviews</h1>
+                <h1 className='h2 mb-8'>شهادات الطلاب</h1>
             </div>
             <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}

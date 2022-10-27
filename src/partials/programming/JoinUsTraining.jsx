@@ -14,7 +14,7 @@ export default function JoinUsTraining() {
                       <h1 className='h1 mb-4'>
                       إنضم إلى أكثر من 40 طالب 
                       </h1>
-                      <p className='text-xl font-normal'>
+                      <p className='text-lg md:text-xl font-normal text-neutral-600'>
                       اختصر وقت تعلمك للمهارات الأكثر طلبا في سوق الشغل واحصل على شهادة معتمدة في التصميم والبرمجة
                       </p>
                   </div>

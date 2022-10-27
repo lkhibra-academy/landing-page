@@ -1,5 +1,5 @@
 const Need = () => (
-  <section className="relative shadow-lkhibra">
+  <section className="relative">
 
     {/* Section background (needs .relative class on parent and next sibling elements) */}
 

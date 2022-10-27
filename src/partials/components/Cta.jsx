@@ -6,7 +6,7 @@ const Cta = () => (
   // <section className="relative max-w-6xl mx-auto px-4 sm:px-6">
   //<div className="max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8"> 
 
-  <div className="flex justify-center items-center shadow-lkhibra">
+  <div className="flex justify-center items-center">
     <div dir="rtl" className="max-w-6xl px-4 sm:px-6 lg:px-8 sm:grid sm:grid-cols-2 ">
 
       <div className="p-6 md:p-12 lg:px-auto lg:py-auto">

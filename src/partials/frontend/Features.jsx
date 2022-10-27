@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 function Features() {
 
   return (
-    <section id="content" className="relative shadow-lkhibra">
+    <section id="content" className="relative">
     <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-8 md:py-12 ">
 
@@ -47,11 +47,12 @@ function Features() {
                       <li>- CSS structure</li>
                       <li>- CSS selectors</li>
                       <li>- Basic CSS styling</li>
+                      <li>- Mini Project</li>
                     </ul>
                   </div>
                 </details>
 
-                <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group">
+                <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group" open>
                   <summary className="flex items-center justify-between cursor-pointer">
                   <h5 className="text-lg font-medium text-gray-900">
                     Part 2 :<span className='ml-2 font-semibold text-lg'>Responsive Web Design</span></h5>
@@ -76,15 +77,17 @@ function Features() {
                   <div className="pl-3 mt-1 leading-relaxed text-gray-700">
                     {/* <span className='font-medium text-lg text-gray-800'>What we'll learn : </span>  */}
                     <ul>
-                      <li>- Advanced HTML elements(Forms , Audio and video , IFrames).</li>
+                      <li>- Advanced HTML elements (Forms , Audio and video , IFrames).</li>
                       <li>- Using CSS to size and space Elements</li>
                       <li>- Text Formatting with CSS</li>
                       <li>- Positionning and display with CSS</li>
+                      <li>- Mini Project</li>
+
                     </ul>
                   </div>
                 </details>
 
-                <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group">
+                <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group" open>
                   <summary className="flex items-center justify-between cursor-pointer">
                   <h5 className="text-lg font-medium text-gray-900">
                     Part 3 :<span className='ml-2 font-semibold text-lg'>Interactive Web with Javascript</span></h5>
@@ -113,11 +116,12 @@ function Features() {
                       <li>- Manipulating DOM with Javascript</li>
                       <li>- Manipulating CSS with Javascript</li>
                       <li>- Adding interactivity to websites</li>
+                      <li>- Mini Project</li>
                     </ul>
                   </div>
                 </details>
                 <div id="checkout"></div>
-                <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group">
+                <details className="p-4 border-l-2 border-red-primary border-y border-y-gray-200 group" open>
                   <summary className="flex items-center justify-between cursor-pointer">
                   <h5 className="text-lg font-medium text-gray-900">
                     Part 4 :<span className='ml-2 font-semibold text-lg'>4 Web Projects</span></h5>
@@ -143,9 +147,9 @@ function Features() {
                     {/* <span className='font-medium text-lg text-gray-800'>What we'll learn : </span>  */}
                     <ul>                 
                       <li>- Portfolio Website</li>
-                      <li>- E-Commerce Landing Page Website</li>
-                      <li>- Live Stream Page</li>
-                      <li>- Online Calculator</li>
+                      <li>- Blog Website</li>
+                      <li>- Drawing App</li>
+                      <li>- Quiz App</li>
                     </ul>
                   </div>
                 </details>

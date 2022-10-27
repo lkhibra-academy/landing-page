@@ -1,4 +1,7 @@
-const AccomplishmentCard = ({num,desc}) => (
+
+export default function AccomplishmentCard({num,desc}) { 
+    
+    return (
     // {li1}
     <div href="" class="relative p-2 border border-red-primary 
     rounded-xl shadow-xl text-center 
@@ -11,6 +14,6 @@ const AccomplishmentCard = ({num,desc}) => (
         <p class="mt-1 mb-3 text-lg font-medium text-gray-500 " dir='rtl'>
         {desc}</p>
     </div>
-  );
-  export default AccomplishmentCard;
+  );}
+ AccomplishmentCard;
   

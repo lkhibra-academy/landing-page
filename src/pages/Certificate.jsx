@@ -11,11 +11,12 @@ export default function Certificate() {
       <Header />
       {/*  Page content */}
       <main className="flex-grow">
-        {/* <HeroHome /> */}
         <Verify/>
+
       </main>
       {/*  Site footer */}
       <Footer />
+
     </div>
 
     

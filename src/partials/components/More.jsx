@@ -3,7 +3,7 @@ import React from 'react';
 
 function More() {
   return (
-      <div className="shadow-lkhibra">
+      <div className="">
 
         <section className="relative max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">

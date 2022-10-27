@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 function Features() {
 
   return (
-    <section id="content" className="relative shadow-lkhibra">
+    <section id="content" className="relative ">
     <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-8 md:py-12 ">
 
