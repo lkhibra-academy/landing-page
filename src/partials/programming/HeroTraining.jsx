@@ -8,7 +8,7 @@ export default function Heroold() {
       return ( 
         <section className='relative max-w-6xl mx-auto px-5 sm:px-6'>
                 <div class="grid grid-cols-1 gap-1 lg:gap-16 md:grid-cols-2 
-                    pt-2 md:pb-2 pb-0 md:pt-8 ">
+                    pt-4 md:pb-2 pb-0 md:pt-8 ">
                     {/* Picture */}
                     <div
                         class="relative h-80 overflow-hidden rounded-lg my-auto
