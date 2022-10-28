@@ -14,7 +14,7 @@ export default function JoinUsHome() {
                   </div>
               </div>
               <div class="flex flex-wrap justify-center mt-8 gap-4">
-                    <Link to='/Training' class="block w-full px-12 py-3 text-base font-medium text-white bg-red-primary rounded shadow sm:w-auto " href="/get-started">
+                    <Link to='/Frontend' class="block w-full px-12 py-3 text-base font-medium text-white bg-red-primary rounded shadow sm:w-auto " href="/get-started">
                     ابدأ الآن
                     </Link>  
                 </div>
