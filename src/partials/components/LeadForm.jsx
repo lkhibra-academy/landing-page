@@ -86,12 +86,12 @@ export default function LeadForm({src}) {
                             <span>Choose the offer</span><span>اختر العرض </span>
                         </label>
                         <select id="offer" ref={offer} class="mb-2  pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" required>
-                            <option value="789" selected>
+                            <option value="789">
                                     789dh - 
                                     ثلاثة أشهر كاملة
                                     
                             </option>
-                            <option value="299">
+                            <option value="299" selected>
                                 299dh/mois - 
                                 كل شهر  
                             </option>
