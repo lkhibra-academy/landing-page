@@ -60,7 +60,7 @@ export default function ThankYou() {
                                 <p className="flex items-center justify-center flex-col text-center font-light text-base my-3 mr-3 px-2 space-y-2" dir="rtl">
                                   <span className=''>
                                     <span className='text-red-primary text-base first-letter:font-semibold'>  *  </span>
-                                    سوف يتم إلغاء حجزك وإعطاء مكانك لشخص أخر ان لم يتم إيداع المبلغ قبل يوم الثلاثاء 8 نونبر
+                                    سوف يتم إلغاء حجزك وإعطاء مكانك لشخص أخر ان لم يتم إيداع المبلغ قبل يوم الأربعاء 9 نونبر صباحا
                                      
                                   </span>
                                   <span className="font-light text-sm" dir="rtl">
