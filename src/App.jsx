@@ -51,11 +51,11 @@ function App() {
         <Route exact path="/Frontend" element={<FrontendTraining />} />
         <Route exact path="/FrontendTraining" element={<FrontendAds />} />
         <Route exact path="/ThankYou" element={<ThankYou />} />
-        <Route exact path="/privacy" element={<Privacy />} />
-        <Route exact path="/termsofuse" element={<Termsofuse />} />
+        <Route exact path="/Privacy" element={<Privacy />} />
+        <Route exact path="/Termsofuse" element={<Termsofuse />} />
         <Route exact path="/Responsibility" element={<Responsibility />} />
       </Routes>
-      <a href="https://api.whatsapp.com/send?phone=212708983350&text=%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D8%A7%D9%84%D9%88%D9%8A%D8%A8" className="whatsapp-button z-50" target="_blank" style={{
+      <a href="https://api.whatsapp.com/send?phone=212708983350&text=%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9" className="whatsapp-button z-50" target="_blank" style={{
         position: 'fixed',
         right: '15px',
         bottom: '15px'
