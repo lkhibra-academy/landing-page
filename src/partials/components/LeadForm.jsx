@@ -78,7 +78,7 @@ export default function LeadForm({src}) {
                         <select id="training" ref={training} class="mb-2  pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" required>
                             {/* <option value="Programming" >
                             </option> */}
-                            <option value="Frontend">Front-End 101</option>
+                            <option value="Programming">Programming Training</option>
                         </select> 
                     </div>
                     <div className="">
@@ -92,8 +92,8 @@ export default function LeadForm({src}) {
                                     
                             </option>
                             <option value="299" selected>
-                                299dh/mois - 
-                                كل شهر  
+                                299dh - 
+                                 شهر فقط 
                             </option>
                         </select> 
                     </div>

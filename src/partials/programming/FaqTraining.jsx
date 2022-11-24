@@ -15,7 +15,7 @@ export default function FaqTraining() {
                   <div className="space-y-4">
                     <FaqBlock 
                     qst=" وقتاش ايبدا تدريب ؟ " 
-                    rpns1="الأربعاء 7 دجنبر(Decembre)"                    
+                    rpns1="الثلاثاء 6 دجنبر (Decembre) "                    
                     />
                     <FaqBlock 
                     qst=" خطوات باش نتسجل فالتدريب ؟ " 
