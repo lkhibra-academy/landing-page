@@ -23,7 +23,7 @@ export default function FaqTraining() {
                     qst="توقيت الحصص ؟ " 
                     rpns1=" كل أربعاء 20h"                 
                     /> */}
-                    <FaqBlock 
+                    {/* <FaqBlock 
                     qst=" خطوات باش نتسجل فالتدريب ؟ " 
                     rpns1="من مور ماكتعمر الإستمارة"
                     rpns2=" كانسيفطوا ليك RIB فين تقدر تخلص"                    
@@ -35,16 +35,16 @@ export default function FaqTraining() {
                     <FaqBlock 
                     qst=" طرق الدفع المتاحة ؟ " 
                     rpns1="عن طريق تحويل بنكي (virement bancaire) "             
-                    />
-                    <FaqBlock 
+                    /> */}
+                    {/* <FaqBlock 
                     qst=" كيف استطيع انتقال الى عرض 3 أشهر ؟" 
                     rpns1="تستطيع الاستافدة من العرض الأساسي لشهر الأول "
-                    rpns2=" موراها تخلص شهرين لي بقات ب 490 درهم"             
+                    rpns2=" موراها تخلص شهرين لي بقات ب  درهم"             
                     />
                     <FaqBlock 
                     qst="واش 789 درهم كل شهر ؟" 
                     rpns1="لا، 789 هو ثمن تلات أشهر كاملة "             
-                    />
+                    /> */}
                   </div>
 
                 </div>

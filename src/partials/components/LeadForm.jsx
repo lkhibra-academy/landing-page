@@ -32,14 +32,15 @@ export default function LeadForm({src}) {
                 name: fullName.current.value,
                 email: email.current.value,
                 phone: phone,
-                offer: offer.current.value,
-                training: training.current.value,
+                // offer: offer.current.value,
+                // training: training.current.value,
                 traffic: traffic.current.value,
             }
         ).then((rep) => {
             if(rep.data.ok){
                 fbq('track', 'Lead');
-                navigate('/ThankYou',{state:{price:offer.current.value}});
+                // navigate('/ThankYou',{state:{price:offer.current.value}});
+                navigate('/');
             }else{
                 setErr(true)
             }
@@ -71,17 +72,17 @@ export default function LeadForm({src}) {
                         </label>
                         <input ref={email} className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" type="email" id="email" required/>
                     </div>
-                    <div className="">
+                    {/* <div className="">
                         <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="email">
                             <span>Choose the Training</span><span>اختر التدريب </span>
                         </label>
                         <select id="training" ref={training} class="mb-2  pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" required>
                             {/* <option value="Programming" >
-                            </option> */}
+                            </option> 
                             <option value="Programming">Programming Training</option>
                         </select> 
-                    </div>
-                    <div className="">
+                    </div> */}
+                    {/* <div className="">
                         <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="email">
                             <span>Choose the offer</span><span>اختر العرض </span>
                         </label>
@@ -96,7 +97,7 @@ export default function LeadForm({src}) {
                                  شهر فقط 
                             </option>
                         </select> 
-                    </div>
+                    </div> */}
                         <select id="traffic" ref={traffic} class="hidden">
                             <option value={src} selected>
                             </option>

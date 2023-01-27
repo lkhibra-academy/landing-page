@@ -21,7 +21,7 @@ export default function Plans({src1}) {
                 </h3>
                     {/* text-neutral-600 */}
                     <p className="flex items-baseline text-neutral-600 space-x-2 leading-tight">
-                    <span className="text-6xl font-bold">299</span> 
+                    <span className="text-6xl font-bold">350</span> 
                     <span className='text-2xl font-semibold text-neutral-500'> درهم </span>
                     {/* <span className='text-lg tracking-tight'> 3 أشهر كاملة </span> */}
                     </p>
@@ -108,7 +108,7 @@ export default function Plans({src1}) {
                     <h3 className="font-semibold text-lg text-white">أحسن عرض </h3>
                     
                     <p className="flex items-baseline text-white space-x-2 leading-tight">
-                    <span className="text-6xl font-bold">789</span> 
+                    <span className="text-6xl font-bold">930</span> 
                     <span className='text-2xl font-semibold '> درهم </span>
                     {/* <span className='text-lg tracking-tight'> 3 أشهر كاملة </span> */}
                     </p>

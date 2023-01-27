@@ -15,7 +15,7 @@ export default function FaqTraining() {
                   <div className="space-y-4">
                     <FaqBlock 
                     qst=" وقتاش ايبدا تدريب ؟ " 
-                    rpns1="الثلاثاء 6 دجنبر (Decembre) "                    
+                    rpns1=" الأربعاء 15 فبراير "                    
                     />
                     <FaqBlock 
                     qst=" خطوات باش نتسجل فالتدريب ؟ " 
@@ -36,13 +36,13 @@ export default function FaqTraining() {
                     rpns1=" كل خميس 20h"                 
                     /> */}
                     <FaqBlock 
-                    qst="واش 789 درهم كل شهر ؟" 
-                    rpns1="لا، 789 هو ثمن تلات أشهر كاملة "             
+                    qst="واش 930 درهم كل شهر ؟" 
+                    rpns1="لا، 930 هو ثمن تلات أشهر كاملة "             
                     />
                     <FaqBlock 
                     qst=" كيف استطيع انتقال الى عرض 3 أشهر ؟" 
                     rpns1="تستطيع الاستافدة من العرض الأساسي لشهر الأول "
-                    rpns2=" موراها تخلص شهرين لي بقات ب 490 درهم"             
+                    rpns2=" موراها تخلص شهرين لي بقات ب 590 درهم"             
                     />
                   </div>
 
