@@ -19,7 +19,7 @@ export default function Home() {
       {/*  Page content */}
       <main className="flex-grow">
         {/* <HeroHome /> */}
-        <HeroHome/>
+        <HeroHome/>j
         <Whoweare/>
         <Accomplishment/>
         <Testimonials/>
