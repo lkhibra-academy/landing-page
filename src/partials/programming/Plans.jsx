@@ -93,12 +93,12 @@ export default function Plans({src1}) {
                     <span className='font-light text-xs md:text-sm text-neutral-600'>
                         مع امكانية الإنتقال إلى عرض 3 أشهر بعد انتهاء شهر الأول 
                     </span></p>
-                    <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} 
+                   <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} 
                         aria-controls="modal"
                         className="rounded-lg text-lg mt-2 font-normal p-2.5 bg-red-primary text-white w-full block text-center transition duration-500 ease-in-out transform border-2 border-white shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 " 
                         type="submit">
                     تسجيل
-                    </button>
+                    </button> 
                 </div>
                 </div>
                 
