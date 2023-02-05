@@ -1,12 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import wtp from '../../images/whatsapp-button.png';
+import Modal from '../../utils/Modal';
+import LeadForm from '../components/LeadForm';
 
-
-export default function Fixed(props) {
+export default function Fixed(props,src) {
+    const [videoModalOpen, setVideoModalOpen] = useState(false);
     let content = {
         Arabic: {
             cta:"تسجيل",
-            price:"222dh/Mois"
+            price:"222dh/Mois",
         },
         French: {
 
@@ -42,7 +44,11 @@ return (
         onClick="fbq('track', 'Contact')">
             <img src={wtp}/>
         </a>
-        
+        <Modal id="modal" ariaLabel="modal-headline" show={videoModalOpen} handleClose={() => setVideoModalOpen(false)}>
+            <div className="relative ">
+            <LeadForm src={src}/>
+            </div>
+        </Modal>    
     </div>
    
 );
