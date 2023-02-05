@@ -32,7 +32,7 @@ export default function ProgrammingAds() {
 
       {/*  Site footer */}
       <Footer />
-      <Fixed />
+      <Fixed language="Arabic"/>
 
     </div>
   );

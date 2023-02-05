@@ -2,20 +2,33 @@ import React from 'react';
 import wtp from '../../images/whatsapp-button.png';
 
 
-export default function Fixed() {
+export default function Fixed(props) {
+    let content = {
+        Arabic: {
+            cta:"تسجيل",
+            price:"222dh/Mois"
+        },
+        French: {
+
+        }
+      };
+    
+      props.language === "Arabic"
+        ? (content = content.Arabic)
+        : (content = content.French);
 return (
 <div className='fixed bottom-0 mx-auto px-0 sm:px-6
-    bg-white h-16 flex flex-row justify-around items-center w-full
+    bg-white h-16 flex flex-row justify-around items-center w-full pb-3 pt-1
     border-t
     '>
         <div className=' ml-2'>
-            <p className='text-xl font-medium text-gray-800 mb-0'>222dh/Mois</p>
+            <p className='text-xl font-medium text-gray-800 mb-0 mr-2 ml-4'>{content.price}</p>
         </div>
         <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} 
                         aria-controls="modal"
-                        className="rounded-lg text-lg font-normal mx-2 p-2.5 bg-red-primary text-white block text-center w-full h-10" 
+                        className="rounded-lg text-lg font-normal ml-2 mr-4 p-2.5 bg-red-primary text-white block text-center w-full h-10" 
                         type="submit">
-                    تسجيل
+                    {content.cta}
         </button>
         <a href="https://api.whatsapp.com/send?phone=212708983350" className="whatsapp-button z-50" 
         target="_blank" style={{
@@ -26,15 +39,7 @@ return (
         onClick="fbq('track', 'Contact')">
             <img src={wtp}/>
         </a>
-        <a href="https://api.whatsapp.com/send?phone=212708983350" className="whatsapp-button z-50" 
-        target="_blank" style={{
-            position: 'fixed',
-            right: '82px',
-            bottom: '70px'
-        }} 
-        onClick="fbq('track', 'Contact')">
-            <img src={wtp}/>
-        </a>
+        
     </div>
    
 );
