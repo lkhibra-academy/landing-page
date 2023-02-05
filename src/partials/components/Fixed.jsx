@@ -26,7 +26,10 @@ return (
         </div>
         <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} 
                         aria-controls="modal"
-                        className="rounded-lg text-lg font-normal ml-2 mr-4 p-2.5 bg-red-primary text-white block text-center w-full h-10" 
+                        className="rounded-lg text-lg font-normal ml-2 mr-4 p-2.5 bg-red-primary 
+                        text-white text-center w-full h-10
+                        flex justify-around items-center
+                        " 
                         type="submit">
                     {content.cta}
         </button>
