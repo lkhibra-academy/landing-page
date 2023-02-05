@@ -19,9 +19,11 @@ export default function Fixed(props,src) {
         ? (content = content.Arabic)
         : (content = content.French);
 return (
-<div className='fixed bottom-0 mx-auto px-0 sm:px-6
-    bg-white h-16 flex flex-row justify-around items-center w-full pb-3 pt-1
-    border-t
+    <section>
+    {/* Buttom Bar */}
+    <div className='fixed bottom-0 mx-auto px-0 sm:px-6
+    bg-white h-16 flex flex-row justify-around items-center w-full pb-3 pt-2
+    border-t md:hidden
     '>
         <div className=' ml-2'>
             <p className='text-xl font-medium text-gray-800 mb-0 mr-2 ml-4'>{content.price}</p>
@@ -35,21 +37,24 @@ return (
                         type="submit">
                     {content.cta}
         </button>
-        <a href="https://api.whatsapp.com/send?phone=212708983350" className="whatsapp-button z-50" 
-        target="_blank" style={{
-            position: 'fixed',
-            right: '15px',
-            bottom: '70px'
-        }} 
-        onClick="fbq('track', 'Contact')">
-            <img src={wtp}/>
-        </a>
-        <Modal id="modal" ariaLabel="modal-headline" show={videoModalOpen} handleClose={() => setVideoModalOpen(false)}>
-            <div className="relative ">
-            <LeadForm src={src}/>
-            </div>
-        </Modal>    
     </div>
+    {/* Whatsapp BTN */}
+        <a href="https://api.whatsapp.com/send?phone=212708983350" className="whatsapp-button z-50" 
+            target="_blank" style={{
+                position: 'fixed',
+                right: '15px',
+                bottom: '70px'
+            }} 
+            onClick="fbq('track', 'Contact')">
+                <img src={wtp}/>
+        </a>
+    {/* Modal */}
+        <Modal id="modal" ariaLabel="modal-headline" show={videoModalOpen} handleClose={() => setVideoModalOpen(false)}>
+                <div className="relative ">
+                <LeadForm src={src}/>
+                </div>
+        </Modal> 
+    </section>
    
 );
 }
