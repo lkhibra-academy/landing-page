@@ -2,11 +2,11 @@ import React from 'react';
 import Header from '../partials/components/Header';
 import Fixed from '../partials/components/Fixed';
 import Footer from '../partials/components/Footer';
+import Hero from '../partials/components/Hero';
 
 
 // import FeaturesBlocks from '../partials/programming/FeaturesBlocks';
 // import Learn from '../partials/programming/Learn';
-// import Need from '../partials/components/Need';
 // import More from '../partials/components/More';
 // import JoinUsTraining from '../partials/programming/JoinUsTraining';
 // import HeroTraining from '../partials/programming/HeroTraining';
@@ -24,7 +24,7 @@ export default function Home() {
 
       {/*  Page content */}
       <main className="flex-grow">
-
+      <Hero />
         {/*  Page sections */}
         
 
