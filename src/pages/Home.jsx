@@ -3,6 +3,7 @@ import Header from '../partials/components/Header';
 import Fixed from '../partials/components/Fixed';
 import Footer from '../partials/components/Footer';
 import Hero from '../partials/components/Hero';
+import Learn from '../partials/components/Learn';
 
 
 // import FeaturesBlocks from '../partials/programming/FeaturesBlocks';
@@ -25,6 +26,7 @@ export default function Home() {
       {/*  Page content */}
       <main className="flex-grow">
       <Hero language="Arabic"/>
+      <Learn language="Arabic"/>
         {/*  Page sections */}
         
 

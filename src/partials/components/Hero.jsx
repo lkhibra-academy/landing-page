@@ -1,11 +1,5 @@
 import React, {useState} from 'react';
-import fsr from '../../images/logo/fsr1.png';
-import souissi from '../../images/logo/souissi1.png';
-import lions from '../../images/logo/lions1.png';
-import iscae from '../../images/logo/iscae1.png';
 import heropic from '../../images/heropic1.png';
-import Modal from '../../utils/Modal';
-import LeadForm from '../components/LeadForm';
 
 export default function Hero(props) { 
     let content = {
