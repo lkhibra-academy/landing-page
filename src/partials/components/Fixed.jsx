@@ -4,7 +4,7 @@ import Modal from '../../utils/Modal';
 import LeadForm from '../components/LeadForm';
 
 export default function Fixed(props,src) {
-    const [videoModalOpen, setVideoModalOpen] = useState(false);
+    const [ModalOpen, setModalOpen] = useState(false);
     let content = {
         Arabic: {
             cta:"تسجيل",
@@ -28,15 +28,16 @@ return (
         <div className=' ml-2'>
             <p className='text-xl font-medium text-gray-800 mb-0 mr-2 ml-4'>{content.price}</p>
         </div>
-        <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} 
+        <a onClick={(e) => { e.preventDefault(); e.stopPropagation(); setModalOpen(true); }} 
                         aria-controls="modal"
-                        className="rounded-lg text-lg font-normal ml-2 mr-4 p-2.5 bg-red-primary 
+                        className="btn
+                        ml-2 mr-4 p-2.5 bg-red-primary 
                         text-white text-center w-full h-10
                         flex justify-around items-center
                         " 
                         type="submit">
                     {content.cta}
-        </button>
+        </a>
     </div>
     {/* Whatsapp BTN */}
         <a href="https://api.whatsapp.com/send?phone=212708983350" className="whatsapp-button z-50" 
@@ -49,7 +50,7 @@ return (
                 <img src={wtp}/>
         </a>
     {/* Modal */}
-        <Modal id="modal" ariaLabel="modal-headline" show={videoModalOpen} handleClose={() => setVideoModalOpen(false)}>
+        <Modal id="modal" ariaLabel="modal-headline" show={ModalOpen} handleClose={() => setModalOpen(false)}>
                 <div className="relative ">
                 <LeadForm src={src}/>
                 </div>

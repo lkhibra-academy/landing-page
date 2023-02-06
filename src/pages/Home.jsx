@@ -24,7 +24,7 @@ export default function Home() {
 
       {/*  Page content */}
       <main className="flex-grow">
-      <Hero />
+      <Hero language="Arabic"/>
         {/*  Page sections */}
         
 
