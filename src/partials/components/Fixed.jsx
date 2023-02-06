@@ -21,13 +21,12 @@ export default function Fixed(props,src) {
 return (
     <section>
     {/* Buttom Bar */}
-    <div className='fixed bottom-0 mx-auto px-0 sm:px-6
-    bg-white h-16 flex flex-row justify-around items-center w-full pb-3 pt-2
-    border-t md:hidden
+    <div className='fixed bottom-0 mx-auto px-2 sm:px-6
+    bg-white h-16 flex flex-row justify-around items-center pb-3 pt-2
+    border-t md:hidden w-full
     '>
-        <div className=' ml-2'>
-            <p className='text-xl font-medium text-gray-800 mb-0 mr-2 ml-4'>{content.price}</p>
-        </div>
+        <div className="max-w-xl flex flex-row w-full ">
+            <p className='text-xl font-medium text-gray-800 mb-0 mr-2 ml-6'>{content.price}</p>
         <a onClick={(e) => { e.preventDefault(); e.stopPropagation(); setModalOpen(true); }} 
                         aria-controls="modal"
                         className="btn
@@ -38,6 +37,7 @@ return (
                         type="submit">
                     {content.cta}
         </a>
+        </div>
     </div>
     {/* Whatsapp BTN */}
         <a href="https://api.whatsapp.com/send?phone=212708983350" className="whatsapp-button z-50" 

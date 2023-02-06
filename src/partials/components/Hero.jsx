@@ -18,7 +18,7 @@ export default function Hero(props) {
         ? (content = content.Arabic)
         : (content = content.French);
       return ( 
-        <section className='relative max-w-6xl mx-auto px-5 sm:px-6'>
+        <section className='relative max-w-6xl mx-auto px-2 sm:px-6 '>
                 <div class="grid grid-cols-1 gap-1 lg:gap-16 md:grid-cols-2 
                     pt-4 md:pb-2 pb-0 md:pt-8 ">
                     {/* Picture */}
