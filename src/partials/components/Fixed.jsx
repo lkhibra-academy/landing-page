@@ -8,7 +8,7 @@ export default function Fixed(props,src) {
     let content = {
         Arabic: {
             cta:"تسجيل",
-            price:"222dh/Mois",
+            price:"350dh/Mois",
         },
         French: {
 
@@ -26,13 +26,14 @@ return (
     border-t md:hidden w-full
     '>
         <div className="max-w-xl flex flex-row w-full ">
-            <p className='text-xl font-medium text-gray-800 mb-0 mr-2 ml-6'>{content.price}</p>
+            <p className='text-lg font-medium text-gray-800 mb-0 mr-2 ml-6 flex-none
+            text-center flex items-center'>{content.price}</p>
         <a onClick={(e) => { e.preventDefault(); e.stopPropagation(); setModalOpen(true); }} 
                         aria-controls="modal"
                         className="btn
-                        ml-2 mr-4 p-2.5 bg-red-primary 
+                        ml-2 mr-4 p-2.5 bg-red-primary flex-initial
                         text-white text-center w-full h-10
-                        flex justify-around items-center
+                        flex justify-around items-center 
                         " 
                         type="submit">
                     {content.cta}
