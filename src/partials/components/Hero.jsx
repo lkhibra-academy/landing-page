@@ -50,27 +50,26 @@ export default function Hero(props) {
                     flex flex-col justify-center items-center flex-shrink-0
                     " dir='rtl'>
                         <div className='sm:text-center md:text-right self-start p-4 '>
-                            <h2 class="text-2xl font-bold sm:text-4xl">{content.title}
+                            <h2 class="text-2xl font-bold sm:text-3xl">{content.title}
                             </h2>
 
                             <p class="mt-4 mb-1 text-gray-600 text-lg">
                             {content.subtitle}
                             </p>
-                            <div className='sm:max-w-xs mx-auto md:mx-0 max-w-none flex-row 
-                            sm:flex justify-start  sm:space-y-0 sm:py-0
-                            space-y-4 py-4'>
-                                <div>
+                            <div className=' mx-auto max-w-none 
+                            flex justify-around items-center flex-row 
+                             pt-4 
+                            '>
                                 <a href="#checkout" 
-                                    className="btn text-white bg-red-primary w-full sm:my-6 sm:w-auto sm:mb-0"
+                                    className="btn text-white bg-red-primary w-full px-0 
+                                    md:my-6  mb-0"
                                 >                                
                                 {content.cta1}</a>
-                                </div> 
-                                <div> 
-                                    <a className="btn text-white bg-gray-900 w-full sm:my-6 sm:mb-0 sm:w-auto sm:mr-4" href="#content">
+                                    <a className="btn text-white bg-gray-900 w-full px-0
+                                    md:my-6 mb-0 mr-4" href="#content">
                                        
                                         {content.cta2}
                                         </a>
-                                </div> 
                             </div>
                         </div>
                        
