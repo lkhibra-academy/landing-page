@@ -5,6 +5,7 @@ import Footer from '../partials/components/Footer';
 import Hero from '../partials/components/Hero';
 import Learn from '../partials/components/Learn';
 import Includes from '../partials/components/Includes';
+import Content from '../partials/components/Content';
 
 
 // import FeaturesBlocks from '../partials/programming/FeaturesBlocks';
@@ -29,6 +30,7 @@ export default function Home() {
       <Hero language="Arabic"/>
       <Learn language="Arabic"/>
       <Includes language="Arabic"/>
+      <Content language="Arabic"/>
         {/*  Page sections */}
         
 

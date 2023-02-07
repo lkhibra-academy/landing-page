@@ -20,7 +20,7 @@ export default function Includes(props) {
     
 return (
     <section className="relative max-w-3xl  
-        text-right py-4 px-7 mx-auto sm:px-10 md:pt-0">
+        text-right py-4 px-7 mx-auto sm:px-10 md:pt-0 md:hidden ">
         {/* Section header */}
             <h2 className="font-medium leading-tight text-lg md:text-xl text-gray-900">{content.title} </h2>
             <ul dir="rtl" className="text-gray-700 text-base md:text-lg list-inside pt-2 ">
