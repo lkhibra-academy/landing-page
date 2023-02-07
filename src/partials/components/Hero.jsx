@@ -22,7 +22,7 @@ export default function Hero(props) {
                 <div class="grid grid-cols-1 gap-1 lg:gap-16 md:grid-cols-2 
                     pt-4 md:pb-2 pb-0 md:pt-8 ">
                     {/* Picture */}
-                    {/* <div
+                    <div
                         class="relative h-80 overflow-hidden rounded-lg my-auto
                         max-h-56 md:max-h-full           
                         "
@@ -33,9 +33,9 @@ export default function Hero(props) {
                         src={heropic}
                         alt="woman smilling"
                         />
-                    </div> */}
+                    </div>
                     {/* Video */}
-                    <div
+                    {/* <div
                         class="relative h-80 overflow-hidden rounded-lg my-auto
                              bg-white  max-h-56 md:max-h-full
                         "
@@ -44,7 +44,7 @@ export default function Hero(props) {
                         // hidden md:block  
                     >
                     <iframe className="absolute w-full h-full"   src="https://www.youtube-nocookie.com/embed/vDHKoTyKLnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div> 
+                    </div>  */}
                     {/* Titles */}
                     <div class=" md:order-last  
                     flex flex-col justify-center items-center flex-shrink-0
