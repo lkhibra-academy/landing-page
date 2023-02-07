@@ -43,7 +43,6 @@ export default function Learn(props) {
 return (
     <section className="relative bg-white">
     <div className="relative max-w-6xl mx-auto px-4 sm:px-6 ">
-      <div className="">
 
         {/* Section header */}
         <div className="max-w-3xl mx-auto text-right py-2 px-2 sm:px-4 md:py-10 ">
@@ -77,7 +76,6 @@ return (
             </ul>
           </div>
         </div>
-    </div>
     </div>
     </section>
 );
