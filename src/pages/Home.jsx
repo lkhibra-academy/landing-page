@@ -7,6 +7,7 @@ import Learn from '../partials/components/Learn';
 import Includes from '../partials/components/Includes';
 import Content from '../partials/components/Content';
 import Need from '../partials/components/Need';
+import More from '../partials/components/More';
 
 
 // import FeaturesBlocks from '../partials/programming/FeaturesBlocks';
@@ -33,6 +34,7 @@ export default function Home() {
       <Includes language="Arabic"/>
       <Content language="Arabic"/>
       <Need language="Arabic"/>
+      <More language="Arabic"/>
         
 
       </main>
