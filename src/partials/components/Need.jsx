@@ -1,35 +1,61 @@
-const Need = () => (
-  <section className="relative">
+import React, { useState } from "react";
 
-    {/* Section background (needs .relative class on parent and next sibling elements) */}
+export default function Need(props) { 
+  let content = {
+    Arabic: {
+        title:"شنو خاصك باش تعلم ",
+        item1:"رغبة في التعلم",
+        item2:"حاسوب",
+        item3:"أنترنيت",
+    },
+    French: {
 
-    <div className="relative max-w-6xl mx-auto px-4 sm:px-6 ">
-      <div className="">
-
-        {/* Section header */}
-        <div className="max-w-3xl mx-auto py-10 md:py-18">
-            <h2 className="font-bold text-3xl md:text-4xl mb-10 text-center">شنو خاصك باش تعلم ؟</h2>
-            {/* <div className=" px-7 ">
-              <div className="h1 self-center">فقط</div> */}
-              <ul dir="rtl" className=" text-2xl text-bold text-right leading-normal 
-              max-w-sm mx-auto grid lg:gap-20 gap-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none
-              sm:text-3xl w-fit
-              ">
-                {/* flex flex-col justify-evenly justify-items-center md:justify-between md:flex-row 
-                grid md:grid-cols-3	grid-cols-1*/}
-                <li>  - 
-                رغبة في التعلم
-
-                </li>
-                <li>  - حاسوب</li>
-                <li>  - أنترنيت</li>
-              </ul>
-            {/* </div> */}
-            
-        </div>
-      </div>
-    </div>
-  </section>
-)
-
-export default Need
+    }
+  };
+  props.language === "Arabic"
+    ? (content = content.Arabic)
+    : (content = content.French);
+    return (
+    <section className="relative max-w-3xl  
+    text-right py-4 px-7 mx-auto sm:px-10 md:pt-0">
+      <details className=" group">
+                  <summary dir="rtl" className="flex items-center justify-between cursor-pointer 
+                  py-3 px-4 border-y border-y-gray-300 ">
+                    <p className="text-lg font-semibold text-gray-800">
+                    {content.title}
+                    </p>
+                    <i class="fa fa-chevron-down
+                    flex-shrink-0 p-1 text-center transition duration-300 group-open:hidden"></i>
+                    <i class="fa fa-chevron-up
+                    flex-shrink-0 p-1 text-center transition duration-300 hidden group-open:block"></i>
+                  </summary>
+                  <div className="py-3 px-4 leading-relaxed text-gray-700 
+                  border-b 
+                  border-b-gray-300 ">
+                  <ul dir="rtl" className="text-gray-700 text-lg md:text-lg list-inside pt-2 ">
+                    <li className=' flex items-center flex-row mb-1.5'>
+                        <i className="fa-solid fa-heart-circle-check w-8 p-1 ml-1 text-center"></i>
+                        <div className=''>
+                        <p>{content.item1}</p>
+                        </div>
+                    </li>
+                    <li className=' flex items-center flex-row mb-1.5'>
+                        <i className="fa-solid fa-laptop w-8 p-1 ml-1 text-center"></i>
+                        <div className=''>
+                        <p>{content.item2}</p>
+                        </div>
+                    </li>
+                    <li className=' flex items-center flex-row mb-1.5'>
+                        <i className="fa-solid fa-wifi w-8 p-1 ml-1 text-center"></i>
+                        <div className=''>
+                        <p>{content.item3}</p>
+                        </div>
+                    </li>
+                  </ul>
+                  </div>
+                </details>
+    </section>
+  );
+  
+ }
+  

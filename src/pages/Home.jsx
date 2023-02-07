@@ -6,6 +6,7 @@ import Hero from '../partials/components/Hero';
 import Learn from '../partials/components/Learn';
 import Includes from '../partials/components/Includes';
 import Content from '../partials/components/Content';
+import Need from '../partials/components/Need';
 
 
 // import FeaturesBlocks from '../partials/programming/FeaturesBlocks';
@@ -31,7 +32,7 @@ export default function Home() {
       <Learn language="Arabic"/>
       <Includes language="Arabic"/>
       <Content language="Arabic"/>
-        {/*  Page sections */}
+      <Need language="Arabic"/>
         
 
       </main>
