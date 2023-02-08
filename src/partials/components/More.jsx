@@ -60,7 +60,7 @@ export default function More(props) {
                 <div className='flex-shrink-0 bg-white rounded-lg 
                 outline outline-1 outline-red-primary p-3 w-10 h-10
                 flex justify-center items-center'>
-                <i class=" fa fa-users text-red-primary text-center " aria-hidden="true"></i>
+                <i class=" fa fa-graduation-cap text-red-primary text-center " aria-hidden="true"></i>
                 </div>
               </li>
               <li className="flex items-start text-right ml-auto">
