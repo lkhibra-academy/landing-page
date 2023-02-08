@@ -21,7 +21,7 @@ export default function Need(props) {
       <details className=" group">
                   <summary dir="rtl" className="flex items-center justify-between cursor-pointer 
                   py-3 px-4 border-y border-y-gray-300 ">
-                    <p className="text-lg font-semibold text-gray-800">
+                    <p className="text-xl font-semibold text-gray-800">
                     {content.title}
                     </p>
                     <i class="fa fa-chevron-down
