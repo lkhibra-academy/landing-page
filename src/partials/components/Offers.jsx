@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Modal from '../../utils/Modal';
-import LeadForm from '../components/LeadForm';
+import LeadForm from './LeadForm';
 
-export default function Plans({src1}) {
+export default function Offers({src1}) {
     const [ModalOpen, setModalOpen] = useState(false);
   return (
-    <section className='relative max-w-6xl mx-auto px-0 sm:px-6 mb-4 md:mt-2 mt-6'>
+    <section className='relative max-w-6xl mx-auto px-0 sm:px-6 mb-4 mt-2'>
         <div className="relative items-center w-fit mx-auto px-3 md:px-1 lg:px-16 max-w-7xl ">
             <div className="relative md:p-2 overflow-hidden 
              md:grid md:grid-cols-2 
@@ -34,8 +34,8 @@ export default function Plans({src1}) {
                     تعلم أساسيات البرمجة والمعارف المهمة لبدأ رحلتك في المجال 
                     </p>
                     {/* <!-- Feature list --> */}
-                    <ul role="list" className="pt-3 mt-2 space-y-2 border-t">
-                    {/* <span className="text-xl font-medium text-white">ماذا يحتوي ؟</span> */}
+
+                    {/* <ul role="list" className="pt-3 mt-2 space-y-2 border-t">
                         <li className="flex">
                             <div className="inline-flex items-center w-6 h-6 bg-red-primary rounded-xl">
                             <svg className="flex-shrink-0 w-4 h-4 mx-auto text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -85,21 +85,26 @@ export default function Plans({src1}) {
                             <span className=''>- أساسيات بايثون </span><br />
                             </span>
                         </li>
-                    </ul>
+                    </ul> */}
                 </div>
+
+{/* cta */}
                 <div className="mt-4 rounded-lg">
                     {/* <a href="#" type="highlight" className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white"> Get Started </a> */}
-                    <p><span className='text-red-primary font-medium text-xs md:text-sm'> * </span>
+                    {/* <p><span className='text-red-primary font-medium text-xs md:text-sm'> * </span>
                     <span className='font-light text-xs md:text-sm text-neutral-600'>
                         مع امكانية الإنتقال إلى عرض 3 أشهر بعد انتهاء شهر الأول 
-                    </span></p>
-                   <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); setModalOpen(true); }} 
+                    </span></p> */}
+
+                   <a onClick={(e) => { e.preventDefault(); e.stopPropagation(); setModalOpen(true); }} 
                         aria-controls="modal"
-                        className="rounded-lg text-lg mt-2 font-normal p-2.5 bg-red-primary text-white w-full block text-center transition duration-500 ease-in-out transform border-2 border-white shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 " 
-                        type="submit">
-                    تسجيل
-                    </button> 
+                        className="flex justify-around items-center  
+                        rounded-md text-lg mt-2 font-normal p-2 bg-red-primary text-white w-full
+                         text-center " 
+                        type="submit"> تسجيل
+                    </a> 
                 </div>
+                
                 </div>
                 
                 {/* right card */}
@@ -119,8 +124,7 @@ export default function Plans({src1}) {
                     تعلم كل ما يخص البرمجة بالبايثون لكي تفتح ابواب جديدة 
                     </p>
                     {/* <!-- Feature list --> */}
-                    <ul role="list" className="pt-3 mt-2 space-y-2 border-t">
-                    {/* <span className="text-xl font-medium text-white">ماذا يحتوي ؟</span> */}
+                    {/* <ul role="list" className="pt-3 mt-2 space-y-2 border-t">
                         <li className="flex">
                             <div className="inline-flex items-center w-6 h-6 bg-white rounded-xl">
                             <svg className="flex-shrink-0 w-4 h-4 mx-auto text-neutral-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -178,15 +182,17 @@ export default function Plans({src1}) {
                             </span>
                         </li>
                         
-                    </ul>
+                    </ul> */}
                 </div>
                 <div className="mt-4 rounded-lg">
                     {/* <a href="/pricing" type="highlight" className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white"> Get started </a> */}
-                    <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); setModalOpen(true); }} 
+                    <a onClick={(e) => { e.preventDefault(); e.stopPropagation(); setModalOpen(true); }} 
                         aria-controls="modal"
-                        className="rounded-lg bg-black text-lg font-normal  p-2.5 text-red-primary bg-white w-full block" type="submit">
-                    تسجيل
-                    </button>
+                        className="flex justify-around items-center  
+                        rounded-md text-lg mt-2 font-medium p-2 text-red-primary bg-white w-full
+                         text-center " 
+                        type="submit"> تسجيل
+                    </a> 
                 </div>
                 </div>
 
