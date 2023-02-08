@@ -4,8 +4,24 @@ import React from 'react';
 export default function More(props) {
   let content = {
     Arabic: {
-        cta:"تسجيل",
-        price:"350dh/Mois",
+        title:"أكثر من مجرد تدريب",
+        itemI:{
+          title:"شهادة معتمدة",
+          content:"مني كاتسالي تدريب كتاخد شهادة معتمدة من عندنا لي كاتفتح ليك فرص جداد فحياتك"
+        },
+        itemII:{
+          title:"متابعة شخصية",
+          content:" المدرس كايبقى معاك على اتصال فمجموعة واتساب باش يحل مشاكل لي اتطيح فيهم أثناء تعلم"
+        },
+        itemIII:{
+          title:"مشاريع برمجية",
+          content:"التدريب تطبيقي 100٪ من اول حصة ونتا كاتخدم على مشاريع برمجية لي اتقدر تعاونك فحياتك العملية "
+        },
+        itemIV:{
+          title:"تدريب شامل ",
+          content:" هاد التدريب ما فيش هير البرمجة بال فيع العديد من Soft skills  لي ها تنفعك باش تحقق أهدافك"
+        },
+
     },
     French: {
 
@@ -19,55 +35,60 @@ export default function More(props) {
   return (
       <div className="">
         <section className="relative max-w-3xl mx-auto px-8 py-8 sm:px-12 lg:px-8">
-              <p className="font-bold leading-tight text-2xl md:text-3xl text-center ">أكثر من مجرد تدريب</p>
-            <ul className="grid grid-cols-1 gap-8 mt-6 md:gap-12 md:mt-16 md:grid-cols-2">
+              <p className="font-bold leading-tight text-2xl md:text-3xl text-center "> {content.title}</p>
+            <ul className="grid grid-cols-1 gap-4 mt-6 md:gap-12 md:mt-16 md:grid-cols-2">
               {/* items */}
 
-              <li className="flex items-start text-right">
+              <li className="flex items-start text-right ml-auto">
                 <div dir="rtl" className="mr-4">
-                  <h2 className="text-lg font-semibold leading-tight">متابعة شخصية</h2>
+                  <p className="text-lg font-semibold leading-tight">{content.itemII.title} </p>
                   <p className="mt-1 text-base font-normal ">
-                  المدرس كايبقى معاك على اتصال فمجموعة واتساب باش يحل مشاكل لي اتطيح فيهم أثناء تعلم                  
-                  </p>
+                  {content.itemII.content}                  </p>
                 </div>
-                <span className="flex-shrink-0 bg-white rounded-lg outline outline-1 outline-red-primary">
-                  <i class="fa fa-users text-red-primary text-center m-3" aria-hidden="true"></i>
-                </span>
-              </li> 
-              <li className="flex items-start text-right">
-                <div dir="rtl" className="mr-4">
-                  <h2 className="text-lg font-semibold leading-tight">متابعة شخصية</h2>
-                  <p className="mt-1 text-base font-normal ">
-                  المدرس كايبقى معاك على اتصال فمجموعة واتساب باش يحل مشاكل لي اتطيح فيهم أثناء تعلم                  
-                  </p>
+                <div className='flex-shrink-0 bg-white rounded-lg 
+                outline outline-1 outline-red-primary p-3 w-10 h-10
+                flex justify-center items-center'>
+                <i class=" fa fa-users text-red-primary text-center " aria-hidden="true"></i>
                 </div>
-                <span className="flex-shrink-0 bg-white rounded-lg outline outline-1 outline-red-primary">
-                  <i class="fa fa-users text-red-primary text-center m-3" aria-hidden="true"></i>
-                </span>
               </li>
-              <li className="flex items-start text-right">
+              <li className="flex items-start text-right ml-auto">
                 <div dir="rtl" className="mr-4">
-                  <h2 className="text-lg font-semibold leading-tight">متابعة شخصية</h2>
+                  <p className="text-lg font-semibold leading-tight">{content.itemI.title} </p>
                   <p className="mt-1 text-base font-normal ">
-                  المدرس كايبقى معاك على اتصال فمجموعة واتساب باش يحل مشاكل لي اتطيح فيهم أثناء تعلم                  
-                  </p>
+                  {content.itemI.content}                  </p>
                 </div>
-                <span className="flex-shrink-0 bg-white rounded-lg outline outline-1 outline-red-primary">
-                  <i class="fa fa-users text-red-primary text-center m-3" aria-hidden="true"></i>
-                </span>
+                <div className='flex-shrink-0 bg-white rounded-lg 
+                outline outline-1 outline-red-primary p-3 w-10 h-10
+                flex justify-center items-center'>
+                <i class=" fa fa-users text-red-primary text-center " aria-hidden="true"></i>
+                </div>
               </li>
-              <li className="flex items-start text-right">
+              <li className="flex items-start text-right ml-auto">
+
                 <div dir="rtl" className="mr-4">
-                  <h2 className="text-lg font-semibold leading-tight">متابعة شخصية</h2>
-                  <p className="mt-1 text-base font-normal ">
-                  المدرس كايبقى معاك على اتصال فمجموعة واتساب باش يحل مشاكل لي اتطيح فيهم أثناء تعلم                  
-                  </p>
+                  <p className="text-lg font-semibold leading-tight">{content.itemIII.title} </p>
+                  <p className="mt-1 text-base font-normal ">{content.itemIII.content}</p>
                 </div>
-                <span className="flex-shrink-0 bg-white rounded-lg outline outline-1 outline-red-primary">
-                  <i class="fa fa-users text-red-primary text-center m-3" aria-hidden="true"></i>
-                </span>
+                <div className='flex-shrink-0 bg-white rounded-lg 
+                outline outline-1 outline-red-primary p-3 w-10 h-10
+                flex justify-center items-center'>
+                <i class=" fa fa-laptop-code text-red-primary text-center " aria-hidden="true"></i>
+                </div>
+                
               </li>
-              
+              <li className="flex items-start text-right ml-auto">
+                <div dir="rtl" className="mr-4">
+                  <p className="text-lg font-semibold leading-tight">{content.itemIV.title} </p>
+                  <p className="mt-1 text-base font-normal ">
+                  {content.itemIV.content}                  </p>
+                </div>
+                <div className='flex-shrink-0 bg-white rounded-lg 
+                outline outline-1 outline-red-primary p-3 w-10 h-10
+                flex justify-center items-center'>
+                <i class=" fa fa-user-graduate text-red-primary text-center " aria-hidden="true"></i>
+                </div>
+              </li>
+
           </ul>
         </section>
       </div>
