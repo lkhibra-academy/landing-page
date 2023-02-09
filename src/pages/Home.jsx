@@ -29,8 +29,8 @@ export default function Home() {
       <ForWho language="Arabic"/>
       <Content language="Arabic"/>
       <More language="Arabic"/>
-      <Need language="Arabic"/>
       <Testimonials />
+      <Need language="Arabic"/>
       <Offers />
       {/* <TestimonyCard /> */}
       <Faq />
