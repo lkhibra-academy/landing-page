@@ -5,14 +5,14 @@ export default function FaqBlock({qst,rpns1,rpns2,rpns3,rpns4}) {
 return ( 
     <details dir="rtl" className="group rounded-lg border border-gray-200 shadow-md">
                       <summary
-                        className="flex items-center justify-between p-4 rounded-lg cursor-pointer "
+                        className="flex items-center justify-between p-3 rounded-lg cursor-pointer "
                       >
-                        <h5 className="font-bold  text-gray-900">
+                        <h5 className="font-bold  text-gray-800">
                         {qst} 
                         </h5>
 
                         <svg
-                          className="flex-shrink-0 ml-1.5 w-5 h-5 transition duration-300 group-open:-rotate-180"
+                          className="flex-shrink-0 mx-1 w-5 h-5 transition duration-300 group-open:-rotate-180"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"

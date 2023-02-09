@@ -23,7 +23,7 @@ return (
     {/* Buttom Bar */}
     <div className='fixed bottom-0 mx-auto px-2 sm:px-6
     bg-white h-16 flex flex-row justify-around items-center pb-3 pt-2
-    border-t md:hidden w-full
+    border-t md:hidden w-full z-50
     '>
         <div className="max-w-xl flex flex-row w-full ">
             <p className='text-lg font-medium text-gray-800 mb-0 mr-2 ml-6 flex-none

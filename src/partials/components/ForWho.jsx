@@ -43,8 +43,8 @@ export default function ForWho(props) {
         ? (content = content.Arabic)
         : (content = content.French);
   return (
-    <section id="content" className="relative 
-    px-6 sm:px-12 py-4 md:py-12 ">
+    <section className="relative 
+    px-6 sm:px-12 md:py-12 my-3">
     
     <div className="relative md:gap-6
     max-w-3xl md:max-w-none md:w-full 
