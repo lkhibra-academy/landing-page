@@ -60,7 +60,7 @@ export default function Hero(props) {
                             flex justify-around items-center flex-row 
                              pt-4 
                             '>
-                                <a href="#checkout" 
+                                <a href="#offers" 
                                     className="btn text-white bg-red-primary w-full px-0 
                                     md:my-6  mb-0"
                                 >                                

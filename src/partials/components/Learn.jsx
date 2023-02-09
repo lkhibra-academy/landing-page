@@ -6,27 +6,43 @@ export default function Learn(props) {
     let content = {
         Arabic: {
             title:": شنو غادي تعلم ",
-            itemI: {
+            itemII: {
                 I:'الخوارزميات وهياكل البيانات ',
                 II:'Algorithms & Data Structure'
             },
-            itemII: {
+            itemI: {
                 I:" أساسيات البرمجة بلغة البايثون  ",
-                II:" "
+                II:"Python Programming Language"
             },
             itemIII: {
                 I:"                أساسيات البرمجة كائنية التوجه                 ",
                 II:" Object-Oriented Programming"
             },
             itemIV: {
-                I:"                 أساسيات البرمجة الوضيفية                 ",
-                II:" Functional Programming"
+                I:"كيفية استخدام مكتبات البايثون",
+                II:"Pandas, matplotlib, SciKitLearn"
             },
             itemV: {
-                I:" ",
-                II:" "
+                I:"أساسيات الذكاء الإصطناعي",
+                II:"Basics of Machine Learning"
             },
             itemVI: {
+                I:" تصاوب برامجك الخاصة",
+                II:" "
+            },
+            itemVII: {
+                I:" تنضم وقتك وتزيد انتاجيتك ",
+                II:" "
+            },
+            itemVIII: {
+                I:"  تطور مهارة حل المشاكل",
+                II:" "
+            },
+            itemIX: {
+                I:" تحسن التركيز ديالك و الإنضباط أثناء تعلم",
+                II:" "
+            },
+            itemX: {
                 I:" ",
                 II:" "
             },
@@ -49,30 +65,61 @@ return (
           <div className=" p-3 rounded-sm border shadow-sm ">
             <h2 className="font-bold leading-tight text-2xl md:text-3xl">{content.title} </h2>
             <ul dir="rtl" className="text-gray-700 text-base md:text-xl list-inside pt-4">
-                <li className=' flex items-start flex-row mb-1'>
+                <li className=' flex items-start flex-row mb-1.5'>
                     <FontAwesomeIcon icon={faCheck} className=" px-2 py-1" />
                     <div className=''>
                     <p>{content.itemI.I}<br className='md:hidden'></br>{content.itemI.II}</p>
                     </div>
                 </li>
-                <li className=' flex items-center flex-row mb-1'>
+                <li className=' flex items-start flex-row mb-1.5'>
                     <FontAwesomeIcon icon={faCheck} className=" px-2 py-1" />
                     <div className=''>
                     <p>{content.itemII.I}<br className='md:hidden'></br>{content.itemII.II}</p>
                     </div>
                 </li>
-                <li className=' flex items-start flex-row mb-1'>
+                <li className=' flex items-start flex-row mb-1.5'>
                     <FontAwesomeIcon icon={faCheck} className=" px-2 py-1" />
                     <div className=''>
                     <p>{content.itemIII.I}<br className='md:hidden'></br>{content.itemIII.II}</p>
                     </div>
                 </li>
-                <li className=' flex items-start flex-row mb-1'>
+                <li className=' flex items-start flex-row mb-1.5'>
                     <FontAwesomeIcon icon={faCheck} className=" px-2 py-1" />
                     <div className=''>
                     <p>{content.itemIV.I}<br className='md:hidden'></br>{content.itemIV.II}</p>
                     </div>
                 </li>
+                <li className=' flex items-start flex-row mb-1.5'>
+                    <FontAwesomeIcon icon={faCheck} className=" px-2 py-1" />
+                    <div className=''>
+                    <p>{content.itemV.I}<br className='md:hidden'></br>{content.itemV.II}</p>
+                    </div>
+                </li>
+                <li className=' flex items-start flex-row mb-1.5'>
+                    <FontAwesomeIcon icon={faCheck} className=" px-2 py-1" />
+                    <div className=''>
+                    <p>{content.itemVI.I}<br className='md:hidden'></br>{content.itemVI.II}</p>
+                    </div>
+                </li>
+                <li className=' flex items-start flex-row mb-1.5'>
+                    <FontAwesomeIcon icon={faCheck} className=" px-2 py-1" />
+                    <div className=''>
+                    <p>{content.itemVII.I}<br className='md:hidden'></br>{content.itemVII.II}</p>
+                    </div>
+                </li>
+                <li className=' flex items-start flex-row mb-1.5'>
+                    <FontAwesomeIcon icon={faCheck} className=" px-2 py-1" />
+                    <div className=''>
+                    <p>{content.itemVIII.I}<br className='md:hidden'></br>{content.itemVIII.II}</p>
+                    </div>
+                </li>
+                <li className=' flex items-start flex-row mb-1.5'>
+                    <FontAwesomeIcon icon={faCheck} className=" px-2 py-1" />
+                    <div className=''>
+                    <p>{content.itemIX.I}<br className='md:hidden'></br>{content.itemIX.II}</p>
+                    </div>
+                </li>
+                
             </ul>
           </div>
         </div>

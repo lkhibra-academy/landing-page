@@ -5,7 +5,7 @@ import LeadForm from './LeadForm';
 export default function Offers({src1}) {
     const [ModalOpen, setModalOpen] = useState(false);
   return (
-    <section className='relative max-w-6xl mx-auto px-0 sm:px-6 mb-4 mt-2'>
+    <section id="offers" className='relative max-w-6xl mx-auto px-0 sm:px-6 mb-4 mt-2'>
         <div className="relative items-center w-fit mx-auto px-3 md:px-1 lg:px-16 max-w-7xl ">
             <div className="relative md:p-2 overflow-hidden 
              md:grid md:grid-cols-2 

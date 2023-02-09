@@ -4,11 +4,13 @@ import React, {useState} from 'react';
 export default function Includes(props) { 
     let content = {
         Arabic: {
-            title:": تشمل هذه الدورة ",
-            item1:" شنو غادي تعلم ",
-            item2:" شنو غادي تعلم ",
-            item3:" شنو غادي تعلم ",
-            item4:" شنو غادي تعلم ",
+            title:": يتضمن  هذا تدريب ",
+            item1:"12 حصة برمجة (Google Meet)",
+            item2:"6 حصص Soft skills",
+            item3:"10 مشاريع برمجية ",
+            item4:"شهادة معتمدة",
+            item5:"متابعة شخصية",
+            item6:"أكتر من 20 ملفات دروس لتحميل",
         },
         French: {
 
@@ -26,7 +28,7 @@ return (
             <ul dir="rtl" className="text-gray-700 text-base md:text-lg list-inside pt-2 ">
 
                 <li className=' flex items-start flex-row mb-1'>
-                    <i className="fa-solid fa-display  w-8 p-1 text-center"></i>
+                    <i className="fa-solid fa-users-rectangle  w-8 p-1 text-center"></i>
                     <div className=''>
                     <p>{content.item1}</p>
                     </div>
@@ -38,19 +40,31 @@ return (
                     </div>
                 </li>
                 <li className=' flex items-start flex-row mb-1'>
-                    <i className="fa-solid fa-check w-8 p-1 text-center"></i>
+                    <i className="fa-solid fa-code w-8 p-1 text-center"></i>
                     <div className=''>
                     <p>{content.item3}</p>
                     </div>
                 </li>
                 <li className=' flex items-start flex-row mb-1'>
-                    <i className="fa-regular fa-file w-8 p-1 text-center"></i>
+                    <i className="fa-solid fa-award w-8 p-1 text-center"></i>
                     <div className=''>
                     <p>{content.item4}</p>
                     </div>
                 </li>
-                {/*
-                 <i className="fa-solid fa-user-graduate p-1 ml-1"></i>
+                <li className=' flex items-start flex-row mb-1'>
+                    <i className="fa-brands fa-whatsapp w-8 p-1 text-center"></i>
+                    <div className=''>
+                    <p>{content.item5}</p>
+                    </div>
+                </li>
+                <li className=' flex items-start flex-row mb-1'>
+                    <i className="fa-regular fa-file-code w-8 p-1 text-center"></i>
+                    <div className=''>
+                    <p>{content.item6}</p>
+                    </div>
+                </li>
+                {/* <div className='space-x-3'>
+                <i className="fa-solid fa-user-graduate p-1 ml-1"></i>
                 <i className="fa-solid fa-award"></i>
                 <i className="fa-regular fa-file"></i>
                 <i className="fa-solid fa-file"></i>
@@ -76,10 +90,10 @@ return (
                 <i className="fa-solid fa-headset"></i>
                 <i className="fa-solid fa-users-rectangle"></i>
                 <i className="fa-regular fa-file-code"></i>
+                </div> */}
                 
                 
-                
-                */}
+               
                 
             </ul>
     </section>
