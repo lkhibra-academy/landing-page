@@ -7,32 +7,33 @@ export default function ForWho(props) {
             ProfileI:{
                 title:"خريجي المعلوميات",
                 goal:"الهدف : تطوير مهاراتك",
-                item2:" ",
-                item3:" ",
-                item4:" ",
-                item5:" ",
-                item6:" ",
-                item7:" ",
+                item2:"إضافة بايثون إلى سيرتك ذاتية",
+                item3:"الحصول على شهادة معتمدة",
+                item4:"العمل على أكثر من 10 مشاريع برمجية ",
+                item5:" تعلم الأساسيات من أجل دخول مجالات متقدمة :  ذكاء الإصطناعي و تطوير الويب",
+                item6:" خطوتك أولى نحو العمل كمطور بايثون ",
             },
             ProfileII:{
                 title:"خريجين في غير المعلوميات",                
                 goal:"الهدف : فتح فرص جديدة",
-                item2:"مجموعة من 5 مشاريع",
-                item3:"مجموعة من 5 مشاريع ",
-                item4:"مجموعة من 5 مشاريع ",
-                item5:"مجموعة من 5 مشاريعمجموعة من 5 مشاريعمجموعة من 5 مشاريعمجموعة من 5 مشاريعمجموعة من 5 مشاريع  ",
-                item6:" ",
-                item7:" ", 
+                item1:"التدريب لايحتاج أي تجربة سابقة في البرمجة ",
+                item2:"إضافة مهارات البرمجة لسيرتك ذاتية",
+                item3:"الحصول على شهادة معتمدة",
+                item4:" خطوتك أولى نحو العمل كمطور بايثون ",
+                item5:"تطوير مهارات ناعمة Soft Skills", 
+                item6:" تعلم جميع الأساسيات لبدأ رحلتك غي مجال المعلوميات والبرمجة",
             },
             ProfileIII:{
                 title:"طلاب",
                 goal:"الهدف : ابدأ حياتك المهنية",
-                item2:"  ",
-                item3:"  ",
-                item4:"  ",
-                item5:"  ",
-                item6:" ",
-                item7:" ",
+                item1:"التدريب لايحتاج أي تجربة سابقة في البرمجة ",
+                item2:"التدريب لايحتاج أي تجربة سابقة في البرمجة ",
+                item3:"إضافة مهارات البرمجة لسيرتك ذاتية",
+                item4:"الحصول على شهادة معتمدة",
+                item5:"العمل على أكثر من 10 مشاريع برمجية ",
+                item6:"تطوير مهارات ناعمة Soft Skills",
+                item7:" خطوتك أولى نحو العمل كمطور بايثون ",
+                item8:" تعلم الأساسيات من أجل دخول مجالات متقدمة :  ذكاء الإصطناعي و تطوير الويب",
             },
         },
         French: {
@@ -102,12 +103,7 @@ export default function ForWho(props) {
                         <p>{content.ProfileI.item6}</p>
                         </div>
                     </li>
-                    <li className=' flex items-start flex-row mb-1.5'>
-                        <i className="fa-solid fa-check w-8 p-1 ml-1 text-center"></i>
-                        <div className=''>
-                        <p>{content.ProfileI.item7}</p>
-                        </div>
-                    </li>
+                    
                     </ul>
                   </div>
                 </details>
@@ -153,12 +149,6 @@ export default function ForWho(props) {
                         <i className="fa-solid fa-check w-8 p-1 ml-1 text-center"></i>
                         <div className=''>
                         <p>{content.ProfileII.item6}</p>
-                        </div>
-                    </li>
-                    <li className=' flex items-start flex-row mb-1.5'>
-                        <i className="fa-solid fa-check w-8 p-1 ml-1 text-center"></i>
-                        <div className=''>
-                        <p>{content.ProfileII.item7}</p>
                         </div>
                     </li>
                     </ul>
@@ -213,6 +203,12 @@ export default function ForWho(props) {
                         <i className="fa-solid fa-check w-8 p-1 ml-1 text-center"></i>
                         <div className=''>
                         <p>{content.ProfileIII.item7}</p>
+                        </div>
+                    </li>
+                    <li className=' flex items-start flex-row mb-1.5'>
+                        <i className="fa-solid fa-check w-8 p-1 ml-1 text-center"></i>
+                        <div className=''>
+                        <p>{content.ProfileIII.item8}</p>
                         </div>
                     </li>
                     </ul>
