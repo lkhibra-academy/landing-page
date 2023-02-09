@@ -18,7 +18,7 @@ import Offers from '../partials/components/Offers';
 // import HeroTraining from '../partials/programming/HeroTraining';
 // import Plans from '../partials/programming/Plans';
 // import FaqTraining from '../partials/programming/FaqTraining';
-// import Testimonials from '../partials/components/Testimonials';
+import Testimonials from '../partials/components/Testimonials';
 
 
 export default function Home() {
@@ -37,6 +37,8 @@ export default function Home() {
       <Need language="Arabic"/>
       <More language="Arabic"/>
       <Offers />
+      {/* <TestimonyCard /> */}
+      <Testimonials />
 
       </main>
 

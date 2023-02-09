@@ -76,7 +76,7 @@ export default function LeadForm({src}) {
                         <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="email">
                             <span>Choose the Training</span><span>اختر التدريب </span>
                         </label>
-                        <select id="training" ref={training} class="mb-2  pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" required>
+                        <select id="training" ref={training} className="mb-2  pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" required>
                             {/* <option value="Programming" >
                             </option> 
                             <option value="Programming">Programming Training</option>
@@ -86,20 +86,20 @@ export default function LeadForm({src}) {
                         <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="email">
                             <span>Choose the offer</span><span>اختر العرض </span>
                         </label>
-                        <select id="offer" ref={offer} class="mb-2  pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" required>
+                        <select id="offer" ref={offer} className="mb-2  pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" required>
                             <option value="789">
                                     789dh - 
                                     ثلاثة أشهر كاملة
                                     
                             </option>
-                            <option value="299" selected>
+                            <option value="299" defaultValue>
                                 299dh - 
                                  شهر فقط 
                             </option>
                         </select> 
                     </div> */}
-                        <select id="traffic" ref={traffic} class="hidden">
-                            <option value={src} selected>
+                        <select id="traffic" ref={traffic} className="hidden">
+                            <option value={src} defaultValue>
                             </option>
                         </select> 
                     <div className="">

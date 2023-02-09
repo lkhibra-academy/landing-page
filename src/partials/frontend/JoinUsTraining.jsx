@@ -19,10 +19,10 @@ export default function JoinUsTraining() {
                       </p>
                   </div>
               </div>
-              <div class="flex flex-wrap justify-center mt-8 gap-4">
+              <div className="flex flex-wrap justify-center mt-8 gap-4">
                     <Link onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} 
                         aria-controls="modal"
-                        class="block w-full px-12 py-3 text-base font-medium text-white bg-red-primary rounded shadow sm:w-auto "
+                        className="block w-full px-12 py-3 text-base font-medium text-white bg-red-primary rounded shadow sm:w-auto "
                          to={"/Training"}>
                     ابدأ الآن
                     </Link>  

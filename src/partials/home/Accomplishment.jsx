@@ -8,7 +8,7 @@ export default function Accomplishment() {
         <div className='relative max-w-6xl mx-auto px-5 sm:px-6 py-12 
         '>
             {/* // sm:flex sm:justify-center sm:items-center */}
-            <div class=" 
+            <div className=" 
                 grid gap-6 sm:grid-cols-3 grid-cols-1 
                 ">
                         {/* bg-red-light     */}

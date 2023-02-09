@@ -24,9 +24,9 @@ export default function Need(props) {
                     <p className="text-xl font-semibold text-gray-800">
                     {content.title}
                     </p>
-                    <i class="fa fa-chevron-down
+                    <i className="fa fa-chevron-down
                     flex-shrink-0 p-1 text-center transition duration-300 group-open:hidden"></i>
-                    <i class="fa fa-chevron-up
+                    <i className="fa fa-chevron-up
                     flex-shrink-0 p-1 text-center transition duration-300 hidden group-open:block"></i>
                   </summary>
                   <div className="py-3 px-4 leading-relaxed text-gray-700 

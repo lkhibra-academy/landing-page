@@ -8,30 +8,30 @@ import { Link } from 'react-router-dom';
 export default function HeroHome() { 
       return ( 
         <section className='relative max-w-6xl mx-auto px-5 sm:px-6'>
-                <div class="grid grid-cols-1 gap-1 lg:gap-16 md:grid-cols-2 
+                <div className="grid grid-cols-1 gap-1 lg:gap-16 md:grid-cols-2 
                     pt-4 md:pb-2 pb-0 md:pt-8 ">
                     {/* Picture */}
                     <div
-                        class="relative h-80 overflow-hidden rounded-lg my-auto
+                        className="relative h-80 overflow-hidden rounded-lg my-auto
                         max-h-56 md:max-h-full           
                         "
                         // hidden md:block 
                     >
                         <img
-                        class="absolute inset-0 h-full mx-auto min-w-fit"
+                        className="absolute inset-0 h-full mx-auto min-w-fit"
                         src={heropic}
                         alt="woman smilling"
                         />
                     </div>
 
                     {/* Titles */}
-                    <div class=" md:order-last  
+                    <div className=" md:order-last  
                     flex flex-col justify-center items-center flex-shrink-0 
                     " dir='rtl'>
                         <div className='text-center lg:text-right  self-start p-4'>
-                            <h2 class="text-3xl font-bold sm:text-4xl">تعلم بدون حدود </h2>
+                            <h2 className="text-3xl font-bold sm:text-4xl">تعلم بدون حدود </h2>
 
-                            <p class="mt-4 text-gray-600 text-lg">
+                            <p className="mt-4 text-gray-600 text-lg">
                             طور مهاراتك في مجالات البرمجة والتصميم عن طريق تدريبات 100٪ تطبيقية ومتابعة شخصية مع المدرب. 
                             </p>
                             <Link to="/Frontend#checkout"
@@ -56,7 +56,7 @@ export default function HeroHome() {
                                 {/* Item */}
                                 <div className="flex items-center justify-center py-2 md:col-auto">
                                 <img
-                                    class="object-cover"
+                                    className="object-cover"
                                     alt="logo 1" 
                                     src={fsr}
                                     width="150"
@@ -65,7 +65,7 @@ export default function HeroHome() {
                                 {/* Item */}
                                 <div className="flex items-center justify-center py-2 md:col-auto">
                                 <img
-                                    class="object-cover "
+                                    className="object-cover "
                                     alt="logo 1" 
                                     src={lions}
                                     width="150"
@@ -74,7 +74,7 @@ export default function HeroHome() {
                                 {/* Item */}
                                 <div className="flex items-center justify-center py-2 md:col-auto">
                                 <img
-                                    class="object-cover"
+                                    className="object-cover"
                                     alt="logo 1" 
                                     src={souissi}
                                     width="150"
@@ -83,7 +83,7 @@ export default function HeroHome() {
                                 {/* Item */}
                                 <div className="flex items-center justify-center py-2 md:col-auto">
                                 <img
-                                    class="object-cover"
+                                    className="object-cover"
                                     alt="logo 1" 
                                     src={iscae}
                                     width="150"

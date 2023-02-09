@@ -51,31 +51,31 @@ return (
                 </li>
                 {/*
                  <i className="fa-solid fa-user-graduate p-1 ml-1"></i>
-                <i class="fa-solid fa-award"></i>
-                <i class="fa-regular fa-file"></i>
-                <i class="fa-solid fa-file"></i>
-                <i class="fa-brands fa-google"></i>
-                <i class="fa-solid fa-book"></i>
-                <i class="fa-solid fa-video"></i>
-                <i class="fa-solid fa-comments"></i>
-                <i class="fa-regular fa-comments"></i>
-                <i class="fa-solid fa-code"></i>
-                <i class="fa-solid fa-wifi"></i>
-                <i class="fa-solid fa-key"></i>
-                <i class="fa-solid fa-briefcase"></i>
-                <i class="fa-solid fa-handshake"></i>
-                <i class="fa-regular fa-handshake"></i>
-                <i class="fa-solid fa-users"></i>
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-solid fa-laptop"></i>
-                <i class="fa-solid fa-desktop"></i>
-                <i class="fa-regular fa-file-pdf"></i>
-                <i class="fa-solid fa-file-pdf"></i>
-                <i class="fa-regular fa-square-check"></i>
-                <i class="fa-brands fa-python"></i>
-                <i class="fa-solid fa-headset"></i>
-                <i class="fa-solid fa-users-rectangle"></i>
-                <i class="fa-regular fa-file-code"></i>
+                <i className="fa-solid fa-award"></i>
+                <i className="fa-regular fa-file"></i>
+                <i className="fa-solid fa-file"></i>
+                <i className="fa-brands fa-google"></i>
+                <i className="fa-solid fa-book"></i>
+                <i className="fa-solid fa-video"></i>
+                <i className="fa-solid fa-comments"></i>
+                <i className="fa-regular fa-comments"></i>
+                <i className="fa-solid fa-code"></i>
+                <i className="fa-solid fa-wifi"></i>
+                <i className="fa-solid fa-key"></i>
+                <i className="fa-solid fa-briefcase"></i>
+                <i className="fa-solid fa-handshake"></i>
+                <i className="fa-regular fa-handshake"></i>
+                <i className="fa-solid fa-users"></i>
+                <i className="fa-brands fa-whatsapp"></i>
+                <i className="fa-solid fa-laptop"></i>
+                <i className="fa-solid fa-desktop"></i>
+                <i className="fa-regular fa-file-pdf"></i>
+                <i className="fa-solid fa-file-pdf"></i>
+                <i className="fa-regular fa-square-check"></i>
+                <i className="fa-brands fa-python"></i>
+                <i className="fa-solid fa-headset"></i>
+                <i className="fa-solid fa-users-rectangle"></i>
+                <i className="fa-regular fa-file-code"></i>
                 
                 
                 

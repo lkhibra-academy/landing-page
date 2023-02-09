@@ -19,24 +19,24 @@ export default function Hero(props) {
         : (content = content.French);
       return ( 
         <section className='relative max-w-6xl mx-auto px-2 sm:px-6 '>
-                <div class="grid grid-cols-1 gap-1 lg:gap-16 md:grid-cols-2 
+                <div className="grid grid-cols-1 gap-1 lg:gap-16 md:grid-cols-2 
                     pt-4 md:pb-2 pb-0 md:pt-8 ">
                     {/* Picture */}
                     <div
-                        class="relative h-80 overflow-hidden rounded-lg my-auto
+                        className="relative h-80 overflow-hidden rounded-lg my-auto
                         max-h-56 md:max-h-full           
                         "
                         // hidden md:block 
                     >
                         <img
-                        class="absolute inset-0 h-full mx-auto min-w-fit"
+                        className="absolute inset-0 h-full mx-auto min-w-fit"
                         src={heropic}
                         alt="woman smilling"
                         />
                     </div>
                     {/* Video */}
                     {/* <div
-                        class="relative h-80 overflow-hidden rounded-lg my-auto
+                        className="relative h-80 overflow-hidden rounded-lg my-auto
                              bg-white  max-h-56 md:max-h-full
                         "
                         //   width="560"
@@ -46,14 +46,14 @@ export default function Hero(props) {
                     <iframe className="absolute w-full h-full"   src="https://www.youtube-nocookie.com/embed/vDHKoTyKLnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>  */}
                     {/* Titles */}
-                    <div class=" md:order-last  
+                    <div className=" md:order-last  
                     flex flex-col justify-center items-center flex-shrink-0
                     " dir='rtl'>
                         <div className='sm:text-center md:text-right self-start p-4 '>
-                            <h2 class="text-2xl font-bold sm:text-3xl">{content.title}
+                            <h2 className="text-2xl font-bold sm:text-3xl">{content.title}
                             </h2>
 
-                            <p class="mt-4 mb-1 text-gray-600 text-lg">
+                            <p className="mt-4 mb-1 text-gray-600 text-lg">
                             {content.subtitle}
                             </p>
                             <div className=' mx-auto max-w-none 

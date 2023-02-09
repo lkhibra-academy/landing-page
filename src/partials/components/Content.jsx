@@ -89,9 +89,9 @@ export default function Content(props) {
                   py-3 px-4 border border-gray-300 border-b-0 ">
                     <p className="text-base font-medium text-gray-800">
                     {content.ModuleI.title}</p>
-                    <i class="fa fa-chevron-down
+                    <i className="fa fa-chevron-down
                     flex-shrink-0 p-1 text-center transition duration-300 group-open:hidden"></i>
-                    <i class="fa fa-chevron-up
+                    <i className="fa fa-chevron-up
                     flex-shrink-0 p-1 text-center transition duration-300 hidden group-open:block"></i>
                   </summary>
 
@@ -110,9 +110,9 @@ export default function Content(props) {
                   py-3 px-4 border border-gray-300 border-b-0 ">
                     <p className="text-base font-medium text-gray-800">
                     {content.ModuleII.title}</p>
-                    <i class="fa fa-chevron-down
+                    <i className="fa fa-chevron-down
                     flex-shrink-0 p-1 text-center transition duration-300 group-open:hidden"></i>
-                    <i class="fa fa-chevron-up
+                    <i className="fa fa-chevron-up
                     flex-shrink-0 p-1 text-center transition duration-300 hidden group-open:block"></i>
                   </summary>
 
@@ -131,9 +131,9 @@ export default function Content(props) {
                   py-3 px-4 border border-gray-300 border-b-0 ">
                     <p className="text-base font-medium text-gray-800">
                     {content.ModuleIII.title}</p>
-                    <i class="fa fa-chevron-down
+                    <i className="fa fa-chevron-down
                     flex-shrink-0 p-1 text-center transition duration-300 group-open:hidden"></i>
-                    <i class="fa fa-chevron-up
+                    <i className="fa fa-chevron-up
                     flex-shrink-0 p-1 text-center transition duration-300 hidden group-open:block"></i>
                   </summary>
 
@@ -152,9 +152,9 @@ export default function Content(props) {
                   py-3 px-4 border border-gray-300 border-b-0 ">
                     <p className="text-base font-medium text-gray-800">
                     {content.ModuleIV.title}</p>
-                    <i class="fa fa-chevron-down
+                    <i className="fa fa-chevron-down
                     flex-shrink-0 p-1 text-center transition duration-300 group-open:hidden"></i>
-                    <i class="fa fa-chevron-up
+                    <i className="fa fa-chevron-up
                     flex-shrink-0 p-1 text-center transition duration-300 hidden group-open:block"></i>
                   </summary>
 
@@ -173,9 +173,9 @@ export default function Content(props) {
                   py-3 px-4 border border-gray-300 border-b-0 ">
                     <p className="text-base font-medium text-gray-800">
                     {content.ModuleV.title}</p>
-                    <i class="fa fa-chevron-down
+                    <i className="fa fa-chevron-down
                     flex-shrink-0 p-1 text-center transition duration-300 group-open:hidden"></i>
-                    <i class="fa fa-chevron-up
+                    <i className="fa fa-chevron-up
                     flex-shrink-0 p-1 text-center transition duration-300 hidden group-open:block"></i>
                   </summary>
 
@@ -194,9 +194,9 @@ export default function Content(props) {
                   py-3 px-4 border border-gray-300 border-b-0 ">
                     <p className="text-base font-medium text-gray-800">
                     {content.ModuleVI.title}</p>
-                    <i class="fa fa-chevron-down
+                    <i className="fa fa-chevron-down
                     flex-shrink-0 p-1 text-center transition duration-300 group-open:hidden"></i>
-                    <i class="fa fa-chevron-up
+                    <i className="fa fa-chevron-up
                     flex-shrink-0 p-1 text-center transition duration-300 hidden group-open:block"></i>
                   </summary>
 
@@ -216,9 +216,9 @@ export default function Content(props) {
                   py-3 px-4 border border-gray-300  ">
                     <p className="text-base font-medium text-gray-800">
                     {content.ModuleVII.title}</p>
-                    <i class="fa fa-chevron-down
+                    <i className="fa fa-chevron-down
                     flex-shrink-0 p-1 text-center transition duration-300 group-open:hidden"></i>
-                    <i class="fa fa-chevron-up
+                    <i className="fa fa-chevron-up
                     flex-shrink-0 p-1 text-center transition duration-300 hidden group-open:block"></i>
                   </summary>
 
