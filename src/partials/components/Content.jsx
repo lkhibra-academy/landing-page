@@ -11,54 +11,86 @@ export default function Content(props) {
                 item3:"- Mutable and Immutable types",
                 item4:"- Strings ",
                 item5:"- Escape Sequences ",
+                item6:"- Userful String Methods",
+                item7:"- Formatted Strings",
+                item8:"- Numbers",
+                item9:"- Arithmetic Operators",
+                item10:"- Type Conversion",
+                item11:"- Conditional Operators",
+                item12:"- Logical Operators",
+                item13:"- Ternary Operator",
+                item14:"- Loops (For,While)",
+                item15:"- Arguments (xargs)",
+                item16:"- Functions",
+                item17:"- Scope"
             },
             ModuleII:{
                 title:"Data Structurs",
-                item1:"-  ",
-                item2:"-  ",
-                item3:"-  ",
-                item4:"-  ",
-                item5:"-  ",
+                item1:"- List",
+                item2:"- Looping Over Lists",
+                item3:"- Finding items",
+                item4:"- Lambda Functions",
+                item5:"- Sortings Lists",
+                item6:"- Map Function",
+                item7:"- Zip Function",
+                item8:"- List Comprehensions",
+                item9:"- Stacks",
+                item10:"- Queues",
+                item11:"- Tuples",
+                item12:"- Arrays",
+                item13:"- Sets",
+                item14:"- Dictionaries",
+                item15:"- Generator Expressions",
+                
             },
             ModuleIII:{
                 title:"Exceptions",
-                item1:"-  ",
-                item2:"-  ",
-                item3:"-  ",
-                item4:"-  ",
-                item5:"-  ",
+                item1:"- Handling Exceptions ",
+                item2:"- Handling different Exceptions ",
+                item3:"- Raising Exceptions ",
+                item4:"- With Statement ",
             },
             ModuleIV:{
                 title:"Classes",
-                item1:"-  ",
-                item2:"-  ",
-                item3:"-  ",
-                item4:"-  ",
-                item5:"-  ",
+                item1:"- Creating Classes ",
+                item2:"- Constructors ",
+                item3:"- Classes vs Instances ",
+                item4:"- Magic Methods ",
+                item5:"- Performing arithmetic operators with classes",
+                item6:"- Inheritance",
+                item7:"- Method Overriding",
+                item8:"- Multiple Inheretence",
+                item9:"- Abstract Base Classes",
+                item10:"- Duck Typing"
             },
             ModuleV:{
                 title:"Modules",
-                item1:"-  ",
-                item2:"-  ",
-                item3:"-  ",
-                item4:"-  ",
-                item5:"-  ",
+                item1:"- Creating Modules ",
+                item2:"- Compiled python files ",
+                item3:"- Module search",
+                item4:"- Sub Packages ",
+                item5:"- Dir function ",
             },
             ModuleVI:{
                 title:"Machine Learning",
-                item1:"-  ",
-                item2:"-  ",
-                item3:"-  ",
-                item4:"-  ",
-                item5:"-  ",
+                item1:"- What is Machine learning ",
+                item2:"- Machine Learning in action ",
+                item3:"- Libraries and tools for machine Learning ",
+                item4:"- Importing data sets ",
+                item5:"- Working on real machine learning problem ",
+                item6:"- Persisting Models",
             },
             ModuleVII:{
                 title:"Soft Skills",
-                item1:"-  ",
-                item2:"-  ",
-                item3:"-  ",
-                item4:"-  ",
-                item5:"-  ",
+                item1:"- How to learn ",
+                item2:"- Time management ",
+                item3:"- Problem-solving ",
+                item4:"- Motivation ",
+                item5:"- Focus ",
+                item6:"- Organisation",
+                item7:"- Adaptability",
+                item8:"- Teamwork",
+                item9:"- Communication",
             },
         },
         French: {
@@ -102,6 +134,18 @@ export default function Content(props) {
                     <li>{content.ModuleI.item3}</li>
                     <li>{content.ModuleI.item4}</li>
                     <li>{content.ModuleI.item5}</li>
+                    <li>{content.ModuleI.item6}</li>
+                    <li>{content.ModuleI.item7}</li>
+                    <li>{content.ModuleI.item8}</li>
+                    <li>{content.ModuleI.item9}</li>
+                    <li>{content.ModuleI.item10}</li>
+                    <li>{content.ModuleI.item11}</li>
+                    <li>{content.ModuleI.item12}</li>
+                    <li>{content.ModuleI.item13}</li>
+                    <li>{content.ModuleI.item14}</li>
+                    <li>{content.ModuleI.item15}</li>
+                    <li>{content.ModuleI.item16}</li>
+                    <li>{content.ModuleI.item17}</li>
                     </ul>
                   </div>
                 </details>
@@ -123,6 +167,16 @@ export default function Content(props) {
                     <li>{content.ModuleII.item3}</li>
                     <li>{content.ModuleII.item4}</li>
                     <li>{content.ModuleII.item5}</li>
+                    <li>{content.ModuleII.item6}</li>
+                    <li>{content.ModuleII.item7}</li>
+                    <li>{content.ModuleII.item8}</li>
+                    <li>{content.ModuleII.item9}</li>
+                    <li>{content.ModuleII.item10}</li>
+                    <li>{content.ModuleII.item11}</li>
+                    <li>{content.ModuleII.item12}</li>
+                    <li>{content.ModuleII.item13}</li>
+                    <li>{content.ModuleII.item14}</li>
+                    <li>{content.ModuleII.item15}</li>
                     </ul>
                   </div>
                 </details>
@@ -143,7 +197,6 @@ export default function Content(props) {
                     <li>{content.ModuleIII.item2}</li>
                     <li>{content.ModuleIII.item3}</li>
                     <li>{content.ModuleIII.item4}</li>
-                    <li>{content.ModuleIII.item5}</li>
                     </ul>
                   </div>
                 </details>
@@ -165,6 +218,11 @@ export default function Content(props) {
                     <li>{content.ModuleIV.item3}</li>
                     <li>{content.ModuleIV.item4}</li>
                     <li>{content.ModuleIV.item5}</li>
+                    <li>{content.ModuleIV.item6}</li>
+                    <li>{content.ModuleIV.item7}</li>
+                    <li>{content.ModuleIV.item8}</li>
+                    <li>{content.ModuleIV.item9}</li>
+                    <li>{content.ModuleIV.item10}</li>
                     </ul>
                   </div>
                 </details>
@@ -207,6 +265,7 @@ export default function Content(props) {
                     <li>{content.ModuleVI.item3}</li>
                     <li>{content.ModuleVI.item4}</li>
                     <li>{content.ModuleVI.item5}</li>
+                    <li>{content.ModuleVI.item6}</li>
                     </ul>
                   </div>
                 </details>
@@ -229,6 +288,10 @@ export default function Content(props) {
                     <li>{content.ModuleVII.item3}</li>
                     <li>{content.ModuleVII.item4}</li>
                     <li>{content.ModuleVII.item5}</li>
+                    <li>{content.ModuleVII.item6}</li>
+                    <li>{content.ModuleVII.item7}</li>
+                    <li>{content.ModuleVII.item8}</li>
+                    <li>{content.ModuleVII.item9}</li>
                     </ul>
                   </div>
                 </details>
