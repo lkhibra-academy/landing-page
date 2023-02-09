@@ -9,7 +9,7 @@ import Content from '../partials/components/Content';
 import Need from '../partials/components/Need';
 import More from '../partials/components/More';
 import Offers from '../partials/components/Offers';
-
+import ForWho from '../partials/components/ForWho';
 
 // import FeaturesBlocks from '../partials/programming/FeaturesBlocks';
 // import Learn from '../partials/programming/Learn';
@@ -39,6 +39,7 @@ export default function Home() {
       <Offers />
       {/* <TestimonyCard /> */}
       <Testimonials />
+      <ForWho language="Arabic"/>
 
       </main>
 

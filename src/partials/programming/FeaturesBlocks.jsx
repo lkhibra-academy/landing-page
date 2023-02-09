@@ -1,5 +1,5 @@
 import React from 'react';
-import Feat from './Feat';
+import Feat from '../components/Feat';
 
 function FeaturesBlocks() {
   return (

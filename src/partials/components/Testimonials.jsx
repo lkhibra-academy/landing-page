@@ -60,7 +60,7 @@ export default function Testimonials() {
                     loop={'true'}
                     breakpoints= {{
                         320: {
-                            slidesPerView: 1,
+                            slidesPerView: 1.2,
                             spaceBetween: 5,
                             
                         },
