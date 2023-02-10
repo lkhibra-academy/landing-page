@@ -25,7 +25,7 @@ export default function ThankYou() {
                     <i className="fa-regular fa-check-circle text-6xl p-3 text-center text-gray-900"></i>
                     {/* Main */}
                     <p className="p-3 font-base text-base md:text-2xl text-center text-gray-800">
-                    سوف يتم الإتصال بك في أقرب وقت من طرف أحد مستشارينا التعليميين
+                    سوف يتم الإتصال بك في أقرب وقت  
                                         </p>
                     {/* Foot */}
                     
