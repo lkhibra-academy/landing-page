@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 import './css/style.css';
 import AOS from 'aos';
 import Home from './pages/Home';
-import ThankYou from './pages/ThankYou';
+import Checkout from './pages/Checkout';
 import Privacy from './pages/Privacy';
 import Termsofuse from './pages/Termsofuse';
 import Responsibility from './pages/Responsibility';
@@ -38,7 +38,7 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/ThankYou" element={<ThankYou />} />
+        <Route exact path="/Checkout" element={<Checkout />} />
         <Route exact path="/Privacy" element={<Privacy />} />
         <Route exact path="/Termsofuse" element={<Termsofuse />} />
         <Route exact path="/Responsibility" element={<Responsibility />} />

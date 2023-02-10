@@ -4,7 +4,7 @@ import CleavePhone from 'cleave.js/dist/addons/cleave-phone.ma'
 import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-export default function LeadForm({src}) {
+export default function ContactForm() {
     // const [ok, setOk] = useState(false)
     let navigate = useNavigate();
     const [err, setErr] = useState(false)
@@ -99,10 +99,10 @@ export default function LeadForm({src}) {
                             </option>
                         </select> 
                     </div>
-                        <select id="traffic" ref={traffic} className="hidden">
+                        {/* <select id="traffic" ref={traffic} className="hidden">
                             <option value={src} defaultValue>
                             </option>
-                        </select> 
+                        </select>  */}
                     <div className="">
                         <a onClick={clickHandler} className="btn rounded-lg bg-black
                          text-lg p-2.5 text-white bg-red-primary w-full
