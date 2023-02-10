@@ -4,7 +4,6 @@ import CleavePhone from 'cleave.js/dist/addons/cleave-phone.ma'
 import React, { useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import Modal from '../../utils/Modal';
-import PhoneForm from '../components/PhoneForm';
 
 export default function ContactForm() {
     // const [ok, setOk] = useState(false)
@@ -56,65 +55,38 @@ export default function ContactForm() {
     return (
             <div className="max-w-lg p-4 mx-4 lg:px-8 rounded-lg border border-gray-200 shadow-md m-2 bg-white">
                 <form ref={form} className="">
-                    {/* <div className={`${err?'':'hidden'}  text-center p-[20px] bg-red-600 text-white w-full mb-[15px]`}>
-                        An unexpected error occurred.
-                    </div>
-                    <div className="">
-                        <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="name">
-                            <span>Full Name</span><span>الإسم الكامل</span>
-                        </label>
-                        <input ref={fullName} maxLength='30' className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" type="text" id="name" required/>
-                    </div>
-                    <div className="">
-                        <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="phone">
-                            <span>Phone</span><span>الهاتف</span>
-                        </label>
-                        <Cleave onChange={ev => setPhone(ev.target.rawValue)} className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" options={{phone: true, phoneRegionCode: 'MA'}} required />
-                    </div>
-                    <div className="">
-                        <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="email">
-                            <span>Email</span><span>البريد الإلكتروني</span>
-                        </label>
-                        <input ref={email} className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" type="email" id="email" required/>
-                    </div>
-                    <div className="">
-                        <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="email">
-                            <span>Choose the offer</span><span>اختر العرض </span>
-                        </label>
-                        <select id="offer" ref={offer} className="mb-2  pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" required>
-                            <option value="930">
-                                    930dh - 
-                                    ثلاثة أشهر كاملة
-                                    
-                            </option>
-                            <option value="250" defaultValue>
-                                350dh - 
-                                كل شهر   
-                            </option>
-                        </select> 
-                    </div> */}
                     <p className="font-semibold text-lg text-center text-gray-800" dir="rtl">
-                     المرجوا اختيار طريقة الإتصال بك 
+                    متى تريد الإتصال بك ؟ 
                     </p>
 
                     <ul dir="rtl" className="text-red-primary text-base md:text-lg list-inside p-2 pt-3">
                     <li className=' flex items-start flex-row mb-1.5'>
-                    <a onClick={(e) => { e.preventDefault(); e.stopPropagation(); setModalOpen(true); }}
+                    <Link to="../ThankYou"
                     className="btn rounded-lg bg-black
                          text-sm p-2 w-full
                          flex justify-start items-center border-red-primary" type="submit">
                         <i className="fa-solid fa-phone w-8 text-center"></i>
-                        <p>عن طريق الهاتف
+                        <p>صباحا   
                         </p>
-                        </a>
+                        </Link>
                     </li>
                     <li className=' flex items-start flex-row mb-1.5'>
                     <Link to="../ThankYou"  className="btn rounded-lg bg-black
                          text-sm p-2 w-full
                          flex justify-start items-center border-red-primary" type="submit">
-                        <i className="fa-brands fa-whatsapp w-8 text-center"></i>
+                        <i className="fa-solid fa-phone w-8 text-center"></i>
                         <p>
-                        عن طريق الواتساب 
+                        بعد الضهر 
+                        </p>
+                    </Link>
+                    </li>
+                    <li className=' flex items-start flex-row mb-1.5'>
+                    <Link to="../ThankYou"  className="btn rounded-lg bg-black
+                         text-sm p-2 w-full
+                         flex justify-start items-center border-red-primary" type="submit">
+                        <i className="fa-solid fa-phone w-8 text-center"></i>
+                        <p>
+                        مساءا   
                         </p>
                     </Link>
                     </li>
@@ -125,7 +97,7 @@ export default function ContactForm() {
         {/* Modal */}
         <Modal id="modal" ariaLabel="modal-headline" show={ModalOpen} handleClose={() => setModalOpen(false)}>
                 <div className="relative ">
-                    <PhoneForm/>
+                    
                 </div>
         </Modal>
             </div>
