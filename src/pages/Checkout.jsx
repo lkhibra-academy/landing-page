@@ -1,16 +1,19 @@
-import React,{useState} from 'react';
+import React,{useState,useRef} from 'react';
 import Header from '../partials/components/Header';
 import Footer from '../partials/components/Footer';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation,useNavigate } from 'react-router-dom';
 import Modal from '../utils/Modal';
 import ContactForm from '../partials/components/ContactForm';
 
 
 export default function Checkout() {
     const loc=useLocation();
+    let navigate = useNavigate();
     const price=loc.state?.price ?? 0;
     const [ModalOpen, setModalOpen] = useState(false);
-
+    /** @type {React.MutableRefObject<HTMLFormElement>} */
+    const form = useRef()
+    
     return (
         <div className="flex flex-col min-h-screen overflow-hidden">
 
@@ -65,10 +68,10 @@ export default function Checkout() {
                             flex justify-around items-center flex-row 
                              w-full px-5
                             '>
-                        <Link to="../Payment"
-                           className="btn text-white bg-red-primary w-full px-2">    
+                        <a onClick={(e) => { navigate('/Payment',{state:{price:price}}) } }
+                           className="btn text-white bg-red-primary w-full px-2"> 
                                دفع الأن                        
-                        </Link>
+                        </a>
                         <a onClick={(e) => { e.preventDefault(); e.stopPropagation(); setModalOpen(true); }}
                             className="btn text-red-primary border border-red-primary w-full 
                         px-2 mr-4" href="#content">

@@ -33,14 +33,13 @@ export default function LeadForm({src}) {
                 email: email.current.value,
                 phone: phone,
                 offer: offer.current.value,
-                // training: training.current.value,
+                training: training.current.value,
                 traffic: traffic.current.value,
             }
         ).then((rep) => {
             if(rep.data.ok){
                 fbq('track', 'Lead');
-                // navigate('/ThankYou',{state:{price:offer.current.value}});
-                navigate('/Checkout');
+                navigate('/Checkout',{state:{price:offer.current.value,id:rep.data.id}});
                 
             }else{
                 setErr(true)
@@ -73,16 +72,16 @@ export default function LeadForm({src}) {
                         </label>
                         <input ref={email} className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" type="email" id="email" required/>
                     </div>
-                    {/* <div className="">
-                        <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="email">
+                    <div className="">
+                        {/* <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="email">
                             <span>Choose the Training</span><span>اختر التدريب </span>
-                        </label>
-                        <select id="training" ref={training} className="mb-2  pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" required>
+                        </label> */}
+                        <select id="training" ref={training} className="mb-2  pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5 hidden">
                             <option value="Programming" >
                             </option> 
-                            <option value="Programming">Programming Training</option>
+                            <option value="Programming" defaultValue>Programming Training</option>
                         </select> 
-                    </div>  */}
+                    </div> 
                     <div className="">
                         <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="email">
                             <span>Choose the offer</span><span>اختر العرض </span>
@@ -93,7 +92,7 @@ export default function LeadForm({src}) {
                                     ثلاثة أشهر كاملة
                                     
                             </option>
-                            <option value="250" defaultValue>
+                            <option value="350" defaultValue>
                                 350dh - 
                                 كل شهر   
                             </option>
