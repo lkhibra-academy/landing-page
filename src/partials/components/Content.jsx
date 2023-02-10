@@ -25,7 +25,7 @@ export default function Content(props) {
                 item17:"- Scope"
             },
             ModuleII:{
-                title:"Data Structurs",
+                title:"Data Structures",
                 item1:"- List",
                 item2:"- Looping Over Lists",
                 item3:"- Finding items",
