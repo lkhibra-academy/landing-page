@@ -8,16 +8,21 @@ export default function Payment() {
     const price=loc.state?.price ?? 0;
     return (
 
-        <div className="">
-      {/*  Site header */}
-      <Header />
+        <div className="flex flex-col min-h-screen overflow-hidden">
+
+        {/*  Site header */}
+        <Header />
+  
+        {/*  Page content */}
+        <main className="flex-grow">
+
         <section className='flex flex-col min-h-screen overflow-hidden mb-10'>
             {/* <h1 className="sr-only">Checkout</h1> */}
             <div className="relative mx-auto max-w-screen-2xl">
                 <div className='flex justify-center'>
                     <div className="pt-8 bg-white md:py-10">
                             <div>
-                                <h1 className="font-bold md:text-4xl text-3xl text-center px-2 pb-5 text-red-primary" dir="rtl">مرحبا بك في تدريب الخبرة فالبرمجة</h1>
+                                {/* <h1 className="font-bold md:text-4xl text-3xl text-center px-2 pb-5 text-red-primary" dir="rtl">مرحبا بك في تدريب الخبرة فالبرمجة</h1> */}
                                 <div className="max-w-lg md:mx-auto mx-3 p-2 pr-3 rounded-lg border border-gray-200 shadow-md ">
                                     <div className="flex justify-between border-b border-b-gray-200 " dir="rtl">
                                         <h2 className="pt-2 pb-3 font-bold text-xl md:text-2xl text-center ">لقد تم التوصل بطلبك لكن … ! </h2>
@@ -51,16 +56,13 @@ export default function Payment() {
                                     <div className="flex justify-between flex-col pt-3 pb-2 space-y-3" dir="rtl">
                                         <h4 className=" pr-1 font-medium text-lg ">المبلغ :<span className='font-bold  '> {price} د.م </span>
                                          </h4>
-                                         <h4 className="pr-1 font-normal text-base ">توقيت الحصص :<span className=''> كل ثلاثاء 20h  </span>
-                                         </h4> 
-                                         <h4 className="pr-1 font-normal text-base ">أول حصة  : <span className=''>الثلاثاء 6 دجنبر  (Decembre)</span>
-                                         </h4> 
+                                          
                                     </div>
                                 </div>
                                 <p className="flex items-center justify-center flex-col text-center font-light text-base my-3 mr-3 px-2 space-y-2" dir="rtl">
                                   <span className=''>
                                     <span className='text-red-primary text-base first-letter:font-semibold'>  *  </span>
-                                    سوف يتم إلغاء حجزك وإعطاء مكانك لشخص أخر ان لم يتم إيداع المبلغ قبل يوم الاثنين 5 دجنبر صباحا
+                                    سوف يتم إلغاء حجزك وإعطاء مكانك لشخص أخر ان لم يتم إيداع المبلغ قبل يوم الأربعاء 15 فبراير   
                                      
                                   </span>
                                   <span className="font-light text-sm" dir="rtl">
@@ -72,7 +74,10 @@ export default function Payment() {
                 </div>
             </div>
         </section>
-      <Footer/>
-    </div>
+        </main>
+        {/*  Site footer */}
+        <Footer />
+
+</div>
     )
 }

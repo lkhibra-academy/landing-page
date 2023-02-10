@@ -12,6 +12,8 @@ import Checkout from './pages/Checkout';
 import Privacy from './pages/Privacy';
 import Termsofuse from './pages/Termsofuse';
 import Responsibility from './pages/Responsibility';
+import Payment from './pages/Payment';
+import ThankYou from './pages/ThankYou';
 
 function App() {
   const location = useLocation();
@@ -38,6 +40,8 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/Payment" element={<Payment />} />
+        <Route exact path="/ThankYou" element={<ThankYou />} />
         <Route exact path="/Checkout" element={<Checkout />} />
         <Route exact path="/Privacy" element={<Privacy />} />
         <Route exact path="/Termsofuse" element={<Termsofuse />} />
