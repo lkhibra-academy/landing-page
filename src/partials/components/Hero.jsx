@@ -29,8 +29,8 @@ export default function Hero(props) {
                         // hidden md:block 
                     >
                         <img
-                        className="absolute inset-0 h-full mx-auto min-w-fit"
-                        src={heropic}
+                        className="absolute inset-0 h-full mx-auto w-fit"
+                        srcset={heropic}
                         alt="woman smilling"
                         />
                     </div>
