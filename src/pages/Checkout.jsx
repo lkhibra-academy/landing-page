@@ -87,15 +87,16 @@ export default function Checkout() {
                              w-full px-5
                             '>
                                 {/* (e) => {  } */}
-                        <button onClick={ clickHandler}
+                        <a onClick={ clickHandler} 
+                        // onClick={(e) => {e.preventDefault(); e.stopPropagation(); setModalOpen(true); }}
                            className="btn text-white bg-red-primary w-full px-2"> 
                                دفع الأن                        
-                        </button>
-                        <button onClick={(e) => {e.preventDefault(); e.stopPropagation(); setModalOpen(true); }}
+                        </a>
+                        <a onClick={(e) => {e.preventDefault(); e.stopPropagation(); setModalOpen(true); }}
                             className="btn text-red-primary border border-red-primary w-full 
                         px-2 mr-4">
                                         أريد معلومات أكثر 
-                         </button>
+                         </a>
                     </div>
 
                     </div>
