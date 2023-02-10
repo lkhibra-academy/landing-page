@@ -32,7 +32,7 @@ export default function Home() {
       <More language="Arabic"/>
       <Testimonials />
       <Need language="Arabic"/>
-      <Offers />
+      <Offers language="Arabic" src="Ads"/>
       {/* <TestimonyCard /> */}
       <Faq />
       </main>

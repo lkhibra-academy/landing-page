@@ -43,7 +43,7 @@ export default function Testimonials() {
             quote:"This Training helped me grasp the basics of algorithmes and allowed me to use them with python, and this opened up my curiosity to learn more about programming and be as creative as i can.",
         },
         Bahija: {
-            name:"Youness",
+            name:"Bahija",
             status:"Programming Student",
             quote:"The material was presented in a way that was easy to understand, even if you don't really know programming languages. In addition, the training team was attentive and patient about everyone's level of understanding.",
         },

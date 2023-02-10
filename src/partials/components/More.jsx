@@ -19,7 +19,7 @@ export default function More(props) {
         },
         itemIV:{
           title:"تدريب شامل ",
-          content:" هاد التدريب ما فيش هير البرمجة بال فيع العديد من Soft skills  لي ها تنفعك باش تحقق أهدافك"
+          content:"هذا التدريب مامركزش غير على جانب تقني فقط بل فيه حتى حصص كل 15 يوم ديال Soft Skills"
         },
 
     },
