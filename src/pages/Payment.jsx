@@ -34,9 +34,8 @@ export default function Payment() {
                                                 <li className="flex items-center justify-between">
                                                     <div className="flex items-start">
                                                         <div className="">
-                                                            <p className='text-lg '>
-                                                              <span className='font-medium'>لم يتم حجز مقعدك بعد </span><br />
-للحجز الان المرجو اداء المبلغ بايداع بنكي على هذا الحساب                                                             
+                                                            <p className='text-base '>
+لحجز مقعدك المرجو اداء المبلغ بايداع بنكي على هذا الحساب                                                             
                                                             </p><br />
                                                             <p className="text-center text-base md:text-lg">
                                                                 Bank : CIH bank <br />
