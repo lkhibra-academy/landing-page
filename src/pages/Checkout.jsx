@@ -10,6 +10,7 @@ export default function Checkout() {
     const loc=useLocation();
     const price=loc.state?.price ?? 0;
     const [ModalOpen, setModalOpen] = useState(false);
+    const [ContactFormOpen, setContactFormOpen] = useState(false);
 
     return (
         <div className="flex flex-col min-h-screen overflow-hidden">
