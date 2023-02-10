@@ -351,7 +351,7 @@ export default function Offers(props) {
         </div>
         <Modal id="modal" ariaLabel="modal-headline" show={ModalOpen} handleClose={() => setModalOpen(false)}>
             <div className="relative ">
-            <LeadForm src={src1}/>
+            <LeadForm src={props.src}/>
             </div>
         </Modal>
     </section>

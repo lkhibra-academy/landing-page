@@ -1,4 +1,5 @@
 import React,{useState,useRef} from 'react';
+import axios from 'axios';
 import Header from '../partials/components/Header';
 import Footer from '../partials/components/Footer';
 import { Link, useLocation,useNavigate } from 'react-router-dom';
@@ -12,8 +13,25 @@ export default function Checkout() {
     const price=loc.state?.price ?? 0;
     const [ModalOpen, setModalOpen] = useState(false);
     /** @type {React.MutableRefObject<HTMLFormElement>} */
-    const form = useRef()
-    
+    const form = useRef();
+    const id=loc.state?.id ?? "";
+    function clickHandler(e) {
+        axios.post(
+            'https://lkhibra.alwaysdata.net/moreinfo.php'
+            ,{
+                id,
+                contact:"PAYNOW",
+            }
+        ).then((rep) => {
+            if(rep.data.ok){
+                navigate('/Payment',{state:{price:price}})
+            }else{
+                setErr(true)
+            }
+        }).catch(() => {
+            setErr(true)
+        })
+    }
     return (
         <div className="flex flex-col min-h-screen overflow-hidden">
 
@@ -68,15 +86,16 @@ export default function Checkout() {
                             flex justify-around items-center flex-row 
                              w-full px-5
                             '>
-                        <a onClick={(e) => { navigate('/Payment',{state:{price:price}}) } }
+                                {/* (e) => {  } */}
+                        <button onClick={ clickHandler}
                            className="btn text-white bg-red-primary w-full px-2"> 
                                دفع الأن                        
-                        </a>
-                        <a onClick={(e) => { e.preventDefault(); e.stopPropagation(); setModalOpen(true); }}
+                        </button>
+                        <button onClick={(e) => {e.preventDefault(); e.stopPropagation(); setModalOpen(true); }}
                             className="btn text-red-primary border border-red-primary w-full 
-                        px-2 mr-4" href="#content">
+                        px-2 mr-4">
                                         أريد معلومات أكثر 
-                         </a>
+                         </button>
                     </div>
 
                     </div>

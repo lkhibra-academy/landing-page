@@ -3,7 +3,7 @@ import wtp from '../../images/whatsapp-button.png';
 import Modal from '../../utils/Modal';
 import LeadForm from '../components/LeadForm';
 
-export default function Fixed(props,src) {
+export default function Fixed(props) {
     const [ModalOpen, setModalOpen] = useState(false);
     let content = {
         Arabic: {
@@ -51,7 +51,7 @@ return (
     {/* Modal */}
         <Modal id="modal" ariaLabel="modal-headline" show={ModalOpen} handleClose={() => setModalOpen(false)}>
                 <div className="relative ">
-                <LeadForm src={src}/>
+                <LeadForm src={props.src}/>
                 </div>
         </Modal> 
     </section>

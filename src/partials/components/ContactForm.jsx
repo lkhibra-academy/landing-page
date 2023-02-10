@@ -71,7 +71,7 @@ export default function ContactForm() {
         {/* Modal */}
         <Modal id="modal" ariaLabel="modal-headline" show={ModalOpen} handleClose={() => setModalOpen(false)}>
                 <div className="relative ">
-                    <PhoneForm/>
+                    <PhoneForm />
                 </div>
         </Modal>
             </div>

@@ -39,7 +39,7 @@ export default function Home() {
 
       {/*  Site footer */}
       <Footer />
-      <Fixed language="Arabic"/>
+      <Fixed language="Arabic" src="Ads"/>
 
     </div>
   );

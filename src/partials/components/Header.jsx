@@ -11,7 +11,7 @@ function Header() {
       <div className="relative max-w-6xl mx-auto px-5 sm:px-6 ">
         <div className=" px-auto" >
           <Link to="/" className="block" aria-label="lkhibra">
-              <Logo className="w-20 md:w-28 mx-auto my-4" />
+              <Logo className="w-48 md:w-28 mx-auto my-1" />
             </Link>
           
         </div>
