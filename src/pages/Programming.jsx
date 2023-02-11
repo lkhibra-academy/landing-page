@@ -14,7 +14,7 @@ import Faq from '../partials/components/Faq';
 import Testimonials from '../partials/components/Testimonials';
 
 
-export default function Home() {
+export default function ProgrammingTraining() {
   
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
@@ -32,14 +32,14 @@ export default function Home() {
       <More language="Arabic"/>
       <Testimonials />
       <Need language="Arabic"/>
-      <Offers language="Arabic" src="Organic"/>
+      <Offers language="Arabic" src="Ads"/>
       {/* <TestimonyCard /> */}
       <Faq />
       </main>
 
       {/*  Site footer */}
       <Footer />
-      <Fixed language="Arabic" src="Organic"/>
+      <Fixed language="Arabic" src="Ads"/>
 
     </div>
   );
