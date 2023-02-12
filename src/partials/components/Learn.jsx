@@ -58,11 +58,11 @@ export default function Learn(props) {
     
 return (
     <section className="relative bg-white">
-    <div className="relative max-w-6xl mx-auto px-4 sm:px-6 ">
+    <div className="relative max-w-6xl mx-auto px-4 md:px-0 md:mx-0">
 
         {/* Section header */}
-        <div className="max-w-3xl mx-auto text-right py-4 px-2 sm:px-4 md:py-10 ">
-          <div className=" p-3 rounded-sm border shadow-sm ">
+        <div className="max-w-3xl mx-auto text-right py-4 px-2 sm:px-4 md:py-6 ">
+          <div className=" p-3 rounded-sm border shadow-sm lg:p-5 lg:pl-28">
             <h2 className="font-bold leading-tight text-2xl md:text-3xl">{content.title} </h2>
             <ul dir="rtl" className="text-gray-700 text-base md:text-xl list-inside pt-4">
                 <li className=' flex items-start flex-row mb-1.5'>

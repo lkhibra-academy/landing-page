@@ -8,12 +8,19 @@ export default function Offers(props) {
     let content = {
         Arabic: {
             title:": يتضمن  هذا تدريب ",
-            item1:"12 حصة برمجية (Google Meet)",
-            item2:"6 حصص Soft skills",
+            item1:"4 حصة برمجية (Google Meet)",
+            item2:" حصتين Soft skills",
             item3:"10 مشاريع برمجية ",
             item4:"شهادة معتمدة",
             item5:"متابعة شخصية",
             item6:"أكتر من 20 ملفات دروس لتحميل",
+            item7:"تمارين تطبيقية",
+
+            item11:" 4 حصة برمجية (Google Meet)",
+            item22:" حصتين Soft skills",
+            item33:" 3 مشاريع برمجية ",
+            item44:"متابعة شخصية",
+            item55:"تمارين تطبيقية",
         },
         French: {
 
@@ -56,41 +63,36 @@ export default function Offers(props) {
                 <ul dir="rtl" className="text-gray-700 text-base md:text-lg list-inside pt-3 ">
 
                 <li className=' flex items-start flex-row mb-1'>
-                    <i className="fa-solid fa-users-rectangle  w-8 p-1 text-center"></i>
+                    <i className="fa-solid fa-users-rectangle  w-8 p-1 lg:ml-1 text-center"></i>
                     <div className=''>
-                    <p>{content.item1}</p>
+                    <p>{content.item11}</p>
                     </div>
                 </li>
                 <li className=' flex items-start flex-row mb-1'>
-                    <i className="fa-solid fa-users w-8 p-1 text-center"></i>
+                    <i className="fa-solid fa-users w-8 p-1 lg:ml-1 text-center"></i>
                     <div className=''>
-                    <p>{content.item2}</p>
+                    <p>{content.item22}</p>
                     </div>
                 </li>
                 <li className=' flex items-start flex-row mb-1'>
-                    <i className="fa-solid fa-code w-8 p-1 text-center"></i>
+                    <i className="fa-brands fa-python w-8 p-1 lg:ml-1 text-center"></i>
                     <div className=''>
-                    <p>{content.item3}</p>
+                    <p>{content.item33}</p>
                     </div>
                 </li>
                 <li className=' flex items-start flex-row mb-1'>
-                    <i className="fa-solid fa-award w-8 p-1 text-center"></i>
+                    <i className="fa-brands fa-whatsapp w-8 p-1 lg:ml-1 text-center"></i>
                     <div className=''>
-                    <p>{content.item4}</p>
+                    <p>{content.item44}</p>
                     </div>
                 </li>
                 <li className=' flex items-start flex-row mb-1'>
-                    <i className="fa-brands fa-whatsapp w-8 p-1 text-center"></i>
+                    <i className="fa-solid fa-code w-8 p-1 lg:ml-1 text-center"></i>
                     <div className=''>
-                    <p>{content.item5}</p>
+                    <p>{content.item55}</p>
                     </div>
                 </li>
-                <li className=' flex items-start flex-row mb-1'>
-                    <i className="fa-regular fa-file-code w-8 p-1 text-center"></i>
-                    <div className=''>
-                    <p>{content.item6}</p>
-                    </div>
-                </li>
+                
                 {/* <div className='space-x-3'>
                 <i className="fa-solid fa-user-graduate p-1 ml-1"></i>
                 <i className="fa-solid fa-award"></i>
@@ -270,39 +272,45 @@ export default function Offers(props) {
                     </ul> */}
                 <ul dir="rtl" className="text-white text-base md:text-lg list-inside pt-3 ">
                 <li className=' flex items-start flex-row mb-1'>
-                    <i className="fa-solid fa-users-rectangle  w-8 p-1 text-center"></i>
+                    <i className="fa-solid fa-users-rectangle  w-8 p-1 lg:ml-1 text-center"></i>
                     <div className=''>
                     <p>{content.item1}</p>
                     </div>
                 </li>
                 <li className=' flex items-start flex-row mb-1'>
-                    <i className="fa-solid fa-users w-8 p-1 text-center"></i>
+                    <i className="fa-solid fa-users w-8 p-1 lg:ml-1 text-center"></i>
                     <div className=''>
                     <p>{content.item2}</p>
                     </div>
                 </li>
                 <li className=' flex items-start flex-row mb-1'>
-                    <i className="fa-solid fa-code w-8 p-1 text-center"></i>
+                    <i className="fa-brands fa-python w-8 p-1 lg:ml-1 text-center"></i>
                     <div className=''>
                     <p>{content.item3}</p>
                     </div>
                 </li>
                 <li className=' flex items-start flex-row mb-1'>
-                    <i className="fa-solid fa-award w-8 p-1 text-center"></i>
+                    <i className="fa-solid fa-award w-8 p-1 lg:ml-1 text-center"></i>
                     <div className=''>
                     <p>{content.item4}</p>
                     </div>
                 </li>
                 <li className=' flex items-start flex-row mb-1'>
-                    <i className="fa-brands fa-whatsapp w-8 p-1 text-center"></i>
+                    <i className="fa-brands fa-whatsapp w-8 p-1 lg:ml-1 text-center"></i>
                     <div className=''>
                     <p>{content.item5}</p>
                     </div>
                 </li>
                 <li className=' flex items-start flex-row mb-1'>
-                    <i className="fa-regular fa-file-code w-8 p-1 text-center"></i>
+                    <i className="fa-regular fa-file-code w-8 p-1 lg:ml-1 text-center"></i>
                     <div className=''>
                     <p>{content.item6}</p>
+                    </div>
+                </li>
+                <li className=' flex items-start flex-row mb-1'>
+                    <i className="fa-solid fa-code w-8 p-1 lg:ml-1 text-center"></i>
+                    <div className=''>
+                    <p>{content.item7}</p>
                     </div>
                 </li>
                 {/* <div className='space-x-3'>

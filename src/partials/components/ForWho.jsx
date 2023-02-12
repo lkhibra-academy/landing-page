@@ -52,7 +52,7 @@ export default function ForWho(props) {
     mx-auto md:col-span-7 lg:col-span-6 md:mt-6 ">
         
               {/* title */}
-                <p className="px-2 pb-4 font-bold leading-tight text-2xl md:text-3xl text-right">
+                <p className="px-2 pb-4 font-bold leading-tight text-2xl lg:text-3xl md:text-center lg:mb-2 text-right">
                     {content.title}
                 </p>
 
@@ -62,7 +62,7 @@ export default function ForWho(props) {
                 <details dir='rtl' className=" group">
                   <summary className="flex items-center justify-between cursor-pointer 
                   py-3 px-4 border-y border-y-gray-300 mb-2">
-                    <p className="text-lg font-medium text-gray-800">
+                    <p className="text-lg font-medium text-gray-800 lg:text-xl ">
                     {content.ProfileI.title}</p>
                     <i className="fa fa-chevron-down
                     flex-shrink-0 p-1 text-center transition duration-300 group-open:hidden"></i>
@@ -110,7 +110,7 @@ export default function ForWho(props) {
                 <details  dir='rtl' className=" group">
                   <summary className="flex items-center justify-between cursor-pointer 
                   py-3 px-4 border-y border-y-gray-300 mb-2">
-                    <p className="text-lg font-medium text-gray-800">
+                    <p className="text-lg font-medium text-gray-800 lg:text-xl">
                     {content.ProfileII.title}</p>
                     <i className="fa fa-chevron-down
                     flex-shrink-0 p-1 text-center transition duration-300 group-open:hidden"></i>
@@ -158,7 +158,7 @@ export default function ForWho(props) {
                 <details dir='rtl' className=" group">
                   <summary className="flex items-center justify-between cursor-pointer 
                   py-3 px-4 border-y border-y-gray-300 mb-2 ">
-                    <p className="text-lg font-medium text-gray-800">
+                    <p className="text-lg font-medium text-gray-800 lg:text-xl">
                     {content.ProfileIII.title}</p>
                     <i className="fa fa-chevron-down
                     flex-shrink-0 p-1 text-center transition duration-300 group-open:hidden"></i>

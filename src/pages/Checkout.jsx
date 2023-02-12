@@ -53,7 +53,7 @@ export default function Checkout() {
                         <i className="fa-regular fa-calendar-check w-8 p-1 ml-1 text-center"></i>
                         <div className=''>
                         <p>
-                        سوف تبدأ الحصص يوم الخميس 16 فبراير 
+                        سوف تبدأ الحصص يوم الثلاثاء 7 مارس 
                         </p>
                         </div>
                     </li>
@@ -61,7 +61,7 @@ export default function Checkout() {
                         <i className="fa-regular fa-clock w-8 p-1 ml-1 text-center"></i>
                         <div className=''>
                         <p>
-                        توقيت حصص البرمجة : كل خميس 20h
+                        توقيت حصص البرمجة : كل ثلاثاء 20h
                         </p>
                         </div>
                     </li>
@@ -84,7 +84,7 @@ export default function Checkout() {
                     </p>
                     <div className=' mx-auto max-w-none  text-sm
                             flex justify-around items-center flex-row 
-                             w-full px-5
+                             w-full px-5 lg:text-lg
                             '>
                                 {/* (e) => {  } */}
                         <a onClick={ clickHandler} 

@@ -24,7 +24,7 @@ export default function Hero(props) {
                     {/* Picture */}
                     <div
                         className="relative h-96 overflow-hidden rounded-lg my-auto
-                        max-h-56 md:max-h-full           
+                        max-h-56 md:max-h-full min-w-fit         
                         "
                         // hidden md:block 
                     >

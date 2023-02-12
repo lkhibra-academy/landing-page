@@ -19,19 +19,19 @@ export default function Fixed(props) {
         ? (content = content.Arabic)
         : (content = content.French);
 return (
-    <section>
+    <section className='md:hidden'>
     {/* Buttom Bar */}
     <div className='fixed bottom-0 mx-auto px-2 sm:px-6
     bg-white h-16 flex flex-row justify-around items-center pb-3 pt-2
-    border-t md:hidden w-full z-50
+    border-t w-full z-50
     '>
-        <div className="max-w-xl flex flex-row w-full ">
+        <div className="max-w-xl flex flex-row w-full">
         <a onClick={(e) => { e.preventDefault(); e.stopPropagation(); setModalOpen(true); }} 
                         aria-controls="modal"
                         className="btn
                         ml-2 mr-4 p-2.5 bg-red-primary flex-initial
                         text-white text-center w-full h-10
-                        flex justify-around items-center 
+                        flex justify-around items-center
                         " 
                         type="submit">
                     {content.cta}

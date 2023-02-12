@@ -34,9 +34,9 @@ export default function More(props) {
 
   return (
       <div className="">
-        <section className="relative max-w-3xl mx-auto px-8 py-8 sm:px-12 lg:px-8">
+        <section className="relative max-w-3xl mx-auto px-8 py-8 sm:px-12 lg:px-8 lg:max-w-full">
               <p className="font-bold leading-tight text-2xl md:text-3xl text-center "> {content.title}</p>
-            <ul className="grid grid-cols-1 gap-4 mt-6 md:gap-12 md:mt-16 md:grid-cols-2">
+            <ul className="grid grid-cols-1 gap-4 mt-6 md:gap-12 md:mt-16 md:grid-cols-2 lg:grid-cols-4">
               {/* items */}
 
               <li className="flex items-start text-right ml-auto">
