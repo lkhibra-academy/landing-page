@@ -8,8 +8,8 @@ export default function Offers(props) {
     let content = {
         Arabic: {
             title:": يتضمن  هذا تدريب ",
-            item1:"4 حصة برمجية (Google Meet)",
-            item2:" حصتين Soft skills",
+            item1:"12 حصة برمجية (Google Meet)",
+            item2:"6 حصص Soft skills",
             item3:"10 مشاريع برمجية ",
             item4:"شهادة معتمدة",
             item5:"متابعة شخصية",
