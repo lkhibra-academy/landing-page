@@ -24,12 +24,12 @@ export default function Hero(props) {
                     {/* Picture */}
                     <div
                         className="relative h-96 overflow-hidden rounded-lg my-auto
-                        max-h-56 md:max-h-full min-w-fit         
+                        max-h-56 md:max-h-full        
                         "
                         // hidden md:block 
                     >
                         <img
-                        className="absolute inset-0 h-full mx-auto w-fit"
+                        className="absolute inset-0 h-full mx-auto w-fit object-contain"
                         srcset={heropic}
                         alt="woman smilling"
                         />
