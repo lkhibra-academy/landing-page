@@ -16,7 +16,7 @@ export default function Offers(props) {
             item6:"أكتر من 20 ملفات دروس لتحميل",
             item7:"تمارين تطبيقية",
 
-            item11:" 4 حصة برمجية (Google Meet)",
+            item11:" 4 حصص برمجية (Google Meet)",
             item22:" حصتين Soft skills",
             item33:" 3 مشاريع برمجية ",
             item44:"متابعة شخصية",
