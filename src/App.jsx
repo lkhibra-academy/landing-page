@@ -15,6 +15,7 @@ import Responsibility from './pages/Responsibility';
 import Payment from './pages/Payment';
 import ThankYou from './pages/ThankYou';
 import ProgrammingTraining from './pages/Programming';
+import Test from './pages/Test';
 
 function App() {
   const location = useLocation();
@@ -41,6 +42,7 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/test" element={<Test />} />
         <Route exact path="/ProgrammingTraining" element={<ProgrammingTraining />} />
         <Route exact path="/Payment" element={<Payment />} />
         <Route exact path="/ThankYou" element={<ThankYou />} />
