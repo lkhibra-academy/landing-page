@@ -20,6 +20,8 @@ export default function LeadForm({src}) {
     const training = useRef()
     /** @type {React.MutableRefObject<HTMLSelectElement>} */
     const traffic = useRef()
+    /** @type {React.MutableRefObject<HTMLSelectElement>} */
+    const contact = useRef()
     const [phone, setPhone] = useState('')
     // /** @type {React.MutableRefObject<HTMLInputElement>} */
     // const phone = useRef()
@@ -27,7 +29,7 @@ export default function LeadForm({src}) {
         e.preventDefault()
         if(form.current.reportValidity())
         axios.post(
-            'https://lkhibra.alwaysdata.net/landing.php'
+            'https://lkhibra.alwaysdata.net/test.php'
             ,{
                 name: fullName.current.value,
                 email: email.current.value,
@@ -35,11 +37,12 @@ export default function LeadForm({src}) {
                 offer: offer.current.value,
                 training: training.current.value,
                 traffic: traffic.current.value,
+                contact: contact.current.value,
             }
         ).then((rep) => {
             if(rep.data.ok){
-                fbq('track', 'Lead');
-                navigate('/Checkout',{state:{price:offer.current.value,id:rep.data.id}});
+                // fbq('track', 'Lead');
+                navigate('./ThankYou',{state:{price:offer.current.value}});
                 
             }else{
                 setErr(true)
@@ -100,6 +103,10 @@ export default function LeadForm({src}) {
                     </div>
                         <select id="traffic" ref={traffic} className="hidden">
                             <option value={src} defaultValue>
+                            </option>
+                        </select>
+                        <select id="contact" ref={contact} className="hidden">
+                            <option value="WA" defaultValue>
                             </option>
                         </select> 
                     <div className="">
