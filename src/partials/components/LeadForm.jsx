@@ -91,12 +91,12 @@ export default function LeadForm({src}) {
                         </label>
                         <select id="offer" ref={offer} className="mb-2  pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" required>
                             <option value="930">
-                                    930dh - 
+                                    970dh - 
                                     ثلاثة أشهر كاملة
                                     
                             </option>
                             <option value="350" defaultValue>
-                                350dh - 
+                                390dh - 
                                 كل شهر   
                             </option>
                         </select> 
