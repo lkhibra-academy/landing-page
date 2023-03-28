@@ -42,8 +42,9 @@ export default function LeadForm({src}) {
         ).then((rep) => {
             if(rep.data.ok){
                 fbq('track', 'Lead');
-                navigate('./ThankYou',{state:{price:offer.current.value}});
-                
+                if(src=="Ads") {
+                    navigate('../ThankYou',{state:{price:offer.current.value}});
+                } else navigate('./ThankYou',{state:{price:offer.current.value}});
             }else{
                 setErr(true)
             }

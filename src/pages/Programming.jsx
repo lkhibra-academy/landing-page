@@ -3,8 +3,7 @@ import Header from '../partials/components/Header';
 import Fixed from '../partials/components/Fixed';
 import Footer from '../partials/components/Footer';
 import Hero from '../partials/components/Hero';
-import Learn from '../partials/components/Learn';
-import Includes from '../partials/components/Includes';
+import DoubleSecond from '../partials/components/DoubleSecond';
 import Content from '../partials/components/Content';
 import Need from '../partials/components/Need';
 import More from '../partials/components/More';
@@ -23,10 +22,9 @@ export default function ProgrammingTraining() {
       <Header />
 
       {/*  Page content */}
-      <main className="flex-grow max-w-6xl justify-center items-center">
+      <main className="flex-grow">
       <Hero language="Arabic"/>
-      <Learn language="Arabic"/>
-      <Includes language="Arabic"/>
+      <DoubleSecond />
       <ForWho language="Arabic"/>
       <Content language="Arabic"/>
       <More language="Arabic"/>
