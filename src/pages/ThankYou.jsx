@@ -33,7 +33,7 @@ export default function ThankYou() {
                 </div>
                 <p className="font-light text-xs text-center p-2" dir="rtl">
                 ان كان هناك اي استفسار يمكن تواصل معنا عبر 
-                <a href="https://api.whatsapp.com/send?phone=212721466943" className='text-red-primary font-medium' > الواتساب</a>
+                <a href="https://api.whatsapp.com/send?phone=212637056721" className='text-red-primary font-medium' > الواتساب</a>
                 </p>
             </div>
                     </div>
