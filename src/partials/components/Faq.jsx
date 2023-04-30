@@ -11,10 +11,10 @@ export default function Faq() {
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6">
                     <p className="px-2 mb-4 font-bold leading-tight text-2xl md:text-3xl text-right">أسئلة متكررة</p>
                   <div className="space-y-2">
-                    <FaqBlock 
+                    {/* <FaqBlock 
                     qst=" وقتاش ايبدا تدريب ؟ " 
                     rpns1="الخميس 6 أبريل"                    
-                    />
+                    /> */}
                     <FaqBlock 
                     qst=" خطوات باش نتسجل فالتدريب ؟ " 
                     rpns1="من مور ماكتعمر الإستمارة"
