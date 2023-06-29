@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom"
-
 const Button1 = (props) => (
     <a href="#checkout" {...props}
         className="btn text-white bg-red-primary

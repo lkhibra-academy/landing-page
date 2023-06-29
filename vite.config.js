@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import postcss from './postcss.config.js'
-import react from '@vitejs/plugin-react'
+import preact from '@preact/preset-vite'
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,7 +11,12 @@ export default defineConfig({
   css: {
     postcss,
   },
-  plugins: [react()],
+  plugins: [preact(),ViteImageOptimizer({
+    jpg: {
+      // https://sharp.pixelplumbing.com/api-output#jpeg
+      quality: 70,
+    }
+  })],
   resolve: {
     alias: [
       {

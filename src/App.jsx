@@ -4,9 +4,9 @@ import {
   Route,
   useLocation
 } from 'react-router-dom';
-import 'aos/dist/aos.css';
+//import 'aos/dist/aos.css';
 import './css/style.css';
-import AOS from 'aos';
+//import AOS from 'aos';
 import Home from './pages/Home';
 import Checkout from './pages/Checkout';
 import Privacy from './pages/Privacy';
@@ -20,7 +20,7 @@ import Test from './pages/Test';
 function App() {
   const location = useLocation();
 
-  useEffect(() => {
+  /*useEffect(() => {
     AOS.init({
       once: true,
       disable: 'phone',
@@ -30,7 +30,7 @@ function App() {
   },[]);
   useEffect(() => {
     AOS.refresh()
-  })
+  })*/
 
   useEffect(() => {
     document.querySelector('html').style.scrollBehavior = 'auto'

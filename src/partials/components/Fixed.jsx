@@ -45,8 +45,8 @@ return (
                 right: '15px',
                 bottom: '70px'
             }} 
-            onClick="fbq('track', 'Contact')">
-                <img src={wtp}/>
+            onClick={(e) => fbq('track', 'Contact')}>
+                <img src={wtp} height={60} width={60}/>
         </a>
     {/* Modal */}
         <Modal id="modal" ariaLabel="modal-headline" show={ModalOpen} handleClose={() => setModalOpen(false)}>
