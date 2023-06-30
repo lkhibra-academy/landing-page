@@ -8,6 +8,7 @@ import {
 import './css/style.css';
 //import AOS from 'aos';
 import Home from './pages/Home';
+import Hoome from './pages/Hoome';
 import Checkout from './pages/Checkout';
 import Privacy from './pages/Privacy';
 import Termsofuse from './pages/Termsofuse';
@@ -41,7 +42,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/Home" element={<Hoome />} />
         <Route exact path="/test" element={<Test />} />
         <Route exact path="/ProgrammingTraining" element={<ProgrammingTraining />} />
         <Route exact path="/Payment" element={<Payment />} />
