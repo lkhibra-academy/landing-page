@@ -101,12 +101,15 @@ export default function Content(props) {
         ? (content = content.Arabic)
         : (content = content.French);
   return (
-    <section id="content" className="relative 
-    px-6 sm:px-12 py-4 md:py-12 ">
+    <section id="content" className="
+    relative 
+    max-w-6xl md:mx-auto md:justify-center
+    px-6 sm:px-12 py-4 md:py-10 
+    ">
     
     <div className="relative md:gap-6
     max-w-3xl md:max-w-none md:w-full 
-    mx-auto md:col-span-7 lg:col-span-6 md:mt-6 ">
+    mx-auto md:col-span-7 lg:col-span-6">
         
               {/* title */}
                 <p className="px-2 pb-4 font-bold leading-tight text-2xl md:text-3xl text-right">

@@ -16,7 +16,7 @@ export default function Need(props) {
     ? (content = content.Arabic)
     : (content = content.French);
     return (
-    <section className="relative max-w-3xl  
+    <section className="relative max-w-6xl  
     text-right py-4 px-7 mx-auto sm:px-10 md:pt-0">
       <details className=" group">
                   <summary dir="rtl" className="flex items-center justify-between cursor-pointer 

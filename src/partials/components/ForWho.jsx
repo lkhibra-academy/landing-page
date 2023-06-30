@@ -44,13 +44,21 @@ export default function ForWho(props) {
         ? (content = content.Arabic)
         : (content = content.French);
   return (
-    <section className="relative 
-    px-6 sm:px-12 md:py-12 my-6">
+    <section className=" 
+    relative max-w-6xl
+        md:mx-auto md:justify-center
+        ">
     
-    <div className="relative md:gap-6
-    max-w-3xl md:max-w-none md:w-full 
-    mx-auto md:col-span-7 lg:col-span-6 md:mt-6 ">
-        
+    {/* "flex flex-col md:flex-row 
+    max-w-7xl md:mx-auto md:justify-center
+    
+    
+    
+    relative md:gap-6 
+    max-w-3xl
+    
+    */}
+        <div className="px-6 sm:px-12 md:py-12 my-6 mx-auto md:col-span-7 lg:col-span-6 md:mt-6">
               {/* title */}
                 <p className="px-2 pb-4 font-bold leading-tight text-2xl lg:text-3xl md:text-center lg:mb-2 text-right">
                     {content.title}
@@ -215,7 +223,7 @@ export default function ForWho(props) {
                   </div>
                 </details>
               </div>
-            </div>
+              </div>
     </section >
   );
 }
