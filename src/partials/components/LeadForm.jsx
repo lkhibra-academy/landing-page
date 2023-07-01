@@ -1,8 +1,10 @@
-import axios from 'axios'
-import Cleave from 'cleave.js/react'
-import CleavePhone from 'cleave.js/dist/addons/cleave-phone.ma'
-import React, { useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import axios from 'axios';
+import Cleave from 'cleave.js/react';
+import CleavePhone from 'cleave.js/dist/addons/cleave-phone.ma';
+import React, { useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import TestComp from "./TestComp";
+
 
 export default function LeadForm({src}) {
     // const [ok, setOk] = useState(false)
@@ -53,7 +55,8 @@ export default function LeadForm({src}) {
         })
     }
     return (
-            <div className="max-w-lg px-4 mx-4 lg:px-8 rounded-lg border border-gray-200 shadow-md p-8 m-2 bg-white">
+            <div className="max-w-lg px-8 mx-4 lg:px-8 rounded-lg border 
+            border-gray-200 shadow-md py-4 m-2 bg-white">
                 <form ref={form} className="space-y-3">
                     <div className={`${err?'':'hidden'}  text-center p-[20px] bg-red-600 text-white w-full mb-[15px]`}>
                         An unexpected error occurred.
@@ -118,6 +121,7 @@ export default function LeadForm({src}) {
                         </a>
                     </div>
                 </form>
+                <TestComp language="Arabic"/>
             </div>
     )
 }

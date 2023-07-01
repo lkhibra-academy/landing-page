@@ -11,7 +11,7 @@ import Offers from '../partials/components/Offers';
 import ForWho from '../partials/components/ForWho';
 import Faq from '../partials/components/Faq';
 import Testimonials from '../partials/components/Testimonials';
-import Team from '../partials/components/Team';
+import TestComp from '../partials/components/TestComp';
 
 
 export default function Test() {
@@ -32,7 +32,7 @@ export default function Test() {
       <Testimonials />
       <Need language="Arabic"/>
       <Offers language="Arabic" src="Organic"/>
-      <Team/>
+      <TestComp language="Arabic"/>
       {/* <TestimonyCard /> */}
       <Faq />
       </main>
