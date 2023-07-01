@@ -19,7 +19,7 @@ export default function TestComp(props) {
     : (content = content.French);
     return (
     <section className="relative max-w-6xl  
-    text-center px-7 mx-auto sm:px-10 md:py-0 pb-4">
+    text-center px-7 mx-auto sm:px-10 md:py-0 pb-4 pt-2">
       <details className=" group">
                   <summary dir="rtl" className="flex items-center justify-center cursor-pointer 
                   pt-2 px-4 ">
