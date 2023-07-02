@@ -63,11 +63,11 @@ export default function LeadForm({ src }) {
       const arr = response.data;
       setOptions([
         {
-          value: 1050,
+          value: arr[0],
           label: `${arr[0]}dh - ثلاثة أشهر كاملة (with ${100*(1050-arr[0])/1050}% discount)`,
         },
         {
-          value: 490,
+          value: arr[1],
           label: `${arr[1]}dh - كل شهر (with ${100*(490-arr[1])/490}% discount)`,
         },
       ]);
@@ -89,11 +89,11 @@ export default function LeadForm({ src }) {
         const arr = response.data;
         setOptions([
           {
-            value: 1050,
+            value: arr[0],
             label: `${arr[0]}dh - ثلاثة أشهر كاملة ${query.has('code')?`(with ${100*(1050-arr[0])/1050}% discount)`:''}`,
           },
           {
-            value: 490,
+            value: arr[1],
             label: `${arr[1]}dh - كل شهر ${query.has('code')?`(with ${100*(490-arr[1])/490}% discount)`:''}`,
           },
         ]);
