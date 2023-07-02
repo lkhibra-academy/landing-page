@@ -26,14 +26,7 @@ export default function LeadForm({src}) {
   const [phone, setPhone] = useState('')
   // /** @type {React.MutableRefObject<HTMLInputElement>} */
   // const phone = useRef()
-  const [code, setCode] = useState('');
-
-  useEffect(() => {
-    let query = new URLSearchParams(window.location.search);
-    if (query.has('code')) {
-      setCode(query.get('code'));
-    }
-  }, []);
+  const [code, setCode] = useState('walo');
 
   function clickHandler(e) {
     e.preventDefault();
@@ -97,6 +90,7 @@ export default function LeadForm({src}) {
       .get('https://lkhibra.alwaysdata.net/api/price.php?' + q2.toString())
       .then((response) => {
         const arr = response.data;
+        setCode(query.get('code'));
         setOptions([
           {
             value: arr[0],
