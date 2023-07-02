@@ -17,7 +17,8 @@ export default function TestComp(props) {
     : (content = content.French);
 
   const [discount, setDiscount] = useState('');
-  const [err, seterr] = useState()
+  const err = props.err
+  // const [err, seterr] = useState()
 
   const clickHandler = () => {
     // Send the discount value to the backend

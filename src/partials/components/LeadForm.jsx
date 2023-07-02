@@ -9,6 +9,7 @@ export default function LeadForm({src}) {
   // const [ok, setOk] = useState(false)
   let navigate = useNavigate();
   const [err, setErr] = useState(false)
+  const [errC, setErrC] = useState(false)
   /** @type {React.MutableRefObject<HTMLInputElement>} */
   const fullName = useRef()
   /** @type {React.MutableRefObject<HTMLInputElement>} */
@@ -26,7 +27,7 @@ export default function LeadForm({src}) {
   const [phone, setPhone] = useState('')
   // /** @type {React.MutableRefObject<HTMLInputElement>} */
   // const phone = useRef()
-  const [code, setCode] = useState('walo');
+  const [code, setCode] = useState('');
 
   function clickHandler(e) {
     e.preventDefault();
@@ -60,20 +61,32 @@ export default function LeadForm({src}) {
   function handleCoupon(code) {
     let q = new URLSearchParams();
     q.set('code', code);
+    setCode(code);
     axios
     .get('https://lkhibra.alwaysdata.net/api/price.php?' + q.toString())
     .then((response) => {
       const arr = response.data;
-      setOptions([
-        {
-          value: arr[0],
-          label: `${arr[0]}dh - ثلاثة أشهر كاملة (with ${100*(1050-arr[0])/1050}% discount)`,
-        },
-        {
-          value: arr[1],
-          label: `${arr[1]}dh - كل شهر (with ${100*(490-arr[1])/490}% discount)`,
-        },
-      ]);
+      let s = new URLSearchParams(window.location.search);
+      if (arr == null) {
+        setErrC(true)
+        s.delete('code');
+        navigate(`?${s.toString()}`, {replace: true});
+        // window.location.search = s.toString();
+      } else {
+        setErrC(false)
+        s.set('code', code);
+        navigate(`?${s.toString()}`, {replace: true});
+        setOptions([
+          {
+            value: arr[0],
+            label: `${arr[0]}dh - ثلاثة أشهر كاملة (with ${100*(1050-arr[0])/1050}% discount)`,
+          },
+          {
+            value: arr[1],
+            label: `${arr[1]}dh - كل شهر (with ${100*(490-arr[1])/490}% discount)`,
+          },
+        ]);
+      }
     })
     .catch((error) => {
       console.error('Error fetching discount:', error);
@@ -85,22 +98,39 @@ export default function LeadForm({src}) {
   useEffect(() => {
     let query = new URLSearchParams(window.location.search);
     let q2 = new URLSearchParams();
-    if(query.has('code'))q2.set('code', query.get('code'));
+    if(query.has('code') && query.get('code') !== '') {
+      q2.set('code', query.get('code'));
+      setCode(query.get('code'));
+    }
     axios
       .get('https://lkhibra.alwaysdata.net/api/price.php?' + q2.toString())
       .then((response) => {
         const arr = response.data;
-        setCode(query.get('code'));
-        setOptions([
-          {
-            value: arr[0],
-            label: `${arr[0]}dh - ثلاثة أشهر كاملة ${query.has('code')?`(with ${100*(1050-arr[0])/1050}% discount)`:''}`,
-          },
-          {
-            value: arr[1],
-            label: `${arr[1]}dh - كل شهر ${query.has('code')?`(with ${100*(490-arr[1])/490}% discount)`:''}`,
-          },
-        ]);
+        if (arr == null) {
+          query.delete('code');
+          navigate(`?${query.toString()}`, {replace: true});
+          setOptions([
+            {
+              value: 1050,
+              label: `1050dh - ثلاثة أشهر كاملة`,
+            },
+            {
+              value: 490,
+              label: `490dh - كل شهر`,
+            },
+          ]);
+        } else {
+          setOptions([
+            {
+              value: arr[0],
+              label: `${arr[0]}dh - ثلاثة أشهر كاملة ${q2.has('code')?`(with ${100*(1050-arr[0])/1050}% discount)`:''}`,
+            },
+            {
+              value: arr[1],
+              label: `${arr[1]}dh - كل شهر ${q2.has('code')?`(with ${100*(490-arr[1])/490}% discount)`:''}`,
+            },
+          ]);
+        }
       })
       .catch((error) => {
         console.error('Error fetching discount:', error);
@@ -176,7 +206,7 @@ export default function LeadForm({src}) {
           </a>
         </div>
       </form>
-      <TestComp language="Arabic" onClick={handleCoupon} />
+      <TestComp language="Arabic" onClick={handleCoupon} err={errC} />
     </div>
   );
 }
