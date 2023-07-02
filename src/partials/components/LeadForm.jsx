@@ -6,26 +6,25 @@ import { useNavigate } from 'react-router-dom';
 import TestComp from './TestComp';
 
 export default function LeadForm({ src }) {
-  // const [ok, setOk] = useState(false)
   let navigate = useNavigate();
-  const [err, setErr] = useState(false)
-  /** @type {React.MutableRefObject<HTMLInputElement>} */
-  const fullName = useRef()
-  /** @type {React.MutableRefObject<HTMLInputElement>} */
-  const email = useRef()
-  /** @type {React.MutableRefObject<HTMLFormElement>} */
-  const form = useRef()
-  /** @type {React.MutableRefObject<HTMLSelectElement>} */
-  const offer = useRef()
-  /** @type {React.MutableRefObject<HTMLSelectElement>} */
-  const training = useRef()
-  /** @type {React.MutableRefObject<HTMLSelectElement>} */
-  const traffic = useRef()
-  /** @type {React.MutableRefObject<HTMLSelectElement>} */
-  const contact = useRef()
-  const [phone, setPhone] = useState('')
-  // /** @type {React.MutableRefObject<HTMLInputElement>} */
-  // const phone = useRef()
+  const [err, setErr] = useState(false);
+  const fullName = useRef();
+  const email = useRef();
+  const form = useRef();
+  const offer = useRef();
+  const training = useRef();
+  const traffic = useRef();
+  const contact = useRef();
+  const [phone, setPhone] = useState('');
+  const [discountCode, setDiscountCode] = useState('');
+
+  useEffect(() => {
+    let query = new URLSearchParams(window.location.search);
+    if (query.has('code')) {
+      setDiscountCode(query.get('code'));
+    }
+  }, []);
+
   function clickHandler(e) {
     e.preventDefault();
     if (form.current.reportValidity()) {
@@ -35,6 +34,7 @@ export default function LeadForm({ src }) {
           email: email.current.value,
           phone: phone,
           offer: offer.current.value,
+          coupon: discountCode,
           training: training.current.value,
           traffic: traffic.current.value,
           contact: contact.current.value,
@@ -42,13 +42,16 @@ export default function LeadForm({ src }) {
         .then((rep) => {
           if (rep.data.ok) {
             fbq('track', 'Lead');
-            if (src == 'Ads') {
+            if (src === 'Ads') {
               navigate('../ThankYou', { state: { price: offer.current.value } });
-            } else navigate('./ThankYou', { state: { price: offer.current.value } });
+            } else {
+              navigate('./ThankYou', { state: { price: offer.current.value } });
+            }
           } else {
             setErr(true);
           }
-        }).catch(() => {
+        })
+        .catch(() => {
           setErr(true);
         });
     }
@@ -58,23 +61,23 @@ export default function LeadForm({ src }) {
     let q = new URLSearchParams();
     q.set('code', code);
     axios
-    .get('https://lkhibra.alwaysdata.net/api/price.php?' + q.toString())
-    .then((response) => {
-      const arr = response.data;
-      setOptions([
-        {
-          value: arr[0],
-          label: `${arr[0]}dh - ثلاثة أشهر كاملة (with ${100*(1050-arr[0])/1050}% discount)`,
-        },
-        {
-          value: arr[1],
-          label: `${arr[1]}dh - كل شهر (with ${100*(490-arr[1])/490}% discount)`,
-        },
-      ]);
-    })
-    .catch((error) => {
-      console.error('Error fetching discount:', error);
-    });
+      .get('https://lkhibra.alwaysdata.net/api/price.php?' + q.toString())
+      .then((response) => {
+        const arr = response.data;
+        setOptions([
+          {
+            value: arr[0],
+            label: `${arr[0]}dh - ثلاثة أشهر كاملة (with ${100 * (1050 - arr[0]) / 1050}% discount)`,
+          },
+          {
+            value: arr[1],
+            label: `${arr[1]}dh - كل شهر (with ${100 * (490 - arr[1]) / 490}% discount)`,
+          },
+        ]);
+      })
+      .catch((error) => {
+        console.error('Error fetching discount:', error);
+      });
   }
 
   const [options, setOptions] = useState([]);
@@ -82,7 +85,7 @@ export default function LeadForm({ src }) {
   useEffect(() => {
     let query = new URLSearchParams(window.location.search);
     let q2 = new URLSearchParams();
-    if(query.has('code'))q2.set('code', query.get('code'));
+    if (query.has('code')) q2.set('code', query.get('code'));
     axios
       .get('https://lkhibra.alwaysdata.net/api/price.php?' + q2.toString())
       .then((response) => {
@@ -90,11 +93,11 @@ export default function LeadForm({ src }) {
         setOptions([
           {
             value: arr[0],
-            label: `${arr[0]}dh - ثلاثة أشهر كاملة ${query.has('code')?`(with ${100*(1050-arr[0])/1050}% discount)`:''}`,
+            label: `${arr[0]}dh - ثلاثة أشهر كاملة ${query.has('code') ? `(with ${100 * (1050 - arr[0]) / 1050}% discount)` : ''}`,
           },
           {
             value: arr[1],
-            label: `${arr[1]}dh - كل شهر ${query.has('code')?`(with ${100*(490-arr[1])/490}% discount)`:''}`,
+            label: `${arr[1]}dh - كل شهر ${query.has('code') ? `(with ${100 * (490 - arr[1]) / 490}% discount)` : ''}`,
           },
         ]);
       })
@@ -106,7 +109,7 @@ export default function LeadForm({ src }) {
   return (
     <div className="max-w-lg px-8 mx-4 lg:px-8 rounded-lg border border-gray-200 shadow-md py-4 m-2 bg-white">
       <form ref={form} className="space-y-3">
-        <div className={`${err ? '' : 'hidden'}  text-center p-[20px] bg-red-600 text-white w-full mb-[15px]`}>
+        <div className={`${err ? '' : 'hidden'} text-center p-[20px] bg-red-600 text-white w-full mb-[15px]`}>
           An unexpected error occurred.
         </div>
         <div className="">
@@ -114,7 +117,14 @@ export default function LeadForm({ src }) {
             <span>Full Name</span>
             <span>الإسم الكامل</span>
           </label>
-          <input ref={fullName} maxLength="30" className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" type="text" id="name" required />
+          <input
+            ref={fullName}
+            maxLength="30"
+            className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5"
+            type="text"
+            id="name"
+            required
+          />
         </div>
         <div className="">
           <label className="mb-1 text-sm text-gray-600 flex justify-between" htmlFor="phone">
@@ -133,7 +143,13 @@ export default function LeadForm({ src }) {
             <span>Email</span>
             <span>البريد الإلكتروني</span>
           </label>
-          <input ref={email} className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" type="email" id="email" required />
+          <input
+            ref={email}
+            className="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5"
+            type="email"
+            id="email"
+            required
+          />
         </div>
         <div className="">
           <select id="training" ref={training} className="mb-2 pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5 hidden">
