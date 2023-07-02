@@ -46,8 +46,8 @@ export default function TestComp(props) {
           </p>
         </summary>
         
-        <div className="my-3 mx-auto leading-relaxed text-gray-700 max-w-sm rounded-md flex flex-row justify-center items-center border border-gray-200 shadow-lg">
-        <form action="">
+        <div className="my-3 mx-auto leading-relaxed text-gray-700 max-w-sm rounded-md border border-gray-200 shadow-lg">
+        <form action="" className="flex flex-row justify-center items-center">
           <input
             type="text"
             placeholder="COUPON CODE"
