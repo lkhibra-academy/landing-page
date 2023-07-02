@@ -17,8 +17,9 @@ export default function TestComp(props) {
     : (content = content.French);
 
   const [discount, setDiscount] = useState('');
+  const [err, seterr] = useState()
 
-  const handleSubmit = () => {
+  const clickHandler = () => {
     // Send the discount value to the backend
     fetch('https://lkhibra.alwaysdata.net/discount.php', {
       method: 'POST',
@@ -56,9 +57,12 @@ export default function TestComp(props) {
             onChange={(e) => setDiscount(e.target.value)}
           />
           <button
-            type={submit}
+            type="submit"
             className="text-white bg-red-primary px-3 py-2 rounded-r-md"
-            onClick={clickHandler}
+            onClick={(e)=>{
+              e.preventDefault()
+              props.onClick(discount)
+            }}
           >
             Apply
           </button>

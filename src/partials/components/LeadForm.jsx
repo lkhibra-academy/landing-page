@@ -54,21 +54,47 @@ export default function LeadForm({ src }) {
     }
   }
 
+  function handleCoupon(code) {
+    let q = new URLSearchParams();
+    q.set('code', code);
+    axios
+    .get('https://lkhibra.alwaysdata.net/api/price.php?' + q.toString())
+    .then((response) => {
+      const arr = response.data;
+      setOptions([
+        {
+          value: 1050,
+          label: `${arr[0]}dh - ثلاثة أشهر كاملة (with ${100*(1050-arr[0])/1050}% discount)`,
+        },
+        {
+          value: 490,
+          label: `${arr[1]}dh - كل شهر (with ${100*(490-arr[1])/490}% discount)`,
+        },
+      ]);
+    })
+    .catch((error) => {
+      console.error('Error fetching discount:', error);
+    });
+  }
+
   const [options, setOptions] = useState([]);
 
   useEffect(() => {
+    let query = new URLSearchParams(window.location.search);
+    let q2 = new URLSearchParams();
+    if(query.has('code'))q2.set('code', query.get('code'));
     axios
-      .get('https://lkhibra.alwaysdata.net/discount.php')
+      .get('https://lkhibra.alwaysdata.net/api/price.php?' + q2.toString())
       .then((response) => {
-        const { discount } = response.data;
+        const arr = response.data;
         setOptions([
           {
             value: 1050,
-            label: `1050dh - ثلاثة أشهر كاملة (with ${discount}% discount)`,
+            label: `${arr[0]}dh - ثلاثة أشهر كاملة ${query.has('code')?`(with ${100*(1050-arr[0])/1050}% discount)`:''}`,
           },
           {
             value: 490,
-            label: `490dh - كل شهر (with ${discount}% discount)`,
+            label: `${arr[1]}dh - كل شهر ${query.has('code')?`(with ${100*(490-arr[1])/490}% discount)`:''}`,
           },
         ]);
       })
@@ -146,7 +172,7 @@ export default function LeadForm({ src }) {
           </a>
         </div>
       </form>
-      <TestComp language="Arabic" />
+      <TestComp language="Arabic" onClick={handleCoupon} />
     </div>
   );
 }
