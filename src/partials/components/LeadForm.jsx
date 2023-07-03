@@ -5,7 +5,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import TestComp from './TestComp';
 
-export default function LeadForm({src}) {
+export default function LeadForm({src, options, setOptions, code, setCode}) {
   // const [ok, setOk] = useState(false)
   let navigate = useNavigate();
   const [err, setErr] = useState(false)
@@ -27,7 +27,7 @@ export default function LeadForm({src}) {
   const [phone, setPhone] = useState('')
   // /** @type {React.MutableRefObject<HTMLInputElement>} */
   // const phone = useRef()
-  const [code, setCode] = useState('');
+  
 
   function clickHandler(e) {
     e.preventDefault();
@@ -93,49 +93,8 @@ export default function LeadForm({src}) {
     });
   }
 
-  const [options, setOptions] = useState([]);
+  // const [options, setOptions] = useState([]);
 
-  useEffect(() => {
-    let query = new URLSearchParams(window.location.search);
-    let q2 = new URLSearchParams();
-    if(query.has('code') && query.get('code') !== '') {
-      q2.set('code', query.get('code'));
-      setCode(query.get('code'));
-    }
-    axios
-      .get('https://lkhibra.alwaysdata.net/api/price.php?' + q2.toString())
-      .then((response) => {
-        const arr = response.data;
-        if (arr == null) {
-          query.delete('code');
-          navigate(`?${query.toString()}`, {replace: true});
-          setOptions([
-            {
-              value: 1050,
-              label: `1050dh - ثلاثة أشهر كاملة`,
-            },
-            {
-              value: 490,
-              label: `490dh - كل شهر`,
-            },
-          ]);
-        } else {
-          setOptions([
-            {
-              value: arr[0],
-              label: `${arr[0]}dh - ثلاثة أشهر كاملة ${q2.has('code')?`(with ${100*(1050-arr[0])/1050}% discount)`:''}`,
-            },
-            {
-              value: arr[1],
-              label: `${arr[1]}dh - كل شهر ${q2.has('code')?`(with ${100*(490-arr[1])/490}% discount)`:''}`,
-            },
-          ]);
-        }
-      })
-      .catch((error) => {
-        console.error('Error fetching discount:', error);
-      });
-  }, []);
 
   return (
     <div className="max-w-lg px-8 mx-4 lg:px-8 rounded-lg border border-gray-200 shadow-md py-4 m-2 bg-white">
@@ -183,7 +142,7 @@ export default function LeadForm({src}) {
             <span>اختر العرض </span>
           </label>
           <select id="offer" ref={offer} className="mb-2 pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" required>
-            {options.map((option) => (
+            {options?.map((option) => (
               <option key={option.value} value={option.value}>
                 {option.label}
               </option>
