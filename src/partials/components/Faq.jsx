@@ -11,10 +11,15 @@ export default function Faq() {
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6">
                     <p className="px-2 mb-4 font-bold leading-tight text-2xl md:text-3xl text-right">أسئلة متكررة</p>
                   <div className="space-y-2">
-                    {/* <FaqBlock 
+                    <FaqBlock 
                     qst=" وقتاش ايبدا تدريب ؟ " 
-                    rpns1="الخميس 6 أبريل"                    
-                    /> */}
+                    rpns1=" الأربعاء 12 يوليو  juillet"                    
+                    />
+                    <FaqBlock 
+                    qst=" توقيت الحصص ؟ " 
+                    rpns1="الحصص التقنية كل اربعاء مع 21h "
+                    rpns2=" حصص Soft Skills كل أحد مع 21h "             
+                    />
                     <FaqBlock 
                     qst=" خطوات باش نتسجل فالتدريب ؟ " 
                     rpns1="من مور ماكتعمر الإستمارة"
@@ -33,15 +38,34 @@ export default function Faq() {
                     qst="توقيت الحصص ؟ " 
                     rpns1=" كل خميس 20h"                 
                     /> */}
-                    <FaqBlock 
+                    
+                    {/* <FaqBlock 
                     qst="واش 1050 درهم كل شهر ؟" 
                     rpns1="لا، 1050 هو ثمن تلات أشهر كاملة "             
-                    />
+                    /> */}
+                    {/* <FaqBlock 
+                    qst=" هل تدريب عن بعد ؟ " 
+                    rpns1="نعم تدريب 100٪ اون لاين، تقدر تقرا منين ما كنتي فالمغرب 
+                    "
+                    rpns2="   "             
+                    /> */}
+
                     <FaqBlock 
-                    qst=" كيف استطيع انتقال الى عرض 3 أشهر ؟" 
-                    rpns1="تستطيع الاستافدة من العرض الأساسي لشهر الأول "
-                    rpns2=" موراها تخلص شهرين لي بقات ب 580 درهم"             
+                    qst=" واش خاص نكون عارف شي حاجة من قبل ؟ " 
+                    rpns1="لا، المدربين ديالنا كايبداو معاك من صفر   "
+                    rpns2="وخا مايكون عندك حتى فكرة من قبل على البرمجة"             
                     />
+                    
+                    <FaqBlock 
+                    qst=" واش خاصني نجي لعندكم باش نتعلم ؟  " 
+                    rpns1=" لا، جميع تدريباتنا عن بعد"
+                    rpns2=" تقدر تقرا من أي بلاصة كنتي فالمغرب "             
+                    />
+                    {/* <FaqBlock 
+                    qst=" " 
+                    rpns1=" "
+                    rpns2="   "             
+                    /> */}
                   </div>
 
                 </div>
