@@ -13,12 +13,12 @@ export default function Faq() {
                   <div className="space-y-2">
                     <FaqBlock 
                     qst=" وقتاش ايبدا تدريب ؟ " 
-                    rpns1=" الأربعاء 12 يوليو  juillet"                    
+                    rpns1=" الثلاثاء 8 أغسطس août"                    
                     />
                     <FaqBlock 
                     qst=" توقيت الحصص ؟ " 
-                    rpns1="الحصص التقنية كل اربعاء مع 21h "
-                    rpns2=" حصص Soft Skills كل أحد مع 21h "             
+                    rpns1="الحصص التقنية كل ثلاثاء مع 21h "
+                    rpns2=" حصص Soft Skills كل سبت مع 21h "             
                     />
                     <FaqBlock 
                     qst=" خطوات باش نتسجل فالتدريب ؟ " 
