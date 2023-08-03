@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useData } from '../../context'
 import axios from 'axios';
 
 import Modal from '../../utils/Modal';
@@ -6,6 +7,7 @@ import LeadForm from './LeadForm';
 
 export default function Offers(props) {
   const [ModalOpen, setModalOpen] = useState(false);
+  const { offers } = useData();
   let src1 = props.src;
   let content = {
     Arabic: {
@@ -30,59 +32,59 @@ export default function Offers(props) {
     ? (content = content.Arabic)
     : (content = content.French);
 
-  const [code, setCode] = useState('');
-  const [options, setOptions] = useState([
-    {
-      value: 1050,
-      label: `1050dh - ثلاثة أشهر كاملة`,
-    },
-    {
-      value: 490,
-      label: `490dh - كل شهر`,
-    },
-  ]);
+  // const [code, setCode] = useState('');
+  // const [options, setOptions] = useState([
+  //   {
+  //     value: 1050,
+  //     label: `1050dh - ثلاثة أشهر كاملة`,
+  //   },
+  //   {
+  //     value: 490,
+  //     label: `490dh - كل شهر`,
+  //   },
+  // ]);
 
-  useEffect(() => {
-    let query = new URLSearchParams(window.location.search);
-    let q2 = new URLSearchParams();
-    if(query.has('code') && query.get('code') !== '') {
-      q2.set('code', query.get('code'));
-      setCode(query.get('code'));
-    }
-    axios
-      .get('https://lkhibra.alwaysdata.net/api/price.php?' + q2.toString())
-      .then((response) => {
-        const arr = response.data;
-        if (arr == null) {
-          query.delete('code');
-          navigate(`?${query.toString()}`, {replace: true});
-          setOptions([
-            {
-              value: 1050,
-              label: `1050dh - ثلاثة أشهر كاملة`,
-            },
-            {
-              value: 490,
-              label: `490dh - كل شهر`,
-            },
-          ]);
-        } else {
-          setOptions([
-            {
-              value: arr[0],
-              label: `${arr[0]}dh - ثلاثة أشهر كاملة ${q2.has('code')?`(with ${100*(1050-arr[0])/1050}% discount)`:''}`,
-            },
-            {
-              value: arr[1],
-              label: `${arr[1]}dh - كل شهر ${q2.has('code')?`(with ${100*(490-arr[1])/490}% discount)`:''}`,
-            },
-          ]);
-        }
-      })
-      .catch((error) => {
-        console.error('Error fetching discount:', error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   let query = new URLSearchParams(window.location.search);
+  //   let q2 = new URLSearchParams();
+  //   if(query.has('code') && query.get('code') !== '') {
+  //     q2.set('code', query.get('code'));
+  //     setCode(query.get('code'));
+  //   }
+  //   axios
+  //     .get('https://lkhibra.alwaysdata.net/api/price.php?' + q2.toString())
+  //     .then((response) => {
+  //       const arr = response.data;
+  //       if (arr == null) {
+  //         query.delete('code');
+  //         navigate(`?${query.toString()}`, {replace: true});
+  //         setOptions([
+  //           {
+  //             value: 1050,
+  //             label: `1050dh - ثلاثة أشهر كاملة`,
+  //           },
+  //           {
+  //             value: 490,
+  //             label: `490dh - كل شهر`,
+  //           },
+  //         ]);
+  //       } else {
+  //         setOptions([
+  //           {
+  //             value: arr[0],
+  //             label: `${arr[0]}dh - ثلاثة أشهر كاملة ${q2.has('code')?`(with ${100*(1050-arr[0])/1050}% discount)`:''}`,
+  //           },
+  //           {
+  //             value: arr[1],
+  //             label: `${arr[1]}dh - كل شهر ${q2.has('code')?`(with ${100*(490-arr[1])/490}% discount)`:''}`,
+  //           },
+  //         ]);
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error fetching discount:', error);
+  //     });
+  // }, []);
 
   return (
     <section id="offers" className="relative max-w-6xl mx-auto px-0 sm:px-6 mb-4 mt-2">
@@ -96,7 +98,7 @@ export default function Offers(props) {
               </h3>
               <p className="flex items-baseline text-neutral-600 space-x-2 leading-tight">
                 <span className="text-6xl font-bold">
-                  {options[1]?.value}
+                  {offers[1]?.value}
                 </span>
                 <span className="text-2xl font-semibold text-neutral-500">
                   {' '}
@@ -163,7 +165,7 @@ export default function Offers(props) {
               <h3 className="font-semibold text-lg text-white">أحسن عرض</h3>
               <p className="flex items-baseline text-white space-x-2 leading-tight">
                 <span className="text-6xl font-bold">
-                  {options[0]?.value}
+                  {offers[0]?.value}
                 </span>
                 <span className="text-2xl font-semibold "> درهم </span>
               </p>
@@ -236,7 +238,7 @@ export default function Offers(props) {
       </div>
       <Modal id="modal" ariaLabel="modal-headline" show={ModalOpen} handleClose={() => setModalOpen(false)}>
         <div className="relative">
-          <LeadForm src={props.src} options={options} setOptions={setOptions} code={code} setCode={setCode}/>
+          <LeadForm src={props.src}/>
         </div>
       </Modal>
     </section>

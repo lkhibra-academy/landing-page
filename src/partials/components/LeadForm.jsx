@@ -4,12 +4,14 @@ import CleavePhone from 'cleave.js/dist/addons/cleave-phone.ma';
 import React, { useRef, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import TestComp from './TestComp';
+import { useData } from "../../context";
 
-export default function LeadForm({src, options, setOptions, code, setCode}) {
+export default function LeadForm({src}) {
+  const { offers,code,setCode,errC } = useData();
   // const [ok, setOk] = useState(false)
   let navigate = useNavigate();
   const [err, setErr] = useState(false)
-  const [errC, setErrC] = useState(false)
+  // const [errC, setErrC] = useState(false)
   /** @type {React.MutableRefObject<HTMLInputElement>} */
   const fullName = useRef()
   /** @type {React.MutableRefObject<HTMLInputElement>} */
@@ -57,45 +59,6 @@ export default function LeadForm({src, options, setOptions, code, setCode}) {
         });
     }
   }
-
-  function handleCoupon(code) {
-    let q = new URLSearchParams();
-    q.set('code', code);
-    setCode(code);
-    axios
-    .get('https://lkhibra.alwaysdata.net/api/price.php?' + q.toString())
-    .then((response) => {
-      const arr = response.data;
-      let s = new URLSearchParams(window.location.search);
-      if (arr == null) {
-        setErrC(true)
-        s.delete('code');
-        navigate(`?${s.toString()}`, {replace: true});
-        // window.location.search = s.toString();
-      } else {
-        setErrC(false)
-        s.set('code', code);
-        navigate(`?${s.toString()}`, {replace: true});
-        setOptions([
-          {
-            value: arr[0],
-            label: `${arr[0]}dh - ثلاثة أشهر كاملة (with ${100*(1050-arr[0])/1050}% discount)`,
-          },
-          {
-            value: arr[1],
-            label: `${arr[1]}dh - كل شهر (with ${100*(490-arr[1])/490}% discount)`,
-          },
-        ]);
-      }
-    })
-    .catch((error) => {
-      console.error('Error fetching discount:', error);
-    });
-  }
-
-  // const [options, setOptions] = useState([]);
-
-
   return (
     <div className="max-w-lg px-8 mx-4 lg:px-8 rounded-lg border border-gray-200 shadow-md py-4 m-2 bg-white">
       <form ref={form} className="space-y-3">
@@ -142,7 +105,7 @@ export default function LeadForm({src, options, setOptions, code, setCode}) {
             <span>اختر العرض </span>
           </label>
           <select id="offer" ref={offer} className="mb-2 pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" required>
-            {options?.map((option) => (
+            {offers?.map((option) => (
               <option key={option.value} value={option.value}>
                 {option.label}
               </option>
@@ -165,7 +128,10 @@ export default function LeadForm({src, options, setOptions, code, setCode}) {
           </a>
         </div>
       </form>
-      <TestComp language="Arabic" onClick={handleCoupon} err={errC} />
+      <div className={`${errC?'':'hidden'}  text-center p-[10px] bg-red-600 text-white w-full my-[5px]`}>
+          Wrong Code. try again!
+      </div>
+      <TestComp language="Arabic" onClick={setCode} />
     </div>
   );
 }

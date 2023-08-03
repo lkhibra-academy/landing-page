@@ -67,9 +67,6 @@ export default function TestComp(props) {
           >
             Apply
           </button>
-          <div className={`${err?'':'hidden'}  text-center p-[20px] bg-red-600 text-white w-full mb-[15px]`}>
-                        Wrong Code. try again!
-                    </div>
         </form>
         </div>
       </details>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Routes,
   Route,
@@ -17,6 +17,7 @@ import Payment from './pages/Payment';
 import ThankYou from './pages/ThankYou';
 import ProgrammingTraining from './pages/Programming';
 import Test from './pages/Test';
+import { State } from './context';
 
 function App() {
   const location = useLocation();
@@ -41,9 +42,10 @@ function App() {
 
   return (
     <>
+    <State>
       <Routes>
-      <Route exact path="/" element={<Home />} />
-      <Route exact path="/Home" element={<Hoome />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/Home" element={<Hoome />} />
         <Route exact path="/test" element={<Test />} />
         <Route exact path="/ProgrammingTraining" element={<ProgrammingTraining />} />
         <Route exact path="/Payment" element={<Payment />} />
@@ -53,7 +55,7 @@ function App() {
         <Route exact path="/Termsofuse" element={<Termsofuse />} />
         <Route exact path="/Responsibility" element={<Responsibility />} />
       </Routes>
-      
+      </State>
     </>
   );
 }

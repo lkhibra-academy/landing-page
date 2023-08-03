@@ -23,7 +23,7 @@ return (
     {/* Buttom Bar */}
     <div className='fixed bottom-0 mx-auto px-2 sm:px-6
     bg-white h-16 flex flex-row justify-around items-center pb-3 pt-2
-    border-t w-full z-50
+    border-t w-full z-40
     '>
         <div className="max-w-xl flex flex-row w-full">
         <a onClick={(e) => { e.preventDefault(); e.stopPropagation(); setModalOpen(true); }} 
@@ -39,7 +39,7 @@ return (
         </div>
     </div>
     {/* Whatsapp BTN */}
-        <a href="https://api.whatsapp.com/send?phone=212628838971" className="whatsapp-button z-50" 
+        <a href="https://api.whatsapp.com/send?phone=212628838971" className="whatsapp-button z-40" 
             target="_blank" style={{
                 position: 'fixed',
                 right: '15px',
