@@ -1,0 +1,12 @@
+[
+    {
+        "num": "80+",
+        "desc": "Statistics.n_students"
+    },{
+        "num": "600+",
+        "desc": "Statistics.n_h_trainings"
+    },{
+        "num": "1000+",
+        "desc": "Statistics.n_h_courses"
+    }
+]

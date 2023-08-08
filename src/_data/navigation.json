@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Navigation.Home",
+        "url": "/"
+    },{
+        "name": "Navigation.Trainings",
+        "items":  [
+          {
+            "label": "Programming",
+            "url": "/Programming"
+          },
+          {
+            "label": "Front-End",
+            "url": "/Frontend"
+          },
+          {
+            "label": "Design",
+            "url": "/Design",
+            "soon": true
+          }
+        ]
+    },{
+        "name": "Navigation.Certificates",
+        "url": "/certificate"
+    }
+]

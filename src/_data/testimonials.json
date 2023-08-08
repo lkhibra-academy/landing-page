@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Malak Laarabi",
+    "status": "Programming 101 Training Student",
+    "pic": "/images/malak.jpg",
+    "quote": "Formation de haut niveau, cela m'a permis d'apprendre le langage de programmation python de manière simple (synthaxe, POO, principales bibliothèques de python), le plus important est que nous travaillions sur des projets avec la possibilité de contacter notre professeur tout le temps"
+  },
+  {
+    "name": "Hamza Kamal",
+    "status": "Programming 101 Training Student",
+    "pic": "/images/hamza.jpg",
+    "quote": "I always have fears to do coding. After scrolling on Instagram, I found this page named \"lkhibra\", proposing an immersive python training. The instructor, is great at explaining the concepts. Especially, he is very patient and helpful.\""
+  },
+  {
+    "name": "Bahija Baidou",
+    "status": "Lkhibra flbermaja Training Student",
+    "pic": "/images/bahija.jpg",
+    "quote": "The material was presented in a way that was easy to understand, even if you don't really know programming languages. In addition, the training team was attentive and patient about everyone's level of understanding."
+  },
+  {
+    "name": "Nouhaila",
+    "status": "Programming Student",
+    "pic": "/images/nouhaila.jpg",
+    "quote": "I'm very much impressed and satisfied with my experience in lkhibra because I got all the training and support that I was looking for, the tutor was very helpful, he took care of any needs I required."
+  },
+  {
+    "name": "Maryam",
+    "status": "Graphic Design Student",
+    "pic": "/images/meryem.jpg",
+    "quote": "J'ai toujours voulu découvrir ce domaine, mais les centres donnent des prix très chers, jusqu'à ce que je trouve que lkhibra lance un atelier de design graphique avec un prix raisonnable.Les tuteurs étaient très utiles et nous ont donné toute l'attention dont nous avions besoin."
+  },
+  {
+    "name": "Youness",
+    "status": "Programming Student",
+    "pic": "/images/youness.jpg",
+    "quote": "This Training helped me grasp the basics of algorithmes and allowed me to use them with python, and this opened up my curiosity to learn more about programming and be as creative as i can."
+  }
+]
