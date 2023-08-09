@@ -34,12 +34,16 @@ function guessSource() {
     sessionStorage.setItem("trafficSource", utmSource);
     return utmSource;
   } else {
-    const refferer = new URL(trafficData.refferer);
-    if (refferer.hostname === location.hostname) {
+    try {
+      const refferer = new URL(trafficData.refferer);
+      if (refferer.hostname === location.hostname) {
+        return sessionStorage.getItem("trafficSource") ?? "Direct";
+      }
+      sessionStorage.setItem("trafficSource", trafficData.refferer);
+      return trafficData.refferer;
+    } catch (error) {
       return sessionStorage.getItem("trafficSource") ?? "Direct";
     }
-    sessionStorage.setItem("trafficSource", trafficData.refferer);
-    return trafficData.refferer;
   }
 }
 const defErrors = {
