@@ -6,17 +6,7 @@ import {
   A11y,
   Autoplay,
 } from "swiper/modules";
-const mediaQuery = window.matchMedia("(min-width: 768px)");
 document.addEventListener("alpine:init", () => {
-  const obj = Alpine.reactive({
-    mobile: !mediaQuery.matches,
-  });
-  mediaQuery.addEventListener("change", () => {
-    obj.mobile = !mediaQuery.matches;
-  });
-  Alpine.magic("mobile", () => {
-    return obj.mobile;
-  });
   Alpine.directive("swiper", (el) => {
     new Swiper(el as HTMLElement, {
       // Install modules
