@@ -28,6 +28,7 @@ const makeProps = (/** @type {any[]} */ args) => {
     args,
   };
 };
+const hastJsx = require("eleventy-hast-jsx");
 /**
  * 
  * @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig 
@@ -35,8 +36,28 @@ const makeProps = (/** @type {any[]} */ args) => {
  */
 module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("locale", "en");
-  eleventyConfig.addPlugin(require("eleventy-hast-jsx").plugin);
-  const jsxsymbol = require("eleventy-hast-jsx").renderComponent;
+  eleventyConfig.addPlugin(hastJsx.plugin);
+  const jsxsymbol = hastJsx.renderComponent;
+  const imageSync = function({ src, alt, formats, widths, sizes, attributes = {} }) {
+    let options = {
+      widths,
+      formats,
+      urlPath: "/img/",
+      outputDir: "./dist/img",
+    };
+
+    Image(src, options);
+
+    let imageAttributes = {
+      alt,
+      sizes,
+      ...attributes,
+    };
+    let metadata = Image.statsSync(src, options);
+    // You bet we throw an error on a missing alt (alt="" works okay)
+    const html = Image.generateHTML(metadata, imageAttributes);
+    return hastJsx.Raw({ html });
+  }
   eleventyConfig.addNunjucksAsyncShortcode("jsx", async function (name, props) {
     /** @type {Function} */
     const component = eleventyConfig[jsxsymbol];
@@ -46,7 +67,40 @@ module.exports = function (eleventyConfig) {
       ctx: {
         ...this.ctx,
         getFilter: (name) => eleventyConfig.getFilter(name).bind(this),
-      }
+        getLocale: (value) => {
+          const page = this.page || this.ctx.page;
+          const translations = this.ctx.translation;
+          const lang = page.lang ?? "en";
+          const translation = get(translations[lang], value, value);
+          if (!translation)
+            console.error(`"${value}" translation not found for lang: ${lang}`); // throw new Error(`"${value}" translation not found for lang: ${lang}`)
+          return translation;
+        },
+        Image: imageSync,
+      },
+    });
+  })
+  eleventyConfig.addPairedNunjucksAsyncShortcode("blk", async function (content, name, props) {
+    /** @type {Function} */
+    const component = eleventyConfig[jsxsymbol];
+    // console.log(eleventyConfig[jsxsymbol])
+    return await component(name, {
+      ...props,
+      children: { type: "raw", value: content },
+      ctx: {
+        ...this.ctx,
+        getFilter: (name) => eleventyConfig.getFilter(name).bind(this),
+        getLocale: (value) => {
+          const page = this.page || this.ctx.page;
+          const translations = this.ctx.translation;
+          const lang = page.lang ?? "en";
+          const translation = get(translations[lang], value, value);
+          if (!translation)
+            console.error(`"${value}" translation not found for lang: ${lang}`); // throw new Error(`"${value}" translation not found for lang: ${lang}`)
+          return translation;
+        },
+        Image: imageSync,
+      },
     });
   })
   eleventyConfig.addShortcode(

@@ -1,4 +1,4 @@
-<div x-data="$dialog">
+<div x-data="$dialog" id="register">
     <script type="application/json">
         {{ "CTA" | i18njson | safe }}
     </script>
@@ -9,6 +9,11 @@
         <div class="dialog-content overflow-auto max-w-lg w-full max-h-full">
             <div class="px-8 mx-4 lg:px-8 rounded-lg border border-gray-200 shadow-md py-4 m-2 bg-white">
                 <form class="space-y-3" id="cta-form">
+                    <noscript>
+                        <div class="text-center p-[10px] bg-red-600 rounded-md text-white w-full mb-[15px]">
+                            {{ "nojs" | i18n }}
+                        </div>
+                    </noscript>
                     <div class="text-center p-[10px] bg-red-600 rounded-md text-white w-full mb-[15px]" x-cloak
                         x-show="error !== ''" x-text="error"></div>
                     <div class="">

@@ -1,8 +1,10 @@
 {
   "soon": "قريبا",
+  "nojs": "فعل الجافا سكريبت للمتابعة",
   "CTA": {
     "strings": ["ثلاثة أشهر كاملة", "كل شهر"],
     "discount": "(with $i% discount)",
+    "register": "تسجيل",
     "errors": {
       "generic": "حدث خطأ",
       "invalidFields": "يجب عليك تعبئة الحقول المطلوبة",
@@ -30,6 +32,15 @@
   },
   "StudentTestimonials": {
     "Title": "شهادات الطلاب"
+  },
+  "FAQ": {
+    "title": "أسئلة متكررة",
+    "list": [
+      {
+        "qst": " وقتاش ايبدا تدريب ؟ ",
+        "ans": [" الثلاثاء 8 أغسطس août"]
+      }
+    ]
   },
   "MoreThanJustTraining": {
     "Title": "أكثر من مجرد تدريب",
