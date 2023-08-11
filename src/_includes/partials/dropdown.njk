@@ -12,7 +12,7 @@
             </svg>
         </a>
         <ul x-show="open" x-cloak class="text-right origin-top-right"
-            x-bind:class="$mobile || 'z-10 absolute top-full right-0 w-56 bg-white ml-4 rounded text-center border border-gray-200 shadow-md'">
+            x-bind:class="$mobile || 'z-10 absolute top-full right-0 w-56 bg-white rounded text-center border border-gray-200 shadow-md'">
             {% for item in items %}
                 <li class="p-2 font-medium">
                     {% if item.soon %}
@@ -20,9 +20,27 @@
                             {{ 'soon' | i18n }}
                         </span>
                     {% endif %}
-                    <a href="{{ item.url | locale_url }}">
-                        {{ item.label | i18n }}
-                    </a>
+                    {% if item.items %}
+                    <div class="" x-data="{open: false}" x-on:mouseover="$mobile || (open = true)"
+                        x-on:mouseout="$mobile || (open = false)" x-on:focus="$mobile || (open = true)"
+                        x-on:blur="$mobile || (open = false)" @resize.window="open = false">
+                        <a class="hover:text-gray-900 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out" href="#0"
+                            x-bind:aria-expanded="open" x-on:click="$mobile && (open = !open)" x-on:click.stop x-on:click.prevent>{{ item.label | i18n }}</a>
+                        <ul x-show="open" class="text-left origin-top-left"
+                            x-bind:class="$mobile || 'z-10 absolute top-0 -right-full h-full w-56 bg-white rounded text-center border border-gray-200 shadow-md'">
+                            {% for subitem in item.items %}
+                                <li class="p-2 font-medium">
+                                    <a class="hover:text-gray-900 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                                        href="{{ subitem.url | locale_url }}">{{ subitem.label | i18n }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% else %}
+                        <a href="{{ item.url | locale_url }}">
+                            {{ item.label | i18n }}
+                        </a>
+                    {% endif %}
                 </li>
             {% endfor %}
         </ul>
