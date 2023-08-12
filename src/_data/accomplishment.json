@@ -8,5 +8,9 @@
     },{
         "num": "1000+",
         "desc": "Statistics.n_h_courses"
+    },
+    {
+        "num": "500+",
+        "desc": "Statistics.n_plus"
     }
 ]

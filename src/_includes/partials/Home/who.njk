@@ -1,0 +1,11 @@
+<div class="relative max-w-6xl mx-auto py-6  px-5 sm:px-12
+">
+<h2 class='text-center h2 mb-4 bg-red-dark'>من نحن ؟</h2>
+  <div class="grid gap-6 grid-cols-3 bg-purple-400">
+    {% for item in who %}
+    <p class="mt-1 mb-3 text-base md:text-lg font-medium text-gray-500">
+        {{item.p | i18n}}
+    </p>
+    {% endfor %}
+  </div>
+</div>

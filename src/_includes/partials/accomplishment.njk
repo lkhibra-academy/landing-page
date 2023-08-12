@@ -1,9 +1,10 @@
-<div class="relative max-w-6xl mx-auto px-5 sm:px-6 py-12">
-  <div class="grid gap-6 sm:grid-cols-3 grid-cols-1">
+<div class="relative max-w-6xl mx-auto py-12  px-5 sm:px-12
+">
+  <div class="grid gap-6 grid-cols-2 sm:grid-cols-4">
     {% for item in accomplishment %}
-        <div class="relative p-2 border border-red-primary rounded-xl shadow-xl text-center justify-self-center sm:w-full lg:w-72 min-w-72 w-full mx-8">
-            <h5 class="text-5xl font-bold">{{item.num}}</h5>
-            <p class="mt-1 mb-3 text-lg font-medium text-gray-500">{{item.desc | i18n}}</p>
+        <div class="relative p-4 border border-red-primary rounded-xl shadow-xl text-center justify-self-center sm:w-full lg:w-42 min-w-42 w-full mx-8">
+            <h5 class="text-3xl sm:text-4xl font-bold">{{item.num}}</h5>
+            <p class="mt-1 mb-3 text-base md:text-lg font-medium text-gray-500">{{item.desc | i18n}}</p>
         </div>
     {% endfor %}
   </div>
