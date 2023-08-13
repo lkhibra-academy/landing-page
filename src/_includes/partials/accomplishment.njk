@@ -3,7 +3,7 @@
   <div class="grid gap-6 grid-cols-2 sm:grid-cols-4">
     {% for item in accomplishment %}
         <div class="relative p-4 border border-red-primary rounded-xl shadow-xl text-center justify-self-center sm:w-full lg:w-42 min-w-42 w-full mx-8">
-            <h5 class="text-3xl sm:text-4xl font-bold">{{item.num}}</h5>
+            <h5 class="text-3xl md:text-4xl font-bold">{{item.num}}</h5>
             <p class="mt-1 mb-3 text-base md:text-lg font-medium text-gray-500">{{item.desc | i18n}}</p>
         </div>
     {% endfor %}
