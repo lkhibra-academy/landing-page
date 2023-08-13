@@ -1,0 +1,47 @@
+<div class='relative max-w-6xl mx-auto px-5 sm:px-6 py-12'>
+    <h2 class='h2 mb-8 text-center'>                
+        {{ translation[page.lang].OurTrainings.Title | i18n }}    
+    </h2>
+    <div class="grid md:grid-cols-3 gap-4">
+        {% for training in translation[page.lang].OurTrainings.Trainings %}
+        <a 
+            class="overflow-hidden rounded-xl 
+            {# grid grid-rows-1 group md:grid-rows-3 #}
+            shadow-xl border border-gray-300"
+        >
+            {# <div class="relative ">
+                {% for item in training.content %}
+                {% image "src/assets"+item.img, item.title, ["png"], [48], "", { class: "absolute inset-0 object-cover w-full h-full", loading: "lazy", decoding: "async" } %}
+                {% endfor %}
+            </div> #}
+            {% for item in training.content %}
+            <div class="md:p-8 px-5 py-6" dir='rtl'>
+                <ul class="flex md:space-x-1 flex-wrap space-y-1 ">
+                    {% for tag in item.tags %}
+                    <li
+                        class="my-auto inline-block px-3 py-1 text-xs font-semibold text-white bg-red-primary rounded-full mx-1" 
+                    >
+                        {{ tag | i18n }}
+                    </li>
+                    {% endfor %}
+                </ul>
+
+                <p class="my-2.5 text-2xl font-bold">
+                    {{ item.title | i18n }}
+                </p>
+
+                <p class="mt-2 text-base text-gray-500">
+                    {{ item.desc | i18n }}
+                </p>
+                <p
+                    class="inline-block pb-1 mt-4 font-medium text-red-primary
+                    border-b border-red-primary "
+                >
+                    {{ item.cta | i18n }}
+                </p>
+            </div>
+            {% endfor %}
+        </a>
+        {% endfor %}
+    </div>
+</div>

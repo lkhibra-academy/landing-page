@@ -109,22 +109,40 @@
     "Title": "تدريباتنا",
     "Trainings": [
       {
-        "subtitle1": "تدريب الخبرة فالبرمجة",
-        "Description1": "اختصر الوقت وتعلم جميع أساسيات البرمجة بالبايثون عن طريق خمس مشاريع تطبيقية، في ثلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.",
-        "Link1": "https://website.lkhibra.ma/Programming",
-        "CTA": "",
-        "tag11": "Algorithms",
-        "tag12": "Data structures",
-        "tag13": "Python"
+        "title": "Python",
+        "content": [
+          {
+            "tags": ["Python", "Programming","css","html"],
+            "title": "تدريب الخبرة فالبرمجة",
+            "desc": "اختصر الوقت وتعلم جميع أساسيات البرمجة بالبايثون عن طريق خمس مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.",
+            "cta": "اكتشف المزيد",
+            "img":"/images/pythontraining.png"
+          }
+        ]
       },
       {
-        "subtitle2": "تدريب الخبرة فالبرمجة",
-        "Description2": "اختصر الوقت وتعلم جميع أساسيات البرمجة بالبايثون عن طريق خمس مشاريع تطبيقية، في ثلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.",
-        "Link2": "https://website.lkhibra.ma/Programming",
-        "CTA": "",
-        "tag21": "Algorithms",
-        "tag22": "Data structures",
-        "tag23": "Python"
+        "title": "Python",
+        "content": [
+          {
+            "tags": ["Python", "Programming","css","html"],
+            "title": "تدريب الخبرة فالبرمجة",
+            "desc": "اختصر الوقت وتعلم جميع أساسيات البرمجة بالبايثون عن طريق خمس مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.",
+            "cta": "اكتشف المزيد",
+            "img":"/images/pythontraining.png"
+          }
+        ]
+      },
+      {
+        "title": "Python",
+        "content": [
+          {
+            "tags": ["Python", "Programming","Programming"],
+            "title": "تدريب الخبرة فالبرمجة",
+            "desc": "اختصر الوقت وتعلم جميع أساسيات البرمجة بالبايثون عن طريق خمس مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.",
+            "cta": "اكتشف المزيد",
+            "img":"/images/pythontraining.png"
+          }
+        ]
       }
     ]
   },
