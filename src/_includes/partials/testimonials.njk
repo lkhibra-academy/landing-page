@@ -1,6 +1,6 @@
 <div class="max-w-6xl mx-auto px-5 sm:px-6 py-12" x-data dir="ltr">
     <div dir='rtl' class="w-full mx-auto text-center">
-        <h1 class='h2 mb-8'>شهادات الطلاب</h1>
+        <h2 class='h2 mb-6'>شهادات الطلاب</h2>
     </div>
     <div class="swiper" x-swiper>
         <div class="swiper-wrapper">
@@ -20,7 +20,8 @@
                             <span class="">&ldquo;</span>
                             <span x-text="showMore ? quote : $truncate(quote, 150)"></span>
                             <span class="">&rdquo;</span>
-                            <a class="text-gray-700 font-semibold text-right cursor-pointer" x-on:click="showMore = !showMore" x-text="showMore ? 'Show Less' : 'Show More'"></a>
+                            <a class="text-gray-700 font-semibold text-right cursor-pointer" 
+                            x-on:click="showMore = !showMore" x-text="showMore ? 'Show Less' : 'Show More'"></a>
                         </p>
                     </blockquote>
                 </div>
