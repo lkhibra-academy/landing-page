@@ -1,0 +1,20 @@
+<div class="relative max-w-6xl mx-auto py-4 px-5 sm:px-12">
+  <h2 class='text-center h2'>{{ "why[0].title" | i18n }}  </h2>
+  <div class="grid grid-cols-1 gap-4 mt-6 md:gap-12 md:mt-12 md:grid-cols-2 lg:grid-cols-4">
+    {% for item in translation[page.lang].why[1].content %}
+      <div class="flex items-start text-right ml-auto">
+        <div dir="rtl" class="mr-4">
+          <p class="text-lg font-semibold leading-tight">
+            {{ item.title | i18n }}
+          </p>
+          <p class="mt-1 text-base font-normal">
+            {{ item.p | i18n }}
+          </p>
+        </div>
+        <div class='flex-shrink-0 bg-white rounded-lg outline outline-1 outline-red-primary p-3 w-10 h-10 flex justify-center items-center'>
+          <i class="fa fa-users text-red-primary text-center" aria-hidden="true"></i>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,8 +1,8 @@
 <div class="relative max-w-6xl mx-auto py-6  px-5 sm:px-12
 ">
-<h2 class='text-center h2 mb-4'>من نحن ؟</h2>
+<h2 class='text-center h2 mb-6'>{{ "who[0].title" | i18n }}</h2>
   <div class="grid gap-2 md:gap-6 md:grid-cols-3 ">
-    {% for item in translation[page.lang].who %}
+    {% for item in translation[page.lang].who[1].content %}
     <p class="md:mt-1 mb-2 md:mb-3 text-base md:text-lg font-medium text-gray-700 text-right">
         {{item.p | i18n}}
     </p>
