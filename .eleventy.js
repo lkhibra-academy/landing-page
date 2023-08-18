@@ -14,20 +14,7 @@ function escapeHtml(unsafe) {
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
 }
-const makeProps = (/** @type {any[]} */ args) => {
-  if (args.length === 1 && typeof args[0] === "object") {
-    return {
-      ...args[0],
-      arg: args[0],
-      args,
-    };
-  }
 
-  return {
-    arg: args[0],
-    args,
-  };
-};
 const hastJsx = require("eleventy-hast-jsx");
 /**
  * 
@@ -38,7 +25,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("locale", "en");
   eleventyConfig.addPlugin(hastJsx.plugin);
   const jsxsymbol = hastJsx.renderComponent;
-  const imageSync = function({ src, alt, formats, widths, sizes, attributes = {} }) {
+  function imageToHtml(widths, formats, src, alt, sizes, attributes) {
     let options = {
       widths,
       formats,
@@ -56,6 +43,10 @@ module.exports = function (eleventyConfig) {
     let metadata = Image.statsSync(src, options);
     // You bet we throw an error on a missing alt (alt="" works okay)
     const html = Image.generateHTML(metadata, imageAttributes);
+    return html;
+  }
+  const imageSync = function({ src, alt, formats, widths, sizes, attributes = {} }) {
+    const html = imageToHtml(widths, formats, src, alt, sizes, attributes);
     return hastJsx.Raw({ html });
   }
   eleventyConfig.addNunjucksAsyncShortcode("jsx", async function (name, props) {
@@ -105,22 +96,8 @@ module.exports = function (eleventyConfig) {
   })
   eleventyConfig.addShortcode(
     "image",
-    async function (src, alt, formats, widths, sizes, attributes = {}) {
-      let metadata = await Image(src, {
-        widths,
-        formats,
-        urlPath: "/img/",
-        outputDir: "./dist/img",
-      });
-
-      let imageAttributes = {
-        alt,
-        sizes,
-        ...attributes,
-      };
-
-      // You bet we throw an error on a missing alt (alt="" works okay)
-      return Image.generateHTML(metadata, imageAttributes);
+    function (src, alt, formats, widths, sizes, attributes = {}) {
+      return imageToHtml(widths, formats, src, alt, sizes, attributes);
     }
   );
   eleventyConfig.addGlobalData("site", globalSiteData);
@@ -181,3 +158,4 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: "njk",
   };
 };
+
