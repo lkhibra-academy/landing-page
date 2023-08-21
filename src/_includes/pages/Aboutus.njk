@@ -7,20 +7,47 @@ plugins:
     - swiper
 ---
 
-{% from "partials/Training/heroTraining.njk" import heroTraining with context %}
-{% from "partials/Training/DoubleSec.njk" import DoubleSec with context %}
 {% include "partials/cta.njk" %}
 <main class="flex-grow">
-    {{ heroTraining("HeroPython") }}
-    {{ DoubleSec("IncludesPython","LearnPython","LearnPythonContent") }}
-    {# {% include "partials/accomplishment.njk" %}  #}
-    {% include "partials/Home/who.njk" %}
-    {% include "partials/testimonials.njk" %}
-    {% include "partials/Home/why.njk" %}
-    {% include "partials/Home/ourtrainings.njk" %}
-    {% include "partials/Home/certification.njk" %}
-    {% include "partials/offers.njk" %}
-    {% jsx "ForWho", name="ForWhoPython" %}
-    {% jsx "FAQ", name="FAQ" %}
+    <section class="relative max-w-6xl mx-auto px-5 sm:px-6">
+        {# hero section #}
+        {# <div class="grid grid-cols-1 gap-1 lg:gap-16 md:grid-cols-2 pt-4 md:pb-2 pb-0 md:pt-8">
+          <div
+            class="relative h-80 overflow-hidden rounded-lg my-auto max-h-56 md:max-h-full">
+            {% image "src/assets/images/heropic1.png", "woman smilling", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
+          </div>
+          <div
+            class="md:order-last flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0"
+            dir="rtl">
+      
+            <div class="text-center lg:text-right  self-start md:text-right">
+              <h2 class="text-2xl font-bold sm:text-3xl ">{{ "AboutUs.Intro" | i18n }}</h2>
+              <p class="mt-4 text-gray-600 text-lg mb-4 md:mb-0">{{ "HeroHome.subtitle" | i18n}}</p>
+              <div class="mx-auto max-w-none" x-data >
+                <a href="#register"
+                  class="btn text-white bg-red-primary w-full md:max-w-fit md:my-6 " x-cta >{{ "HeroHome.cta1" | i18n}}</a>
+                  {# <a href="#content"
+                  class="btn text-white bg-gray-900 w-full px-0 md:my-6 mr-0 md:mr-4">{{ "HeroHome.cta2" | i18n}}</a>
+              </div>
+      
+              
+            </div>
+          </div>
+        </div> #}
+        <div dir="rtl" class="text-center py-6 md:px-20 flex flex-col items-center">
+            <p class="text-2xl font-bold sm:text-3xl mb-4">{{ "AboutUs.Intro" | i18n }}</p>
+            <p class="text-lg font-medium sm:text-xl text-gray-600 max-w-lg">{{ "AboutUs.sub1" | i18n }}</p>
+            <p class="text-lg font-medium sm:text-xl text-gray-600 max-w-2xl">{{ "AboutUs.sub2" | i18n }}</p>
+            {# <p class="mt-4 text-gray-600 text-lg mb-4 md:mb-0">{{ "AboutUs.sub" | i18n}}</p> #}
+            <div class="mx-auto max-w-none" x-data >
+                <a href="#register"
+                  class="btn text-white bg-red-primary w-full md:max-w-fit md:my-6 " x-cta >
+                  {{ "HeroHome.cta1" | i18n}}
+                </a>
+            </div>
+    
+            
+          </div>    
+      </section>
 </main>
 {% jsx "Fixed" %}
