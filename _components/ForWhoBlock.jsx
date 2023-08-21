@@ -5,36 +5,43 @@
  */
 module.exports = function ForWhoBlock({ title,goal,goals}) {
     
-    return(
-    <details dir='rtl' className=" group">
-        <summary className="flex items-center justify-between cursor-pointer 
-        py-3 px-4 border-y border-y-gray-300 mb-2">
-        <p className="text-lg font-medium text-gray-800 lg:text-xl ">
-        {title}
-        </p>
-        <i className="fa fa-chevron-down
-        flex-shrink-0 p-1 text-center transition duration-300 group-open:hidden"></i>
-        <i className="fa fa-chevron-up
-        flex-shrink-0 p-1 text-center transition duration-300 hidden group-open:block"></i>
+    return (
+      <details dir="rtl" class="group">
+        <summary
+          class="flex items-center justify-between cursor-pointer 
+        py-3 px-4 border-y border-y-gray-300 mb-2"
+        >
+          <p class="text-lg font-medium text-gray-800 lg:text-xl ">{title}</p>
+          <svg
+            className="flex-shrink-0 mx-1 w-5 h-5 transition duration-300 group-open:-rotate-180"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
         </summary>
 
-        <div className="py-1 px-4 leading-relaxed text-gray-700">
-        <ul>                 
-            <li className='font-bold mb-2 mr-2'>
-                {goal}
-            </li>
+        <div class="py-1 px-4 leading-relaxed text-gray-700">
+          <ul>
+            <li class="font-bold mb-2 mr-2">{goal}</li>
 
             {goals.map((item, index) => (
-                <li key={index} className='flex items-start flex-row mb-1.5'>
-                <i className="fa-solid fa-check w-8 p-1 ml-1 text-center"></i>
-                <div className=''>
-                    <p>{item}</p>
+              <li key={index} class="flex items-start flex-row mb-1.5">
+                <i class="fa-solid fa-check w-8 p-1 ml-1 text-center"></i>
+                <div class="">
+                  <p>{item}</p>
                 </div>
-                </li>
+              </li>
             ))}
-
-        </ul>
+          </ul>
         </div>
-    </details>
+      </details>
     );
 }

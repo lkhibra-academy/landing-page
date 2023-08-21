@@ -6,30 +6,13 @@ plugins:
     - cleave-phone.ma
     - swiper
 ---
-<<<<<<< HEAD
-{% from "partials/Training/heroTraining.njk" import heroTraining with context %}
-{% from "partials/Training/DoubleSec.njk" import DoubleSec with context %}
-{# {% from "partials/Training/ForWho.njk" import ForWho with context %} #}
-=======
 
 {% from "partials/Training/heroTraining.njk" import heroTraining with context %}
 {% from "partials/Training/DoubleSec.njk" import DoubleSec with context %}
->>>>>>> a4ccc1fca52d6130bd421b2100af4c97074986b4
 {% include "partials/cta.njk" %}
 <main class="flex-grow">
     {{ heroTraining("HeroPython") }}
     {{ DoubleSec("IncludesPython","LearnPython","LearnPythonContent") }}
-<<<<<<< HEAD
-    {# {{ ForWho("ForWhoPyton") }} #}
-    {# {% include "partials/accomplishment.njk" %}  #}
-    {# {% include "partials/Home/who.njk" %} #}
-    {# {% include "partials/testimonials.njk" %} #}
-    {# {% include "partials/Home/why.njk" %} #}
-    {# {% include "partials/Home/ourtrainings.njk" %} #}
-    {# {% include "partials/Home/certification.njk" %} #}
-    {# {% include "partials/offers.njk" %} #}
-    {% jsx "ForWho" %}
-=======
     {# {% include "partials/accomplishment.njk" %}  #}
     {% include "partials/Home/who.njk" %}
     {% include "partials/testimonials.njk" %}
@@ -37,7 +20,7 @@ plugins:
     {% include "partials/Home/ourtrainings.njk" %}
     {% include "partials/Home/certification.njk" %}
     {% include "partials/offers.njk" %}
->>>>>>> a4ccc1fca52d6130bd421b2100af4c97074986b4
-    {% jsx "FAQ" %}
+    {% jsx "ForWho", name="ForWhoPython" %}
+    {% jsx "FAQ", name="FAQ" %}
 </main>
 {% jsx "Fixed" %}
