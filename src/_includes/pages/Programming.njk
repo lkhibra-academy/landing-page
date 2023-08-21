@@ -13,14 +13,13 @@ plugins:
 <main class="flex-grow">
     {{ heroTraining("HeroPython") }}
     {{ DoubleSec("IncludesPython","LearnPython","LearnPythonContent") }}
-    {# {% include "partials/accomplishment.njk" %}  #}
-    {% include "partials/Home/who.njk" %}
-    {% include "partials/testimonials.njk" %}
-    {% include "partials/Home/why.njk" %}
-    {% include "partials/Home/ourtrainings.njk" %}
-    {% include "partials/Home/certification.njk" %}
-    {% include "partials/offers.njk" %}
     {% jsx "ForWho", name="ForWhoPython" %}
+    {% jsx "TrainingContent", name="PythonContent" %}
+    {% include "partials/Home/why.njk" %}
+    {% include "partials/testimonials.njk" %} 
+    {# {% include "partials/Home/ourtrainings.njk" %}
+    {% include "partials/Home/certification.njk" %}  #}
+    {% include "partials/offers.njk" %}
     {% jsx "FAQ", name="FAQ" %}
 </main>
 {% jsx "Fixed" %}

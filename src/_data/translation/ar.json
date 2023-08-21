@@ -128,6 +128,112 @@
           }
         ]
       },
+  "PythonContent":{
+    "title":": محتوى تدريب ",
+    "modules": [
+      {
+        "title": "Algorithms & Python Basics",
+        "items": [
+          "- Variables",
+          "- Dynamic Typing",
+          "- Mutable and Immutable types",
+          "- Strings",
+          "- Escape Sequences",
+          "- Userful String Methods",
+          "- Formatted Strings",
+          "- Numbers",
+          "- Arithmetic Operators",
+          "- Type Conversion",
+          "- Conditional Operators",
+          "- Logical Operators",
+          "- Ternary Operator",
+          "- Loops (For,While)",
+          "- Arguments (xargs)",
+          "- Functions",
+          "- Scope"
+        ]
+      },
+      {
+        "title": "Data Structures",
+        "items": [
+          "- List",
+          "- Looping Over Lists",
+          "- Finding items",
+          "- Lambda Functions",
+          "- Sortings Lists",
+          "- Map Function",
+          "- Zip Function",
+          "- List Comprehensions",
+          "- Stacks",
+          "- Queues",
+          "- Tuples",
+          "- Arrays",
+          "- Sets",
+          "- Dictionaries",
+          "- Generator Expressions"
+        ]
+      },
+      {
+        "title": "Exceptions",
+        "items": [
+          "- Handling Exceptions",
+          "- Handling different Exceptions",
+          "- Raising Exceptions",
+          "- With Statement"
+        ]
+      },
+      {
+        "title": "Classes",
+        "items": [
+          "- Creating Classes",
+          "- Constructors",
+          "- Classes vs Instances",
+          "- Magic Methods",
+          "- Performing arithmetic operators with classes",
+          "- Inheritance",
+          "- Method Overriding",
+          "- Multiple Inheretence",
+          "- Abstract Base Classes",
+          "- Duck Typing"
+        ]
+      },
+      {
+        "title": "Modules",
+        "items": [
+          "- Creating Modules",
+          "- Compiled python files",
+          "- Module search",
+          "- Sub Packages",
+          "- Dir function"
+        ]
+      },
+      {
+        "title": "Machine Learning",
+        "items": [
+          "- What is Machine learning",
+          "- Machine Learning in action",
+          "- Libraries and tools for machine Learning",
+          "- Importing data sets",
+          "- Working on real machine learning problem",
+          "- Persisting Models"
+        ]
+      },
+      {
+        "title": "Soft Skills",
+        "items": [
+          "- How to learn",
+          "- Time management",
+          "- Problem-solving",
+          "- Motivation",
+          "- Focus",
+          "- Organisation",
+          "- Adaptability",
+          "- Teamwork",
+          "- Communication"
+        ]
+      }
+    ]
+  },
   "Statistics": {
     "n_h_courses": "عدد الحصص",
     "n_h_trainings": "عدد ساعات التدريب",
