@@ -1,0 +1,26 @@
+---
+layout: main.njk
+plugins:
+    - cta
+    - mask
+    - cleave-phone.ma
+    - swiper
+---
+
+{% from "partials/Training/heroTraining.njk" import heroTraining with context %}
+{% from "partials/Training/DoubleSec.njk" import DoubleSec with context %}
+{% include "partials/cta.njk" %}
+<main class="flex-grow">
+    {{ heroTraining("HeroPython") }}
+    {{ DoubleSec("IncludesPython","LearnPython","LearnPythonContent") }}
+    {# {% include "partials/accomplishment.njk" %}  #}
+    {% include "partials/Home/who.njk" %}
+    {% include "partials/testimonials.njk" %}
+    {% include "partials/Home/why.njk" %}
+    {% include "partials/Home/ourtrainings.njk" %}
+    {% include "partials/Home/certification.njk" %}
+    {% include "partials/offers.njk" %}
+    {% jsx "ForWho", name="ForWhoPython" %}
+    {% jsx "FAQ", name="FAQ" %}
+</main>
+{% jsx "Fixed" %}

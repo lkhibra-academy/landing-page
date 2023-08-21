@@ -12,23 +12,10 @@
           {
             "label": "Front-End",
             "url": "/Frontend"
-          },
-          {
-            "label": "Design",
-            "url": "/Design",
-            "soon": true
-          },{
-            "label": "__",
-            "items": [
-              {
-                "label": "Programming",
-                "url": "/Programming"
-              }
-            ]
           }
         ]
     },{
-        "name": "Navigation.Certificates",
-        "url": "/certificate"
+        "name": "Navigation.Aboutus",
+        "url": "/Aboutus"
     }
 ]
