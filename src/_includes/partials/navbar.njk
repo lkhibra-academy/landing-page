@@ -1,16 +1,16 @@
 {% from "partials/logo.njk" import Logo %}
 {% from "partials/dropdown.njk" import Dropdown with context %}
-<nav class="bg-white shadow-lkhibra w-full" dir="ltr" x-data="{
+<nav class="bg-white shadow-lkhibra w-full pt-1" dir="ltr" x-data="{
     navbar: false,
 }">
-  <div class="relative max-w-6xl mx-auto px-5 sm:px-6">
-    <div class="justify-center md:items-center md:flex">
-      <div class="bg-white">
-        <div class="flex items-center justify-between py-3 md:py-5 md:block">
+  <div class="relative max-w-6xl mx-auto px-5 sm:px-6 ">
+    <div class="justify-between md:items-center md:flex ">
+      <div class=" ">
+        <div class="flex items-center justify-between md:block">
           <a href="{{ "/" | locale_url }}" class="block" aria-label="lkhibra">
-            {{ Logo("w-20 md:w-28") }}
+            {{ Logo("w-40 md:w-56") }}
           </a>
-          <div class="md:hidden bg-white">
+          <div class="md:hidden">
             <button class="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
               @click="navbar = !navbar">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 20 20" fill="currentColor" x-cloak
@@ -27,12 +27,12 @@
           </div>
         </div>
       </div>
-      <div>
-        <div class="flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0"
+      <div class=" ">
+        <div class="flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 "
           x-cloak="mobile"
           x-bind:class="navbar ? 'block' : 'hidden'">
           <ul
-            class="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-lg font-medium bg-white">
+            class="text-center space-y-8 flex flex-col md:flex-row items-center justify-center md:flex md:space-x-6 md:space-y-0 text-lg font-medium mx-auto  ">
             {% for item in navigation %}
               {% if item.items %}
                 {{ Dropdown(item.name, item.items) }}

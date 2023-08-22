@@ -1,5 +1,5 @@
 {% macro Dropdown(title, items) %}
-    <li class="ml-3 relative" x-data="{open: false}" x-on:mouseover="$mobile || (open = true)"
+    <li class="relative" x-data="{open: false}" x-on:mouseover="$mobile || (open = true)"
         x-on:mouseout="$mobile || (open = false)" x-on:focus="$mobile || (open = true)"
         x-on:blur="$mobile || (open = false)" x-on:click="$mobile && (open = !open)" @resize.window="open = false">
         <a class="hover:text-gray-900 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out" href="#0"
@@ -11,8 +11,8 @@
                     d="M10.28 4.305L5.989 8.598 1.695 4.305A1 1 0 00.28 5.72l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z" />
             </svg>
         </a>
-        <ul x-show="open" x-cloak class="text-right origin-top-right"
-            x-bind:class="$mobile || 'z-10 absolute top-full right-0 w-56 bg-white rounded text-center border border-gray-200 shadow-md'">
+        <ul x-show="open" x-cloak class="text-center origin-top-right"
+            x-bind:class="$mobile || 'z-10 absolute top-full right-0 w-fit px-2 bg-white rounded text-center border border-gray-200 shadow-md'">
             {% for item in items %}
                 <li class="p-2 font-medium">
                     {% if item.soon %}
