@@ -1,11 +1,15 @@
-<div class="relative max-w-6xl mx-auto py-6  px-5 sm:px-12
+<div class="relative max-w-6xl mx-auto px-5 sm:px-12
 ">
-<h2 class='text-center h2 mb-6'>{{ "who[0].title" | i18n }}</h2>
-  <div class="grid gap-2 md:gap-6 md:grid-cols-3 ">
+  <div class="flex flex-col md:flex-row-reverse gap-4 md:gap-10">
     {% for item in translation[page.lang].who[1].content %}
-    <p class="md:mt-1 mb-2 md:mb-3 text-base md:text-lg font-medium text-gray-700 text-right">
+    <div class="">
+    <p class=" mb-2 md:mb-3 text-xl md:text-2xl font-bold text-gray-900 text-right">
+      {{item.title | i18n}}
+    </p>
+    <p class=" md:mb-3 text-base md:text-lg font-normal text-gray-600 text-right">
         {{item.p | i18n}}
     </p>
+    </div>
     {% endfor %}
   </div>
 </div>
