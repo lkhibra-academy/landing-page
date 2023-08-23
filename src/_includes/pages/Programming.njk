@@ -8,13 +8,15 @@ plugins:
 ---
 {% from "partials/Training/heroTraining.njk" import heroTraining with context %}
 {% from "partials/Training/DoubleSec.njk" import DoubleSec with context %}
+{% from "partials/Training/More.njk" import More with context %}
 {% include "partials/cta.njk" %}
 <main class="flex-grow">
     {{ heroTraining("HeroPython") }}
     {{ DoubleSec("IncludesPython","LearnPython","LearnPythonContent") }}
     {% jsx "ForWho", name="ForWhoPython" %}
     {% jsx "TrainingContent", name="PythonContent" %}
-    {% include "partials/Home/why.njk" %}
+    {{ More("MorePython") }}
+    {# {% include "partials/Training/More.njk" %} #}
     {% include "partials/testimonials.njk" %} 
     {# {% include "partials/Home/ourtrainings.njk" %}
     {% include "partials/Home/certification.njk" %}  #}

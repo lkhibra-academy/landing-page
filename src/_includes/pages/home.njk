@@ -8,12 +8,13 @@
         - swiper
 ---
 {% include "partials/cta.njk" %}
+{% from "partials/Training/More.njk" import More with context %}
 <main class="flex-grow">
     {% include "partials/Home/heroHome.njk" %}
     {% include "partials/accomplishment.njk" %}
     {% include "partials/Home/who.njk" %}
     {% include "partials/testimonials.njk" %}
-    {% include "partials/Home/why.njk" %}
+    {{ More("MoreHome") }}
     {% include "partials/Home/ourtrainings.njk" %}
     {% include "partials/Home/certification.njk" %}
     {# {% include "partials/offers.njk" %} #}
