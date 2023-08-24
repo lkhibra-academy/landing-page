@@ -4,9 +4,9 @@
     navbar: false,
 }">
   <div class="relative max-w-6xl mx-auto px-5 sm:px-6 ">
-    <div class="justify-between md:items-center md:flex ">
+    <div class="justify-between md:items-center md:flex  md:px-6">
       <div class=" ">
-        <div class="flex items-center justify-between md:my-1 my-2 md:block">
+        <div class="flex items-center justify-between md:my-1 my-2 md:block ">
           <a href="{{ "/" | locale_url }}" class="block" aria-label="lkhibra">
             {{ Logo("w-40 md:w-56") }}
           </a>
@@ -32,19 +32,22 @@
           x-cloak="mobile"
           x-bind:class="navbar ? 'block' : 'hidden'">
           <ul
-            class="text-center space-y-8 flex flex-col md:flex-row items-center justify-center md:flex md:space-x-6 md:space-y-0 text-lg font-medium mx-auto  ">
+            class="text-center 
+            flex flex-col md:flex-row items-center justify-center
+            space-y-5 md:space-x-6 md:space-y-0
+             text-lg font-medium ">
             {% for item in navigation %}
               {% if item.items %}
                 {{ Dropdown(item.name, item.items) }}
               {% else %}
-                <li class="ml-3">
+                <li class="mr-4 ">
                   <a href="{{ item.url | locale_url }}">{{ item.name | i18n }}</a>
                 </li>
               {% endif %}
             {% endfor %}
-            <div>
+            <li class=" pb-2 md:pb-0">
               {% include "partials/lang.njk" %}
-            </div>
+            </li >
           </ul>
         </div>
       </div>
