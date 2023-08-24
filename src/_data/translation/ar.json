@@ -367,22 +367,10 @@
         ]
       },
       {
-        "title": "Python",
+        "title": "Front-End",
         "content": [
           {
-            "tags": ["Python", "Programming","css","html"],
-            "title": "تدريب الخبرة فالبرمجة",
-            "desc": "اختصر الوقت وتعلم جميع أساسيات البرمجة بالبايثون عن طريق خمس مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.",
-            "cta": "اكتشف المزيد",
-            "img":"/images/pythontraining.png"
-          }
-        ]
-      },
-      {
-        "title": "Python",
-        "content": [
-          {
-            "tags": ["Python", "Programming","Programming"],
+            "tags": ["HTML", "CSS","Javascript","Web design"],
             "title": "تدريب الخبرة فالبرمجة",
             "desc": "اختصر الوقت وتعلم جميع أساسيات البرمجة بالبايثون عن طريق خمس مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.",
             "cta": "اكتشف المزيد",
@@ -390,6 +378,7 @@
           }
         ]
       }
+      
     ]
   },
   "LearningExperience": {
