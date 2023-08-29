@@ -25,7 +25,10 @@
                 <i class="fa fa-graduation-cap text-red-primary text-center" aria-hidden="true"></i>
             {% elif [MoreTraining, "content", i, "icon"] | join(".") | i18n == "laptop-code" %}
                 <i class="fa fa-laptop-code text-red-primary text-center" aria-hidden="true"></i>
-            {% endif %}          
+                {% elif [MoreTraining, "content", i, "icon"] | join(".") | i18n == "brush" %}
+                <i class="fa fa-palette text-red-primary text-center" aria-hidden="true"></i>
+                {% endif %}  
+                   
             </div>
         </div>
       {% endfor %}

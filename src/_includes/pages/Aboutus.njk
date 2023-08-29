@@ -39,7 +39,7 @@ plugins:
 
     <section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6 ">
         <p class='text-center text-3xl md:text-3xl font-bold mb-4 md:mb-6  ' >{{ "AboutUs.Values.title" | i18n }}  </p>
-        <div class="grid grid-cols-1 gap-4 md:gap-4 md:grid-cols-2 lg:grid-cols-5">
+        <div class="grid grid-cols-1 gap-4 md:gap-4 md:grid-cols-2">
             {% for item in translation[page.lang].AboutUs.Values.content %}
             <div class="flex items-start text-right ml-auto">
                 <div dir="rtl" class="mr-4">
@@ -75,7 +75,7 @@ plugins:
         </div>
     </section>
     
-    <section class="relative max-w-6xl mx-auto px-5 sm:px-6">
+    {# <section class="relative max-w-6xl mx-auto px-5 sm:px-6">
         <div class="text-center md:text-right grid grid-cols-1 gap-1 md:grid-flow-row lg:gap-16 md:grid-cols-3 my-4 ">
             <div class="relative h-80 overflow-hidden my-auto max-h-56 md:max-h-full col-span-1">
                 {% image "src/assets/images/sonofniya2.png", "Founder of Lkhibra", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full w-fit object-contain"} %}
@@ -83,18 +83,13 @@ plugins:
     
             <div class="flex justify-start flex-col md:items-end items-center  my-4 md:my-2 col-span-2 ">
                 <p class="text-xl font-bold sm:text-3xl mt-4 mb-2 sm:mb-3">{{ "AboutUs.Story.title" | i18n }}</p>
-                {# <p class="text-lg font-medium sm:text-2xl text-gray-600 max-w-lg mb-4 sm:mb-6">{{ "AboutUs.sub1" | i18n }}</p> #}
                 <p class="text-lg font-medium sm:text-xl text-gray-600 max-w-2xl">{{ "AboutUs.Story.p1" | i18n }}</p>
                 <p class="text-lg font-medium sm:text-xl text-gray-600 max-w-2xl">{{ "AboutUs.Story.p2" | i18n }}</p>
-                {# <div class="mx-auto max-w-none" x-data >
-                    <a href="#register" class="btn text-white bg-red-primary w-full md:max-w-fit md:my-6 " x-cta >
-                        {{ "HeroHome.cta1" | i18n}}
-                    </a>
-                </div> #}
+                
             </div>
         </div>    
-    </section>
-
+    </section> #}
+    {% include "partials/Home/certification.njk" %}
     {% include "partials/Social.njk" %}
 
 
