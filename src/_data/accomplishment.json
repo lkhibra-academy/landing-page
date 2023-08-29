@@ -1,16 +1,12 @@
 [
     {
-        "num": "80+",
-        "desc": "Statistics.n_students"
+        "num": "700+",
+        "desc": "Statistics.n_h_courses"
     },{
-        "num": "600+",
+        "num": "3000+",
         "desc": "Statistics.n_h_trainings"
     },{
-        "num": "1000+",
-        "desc": "Statistics.n_h_courses"
-    },
-    {
-        "num": "500+",
-        "desc": "Statistics.n_plus"
+        "num": "200+",
+        "desc": "Statistics.n_students"
     }
 ]
