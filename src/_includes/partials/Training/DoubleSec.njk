@@ -1,6 +1,7 @@
 {% macro DoubleSec(Includes, Learntitle,LearnContent) %}
 <div class='flex flex-col md:flex-row relative max-w-7xl md:mx-auto md:justify-center'>
-    
+    {# {{ LearnContent | i18n }} #}
+    {# {{ LearnContent | i18n }} #}
     <section class="relative bg-white">
         <div class="relative max-w-6xl mx-auto px-4 md:px-0 md:mx-0">
             <div class="max-w-3xl mx-auto text-right py-4 px-2 sm:px-4 md:py-6">
@@ -20,8 +21,6 @@
                                 </p>
                             </li>
                         {% endfor %}
-
-
                     </ul>
                     
                                                
