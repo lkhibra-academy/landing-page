@@ -1,10 +1,10 @@
-<section class="relative max-w-6xl mx-auto px-5 sm:px-6">
+<section class="relative max-w-6xl mx-auto px-5 sm:px-6 ">
   {# hero section #}
-  <div class="grid grid-cols-1 gap-1 lg:gap-16 md:grid-cols-2 pt-4 md:pb-2 pb-0 md:pt-8">
+  <div class="grid grid-cols-1 gap-1 lg:gap-10 md:grid-cols-2">
     {# picture #}
     <div
-      class="relative h-80 overflow-hidden rounded-lg my-auto max-h-56 md:max-h-full">
-      {% image "src/assets/images/heropic55.png", "woman smilling", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
+      class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0">
+      {% image "src/assets/images/heropic55.png", "woman smilling", ["webp","png"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
     </div>
     {# texte #}
     <div
@@ -22,7 +22,7 @@
         </div>
 
         {# they trust us #}
-        <div class="w-full md:max-w-fit ml-auto mt-4 md:mt-0">
+        {# <div class="w-full md:max-w-fit ml-auto mt-4 md:mt-0">
           <p
             class="text-lg font-bold text-center md:text-right text-black-primary
             mt-2 mb-3 md:mt-0 p-1">
@@ -48,7 +48,7 @@
               {% image "src/assets/images/logo/robotics.png", "Robotique FSR", ["webp","png"], [70], "(min-width: 780px) 150px, (min-width: 480px) 90px, calc(24.38vw - 22px)", {class:"object-cover"}%}
             </a>
           </div>
-        </div>
+        </div> #}
       </div>
     </div>
   </div>
