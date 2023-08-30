@@ -751,8 +751,128 @@
           "p": "بالإضافة إلى التطوير، التدريب يشمل أيضًا مبادئ التصميم واستخدام Figma لإنشاء تصاميم واجهات جذابة"
         }
       ]
-    }
-    
+    },
 
+
+
+
+
+
+
+
+    "offers":[
+      {
+        "title": "عرض البداية",
+        "price": "390",
+        "currency":"درهم",
+        "subscription": "كل شهر لمدة 3 أشهر",
+        "description": "مناسب لأي شخص يريد بدأ في عالم البرمجة بأقل الثمن",
+        "fTitle":"على ماذا ستحصل :",
+        "features": [
+          {
+            "name":"4 حصص برمجية (Google Meet)",
+            "icon":"users-rectangle"
+          },
+          {
+            "name":"3 مشاريع برمجية",
+            "icon":"users"
+          },
+          {
+            "name":"متابعة شخصية",
+            "icon":"whatsapp"
+          },
+          {
+            "name":"تمارين تطبيقية",
+            "icon":"code"
+          }
+        ]
+      },
+      {
+        "title": "Essential Plus",
+        "price": "460",
+        "currency":"درهم",
+        "subscription": "كل شهر لمدة 3 أشهر",
+        "description": "تدريب شامل لتطوير المهارات. مناسب لأي شخص يريد تطوير مهاراته والحصول على أفضل",
+        "fTitle":"على ماذا ستحصل :",
+        "features": [
+          {
+            "name": "4 حصص برمجية (Google Meet)",
+            "icon": "users-rectangle"
+          },
+          {
+            "name": "3 مشاريع برمجية",
+            "icon": "users"
+          },
+          {
+            "name": "متابعة شخصية",
+            "icon": "whatsapp"
+          },
+          {
+            "name": "تمارين تطبيقية",
+            "icon": "code"
+          },
+          {
+            "name": "20+ ملفات دروس لتحميل",
+            "icon": "document-text"
+          },
+          {
+            "name": "الحصول على تسجيلات الحصص المباشر",
+            "icon": "video-camera"
+          },
+          {
+            "name": "+كورس لخبرة فالبرمجة (50+ فيديو مسجل)",
+            "icon": "video-library"
+          }
+        ]        
+      },
+      {
+        "title": "أحسن عرض",
+        "price": "1050",
+        "currency":"درهم",
+        "subscription": "دفعة واحدة لمدة 3 أشهر كاملة",
+        "description": "تدريب شامل لتطوير المهارات. الحصول على أفضل عرض بأقل ثمن",
+        "fTitle":"الأكثر مبيعًا",
+        "features": [
+          {
+            "name": "12 حصة برمجية (Google Meet)",
+            "icon": "users-rectangle"
+          },
+          {
+            "name": "6 حصص Soft skills",
+            "icon": "users"
+          },
+          {
+            "name": "10 مشاريع برمجية",
+            "icon": "python"
+          },
+          {
+            "name": "شهادة معتمدة",
+            "icon": "certificate"
+          },
+          {
+            "name": "متابعة شخصية",
+            "icon": "whatsapp"
+          },
+          {
+            "name": "تمارين تطبيقية",
+            "icon": "code"
+          },
+          {
+            "name": "20+ ملفات دروس لتحميل",
+            "icon": "document-text"
+          }
+        ],
+        "bonus":{
+          "title":"هدية مجانية ",
+          "items":[
+            {
+              "course":" دورة الخبرة في تطوير الويب",
+              "icon":"html"
+            }
+          ]
+        }
+      }
+    ]
+    
 
 }
