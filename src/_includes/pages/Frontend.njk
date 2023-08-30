@@ -6,6 +6,7 @@ plugins:
     - cleave-phone.ma
     - swiper
 ---
+{% set training = "Frontend" %}
 {% from "partials/Training/heroTraining.njk" import heroTraining with context %}
 {% from "partials/Training/DoubleSec.njk" import DoubleSec with context %}
 {% from "partials/Training/More.njk" import More with context %}
@@ -17,7 +18,6 @@ plugins:
     {% jsx "TrainingContent", name="FrontendContent" %}
     {{ More("MoreFrontend") }}
     {% include "partials/testimonials.njk" %} 
-    {% set training = "Frontend" %}
     {% include "partials/offers.njk" %}
     {% jsx "FAQ", name="FAQFrontend" %}
 </main>
