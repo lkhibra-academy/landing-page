@@ -10,9 +10,13 @@ const defOffers:{
     discounted: null,
   },
   {
-    value: 490,
+    value: 460,
     discounted: null,
   },
+  {
+    value: 390,
+    discounted: null,
+  }
 ];
 function replacei(str: string, i: number) {
   return str.replace(/(\\)?(\$i)/g, function (matcher, p1, p2) {
@@ -24,12 +28,15 @@ function replacei(str: string, i: number) {
 function isCTAData(data: unknown):data is {url: string, training: string, lead: (()=>void)} {
   if (typeof data !== "object") return false;
   if (typeof (data as {url: string}).url !== "string") return false;
-  if (typeof (data as {training: string}).training !== "string") return false;
   if (typeof (data as {lead: () => void}).lead !== "function") return false;
   return true;
 }
 function guessSource() {
-  if (trafficData.utmSource) {
+  if (trafficData.source) {
+    const source = trafficData.source;
+    sessionStorage.setItem("trafficSource", source);
+    return source;
+  } else if (trafficData.utmSource) {
     const utmSource = trafficData.utmSource;
     sessionStorage.setItem("trafficSource", utmSource);
     return utmSource;
@@ -85,6 +92,7 @@ document.addEventListener("alpine:init", () => {
     phone: "",
     email: "",
     offer: "",
+    training: "Frontend",
     contact: "WA",
     options: [
       {
@@ -171,7 +179,7 @@ document.addEventListener("alpine:init", () => {
           email: dialog.email,
           phone: dialog.phone,
           offer: dialog.offer,
-          training: data.training,
+          training: dialog.training,
           traffic: guessSource(),
           coupon: applied.coupon,
         });
@@ -180,30 +188,37 @@ document.addEventListener("alpine:init", () => {
           return
         }
         dialog.error = ""
-        axios.post(data.url, {
-          name: dialog.fullName,
-          email: dialog.email,
-          phone: dialog.phone,
-          offer: dialog.offer,
-          training: data.training,
-          traffic: guessSource(),
-          contact: dialog.contact,
-          coupon: applied.coupon
-        }).then((res) => {
-          if (res.data.ok) {
-            data.lead()
-            location.href = `/${document.documentElement.lang}/thankyou?price=${dialog.offer}`;
-          } else {
-            dialog.error = translations.errors.generic
-          }
-        }).catch(() => {
-          dialog.error = translations.errors.generic
-        })
+        axios
+          .post(data.url, {
+            name: dialog.fullName,
+            email: dialog.email,
+            phone: dialog.phone,
+            offer: dialog.offer,
+            training: dialog.training,
+            traffic: guessSource(),
+            contact: dialog.contact,
+            coupon: applied.coupon,
+          })
+          .then((res) => {
+            if (res.data.ok) {
+              data.lead();
+              location.href = `/${document.documentElement.lang}/thankyou?price=${dialog.offer}`;
+            } else {
+              dialog.error = translations.errors.generic;
+            }
+          })
+          .catch(() => {
+            dialog.error = translations.errors.generic;
+          });
       })
     } else {
       el.addEventListener("click", (e) => {
         e.preventDefault();
-        if(expression !== "") dialog.offer = String(evaluate(expression));
+        if(expression !== "") {
+          const data = evaluate(expression) as {training: string, offer: string};
+          if (data.training) dialog.training = data.training
+          if (data.offer) dialog.offer = data.offer
+        }
         dialog.show = true;
       });
     }

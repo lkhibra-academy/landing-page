@@ -1,9 +1,11 @@
 export default function getTraffic() {
-    const utmSource = new URLSearchParams(window.location.search).get("utm_source");
-    const utmMedium = new URLSearchParams(window.location.search).get("utm_medium");
-    const utmCampaign = new URLSearchParams(window.location.search).get("utm_campaign");
-    const utmContent = new URLSearchParams(window.location.search).get("utm_content");
-    const utmTerm = new URLSearchParams(window.location.search).get("utm_term");
+    const query = new URLSearchParams(window.location.search);
+    const utmSource = query.get("utm_source");
+    const utmMedium = query.get("utm_medium");
+    const utmCampaign = query.get("utm_campaign");
+    const utmContent = query.get("utm_content");
+    const utmTerm = query.get("utm_term");
+    const source = query.get("source");
     const refferer = document.referrer;
     return {
         utmSource,
@@ -11,6 +13,7 @@ export default function getTraffic() {
         utmCampaign,
         utmContent,
         utmTerm,
+        source,
         refferer
     }
 }

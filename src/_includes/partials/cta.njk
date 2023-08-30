@@ -29,7 +29,7 @@
                             <span>Phone</span>
                             <span>الهاتف</span>
                         </label>
-                        <input type="text" pattern="^\+212[\s]*(6|7)[0-9]{2}[\s]*[0-9]{6}$" name="phone" x-mask="{phone: true,phoneRegionCode: 'ma', prefix: '+212'}"
+                        <input type="text" pattern="^0(5|6|7)[0-9]{2}[\s]*[0-9]{6}$" name="phone" x-mask="{phone: true,phoneRegionCode: 'ma', prefix: '0'}"
                             class="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" x-model="phone" required />
                     </div>
                     <div class="">
@@ -46,8 +46,8 @@
                             <span>اختر تدريب </span>
                         </label>
                         <select id="training"
-                            class="mb-2 pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5 ">
-                            <option value="Frontend" defaultValue>
+                            class="mb-2 pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" x-model="training" required>
+                            <option value="Frontend" selected>
                                 تدريب الخبرة في تطوير الويب                            
                             </option>
                             <option value="Programming" >
@@ -72,7 +72,7 @@
                     </select>
                     <div class="">
                         <a class="cursor-pointer btn rounded-lg bg-black text-lg p-2.5 text-white bg-red-primary w-full flex justify-around items-center"
-                            x-cta:submit="{url: 'https://lkhibra.alwaysdata.net/test.php', training: 'Programming Training', lead: () => {fbq('track', 'Lead')}}">
+                            x-cta:submit="{url: 'https://lkhibra.alwaysdata.net/test.php', lead: () => {fbq('track', 'Lead')}}">
                             تسجيل
                         </a>
                     </div>

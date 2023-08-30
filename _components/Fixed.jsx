@@ -25,7 +25,9 @@ exports.default = function ({ ctx }) {
                         "
             type="submit"
             href="#register"
-            x-cta
+            x-cta={ctx.training ? JSON.stringify({
+              training: ctx.training,
+            }): ""}
           >
             {i18n("CTA.register")}
           </a>
