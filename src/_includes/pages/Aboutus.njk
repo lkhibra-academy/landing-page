@@ -9,7 +9,7 @@ plugins:
 
 {% include "partials/cta.njk" %}
 <main class="flex-grow ">
-    <section class="relative max-w-6xl mx-auto px-5 sm:px-6">
+    <section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6">
         <div class="text-center md:text-right grid grid-cols-1 gap-1 lg:gap-10 md:grid-cols-2 mt-4">
             <div class="relative h-[300px] overflow-hidden rounded-lg max-h-60 md:max-h-full ">
             {% image "src/assets/images/heropic4.png", "woman smilling", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
@@ -22,19 +22,26 @@ plugins:
         </div>    
     </section>
 
-    
-    <section class="relative max-w-6xl mx-auto px-5 sm:px-6 py-6">
-        <div class="text-center md:text-right grid grid-cols-1 gap-1 md:grid-flow-row lg:gap-16 md:grid-cols-2">
-            <div class="flex justify-start flex-col md:items-end items-center col-span-1 ">
-                <p class="text-2xl font-bold sm:text-3xl mb-2 sm:mb-3">{{ "AboutUs.Vision.title" | i18n }}</p>
-                <p class="text-lg font-normal text-gray-600 ">{{ "AboutUs.Vision.content" | i18n }}</p>
-            </div>
-            <div class="flex justify-start flex-col md:items-end items-center col-span-1 ">
-                <p class="text-2xl font-bold sm:text-3xl mb-2 sm:mb-3">{{ "AboutUs.Mission.title" | i18n }}</p>
-                <p class="text-lg font-normal text-gray-600">{{ "AboutUs.Mission.content" | i18n }}</p>
-            </div>
-            
-        </div>    
+    <section class="relative max-w-6xl mx-auto px-5 sm:px-6">
+      <div class="flex flex-col md:flex-row-reverse gap-6 md:gap-10">
+        <div class="">
+            <p class=" mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-gray-900 text-right">
+                {{ "AboutUs.Mission.title" | i18n }}
+            </p>
+            <p class=" md:mb-3 text-base md:text-lg font-normal text-gray-600 text-right">
+                {{ "AboutUs.Mission.content" | i18n }}
+            </p>
+        </div>
+        <div class="">
+        <p class=" mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-gray-900 text-right">
+            {{ "AboutUs.Vision.title" | i18n }}
+        </p>
+        <p class=" md:mb-3 text-base md:text-lg font-normal text-gray-600 text-right">
+            {{ "AboutUs.Vision.content" | i18n }}
+        </p>
+        </div>
+        
+      </div>
     </section>
 
     <section class="relative max-w-6xl mx-auto px-5 sm:px-8 py-6">
