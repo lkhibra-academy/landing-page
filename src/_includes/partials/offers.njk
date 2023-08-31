@@ -5,16 +5,16 @@
             <div dir="rtl" class="relative flex flex-col p-5 bg-white rounded-2xl h-fit  order-2 md:order-1 border">
                 <div class="flex-1">
                     <h3 class="font-semibold text-lg text-neutral-600 ">
-                        {{ "offers[0].title" | i18n }}
+                        {{ offers[1].title }}
                     </h3>
                     <p class="flex items-baseline text-neutral-600 leading-none pt-3 space-y-0">
                         <span class="text-6xl font-bold leading-none" x-text="offers[1].value">
                         </span>
                         <span class="text-2xl font-semibold leading-none text-neutral-500 pr-1">
-                            {{ "offers[0].currency" | i18n }}
+                            {{ offers[1].currency }}
                         </span>
                         <p class="text-base font-light text-neutral-500 pb-3 ">
-                                {{ "offers[0].subscription" | i18n }}           
+                                {{ offers[1].subscription }}           
                         </p>
                     </p>
                     {# <p class="text-lg font-medium text-neutral-600 pb-3 border-b">
@@ -24,22 +24,15 @@
                         {# <p class="text-base font-medium text-neutral-600 pb-2 ">
                             {{ "offers[0].fTitle" | i18n }}           
                         </p> #}
-                        {% for item in translation[page.lang].offers[0].features %}          
+                        {% for item in offers[1].features %}          
                         <li class="flex items-start flex-row mb-1">
-                            
-                            {% if item.icon | i18n == "users-rectangle" %}
-                                <i class="fa-solid fa-users-rectangle w-8 p-1 lg:ml-1 text-center"></i>
-                            {% elif item.icon | i18n == "python" %}
-                                <i class="fa-brands fa-python w-8 p-1 lg:ml-1 text-center"></i>
-                            {% elif item.icon | i18n == "users" %}
-                            <i class="fa-solid fa-users w-8 p-1 lg:ml-1 text-center"></i>
-                            {% elif item.icon | i18n == "whatsapp" %}
-                                <i class="fa-brands fa-whatsapp w-8 p-1 lg:ml-1 text-center"></i>
-                            {% elif item.icon | i18n == "code" %}
-                                <i class="fa-solid fa-code w-8 p-1 lg:ml-1 text-center"></i>    
+                            {% if item.icon in icons.brands %}
+                                <i class="fa-brands fa-{{ item.icon }} w-8 p-1 lg:ml-1 text-center"></i>
+                            {% else %}
+                                <i class="fa-solid fa-{{ item.icon }} w-8 p-1 lg:ml-1 text-center"></i>
                             {% endif %}
                                 <p class="">
-                                    {{ item.name | i18n }}
+                                    {{ item.name }}
                                 </p>
                             </li>
                         {% endfor %}
@@ -60,44 +53,34 @@
     <div class="flex items-center flex-col pt-1 border-2 border-red-primary 
     rounded-t-2xl px-4 text-white bg-red-primary w-fit mx-auto">
             <p class="text-lg font-medium text-center ">
-                {{ "offers[2].fTitle" | i18n }} 
+                {{ offers[2].fTitle }} 
             </p>         
     </div>
             <div class=" flex flex-col bg-red-primary rounded-2xl h-fit">
                 <div class="relative bg-red-primary flex-1 m-5">
                     <h3 class="font-semibold text-lg text-white">
-                        {{ "offers[2].title" | i18n }}
+                        {{ offers[2].title }}
                     </h3>
                     <p class="flex items-baseline text-white space-x-2 leading-tight">
                         <span class="text-6xl font-bold" x-text="offers[0].value">
                         </span>
                         <span class="text-2xl font-semibold leading-none  pr-1">
-                            {{ "offers[2].currency" | i18n }}
+                            {{ offers[2].currency }}
                         </span>
                         <p class="text-base font-light pb-3 text-white">
-                                {{ "offers[2].subscription" | i18n }}           
+                                {{ offers[2].subscription }}           
                         </p>                    
                     </p>
                     {# <p class="text-lg font-medium text-white pb-3 ">
                         {{ "offers[2].description" | i18n }}           
                     </p> #}
                     <ul dir="rtl" class="text-white text-base md:text-lg list-inside py-3 border-t border-gray-100">
-                        {% for item in translation[page.lang].offers[2].features %}          
+                        {% for item in offers[2].features %}          
                             <li class="flex items-start flex-row mb-1">
-                                {% if item.icon == "users-rectangle" %}
-                                    <i class="fa-solid fa-users-rectangle w-8 p-1 lg:ml-1 text-center"></i>
-                                {% elif item.icon == "users" %}
-                                    <i class="fa-solid fa-users w-8 p-1 lg:ml-1 text-center"></i>
-                                {% elif item.icon == "whatsapp" %}
-                                    <i class="fa-brands fa-whatsapp w-8 p-1 lg:ml-1 text-center"></i>
-                                {% elif item.icon == "code" %}
-                                    <i class="fa-solid fa-code w-8 p-1 lg:ml-1 text-center"></i>
-                                {% elif item.icon == "python" %}
-                                    <i class="fa-brands fa-python w-8 p-1 lg:ml-1 text-center"></i>
-                                {% elif item.icon == "certificate" %}
-                                    <i class="fa-solid fa-award w-8 p-1 lg:ml-1 text-center"></i>
-                                {% elif item.icon == "document-text" %}
-                                    <i class="fa-regular fa-file-code w-8 p-1 lg:ml-1 text-center"></i>
+                                {% if item.icon in icons.brands %}
+                                    <i class="fa-brands fa-{{ item.icon }} w-8 p-1 lg:ml-1 text-center"></i>
+                                {% else %}
+                                    <i class="fa-solid fa-{{ item.icon }} w-8 p-1 lg:ml-1 text-center"></i>
                                 {% endif %}
                                 <p class="">
                                     {{ item.name | i18n }}
@@ -120,11 +103,11 @@
             </div>
                 <div class="flex items-center flex-col pt-2 border-2 border-red-primary rounded-b-2xl p-2 mx-4 text-red-primary bg-white">
                         <p class="text-lg font-medium mb-1 text-center">
-                            {{ "offers[2].bonus.title" | i18n }} 
+                            {{ offers[2].bonus.title}} 
                             <i class="fa-solid fa-gift w-8 p-1 lg:ml-1 text-center "></i>
                         </p>
                     <div class=" ">        
-                    {% for item in translation[page.lang].offers[2].bonus.items %} 
+                    {% for item in offers[2].bonus.items %} 
                     <div class="flex items-start justify-start flex-row mb-1">
                         {% if item.icon | i18n == "python" %}
                                 <i class="fa-brands fa-python p-1 ml-1 text-center text-xl"></i>
@@ -134,7 +117,7 @@
                         <p class="text-lg font-light">
                             {{ item.course | i18n }} <br>
                         </p>
-                    </div>    
+                    </div>
                     {% endfor %}
                     </div>         
                 </div>
@@ -144,16 +127,16 @@
             rounded-2xl h-fit order-3 border">
                 <div class="flex-1">
                     <h3 class="font-semibold text-lg text-neutral-600 ">
-                        {{ "offers[0].title" | i18n }}
+                        {{ offers[0].title }}
                     </h3>
                     <p class="flex items-baseline text-neutral-600 leading-none pt-3 space-y-0">
                         <span class="text-6xl font-bold leading-none" x-text="offers[2].value">
                         </span>
                         <span class="text-2xl font-semibold leading-none text-neutral-500 pr-1">
-                            {{ "offers[0].currency" | i18n }}
+                            {{ offers[0].currency }}
                         </span>
                         <p class="text-base font-light text-neutral-500 pb-3 ">
-                                {{ "offers[0].subscription" | i18n }}           
+                                {{ offers[0].subscription }}           
                         </p>
                     </p>
                     {# <p class="text-lg font-medium text-neutral-600 pb-3 border-b">
@@ -163,19 +146,12 @@
                         {# <p class="text-base font-medium text-neutral-600 pb-2 ">
                             {{ "offers[0].fTitle" | i18n }}           
                         </p> #}
-                        {% for item in translation[page.lang].offers[0].features %}          
+                        {% for item in offers[0].features %}          
                         <li class="flex items-start flex-row mb-1">
-                            
-                            {% if item.icon | i18n == "users-rectangle" %}
-                                <i class="fa-solid fa-users-rectangle w-8 p-1 lg:ml-1 text-center"></i>
-                            {% elif item.icon | i18n == "python" %}
-                                <i class="fa-brands fa-python w-8 p-1 lg:ml-1 text-center"></i>
-                            {% elif item.icon | i18n == "users" %}
-                            <i class="fa-solid fa-users w-8 p-1 lg:ml-1 text-center"></i>
-                            {% elif item.icon | i18n == "whatsapp" %}
-                                <i class="fa-brands fa-whatsapp w-8 p-1 lg:ml-1 text-center"></i>
-                            {% elif item.icon | i18n == "code" %}
-                                <i class="fa-solid fa-code w-8 p-1 lg:ml-1 text-center"></i>    
+                            {% if item.icon in icons.brands %}
+                                <i class="fa-brands fa-{{ item.icon }} w-8 p-1 lg:ml-1 text-center"></i>
+                            {% else %}
+                                <i class="fa-solid fa-{{ item.icon }} w-8 p-1 lg:ml-1 text-center"></i>
                             {% endif %}
                                 <p class="">
                                     {{ item.name | i18n }}

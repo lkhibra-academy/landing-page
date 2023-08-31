@@ -120,10 +120,10 @@ document.addEventListener("alpine:init", () => {
         }else{
             offers.offers = arr.map((item, i) => {
               return {
-                value: item,
+                value: Math.ceil(item),
                 discounted:
                   applied.coupon !== ""
-                    ? (100 * (defOffers[i].value - item)) / defOffers[i].value
+                    ? Math.ceil(((100 * (defOffers[i].value - item)) / defOffers[i].value))
                     : null,
               };
             });
