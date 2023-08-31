@@ -1,0 +1,25 @@
+---
+layout: main.njk
+plugins:
+    - cta
+    - mask
+    - cleave-phone.ma
+    - swiper
+---
+{% set training = "Frontend" %}
+{% set offers = translation[page.lang].offersFrontend %}
+{% from "partials/Training/heroTraining.njk" import heroTraining with context %}
+{% from "partials/Training/DoubleSec.njk" import DoubleSec with context %}
+{% from "partials/Training/More.njk" import More with context %}
+{% include "partials/cta.njk" %}
+<main class="flex-grow">
+    {{ heroTraining("HeroFrontend") }}
+    {{ DoubleSec("IncludesFrontend","LearnFrontend","LearnFrontendContent") }}
+    {% jsx "ForWho", name="ForWhoFrontend" %}
+    {% jsx "TrainingContent", name="FrontendContent" %}
+    {{ More("MoreFrontend") }}
+    {% include "partials/testimonials.njk" %} 
+    {% include "partials/offers.njk" %}
+    {% jsx "FAQ", name="FAQFrontend" %}
+</main>
+{% jsx "Fixed" %}

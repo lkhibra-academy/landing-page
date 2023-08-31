@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Navigation.Home",
+        "url": "/"
+    },{
+        "name": "Navigation.Trainings",
+        "items":  [
+          {
+            "label": "تدريب الخبرة في البرمجة",
+            "url": "/Programming"
+          },
+          {
+            "label": "تدريب الخبرة في تطوير الويب",
+            "url": "/Frontend"
+          }
+        ]
+    },{
+        "name": "Navigation.Aboutus",
+        "url": "/Aboutus"
+    }
+]

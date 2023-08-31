@@ -1,0 +1,102 @@
+---
+layout: main.njk
+plugins:
+    - cta
+    - mask
+    - cleave-phone.ma
+    - swiper
+---
+
+{% include "partials/cta.njk" %}
+<main class="flex-grow ">
+    <section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6">
+        <div class="text-center md:text-right grid grid-cols-1 gap-1 lg:gap-10 md:grid-cols-2 mt-4">
+            <div class="relative h-[300px] overflow-hidden rounded-lg max-h-60 md:max-h-full ">
+            {% image "src/assets/images/heropic4.png", "woman smilling", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
+            </div>
+            <div class=" flex justify-center flex-col items-center md:items-end md:my-2">
+                <p class="text-2xl font-bold sm:text-3xl mt-4 mb-2">{{ "AboutUs.Intro" | i18n }}</p>
+                <p class="text-lg font-medium sm:text-xl text-gray-600 max-w-lg mb-4 sm:mb-5">{{ "AboutUs.sub1" | i18n }}</p>
+                <p class="text-lg font-normal text-gray-600 max-w-2xl">{{ "AboutUs.sub2" | i18n }}</p>
+            </div>
+        </div>    
+    </section>
+
+    <section class="relative max-w-6xl mx-auto px-5 sm:px-6">
+      <div class="flex flex-col md:flex-row-reverse gap-6 md:gap-10">
+        <div class="">
+            <p class=" mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-gray-900 text-right">
+                {{ "AboutUs.Mission.title" | i18n }}
+            </p>
+            <p class=" md:mb-3 text-base md:text-lg font-normal text-gray-600 text-right">
+                {{ "AboutUs.Mission.content" | i18n }}
+            </p>
+        </div>
+        <div class="">
+        <p class=" mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-gray-900 text-right">
+            {{ "AboutUs.Vision.title" | i18n }}
+        </p>
+        <p class=" md:mb-3 text-base md:text-lg font-normal text-gray-600 text-right">
+            {{ "AboutUs.Vision.content" | i18n }}
+        </p>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="relative max-w-6xl mx-auto px-5 sm:px-8 py-6">
+        <p class='text-center text-3xl md:text-3xl font-bold mb-4 md:mb-6  ' >{{ "AboutUs.Values.title" | i18n }}  </p>
+        <div class="grid grid-cols-1 gap-4 md:gap-4 md:grid-cols-2">
+            {% for item in translation[page.lang].AboutUs.Values.content %}
+            <div class="flex items-start text-right ml-auto">
+                <div dir="rtl" class="mr-4">
+                    <p class="text-lg font-semibold leading-tight">
+                        {{ item.title | i18n }}
+                    </p>
+                    <p class="mt-1 text-base font-normal">
+                        {{ item.content | i18n }}
+                    </p>
+                </div>
+                <div class='flex-shrink-0 bg-white rounded-lg outline outline-1 outline-red-primary p-3 w-10 h-10 flex justify-center items-center'>
+                    {% if item.icon == "users" %}
+                        <i class="fa fa-users text-red-primary text-center" aria-hidden="true"></i>
+                    {% elif item.icon == "bolt" %}
+                        <i class="fas fa-bolt text-red-primary text-center" aria-hidden="true"></i>
+                    {% elif item.icon == "globe-americas" %}
+                        <i class="fas fa-globe-americas text-red-primary text-center" aria-hidden="true"></i>
+                    {% elif item.icon == "lightbulb" %}
+                        <i class="fa fa-lightbulb  text-red-primary text-center" aria-hidden="true"></i>
+                    {% elif item.icon == "briefcase" %}
+                        <i class="fa fa-briefcase text-red-primary text-center" aria-hidden="true"></i>
+                    {% elif item.icon == "shield" %}
+                        <i class="fa fa-shield-alt text-red-primary text-center" aria-hidden="true"></i>
+                    {% elif item.icon == "rocket" %}
+                        <i class="fas fa-rocket text-red-primary text-center" aria-hidden="true"></i>
+                    {% elif item.icon == "hand" %}
+                        <i class="fa fa-hand-holding-heart text-red-primary text-center" aria-hidden="true"></i>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </section>
+    
+    {# <section class="relative max-w-6xl mx-auto px-5 sm:px-6">
+        <div class="text-center md:text-right grid grid-cols-1 gap-1 md:grid-flow-row lg:gap-16 md:grid-cols-3 my-4 ">
+            <div class="relative h-80 overflow-hidden my-auto max-h-56 md:max-h-full col-span-1">
+                {% image "src/assets/images/sonofniya2.png", "Founder of Lkhibra", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full w-fit object-contain"} %}
+            </div>
+    
+            <div class="flex justify-start flex-col md:items-end items-center  my-4 md:my-2 col-span-2 ">
+                <p class="text-xl font-bold sm:text-3xl mt-4 mb-2 sm:mb-3">{{ "AboutUs.Story.title" | i18n }}</p>
+                <p class="text-lg font-medium sm:text-xl text-gray-600 max-w-2xl">{{ "AboutUs.Story.p1" | i18n }}</p>
+                <p class="text-lg font-medium sm:text-xl text-gray-600 max-w-2xl">{{ "AboutUs.Story.p2" | i18n }}</p>
+                
+            </div>
+        </div>    
+    </section> #}
+    {% include "partials/Home/certification.njk" %}
+    {% include "partials/Social.njk" %}
+</main>
+{% jsx "Fixed" %}
