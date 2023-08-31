@@ -5,17 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <link rel="alternate" hreflang="{{locale}}" href="{{ site.baseUrl }}{{page.url}}">
+    {% for link in page.url | locale_links -%}
+    <link rel="alternate" hreflang="{{link.lang}}" href="{{ site.baseUrl }}{{link.url}}">
+    {%- endfor %}
     <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}">
     <link rel="stylesheet" href="/aos.css">
     <script src="/aos.js"></script>
-    <link rel="preload" href="/freakflags.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    {#-<link rel="preload" href="/freakflags.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="/freakflags.css">
-    </noscript>
-    {% for item in scripts %}
+    </noscript>-#}
+    {% for item in scripts -%}
         <script src="/js/{{ item }}.js"></script>
     {% endfor %}
-    {% for item in plugins %}
+    {% for item in plugins -%}
         <script src="/js/{{ item }}.js" defer></script>
     {% endfor %}
     <script src="/js/app.js" defer></script>

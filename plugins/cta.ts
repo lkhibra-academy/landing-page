@@ -202,7 +202,7 @@ document.addEventListener("alpine:init", () => {
           .then((res) => {
             if (res.data.ok) {
               data.lead();
-              location.href = `/${document.documentElement.lang}/thankyou`;
+              location.href = `/${document.documentElement.lang}/Thankyou/`;
             } else {
               dialog.error = translations.errors.generic;
             }

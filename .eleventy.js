@@ -147,6 +147,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("json", function (value) {
     return JSON.stringify(value);
   });
+  eleventyConfig.addFilter("lang", function (url) {
+    let s = (url || "").split("/");
+    return s.length > 0 && s[1];
+  });
   eleventyConfig.addWatchTarget("./plugins/**/*.{ts,js}");
   eleventyConfig.addWatchTarget("./_components/**/*.{tsx,jsx}");
   return {
