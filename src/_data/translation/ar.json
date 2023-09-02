@@ -2,8 +2,8 @@
   "soon": "قريبا",
   "nojs": "فعل الجافا سكريبت للمتابعة",
   "CTA": {
-    "strings": ["ثلاثة أشهر كاملة", "كل شهر", "كل شهر"],
-    "discount": "(with $i% discount)",
+    "strings": ["أفضل عرض ", "العرض الأساسي ", " عرض البداية"],
+    "discount": "( $i% تخفيض)",
     "register": "تسجيل",
     "errors": {
       "generic": "حدث خطأ",
@@ -26,7 +26,7 @@
     "theytrustus": "وضعوا ثقتهم بنا"
   },
   "certification": {
-    "title":"افتح فرص جديدة في سوق الشغل!"    ,
+    "title":" افتح فرص جديدة في سوق الشغل"    ,
     "subtitle": "شهادتنا ليست فقط تأكيداً على مهاراتك وقدراتك، بل هي بوابتك لفتح فرص عمل جديدة وتحقيق تقدير أكبر في سوق العمل",
     "cta1": "بغيت نتعلم"
   },  
@@ -124,10 +124,10 @@
     "Title": "تدريباتنا",
     "Trainings": [
       {
-        "link": "/Programming",
+        "link": "./programming",
         "content": [
           {
-            "tags": ["Python", "Algorithmes","Data Structure","OOP"],
+            "tags": ["Python", "Algorithm","OOP","Data Structure"],
             "title": "تدريب الخبرة في البرمجة",
             "desc": "اختصر الوقت وتعلم جميع أساسيات البرمجة عن طريق مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.",
             "cta": "اكتشف المزيد",
@@ -136,10 +136,10 @@
         ]
       },
       {
-        "link": "/Frontend",
+        "link": "./frontend",
         "content": [
           {
-            "tags": ["HTML", "CSS","Javascript","Web design"],
+            "tags": ["HTML", "CSS","Javascript","Web Design","Figma"],
             "title": "تدريب الخبرة في تطوير الويب",
             "desc": "اختصر الوقت وتعلم جميع أساسيات تطوير الويب عن طريق مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.",
             "cta": "اكتشف المزيد",
@@ -277,7 +277,7 @@
   "LearnPythonContent": [
         {
           "itemAR": "الخوارزميات وهياكل البيانات",
-          "itemEN": "Algorithms & Data Structure"
+          "itemEN": "Algorithms and Data Structure"
         },
         {
           "itemAR": "أساسيات البرمجة بلغة البايثون",
@@ -546,7 +546,7 @@
     "IncludesFrontend": {
       "title": ": يتضمن هذا التدريب",
       "item1": "12 حصة برمجة (Google Meet)",
-      "item2": "6 حصص تصميم ويب ",
+      "item2": "6 حصص تصميم الويب ",
       "item3": "10 مشاريع برمجة",
       "item4": "شهادة معتمدة ",
       "item5": "متابعة شخصية ",
@@ -637,7 +637,7 @@
       "title": "محتوى التدريب",
       "modules": [
         {
-          "title": "Part 1: Web Development Fundamentals",
+          "title": "Web Development Fundamentals",
           "items": [
             "- How the Internet Works",
             "- Introduction to HTTP",
@@ -652,7 +652,7 @@
           ]
         },
         {
-          "title": "Part 2: HTML Basics",
+          "title": "HTML Basics",
           "items": [
             "- Head Section",
             "- Text Elements",
@@ -667,7 +667,7 @@
           ]
         },
         {
-          "title": "Part 3: CSS Basics",
+          "title": "CSS Basics",
           "items": [
             "- Inline CSS",
             "- Selectors",
@@ -682,7 +682,7 @@
           ]
         },
         {
-          "title": "Part 4: Advanced CSS",
+          "title": "Advanced CSS",
           "items": [
             "- Typography",
             "- Layout Techniques",
@@ -691,7 +691,7 @@
           ]
         },
         {
-          "title": "Part 5: Javascript",
+          "title": "Javascript",
           "items": [
             "- Variables and Constants",
             "- Data Types",
@@ -706,7 +706,7 @@
           ]
         },
         {
-          "title": "Part 6: Web Design Fundamentals",
+          "title": "Web Design Fundamentals",
           "items": [
             "- Design Thinking",
             "- Color Theories",
@@ -716,7 +716,7 @@
           ]
         },
         {
-          "title": "Part 7: Figma for Web Design",
+          "title": "Figma for Web Design",
           "items": [
             "- Introduction to Figma",
             "- Creating Layouts",
@@ -792,7 +792,7 @@
         ]
       },
       {
-        "title": "العرض أساسي",
+        "title": "العرض الأساسي",
         "price": "460",
         "currency":"درهم",
         "subscription": "كل شهر  لمدة 3 أشهر",
@@ -830,10 +830,10 @@
         ]
       },
       {
-        "title": "أحسن عرض",
+        "title": "أفضل عرض",
         "price": "1050",
         "currency":"درهم",
-        "subscription": "دفعة واحدة لمدة 3 أشهر كاملة",
+        "subscription": " 3 أشهر كاملة",
         "description": "تدريب شامل لتطوير المهارات. الحصول على أفضل عرض بأقل ثمن",
         "fTitle":"الأكثر مبيعًا",
         "features": [
@@ -913,7 +913,7 @@
         ]
       },
       {
-        "title": "العرض أساسي",
+        "title": "العرض الأساسي",
         "price": "460",
         "currency":"درهم",
         "subscription": "كل شهر  لمدة 3 أشهر",
@@ -925,7 +925,7 @@
             "icon": "users-rectangle"
           },
           {
-            "name": "حصتين تصميم جرافيكي",
+            "name": "حصتين تصميم الويب ",
             "icon": "users"
           },
           {
@@ -951,7 +951,7 @@
         ]
       },
       {
-        "title": "أحسن عرض",
+        "title": "أفضل عرض",
         "price": "1050",
         "currency":"درهم",
         "subscription": " 3 أشهر كاملة",
@@ -963,8 +963,8 @@
             "icon": "users-rectangle"
           },
           {
-            "name": "6 حصص تصميم جرافيكي",
-            "icon": "users"
+            "name": "6 حصص تصميم الويب ",
+            "icon": "palette"
           },
           {
             "name": "10 مشاريع برمجية",
@@ -995,8 +995,8 @@
           "title":"هدية مجانية ",
           "items":[
             {
-              "course":" كورس الخبرة في تطوير الويب",
-              "icon":"html"
+              "course":" كورس الخبرة في البرمجة",
+              "icon":"python"
             }
           ]
         }
