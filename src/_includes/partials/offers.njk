@@ -9,7 +9,7 @@
                             {{ offers[2].fTitle }} 
                         </p>         
                 </div>
-                        <div class=" flex flex-col bg-red-primary rounded-2xl h-fit">
+                        <div class=" flex flex-col bg-red-primary rounded-2xl ">
                             <div class="relative bg-red-primary flex-1 m-5">
                                 <h3 class="font-semibold text-lg text-white">
                                     {{ offers[2].title }}
@@ -20,14 +20,14 @@
                                     <span class="text-2xl font-semibold leading-none  pr-1">
                                         {{ offers[2].currency }}
                                     </span>
-                                    <p class="text-base font-medium mb-3 text-red-primary bg-white p-1 rounded-md w-fit">
+                                    <p class="text-sm font-medium mb-3 text-red-primary bg-white p-1 px-3 rounded-md w-fit">
                                             {{ offers[2].subscription }}           
                                     </p>                    
                                 </p>
                                 {# <p class="text-lg font-medium text-white pb-3 ">
                                     {{ "offers[2].description" | i18n }}           
                                 </p> #}
-                                <ul dir="rtl" class="text-white text-base md:text-lg list-inside py-3">
+                                <ul dir="rtl" class="text-white text-base md:text-lg list-inside pt-3">
                                     {% for item in offers[2].features %}          
                                         <li class="flex items-start flex-row mb-1">
                                             {% if item.icon in icons.brands %}
