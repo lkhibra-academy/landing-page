@@ -8,12 +8,12 @@ plugins:
 ---
 {% set training = "Programming" %}
 {% set offers = translation[page.lang].offersPython %}
-{% from "partials/Training/heroTraining.njk" import heroTraining with context %}
+{% set hero = translation[page.lang].HeroPython %}
 {% from "partials/Training/DoubleSec.njk" import DoubleSec with context %}
 {% from "partials/Training/More.njk" import More with context %}
 {% include "partials/cta.njk" %}
 <main class="flex-grow">
-    {{ heroTraining("HeroPython") }}
+    {% include "partials/Training/heroTraining.njk" %}
     {{ DoubleSec("IncludesPython","LearnPython","LearnPythonContent") }}
     {% jsx "ForWho", name="ForWhoPython" %}
     {% jsx "TrainingContent", name="PythonContent" %}
