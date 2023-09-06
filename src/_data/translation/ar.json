@@ -124,7 +124,7 @@
     "Title": "تدريباتنا",
     "Trainings": [
       {
-        "link": "./programming",
+        "link": "/Programming",
         "content": [
           {
             "tags": ["Python", "Algorithm","OOP","Data Structure"],
@@ -136,7 +136,7 @@
         ]
       },
       {
-        "link": "./frontend",
+        "link": "/Frontend",
         "content": [
           {
             "tags": ["HTML", "CSS","Javascript","Web Design","Figma"],
