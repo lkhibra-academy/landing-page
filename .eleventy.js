@@ -7,6 +7,7 @@ const globalSiteData = {
 }
 function escapeHtml(unsafe) {
     if (!unsafe) return "";
+    if (typeof unsafe !== "string") return unsafe
   return unsafe
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
@@ -133,7 +134,7 @@ module.exports = function (eleventyConfig) {
     const translation = get(translations[lang], value, value);
     if (!translation)
       console.error(`"${value}" translation not found for lang: ${lang}`); // throw new Error(`"${value}" translation not found for lang: ${lang}`)
-    return escapeHtml(translation);
+    return translation;
   });
   eleventyConfig.addFilter("i18njson", function (value) {
     const page = this.page || this.ctx.page;
