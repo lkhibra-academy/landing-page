@@ -7,7 +7,7 @@
     <div class="grid grid-cols-1 gap-4 mt-6 md:gap-12 md:mt-12 md:grid-cols-2 lg:grid-cols-4">
         {% for i in range(0, 4) %}
         {# {% for item in context[MoreTraining].content %} #}
-        <div class="flex items-start text-right ml-auto">
+        <div class="flex rtl:flex-row-reverse items-start text-right ml-auto">
           <div dir="rtl" class="mr-4">
             <p class="text-lg font-semibold leading-tight">
               {{ [MoreTraining, "title"] | join(".content["+i+"].") | i18n }}

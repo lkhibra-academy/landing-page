@@ -11,7 +11,7 @@ exports.default = function ({ctx}) {
         <div className="py-4 md:py-6">
           {/* 1st block */}
           <div className="">
-            <div className="mb-2 flex flex-col md:flex-row gap-4 space-between items-center md:gap-8">
+            <div className="mb-2 flex flex-col md:flex-row rtl:md:flex-row-reverse gap-4 space-between items-center md:gap-8">
               {/* Logo */}
               <Link to={url("/")} className="inline-block " aria-label="Cruip">
                 <Logo className="md:w-50 w-40" />

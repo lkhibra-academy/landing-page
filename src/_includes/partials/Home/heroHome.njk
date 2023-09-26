@@ -3,15 +3,15 @@
   <div class="grid grid-cols-1 gap-1 lg:gap-10 md:grid-cols-2">
     {# picture #}
     <div
-      class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0">
+      class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 ltr:col-start-2 rtl:col-start-2 row-start-1">
       {% image "src/assets/images/heropic55.png", "woman smilling", ["webp","png"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
     </div>
     {# texte #}
     <div
-      class="md:order-last flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0"
-      dir="rtl">
+      class="flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 col-start-1 row-start-1"
+      dir="{{ dir }}">
 
-      <div class="text-center lg:text-right  self-start md:text-right">
+      <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">
         <h2 class="text-2xl font-bold sm:text-3xl ">{{ "HeroHome.title" | i18n }}</h2>
         <p class="mt-4 text-gray-600 text-lg mb-4 md:mb-0">{{ "HeroHome.subtitle" | i18n}}</p>
         <div class="mx-auto max-w-none" x-data >
