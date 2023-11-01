@@ -264,7 +264,7 @@
     "img":"python"
   },
   "IncludesPython": {
-        "title": ": يتضمن  هذا تدريب ",
+        "title": " يتضمن  هذا تدريب :",
         "item1": "12 حصة برمجة (Google Meet)",
         "item2": "6 حصص Soft skills",
         "item3": "10 مشاريع برمجية",
@@ -273,7 +273,7 @@
         "item6": "أكتر من 20 ملفات دروس"
   },
   "LearnPython": {
-        "title": ": شنو غادي تعلم"
+        "title":"شنو غادي تعلم :"
   },
   "LearnPythonContent": [
         {
@@ -529,7 +529,7 @@
       "img":"frontend"
     },
     "IncludesFrontend": {
-      "title": ": يتضمن هذا التدريب",
+      "title": " يتضمن هذا التدريب :",
       "item1": "12 حصة برمجة (Google Meet)",
       "item2": "6 حصص تصميم الويب ",
       "item3": "10 مشاريع برمجة",
@@ -538,7 +538,7 @@
       "item6": "أكتر من 20 ملفات دروس"
     },
     "LearnFrontend": {
-      "title": ": شنو غادي تعلم"
+      "title": "شنو غادي تعلم :"
     },
     "LearnFrontendContent": [
       {
