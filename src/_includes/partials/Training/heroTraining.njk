@@ -5,18 +5,18 @@
     {% set offers = translation[page.lang].offersPython %}
     {% if hero.img=="frontend" %}
       <div
-      class="relative h-[340px] overflow-hidden rounded-lg my-auto max-h-72 md:max-h-full">
+      class="relative h-[340px] overflow-hidden rounded-lg my-auto max-h-72 md:max-h-full md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
       {% image "src/assets/images/heropic8.png", "woman smilling", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"}%}
       </div>
     {% else %}
       <div
-      class="relative h-[340px] overflow-hidden rounded-lg my-auto max-h-72 md:max-h-full">
+      class="relative h-[340px] overflow-hidden rounded-lg my-auto max-h-72 md:max-h-full md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
       {% image "src/assets/images/heropic7.png", "woman smilling", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"}%}
       </div>
     {% endif %}
     {# texte #}
     <div
-      class="md:order-last flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0"
+      class="md:order-last flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:col-start-1 md:row-start-1 row-start-2"
       dir="rtl">
 
       <div class="text-center lg:text-right self-start md:text-right">

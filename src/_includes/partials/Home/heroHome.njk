@@ -3,12 +3,12 @@
   <div class="grid grid-cols-1 gap-1 lg:gap-10 md:grid-cols-2">
     {# picture #}
     <div
-      class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 ltr:col-start-2 rtl:col-start-2 row-start-1">
+      class="relative h-[360px] overflow-hidden rounded-lg max-h-72 md:max-h-full p-0 md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
       {% image "src/assets/images/heropic55.png", "woman smilling", ["webp","png"], [600,1200], "(min-width: 780px) 720px, 518px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
     </div>
     {# texte #}
     <div
-      class="flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 col-start-1 row-start-1"
+      class="flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:col-start-1 md:row-start-1 row-start-2"
       dir="{{ dir }}">
 
       <div class="text-center rtl:lg:text-right ltr:lg:text-left self-start md:text-right">

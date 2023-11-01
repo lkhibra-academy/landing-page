@@ -4,20 +4,7 @@ const trafficData = getTraffic();
 const defOffers:{
     value: number,
     discounted: number|null
-}[] = [
-  {
-    value: 1050,
-    discounted: null,
-  },
-  {
-    value: 460,
-    discounted: null,
-  },
-  {
-    value: 390,
-    discounted: null,
-  }
-];
+}[] = [];
 function replacei(str: string, i: number) {
   return str.replace(/(\\)?(\$i)/g, function (matcher, p1, p2) {
     if (p1 === "\\") return p2;
@@ -53,12 +40,22 @@ function guessSource() {
     }
   }
 }
+
+function isFromAds() {
+  let traffic = guessSource();
+  if (traffic.startsWith("ads") || traffic.startsWith("cbo")) {
+    return true;
+  }
+  return false;
+}
+
 const defErrors = {
   coupon: "errors.coupon",
   generic: "errors.generic",
   invalidFields: "errors.invalidFields",
 };
 document.addEventListener("alpine:init", () => {
+  const isads = isFromAds();
   const formElm = document.getElementById("cta-form")! as HTMLFormElement;
   let translations = {
     strings: [],
@@ -104,6 +101,9 @@ document.addEventListener("alpine:init", () => {
   const offers = Alpine.reactive({
       offers: defOffers
   })
+  Alpine.magic("noffers", () => {
+    return isads ? 2 : 3;
+  })
   function fetchPrices() {
     let q = new URLSearchParams();
     if (applied.coupon !== "")
@@ -145,7 +145,7 @@ document.addEventListener("alpine:init", () => {
         value: offer.value,
         text: `${offer.value}dh - ${translations.strings[i]}${offer.discounted ? replacei(` ${translations.discount}`, offer.discounted) : ""}`,
       };
-    });
+    }).filter((_, i) => !isads || i != 1);
     dialog.offer = String(dialog.options[0].value)
   }
   Alpine.magic("dialog", (el) => {

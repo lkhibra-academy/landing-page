@@ -60,3 +60,7 @@ footer {
 #register:target > div {
     display: flex;
 }
+
+.rtl-dir {
+    direction: ltr;
+}
