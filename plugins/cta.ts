@@ -43,7 +43,7 @@ function guessSource() {
 
 function isFromAds() {
   let traffic = guessSource();
-  if (traffic.startsWith("ads") || traffic.startsWith("cbo")) {
+  if (traffic.startsWith("Ads") || traffic.startsWith("cbo") || traffic.startsWith("ads") || traffic.startsWith("CBO") || traffic.startsWith("ADS")) {
     return true;
   }
   return false;
