@@ -24,7 +24,7 @@
                         <input maxLength="30" class="rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5"
                             type="text" id="name" x-model="fullName" required />
                     </div>
-                    <div class="">
+                    <div class=" ">
                         <label class="mb-1 text-sm text-gray-600 flex justify-between" for="phone">
                             <span>Phone</span>
                             <span>الهاتف</span>
@@ -46,11 +46,11 @@
                             <span>اختر تدريب </span>
                         </label>
                         <select id="training"
-                            class="mb-2 pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" x-model="training" required>
-                            <option value="Frontend" selected>
+                            class="mb-2 pr-2 rounded-lg shadow-sm border-gray-200 w-full text-sm p-2.5" x-model="training">
+                            {# <option value="Frontend" selected>
                                 تدريب الخبرة في تطوير الويب                            
-                            </option>
-                            <option value="Programming" >
+                            </option> #}
+                            <option value="LP" selected>
                                 تدريب الخبرة في البرمجة                            
                             </option>
                         </select>
@@ -67,9 +67,9 @@
                             </template>
                         </select>
                     </div>
-                    <select id="contact" x-model="contact" class="hidden">
+                    {# <select id="contact" x-model="contact" class="hidden">
                         <option value="WA" selected></option>
-                    </select>
+                    </select> #}
                     <div class="">
                         <a class="cursor-pointer btn rounded-lg bg-black text-lg p-2.5 text-white bg-red-primary w-full flex justify-around items-center"
                             x-cta:submit="{url: 'https://lkhibra.alwaysdata.net/test.php', lead: () => {fbq('track', 'Lead')}}">
