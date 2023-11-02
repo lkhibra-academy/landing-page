@@ -34,7 +34,7 @@ module.exports = function TrainingBlock({ title,items}) {
           </svg>
             </summary>
 
-            <div className="py-3 px-4 leading-relaxed text-gray-700 border border-gray-300">
+            <div dir="ltr" className="py-3 px-4 leading-relaxed text-gray-700 border border-gray-300 text-left">
               <ul className="">                 
                 {items.map((item, index) => (
                 <li>
