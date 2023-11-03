@@ -35,7 +35,7 @@ exports.default = function ({ ctx }) {
       </div>
       {/* Whatsapp BTN */}
       <a
-        href="https://api.whatsapp.com/send?phone=212646616180"
+        href="https://api.whatsapp.com/send?phone=212708983350"
         className="whatsapp-button z-40"
         target="_blank"
         style={{
