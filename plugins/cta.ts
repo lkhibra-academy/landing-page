@@ -1,10 +1,31 @@
 import axios from "axios";
 import getTraffic from "./lib/traffic";
 const trafficData = getTraffic();
-const defOffers:{
-    value: number,
-    discounted: number|null
-}[] = [];
+let defOffers: {
+  value: number;
+  discounted: number | null;
+}[] = [
+  {
+    value: 1050,
+    discounted: null,
+  },
+  {
+    value: 550,
+    discounted: null,
+  },
+  {
+    value: 450,
+    discounted: null,
+  },
+];
+axios.get("https://lkhibra.alwaysdata.net/api/price.php").then(async (response: { data: number[] }) => {
+  defOffers = response.data.map((item) => {
+    return {
+      value: item,
+      discounted: null,
+    };
+  });
+})
 function replacei(str: string, i: number) {
   return str.replace(/(\\)?(\$i)/g, function (matcher, p1, p2) {
     if (p1 === "\\") return p2;
