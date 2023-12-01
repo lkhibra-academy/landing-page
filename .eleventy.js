@@ -112,6 +112,7 @@ module.exports = function (eleventyConfig) {
       entryPoints: [
         "./plugins/app.ts",
         "./plugins/cta.ts",
+        "./plugins/students.ts",
         "./plugins/swiper.ts",
         "./plugins/mask.js",
       ],

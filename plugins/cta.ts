@@ -89,7 +89,7 @@ document.addEventListener("alpine:init", () => {
     phone: "",
     email: "",
     offer: "",
-    training: "Frontend",
+    training: "",
     contact: "WA",
     options: [
       {
@@ -223,4 +223,6 @@ document.addEventListener("alpine:init", () => {
       });
     }
   });
+  
+  
 });
