@@ -6,7 +6,7 @@
 module.exports = function ForWhoBlock({ title,goal,goals}) {
     
     return (
-      <details dir="rtl" class="group">
+      <details class="group">
         <summary
           class="flex items-center justify-between cursor-pointer 
         py-3 px-4 border-y border-y-gray-300 mb-2"

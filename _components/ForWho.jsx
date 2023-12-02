@@ -11,7 +11,7 @@ exports.default = function ForWho({ ctx, name }) {
             <p class="px-2 mb-6 font-bold leading-tight text-2xl md:text-3xl text-right md:text-center">
               {i18n(name + ".title")}
             </p>
-            <div class="">
+            <div class=" ">
               {Array.isArray(faq) && faq.map((item, index) => (
                 <ForWhoBlock
                   title={item.title}

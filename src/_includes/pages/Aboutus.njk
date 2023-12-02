@@ -10,7 +10,7 @@ plugins:
 {% include "partials/cta.njk" %}
 <main class="flex-grow ">
     <section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6">
-        <div class="text-center md:text-right grid grid-cols-1 gap-1 lg:gap-10 md:grid-cols-2 mt-4 md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
+        <div class="text-center md:rtl:text-right md:text-left grid grid-cols-1 gap-1 lg:gap-10 md:grid-cols-2 mt-4 md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
             <div class="relative h-[300px] overflow-hidden rounded-lg max-h-60 md:max-h-full ">
             {% image "src/assets/images/heropic4.png", "woman smilling", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
             </div>
@@ -25,18 +25,18 @@ plugins:
     <section class="relative max-w-6xl mx-auto px-5 sm:px-6">
       <div class="flex flex-col md:flex-row-reverse gap-6 md:gap-10">
         <div class="">
-            <p class=" mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-gray-900 text-right">
+            <p class=" mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-gray-900 text-right ltr:text-left">
                 {{ "AboutUs.Mission.title" | i18n }}
             </p>
-            <p class=" md:mb-3 text-base md:text-lg font-normal text-gray-600 text-right">
+            <p class=" md:mb-3 text-base md:text-lg font-normal text-gray-600 text-right ltr:text-left">
                 {{ "AboutUs.Mission.content" | i18n }}
             </p>
         </div>
         <div class="">
-        <p class=" mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-gray-900 text-right">
+        <p class=" mb-2 md:mb-3 text-2xl md:text-3xl font-bold text-gray-900 text-right ltr:text-left">
             {{ "AboutUs.Vision.title" | i18n }}
         </p>
-        <p class=" md:mb-3 text-base md:text-lg font-normal text-gray-600 text-right">
+        <p class=" md:mb-3 text-base md:text-lg font-normal text-gray-600 text-right ltr:text-left">
             {{ "AboutUs.Vision.content" | i18n }}
         </p>
         </div>
@@ -48,8 +48,8 @@ plugins:
         <p class='text-center text-3xl md:text-3xl font-bold mb-4 md:mb-6  ' >{{ "AboutUs.Values.title" | i18n }}  </p>
         <div class="grid grid-cols-1 gap-4 md:gap-4 md:grid-cols-2">
             {% for item in translation[page.lang].AboutUs.Values.content %}
-            <div class="flex rtl:flex-row-reverse items-start text-right ml-auto">
-                <div dir="rtl" class="mr-4">
+            <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto">
+                <div class="mr-4 ml-4">
                     <p class="text-lg font-semibold leading-tight">
                         {{ item.title | i18n }}
                     </p>
@@ -57,7 +57,8 @@ plugins:
                         {{ item.content | i18n }}
                     </p>
                 </div>
-                <div class='flex-shrink-0 bg-white rounded-lg outline outline-1 outline-red-primary p-3 w-10 h-10 flex justify-center items-center'>
+                <div class='flex-shrink-0 bg-white rounded-lg outline outline-1
+                 outline-red-primary p-3 w-10 h-10 flex justify-center items-center '>
                     {% if item.icon == "users" %}
                         <i class="fa fa-users text-red-primary text-center" aria-hidden="true"></i>
                     {% elif item.icon == "bolt" %}

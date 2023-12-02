@@ -6,7 +6,6 @@
 module.exports = function FaqBlock({ qst, ans }) {
   return (
     <details
-      dir="rtl"
       className="group rounded-lg border border-gray-200 shadow-md"
     >
       <summary className="flex items-center justify-between p-3 rounded-lg cursor-pointer ">

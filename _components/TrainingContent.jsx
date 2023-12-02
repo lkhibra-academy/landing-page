@@ -12,7 +12,7 @@ exports.default = function TrainingContent({ ctx, name }) {
     mx-auto md:col-span-7 lg:col-span-6">
         
               {/* title */}
-                <p className="px-2 pb-5 font-bold text-2xl md:text-3xl text-right">
+                <p className="px-2 pb-5 font-bold text-2xl md:text-3xl text-right ltr:text-left">
                     {i18n(name + ".title")}
                 </p>
               {/* Tabs buttons */}

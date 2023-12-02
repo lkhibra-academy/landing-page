@@ -9,7 +9,7 @@
             shadow-xl border border-gray-300" href={{ training.link | locale_url }}
         >
             {% for item in training.content %}
-            <div class="md:p-8 px-5 py-6" dir='rtl'>
+            <div class="md:p-8 px-5 py-6">
                 <ul class="flex md:space-x-1 flex-wrap space-y-1 ">
                     {% for tag in item.tags %}
                     <li
