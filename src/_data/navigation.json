@@ -6,11 +6,11 @@
         "name": "Navigation.Trainings",
         "items":  [
           {
-            "label": "تدريب الخبرة في البرمجة",
+            "label": "Navigation.Python",
             "url": "/Programming"
           },
           {
-            "label": "تدريب الخبرة في تطوير الويب",
+            "label": "Navigation.Frontend",
             "url": "/Frontend"
           }
         ]

@@ -17,7 +17,10 @@
       "Courses": "Cours",
       "Contact": "Contact",
       "Certificates": "Certificats",
-      "Aboutus": "À propos"
+      "Aboutus": "À propos",
+      "Python":"Python et Soft-Skills",
+      "Frontend":"Front-end et Web Design"
+
     },
     "HeroHome": {
       "title": "Commencez votre avenir maintenant et développez vos compétences avec l'Académie de l'Expertise!",
