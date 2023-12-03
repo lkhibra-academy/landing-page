@@ -23,20 +23,20 @@
 
     },
     "HeroHome": {
-      "title": "Commencez votre avenir maintenant et développez vos compétences avec l'Académie de l'Expertise!",
-      "subtitle": "Apprenez les compétences numériques qui vous permettront d'atteindre vos objectifs personnels et professionnels grâce à nos formations soigneusement sélectionnées et spécialement conçues pour répondre aux besoins du marché du travail. Nous vous offrons une occasion unique d'apprendre auprès d'experts du domaine.",
+      "title": "Lancez votre carrière avec notre expertise !",
+      "subtitle":  "Rejoignez des milliers qui ont transformé leur avenir avec nos formations uniques. Nos cours, conçus par des experts, vous équipent avec des compétences numériques cruciales pour exceller dans votre parcours professionnel.",
       "cta1": "Je veux apprendre",
       "theytrustus": "Ils nous font confiance"
     },
     "certification": {
-      "title": "Ouvrez de nouvelles opportunités sur le marché du travail",
-      "subtitle": "Notre certification n'est pas seulement la reconnaissance de vos compétences et capacités, mais elle est aussi la porte d'entrée vers de nouvelles opportunités d'emploi et une plus grande reconnaissance sur le marché du travail.",
+      "title": "Votre passeport pour le succès professionnel",
+      "subtitle":  "Nos certifications reconnues valident vos compétences et ouvrent les portes des meilleures opportunités de carrière. Faites le choix de l'excellence avec nous !",
       "cta1": "Je veux apprendre"
     },
     "Statistics": {
-      "n_h_courses": "Nombre de cours",
-      "n_h_trainings": "Nombre d'heures de formation",
-      "n_students": "Nombre d'étudiants"
+      "n_h_courses": "Cours innovants",
+      "n_h_trainings": "Heures d'apprentissage interactif",
+      "n_students": "Étudiants satisfaits et réussis"
     },
     "who": [
       {
@@ -46,7 +46,7 @@
         "content": [
           {
             "title": "Qui sommes-nous",
-            "p": "Nous sommes une académie en ligne spécialisée dans la formation à distance en programmation et en design. Nous formons les jeunes aux dernières technologies et aux emplois de l'avenir pour les préparer au monde professionnel et améliorer leurs opportunités d'emploi. Nous offrons même un accompagnement personnalisé pour garantir une qualité élevée dans nos cours, tous adaptés au marché du travail et comprenant des projets pratiques."
+            "p": "Nous sommes l'incubateur de votre réussite professionnelle, offrant des formations en programmation et design, taillées sur mesure pour le marché du travail actuel. Avec nous, transformez votre passion en une carrière florissante."
           },
           {
             "title": "Notre mission",
@@ -129,7 +129,7 @@
           "content": [
             {
               "tags": ["Python", "Algorithmes", "POO", "Structure de données"],
-              "title": "Formation Expert en Programmation",
+              "title": "Formation Python et Soft-skills",
               "desc": "Économisez du temps et apprenez les bases de la programmation grâce à des projets pratiques en seulement trois mois, et obtenez une certification pour ouvrir de nouvelles opportunités.",
               "cta": "Découvrir plus",
               "img": "/images/pythontraining.png"
@@ -141,7 +141,7 @@
           "content": [
             {
               "tags": ["HTML", "CSS", "Javascript", "Conception Web", "Figma"],
-              "title": "Formation Expert en Développement Web",
+              "title": "Formation Front-end et Web Design",
               "desc": "Économisez du temps et apprenez les bases du développement web grâce à des projets pratiques en seulement trois mois, et obtenez une certification pour ouvrir de nouvelles opportunités.",
               "cta": "Découvrir plus",
               "img": "/images/pythontraining.png"
@@ -160,7 +160,7 @@
       "TermsOfUse": "Conditions d'utilisation"
     },
     "AboutUs": {
-      "Intro": "Bienvenue à l'Académie de l'Expertise",
+      "Intro": "Bienvenue à l'Académie lkhibra:  Votre allié pour une carrière réussie",
       "sub1": "Votre partenaire de confiance dans votre voyage d'apprentissage et de croissance",
       "sub2": "Nous sommes plus qu'une simple plateforme d'apprentissage en ligne. Nous formons une communauté de passionnés d'apprentissage et d'enseignants engagés à favoriser un environnement d'innovation, de curiosité et d'excellence. Nous croyons en la puissance de l'éducation pour transformer des vies et ouvrir de nouvelles opportunités.",
       "Story": {
@@ -832,28 +832,28 @@
             "description": "Formation complète pour développer vos compétences. Obtenez la meilleure offre au prix le plus bas.",
             "fTitle": "La plus vendue",
             "features": [
-                {
-                    "name": "12 sessions de programmation (Google Meet)",
-                    "icon": "users-rectangle"
-                },
-                {
-                    "name": "6 sessions de Soft Skills",
-                    "icon": "users"
-                },
-                {
-                    "name": "10 projets de programmation",
-                    "icon": "python"
-                },
-                {
-                    "name": "Certification",
-                    "icon": "award"
-                },
-                {
-                    "name": "Suivi personnalisé",
-                    "icon": "whatsapp"
-                },
-                {
-                    "name": "Exercices pratiques",
+              {
+                "name": "12 sessions de programmation (Google Meet)",
+                "icon": "users-rectangle"
+              },
+              {
+                "name": "6 sessions de Soft Skills",
+                "icon": "users"
+              },
+              {
+                "name": "10 projets de programmation",
+                "icon": "python"
+              },
+              {
+                "name": "Certification ",
+                "icon": "award"
+              } ,
+              {
+                "name": "Suivi personnalisé",
+                "icon": "whatsapp"
+              },
+              {
+                "name": "Exercices pratiques",
                     "icon": "code"
                 },
                 {
@@ -869,7 +869,7 @@
                 "title": "Cadeau gratuit",
                 "items": [
                     {
-                        "course": "Cours d'expertise en développement web",
+                        "course": "Cours en développement web",
                         "icon": "html"
                     }
                 ]

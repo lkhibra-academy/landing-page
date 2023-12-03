@@ -1,5 +1,5 @@
 {% macro DoubleSec(Includes, Learntitle,LearnContent) %}
-<div class='flex flex-col md:flex-row-reverse ltr:flex-row relative max-w-7xl md:mx-auto md:justify-center'>
+<div class='flex flex-col-reverse md:flex-row-reverse md:ltr:flex-row relative max-w-7xl md:mx-auto md:justify-center'>
     {# {{ LearnContent | i18n }} #}
     {# {{ LearnContent | i18n }} #}
     <section class="relative bg-white">
@@ -27,33 +27,33 @@
         </div>
     </section>
     
-    <section class="relative max-w-3xl text-right ltr:text-left py-4 px-7 mx-auto md:px-8 md:py-10 md:mx-0 bg-white lg:ml-6">
+    <section class="relative max-w-3xl rtl:text-right ltr:text-left py-4 px-7 mx-auto md:px-8 md:py-10 md:mx-0 bg-white lg:ml-6">
         <h2 class="font-semibold text-lg md:text-xl text-gray-900 ">
             {{ [Includes, "title"] | join(".") | i18n }}        
         </h2>
-        <ul dir="rtl" class="text-gray-700 text-base md:text-lg list-inside pt-3">
-            <li class=' flex items-start ltr:flex-row-reverse flex-row mb-1'>
-                <span class="fa-solid fa-users-rectangle w-8 p-1 ltr:text-left text-center"></span>
+        <ul class="text-gray-700 text-base md:text-lg list-inside pt-3 ">
+            <li class=' flex items-start mb-1'>
+                <span class="fa-solid fa-users-rectangle w-8 p-1"></span>
                 <p>{{ [Includes, "item1"] | join(".") | i18n }}</p>
             </li>
-            <li class=' flex items-start ltr:flex-row-reverse flex-row mb-1'>
-                <span class="fa-solid fa-users w-8 p-1 ltr:text-left text-center"></span>
+            <li class=' flex items-start mb-1'>
+                <span class="fa-solid fa-users w-8 p-1"></span>
                 <p>{{ [Includes, "item2"] | join(".") | i18n }}</p>
             </li>
-            <li class=' flex items-start ltr:flex-row-reverse flex-row mb-1'>
-                <span class="fa-solid fa-code w-8 p-1 ltr:text-left text-center"></span>
+            <li class=' flex items-start mb-1'>
+                <span class="fa-solid fa-code w-8 p-1"></span>
                 <p>{{ [Includes, "item3"] | join(".") | i18n }}</p>
             </li>
-            <li class=' flex items-start ltr:flex-row-reverse flex-row mb-1'>
-                <span class="fa-solid fa-award w-8 p-1 ltr:text-left text-center"></span>
+            <li class=' flex items-start mb-1'>
+                <span class="fa-solid fa-award w-8 p-1"></span>
                 <p>{{ [Includes, "item4"] | join(".") | i18n }}</p>
             </li>
-            <li class=' flex items-start ltr:flex-row-reverse flex-row mb-1'>
-                <span class="fa-brands fa-whatsapp w-8 p-1 ltr:text-left text-center"></span>
+            <li class=' flex items-start mb-1'>
+                <span class="fa-brands fa-whatsapp w-8 p-1"></span>
                 <p>{{ [Includes, "item5"] | join(".") | i18n }}</p>
             </li>
-            <li class=' flex items-start ltr:flex-row-reverse flex-row mb-1'>
-                <span class="fa-regular fa-file-code w-8 p-1 ltr:text-left text-center"></span>
+            <li class=' flex items-start mb-1'>
+                <span class="fa-regular fa-file-code w-8 p-1"></span>
                 <p>{{ [Includes, "item6"] | join(".") | i18n }}</p>
             </li>
         </ul>
