@@ -25,7 +25,7 @@ document.addEventListener("alpine:init", () => {
     name: "", // Matched to 'full_name' in the database
     email: "",
     phone: "",
-    student: 0, // Matched to 'student' in the database
+    student: "", // Matched to 'student' in the database
     faculty: "", // Matched to 'faculty' in the database
     study: "", // Matched to 'study' in the database
     semester: "",
@@ -36,7 +36,7 @@ document.addEventListener("alpine:init", () => {
     technologieWeb: 0,
     python: 0,
     customOption: "", // Matched to 'customOption' in the database
-    paid: 0, // Matched to 'paid' (boolean) in the database
+    paid: "", // Matched to 'paid' (boolean) in the database
     // Add other form fields as necessary
   });
   // Expose the dialog state to Alpine.js
