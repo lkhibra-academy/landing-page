@@ -1,6 +1,11 @@
-import axios from "axios";
-import getTraffic from "./lib/traffic";
+// Import necessary libraries and modules
+import axios from "axios"; // Axios for making HTTP requests
+import getTraffic from "./lib/traffic"; // Custom module for getting traffic data
+
+// Retrieve traffic data using the 'getTraffic' function
 const trafficData = getTraffic();
+
+// Initialize an array of default offers
 let defOffers: {
   value: number;
   discounted: number | null;
@@ -10,22 +15,27 @@ let defOffers: {
     discounted: null,
   },
   {
-    value: 550,
+    value: 650,
     discounted: null,
   },
   {
-    value: 450,
+    value: 550,
     discounted: null,
   },
 ];
+
+// Make an HTTP GET request to fetch offer data from an API
 axios.get("https://lkhibra.alwaysdata.net/api/price.php").then(async (response: { data: number[] }) => {
+  // Update 'defOffers' with the response data from the API
   defOffers = response.data.map((item) => {
     return {
       value: item,
       discounted: null,
     };
   });
-})
+});
+
+// Define a function to replace a string based on a pattern
 function replacei(str: string, i: number) {
   return str.replace(/(\\)?(\$i)/g, function (matcher, p1, p2) {
     if (p1 === "\\") return p2;
@@ -33,12 +43,14 @@ function replacei(str: string, i: number) {
     return matcher;
   });
 }
+// Define a function to check if data matches a specific structure
 function isCTAData(data: unknown):data is {url: string, training: string, lead: (()=>void)} {
   if (typeof data !== "object") return false;
   if (typeof (data as {url: string}).url !== "string") return false;
   if (typeof (data as {lead: () => void}).lead !== "function") return false;
   return true;
 }
+// Define a function to guess the source of traffic
 function guessSource() {
   if (trafficData.source) {
     const source = trafficData.source;
@@ -61,7 +73,7 @@ function guessSource() {
     }
   }
 }
-
+// Define a function to check if traffic is from ads
 function isFromAds() {
   let traffic = guessSource();
   if (traffic.startsWith("Ads") || traffic.startsWith("cbo") || traffic.startsWith("ads") || traffic.startsWith("CBO") || traffic.startsWith("ADS")) {
@@ -69,15 +81,19 @@ function isFromAds() {
   }
   return false;
 }
-
+// Define default error messages
 const defErrors = {
   coupon: "errors.coupon",
   generic: "errors.generic",
   invalidFields: "errors.invalidFields",
 };
+// Add an event listener for Alpine.js initialization
 document.addEventListener("alpine:init", () => {
+    // Check if traffic is from ads
   const isads = isFromAds();
+    // Get the form element with the ID 'cta-form'
   const formElm = document.getElementById("cta-form")! as HTMLFormElement;
+    // Initialize translations and applied coupon data
   let translations = {
     strings: [],
     discount: "",
@@ -86,6 +102,7 @@ document.addEventListener("alpine:init", () => {
   const applied = {
     coupon: new URLSearchParams(window.location.search).get("code") ?? "",
   };
+    // Create a reactive dialog component
   const dialog = Alpine.reactive({
     show: false,
     coupon: new URLSearchParams(window.location.search).get("code") ?? "",
@@ -119,12 +136,15 @@ document.addEventListener("alpine:init", () => {
       },
     ],
   });
+    // Create a reactive offers component
   const offers = Alpine.reactive({
       offers: defOffers
   })
+    // Define a magic function to determine the number of offers
   Alpine.magic("noffers", () => {
     return isads ? 2 : 3;
   })
+    // Define a function to fetch prices
   function fetchPrices() {
     let q = new URLSearchParams();
     if (applied.coupon !== "")
@@ -160,6 +180,7 @@ document.addEventListener("alpine:init", () => {
         dialog.error = translations.errors.generic
       });
   }
+    // Define a function to update offers
   function updateOffers() {
     dialog.options = offers.offers.map((offer, i) => {
       return {
@@ -169,6 +190,7 @@ document.addEventListener("alpine:init", () => {
     }).filter((_, i) => !isads || i != 1);
     dialog.offer = String(dialog.options[0].value)
   }
+    // Define a magic function for the 'dialog' component
   Alpine.magic("dialog", (el) => {
     const elem = el as HTMLDivElement;
     const tran = elem.querySelector("script[type='application/json']")?.textContent;
@@ -181,14 +203,17 @@ document.addEventListener("alpine:init", () => {
     });
     return dialog;
   });
+    // Define a magic function for the 'offers' component
   Alpine.magic("offers", () => {
       return offers;
   })
+    // Define a magic function for truncating text
   Alpine.magic("truncate", () => {
     return function truncate(str: string, length: number) {
       return str.length > length ? str.slice(0, length) + "..." : str;
     }
   })
+    // Define a directive for handling CTA interactions
   Alpine.directive("cta", (el, { value, expression }, { evaluate }) => {
     if (value === "submit") {
       const data = evaluate(expression);
