@@ -209,17 +209,6 @@
         "title": "Questions fréquemment posées",
         "list": [
           {
-            "qst": "Quand commence la formation ?",
-            "ans": ["Le jeudi 14 septembre"]
-          },
-          {
-            "qst": "Quels sont les horaires des cours ?",
-            "ans": [
-              "Les cours techniques ont lieu tous les jeudis à 21h",
-              "Les cours Soft Skills ont lieu tous les samedis à 21h"
-            ]
-          },
-          {
             "qst": "Quelles sont les étapes pour s'inscrire à la formation ?",
             "ans": [
               "Remplissez le formulaire d'inscription",
@@ -491,17 +480,6 @@
       "FAQFrontend": {
         "title": "Questions fréquemment posées",
         "list": [
-          {
-            "qst": "Quand commence la formation ?",
-            "ans": ["Le vendredi 15 septembre"]
-          },
-          {
-            "qst": "Quels sont les horaires des cours ?",
-            "ans": [
-              "Les cours techniques ont lieu tous les vendredis à 21h",
-              "Les cours Soft Skills ont lieu tous les dimanches à 21h"
-            ]
-          },
           {
             "qst": "Quelles sont les étapes pour s'inscrire à la formation ?",
             "ans": [
