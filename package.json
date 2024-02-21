@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "npm-run-all --parallel dev:*",
+    "start": "node watch-and-restart.js",
     "dev": "npm-run-all --parallel dev:*",
     "build": "npm-run-all --serial build:*",
     "dev:11ty": "eleventy --serve",
@@ -34,6 +34,8 @@
     "tailwindcss-dir": "^4.0.0"
   },
   "devDependencies": {
-    "@types/alpinejs": "^3.7.2"
+    "@types/alpinejs": "^3.7.2",
+    "chokidar": "^3.5.3",
+    "tree-kill": "^1.2.2"
   }
 }

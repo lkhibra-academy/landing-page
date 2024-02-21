@@ -19,8 +19,13 @@
       "Certificates": "Certificats",
       "Aboutus": "À propos",
       "Python":"Python et Soft-Skills",
-      "Frontend":"Front-end et Web Design"
-
+      "Frontend":"Front-end et Web Design",
+      "Data":"Data Analysis avec Python",
+      "Ressources":"Ressources",
+      "Design":"Design",
+      "Programming":"Programmation",
+      "Marketing":"Marketing",
+      "AI":"Intelligence Artificielle"
     },
     "HeroHome": {
       "title": "Lancez votre carrière avec notre expertise !",

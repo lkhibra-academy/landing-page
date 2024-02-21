@@ -6,15 +6,31 @@
         "name": "Navigation.Trainings",
         "items":  [
           {
+            "label": "Navigation.Individual",
+            "url": "/Individual"
+          },        
+          {
             "label": "Navigation.Python",
             "url": "/Programming"
+          },        
+          {
+            "label": "Navigation.Data",
+            "url": "/Data"
           },
           {
             "label": "Navigation.Frontend",
-            "url": "/Frontend"
+            "url": "/Frontend",
+            "closed": true
           }
+
         ]
-    },{
+    },
+    {
+      "name": "Navigation.Ressources",
+      "url": "/Ressources"
+      
+    }
+    ,{
         "name": "Navigation.Aboutus",
         "url": "/Aboutus"
     }

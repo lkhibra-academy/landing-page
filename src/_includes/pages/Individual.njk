@@ -1,0 +1,18 @@
+---
+layout: main.njk
+plugins:
+    - cta
+    - mask
+    - cleave-phone.ma
+    - swiper
+---
+{% set training = "Indiv" %}
+{% set offers = translation[page.lang].offersPython %}
+{% set hero = translation[page.lang].HeroPython %}
+{% from "partials/Training/DoubleSec.njk" import DoubleSec with context %}
+{% from "partials/Training/More.njk" import More with context %}
+{% include "partials/cta.njk" %}
+<main class="flex-grow">
+    Hello Individual
+</main>
+{% jsx "Fixed" %}
