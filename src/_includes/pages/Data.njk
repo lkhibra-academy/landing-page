@@ -1,18 +1,284 @@
 ---
 layout: main.njk
-plugins:
-    - cta
-    - mask
-    - cleave-phone.ma
-    - swiper
 ---
-{% set training = "Data" %}
+{% set training = "Programming" %}
 {% set offers = translation[page.lang].offersPython %}
 {% set hero = translation[page.lang].HeroPython %}
 {% from "partials/Training/DoubleSec.njk" import DoubleSec with context %}
 {% from "partials/Training/More.njk" import More with context %}
 {% include "partials/cta.njk" %}
 <main class="flex-grow">
-    Hello Data
+
+{# HERO #}
+<section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6 md:mb-0">
+  {# hero section #}
+  <div class="grid grid-cols-1 gap-1 lg:gap-10 md:grid-cols-2 pt-4 md:pb-2 pb-0 md:pt-8">
+    {# picture #}
+    {% set offers = translation[page.lang].offersPython %}
+    {% if hero.img=="frontend" %}
+      <div
+      class="relative h-[340px] overflow-hidden rounded-lg my-auto max-h-72 md:max-h-full md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
+      {% image "src/assets/images/heropic8.png", "woman smilling", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"}%}
+      </div>
+    {% else %}
+      <div
+      class="relative h-[340px] overflow-hidden rounded-lg my-auto max-h-72 md:max-h-full md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
+      {% image "src/assets/images/heropic7.png", "woman smilling", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"}%}
+      </div>
+    {% endif %}
+    {# texte #}
+    <div
+      class="md:order-last flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:col-start-1 md:row-start-1 row-start-2">
+
+      <div class="text-center self-start md:text-right md:ltr:text-left">
+        <h2 class="text-2xl font-bold sm:text-3xl ">
+          {{ hero.title | i18n }}
+        </h2>
+        <p class="mt-4 text-gray-600 text-lg mb-4 md:mb-0">
+          {{ hero.subtitle | i18n }}
+        </p>
+        <div class="mx-auto max-w-none flex justify-around items-center flex-col md:flex-row gap-2 md:gap-0" x-data >
+          <a href="#register"
+            class="btn text-white bg-red-primary w-full px-0  md:my-6 " x-cta="{training: {{ training | json }}}" >
+            {{ hero.cta1 | i18n }}
+            </a>
+            <a href="https://www.lkhibra.ma/Formation-Python-Softskills.pdf" target="_blank"
+            class="btn bg-white text-gray-700 shadow-lg border-b-1 border-gray-300 
+            w-full px-0 md:my-6 mr-0 md:mr-4">
+            <i class="fa-solid fa-download mx-2"></i>
+            <span>{{ hero.cta2 | i18n }}</span>
+            </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+{# STATISTICS #}
+<section class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
+    <div class="flex flex-col justify-start items-center bg-white">
+    <p class=" text-2xl md:text-3xl font-semibold text-center text-black-primary mb-6">
+        أكثر الوظائف طلبًا في عام 2024
+    </p>
+    <div class="grid grid-cols-2 lg:grid-cols-4 justify-center items-center md:gap-6 gap-3">
+        <div class="flex flex-col justify-center items-center ">
+            <p class="text-3xl md:text-4xl font-semibold text-center text-black-primary">
+                22%
+            </p>
+            <p class=" text-base md:text-lg text-center text-gray-700">
+                مزيد من فرص العمل في علوم البيانات
+            </p>
+        </div>
+        <div class="flex flex-col justify-center items-center ">
+            <p class="text-3xl md:text-4xl font-semibold text-center text-black-primary">
+                $71K
+            </p>
+            <p class=" text-base md:text-lg text-center text-gray-700">
+                الدخل المتوسط العالمي لعالم البيانات
+            </p>
+        </div>
+        <div class="flex flex-col justify-center items-center ">
+            <p class="text-3xl md:text-4xl font-semibold text-left text-black-primary">
+                +82M
+            </p>
+            <p class=" text-base md:text-lg text-center text-gray-700">
+                علماء البيانات في الست سنوات القادمة
+            </p>
+        </div>
+        <div class="flex flex-col justify-center items-center ">
+            <p class="text-3xl md:text-4xl font-semibold text-left text-black-primary">
+                +82M
+            </p>
+            <p class=" text-base md:text-lg text-center text-gray-700">
+                علماء البيانات في الست سنوات القادمة
+            </p>
+        </div>
+    </div>
+    </div>
+</section>
+
+{{ More("MorePython") }}
+
+{# TRAINING CONTENT #}
+<section id="content" class="relative max-w-6xl md:mx-auto md:justify-center mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
+    <div class="relative md:gap-6 max-w-3xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">
+        <p class="px-2 pb-5 font-bold text-2xl md:text-3xl text-right ltr:text-left">
+            محتوى التدريب
+        </p>
+        <div class="border-b border-gray-300">
+            {% for module in data.modules %}
+            <details class="group">
+                <summary class="flex items-center justify-between cursor-pointer py-3 px-4 border border-gray-300 border-b-0">
+                    <svg class="flex-shrink-0 mx-1 w-5 h-5 transition duration-300 group-open:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                    <p class="text-base font-medium text-gray-800">
+                        {{ module.title }}
+                    </p>
+                    
+                </summary>
+                <div dir="ltr" class="py-3 px-4 leading-relaxed text-gray-700 border border-gray-300 text-left">
+                    <ul>                 
+                        {% for item in module.items %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </details>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+    
+{# GET A JOB #}
+<section class=" relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8" >
+    <div class="flex flex-col-reverse md:flex-row justify-center md:justify-between items-center gap-5">    
+        <div class="flex flex-col justify-start items-start 
+         gap-3 md:gap-5">
+            <p class="text-2xl md:text-3xl font-semibold text-right">
+                احصل على وظيفة في تحليل البيانات!
+            </p>
+            <p class="text-right text-[#212529] max-w-md">
+                هذا البرنامج الكامل عبر الإنترنت يوفر لك جميع المهارات التي تحتاجها للعثور على وظيفة في مجال
+                تحليل البيانات، حتى إذا كنت لا تمتلك خبرة سابقة.
+            </p>
+            <div class="flex flex-col justify-center items-start   gap-2">
+                <p class="text-base font-bold text-right text-[#212529]">
+                    استعد لوظائف مثل:
+                </p>
+                <div class="flex flex-row justify-between items-center gap-6 md:gap-4">
+                    <p class="text-sm sm:text-base text-left text-[#212529]">
+                        Marketing Analytics Specialist<br />
+                        Customer Insights Analyst<br />
+                        Risk Management Analyst<br />
+                        Operations Analyst
+                    </p>
+                    <p class="text-sm sm:text-base text-left text-[#212529]">
+                        Data Visualisation Developer<br />
+                        Data Capturer<br />
+                        Data Analyst<br />
+                        Business Intelligence Analyst
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="my-auto md:max-h-full md:h-80 w-full md:w-[50%] md:max-w-lg 
+        ">
+            {% image "src/assets/images/hero.png", "data analyst woman", ["png","webp"], ["300px","300px"], "", {class:"object-cover bg-center bg-white w-full"} %} 
+        </div>
+    </div>
+</section>
+
+{# PRICING #}
+<section id="pricing" class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <div class="flex flex-col justify-center items-start px-4">
+                <p class="text-2xl md:text-3xl font-bold text-right text-neutral-600 mb-2 md:mb-4">
+                    الاستثمار الذي سيغير حياتك للأبد !
+                </p>
+                <div class="flex flex-col justify-center items-start gap-1 md:gap-2">
+                    <div class="flex items-center gap-3">
+                        <p class="text-lg text-[#4c4c4c]">
+                            <i class="fas fa-users-rectangle"></i>
+                        </p>
+                        <p class="text-lg text-right text-[#4c4c4c]">
+                         حصص برمجية
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <p class="text-lg text-[#4c4c4c]">
+                            <i class="fab fa-js"></i>
+                        </p>
+                        <p class="text-lg text-right text-[#4c4c4c]">
+                         مشاريع برمجية
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <p class="text-lg text-[#4c4c4c]">
+                            <i class="fab fa-whatsapp"></i>
+                        </p>
+                        <p class="text-lg text-right text-[#4c4c4c]">
+                            متابعة شخصية
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <p class="text-lg text-[#4c4c4c]">
+                            <i class="fas fa-code"></i>
+                        </p>
+                        <p class="text-lg text-right text-[#4c4c4c]">
+                            تمارين تطبيقية
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <p class="text-lg text-[#4c4c4c]">
+                            <i class="fas fa-file-code"></i>
+                        </p>
+                        <p class="text-lg text-right text-[#4c4c4c]">
+                            20+ ملفات دروس
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <p class="text-lg text-[#4c4c4c]">
+                            <i class="fas fa-file-code"></i>
+                        </p>
+                        <p class="text-lg text-right text-[#4c4c4c]">
+                            تسجيلات الحصص المباشرة
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-row justify-between items-center w-full gap-2 md:gap-4">
+                <div class="flex flex-col justify-between items-start  h-60 md:h-72 w-full p-4 rounded-2xl bg-red-primary">
+                    <p class="text-sm font-medium text-right text-red-primary bg-white rounded-md w-fit px-2 py-1 mb-2">
+                                            أداء مرة واحدة
+                    </p>
+                    <p class="line-through text-2xl font-bold text-right text-white">
+                                    1650 درهم  
+                    </p>
+                    <div class="flex flex-row justify-center items-baseline">
+                        <p class=" text-5xl md:text-6xl font-bold text-right text-white">
+                                            1050
+                        </p>
+                        <p class="text-lg md:text-xl font-semibold text-right text-white ">
+                                            درهم
+                        </p> 
+                                    
+                    </div>
+                            
+                    <p class="w-full py-1 rounded-md bg-white text-base md:text-lg font-medium text-center text-red-primary">
+                                    تسجيل
+                    </p>
+                </div> 
+
+
+                <div class="flex flex-col justify-between items-start  h-60 md:h-72 w-full p-4 rounded-2xl border shadow-sm">
+                    <p class="text-sm font-medium text-right text-white bg-neutral-400 rounded-md w-fit px-2 py-1 mb-2">
+                    أداء كل شهر
+                    </p>
+                    <p class="line-through text-2xl font-bold text-right text-gray-600">
+                                    550 درهم  
+                    </p>
+                    <div class="flex flex-row justify-center items-baseline">
+                        <p class=" text-5xl md:text-6xl font-bold text-right text-gray-600">
+                                            450
+                        </p>
+                        <p class="text-lg md:text-xl font-semibold text-right text-gray-600 ">
+                                            درهم
+                        </p> 
+                                    
+                    </div>
+                            
+                    <p class="w-full py-1 rounded-md bg-red-primary text-base md:text-lg font-medium text-center text-white">
+                                    تسجيل
+                    </p>
+                </div> 
+            </div>              
+        </div>
+</section>
+    
+    {% jsx "FAQ", name="FAQData" %}
 </main>
 {% jsx "Fixed" %}
