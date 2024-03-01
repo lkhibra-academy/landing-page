@@ -38,9 +38,9 @@ layout: main.njk
                 <div class="max-w-md mx-auto sm:max-w-none ">
                     <div>         
                     {% image resource.img, resource.title, ["png","webp"], ["400px","400px"], "", {class:" object-cover bg-center bg-white h-80 w-full"} %} </div> 
-                    <div class="flex flex-col justify-center items-stretch pt-2 text-left px-2">
-                            <h3 class="text-lg md:text-xl font-bold text-black-primary mb-2 ">{{ resource.title | i18n }}</h3>
-                            <p class="text-base font-light text-gray-700 mb-3">{{ resource.description | i18n }}</p>
+                    <div class="flex flex-col justify-center items-stretch pt-2 px-2">
+                            <h3 class="text-xl font-bold text-black-primary mb-2 text-center">{{ resource.title | i18n }}</h3>
+                            <p class="text-base font-light text-gray-700 mb-3 text-right">{{ resource.description | i18n }}</p>
                             <a href="{{ resource.link }}" class=" bg-red-primary border border-red-primary text-white hover:bg-white hover:text-red-primary px-2 py-1 md:px-4 md:py-2 transition-colors duration-300 text-base rounded-md text-center">
                             {{ resource.cta | i18n }}</a>
                     </div>
@@ -50,8 +50,8 @@ layout: main.njk
                     <div>
                     {% image resource.img, resource.title, ["png","webp"], ["400px","400px"], "", {class:" object-cover bg-center bg-white h-80 w-full "} %} </div>
                     <div class="flex flex-col justify-center items-stretch pt-2 text-right px-2">
-                            <h3 class="text-lg md:text-xl font-bold text-black-primary mb-2 ">{{ resource.title | i18n }}</h3>
-                            <p class="text-base font-light text-gray-700 mb-3">{{ resource.description | i18n }}</p>
+                        <h3 class="text-xl font-bold text-black-primary mb-2 text-center">{{ resource.title | i18n }}</h3>
+                        <p class="text-base font-light text-gray-700 mb-3">{{ resource.description | i18n }}</p>
                             <a href="{{ resource.link }}" class=" bg-red-primary border border-red-primary text-white hover:bg-white hover:text-red-primary px-2 py-1 md:px-4 md:py-2 transition-colors duration-300 text-base rounded-md text-center">
                             {{ resource.cta | i18n }}</a>
                     </div>

@@ -990,53 +990,80 @@
     ],
   
       "resourceHero": {
-          "title": "استكشف مواردنا التقنية الشاملة في أكاديمية لخبيرا!",
-          "subtitle": "في أكاديمية لخبيرا، نسعى لأن نكون وجهتك الأولى للحصول على أفضل الموارد التعليمية في مجال البرمجة وتطوير الويب. سواء كنت طالباً مبتدئاً تطرق أبواب هذا العالم للمرة الأولى، أو مطوراً محترفاً تتطلع إلى توسيع آفاقك، لدينا ما يلبي كافة احتياجاتك."
+          "title": "استكشف مواردنا التقنية الشاملة في أكاديمية لخبرة!",
+          "subtitle": "في أكاديمية لخبرة، نسعى لأن نكون وجهتك الأولى للحصول على أفضل الموارد التعليمية في مجال البرمجة وتطوير الويب. سواء كنت طالباً مبتدئاً تطرق أبواب هذا العالم للمرة الأولى، أو مطوراً محترفاً تتطلع إلى توسيع آفاقك، لدينا ما يلبي كافة احتياجاتك."
       },
       "resourceList": [
         {
           "fr":true,
-          "title": " انضم إلى شبكة لخبيرا على واتساب!",
+          "title": " انضم إلى شبكة لخبرة على واتساب!",
           "description": "انضم إلى مجتمع نابض بالموارد الحصرية والتواصل المباشر مع الخبراء والمتعلمين. استفد من التحديات والخبرات التفاعلية وطور مهاراتك البرمجية إلى مستويات أعلى.",
-          "link": "https://www.lkhibra.ma/Formation-Python-Softskills.pdf",
-          "img":"src/assets/images/ebook1.webp",
-          "cta": "انضمام "
+          "link": "https://chat.whatsapp.com/Fxurpbkphnn3KGWFRIXb03",
+          "img":"src/assets/images/lkhibra-network.webp",
+          "cta": "انضم"
       },{
-            
-        "title": " انضم إلى شبكة لخبيرا على واتساب!",
-        "description": "انضم إلى مجتمع نابض بالموارد الحصرية والتواصل المباشر مع الخبراء والمتعلمين. استفد من التحديات والخبرات التفاعلية وطور مهاراتك البرمجية إلى مستويات أعلى.",
-        "link": "https://www.lkhibra.ma/Formation-Python-Softskills.pdf",
-        "img":"src/assets/images/ebook2.webp",
-        "cta": "انضمام "
+        "fr":true,
+        "title": "Clean Code",
+        "description": " احصل على نسختك الخاصة من كتاب Clean Code للمبرمج الشهير Robert C. Martin، واستفد من أفضل الممارسات في كتابة الكود النظيف والقابل للصيانة.",
+        "link": "https://www.lkhibra.ma/clean-code.pdf",
+        "img":"src/assets/images/clean-code.webp",
+        "cta": "تحميل"
     },{
-            
-      "title": " انضم إلى شبكة لخبيرا على واتساب!",
-      "description": "انضم إلى مجتمع نابض بالموارد الحصرية والتواصل المباشر مع الخبراء والمتعلمين. استفد من التحديات والخبرات التفاعلية وطور مهاراتك البرمجية إلى مستويات أعلى.",
-      "link": "https://www.lkhibra.ma/Formation-Python-Softskills.pdf",
-      "img":"src/assets/images/ebook1.webp",
-      "cta": "انضمام "
-  },{
-            
-    "title": " انضم إلى شبكة لخبيرا على واتساب!",
-    "description": "انضم إلى مجتمع نابض بالموارد الحصرية والتواصل المباشر مع الخبراء والمتعلمين. استفد من التحديات والخبرات التفاعلية وطور مهاراتك البرمجية إلى مستويات أعلى.",
-    "link": "https://www.lkhibra.ma/Formation-Python-Softskills.pdf",
-    "img":"src/assets/images/ebook2.webp",
-    "cta": "انضمام "
+      "fr":true,
+      "title": "Building Skills in Python",
+      "description": " احصل على نسختك الخاصة من كتاب Building Skills in Python، واستفد من أفضل الممارسات في تطوير البرمجة بلغة بايثون.",
+      "link": "https://www.lkhibra.ma/BuildingSkillsinPython.pdf",
+      "img":"src/assets/images/BuildingSkillsinPython.webp",
+      "cta": "تحميل"
+  },
+  {
+    "fr":true,
+    "title": "C Handbook",
+    "description": " احصل على نسختك الخاصة من كتاب C Handbook، واستفد من أفضل الممارسات في تطوير البرمجة بلغة C",
+    "link": "https://www.lkhibra.ma/c-handbook.pdf",
+    "img":"src/assets/images/c-handbook.webp",
+    "cta": "تحميل"
+},
+{
+  "fr":true,
+  "title": "React JS Notes for Professionals",
+  "description": " احصل على نسختك الخاصة من كتاب React JS Notes for Professionals، واستفد من أفضل الممارسات في تطوير الواجهات الأمامية بلغة ReactJS",
+  "link": "https://www.lkhibra.ma/ReactJSNotesForProfessionals.pdf",
+  "img":"src/assets/images/ReactJSNotesForProfessionals.webp",
+  "cta": "تحميل"
+},
+{
+  "fr":true,
+  "title": "LaTeX Notes for Professionals",
+  "description": " احصل على نسختك الخاصة من كتاب LaTeX Notes for Professionals، واستفد من أفضل الممارسات في كتابة الوثائق العلمية بلغة LaTeX",
+  "link": "https://www.lkhibra.ma/LaTeXNotesForProfessionals.pdf",
+  "img":"src/assets/images/LaTeXNotesForProfessionals.webp",
+  "cta": "تحميل"
+},
+{
+  "fr":true,
+  "title": " Linux Fundamentals",
+  "description": " احصل على نسختك الخاصة من كتاب Linux Fundamentals، واستفد من أفضل الممارسات في تطوير البرمجة بلغة Linux",
+  "link": "https://www.lkhibra.ma/linux-fundamentals.pdf",
+  "img":"src/assets/images/linux-fundamentals.webp",
+  "cta": "تحميل"
+},
+
+{
+  "fr":true,
+  "title": "Python for Data Analysis",
+  "description": " احصل على نسختك الخاصة من كتاب Python for Data Analysis، واستفد من أفضل الممارسات في تطوير البرمجة بلغة Python",
+  "link": "https://www.lkhibra.ma/Python-for-Data-Analysis.pdf",
+  "img":"src/assets/images/Python-for-Data-Analysis.webp",
+  "cta": "تحميل"
 },{
             
-  "title": " انضم إلى شبكة لخبيرا على واتساب!",
-  "description": "انضم إلى مجتمع نابض بالموارد الحصرية والتواصل المباشر مع الخبراء والمتعلمين. استفد من التحديات والخبرات التفاعلية وطور مهاراتك البرمجية إلى مستويات أعلى.",
-  "link": "https://www.lkhibra.ma/Formation-Python-Softskills.pdf",
-  "img":"src/assets/images/ebook1.webp",
-  "cta": "انضمام "
-},{
-            
-  "title": " انضم إلى شبكة لخبيرا على واتساب!",
-  "description": "انضم إلى مجتمع نابض بالموارد الحصرية والتواصل المباشر مع الخبراء والمتعلمين. استفد من التحديات والخبرات التفاعلية وطور مهاراتك البرمجية إلى مستويات أعلى.",
-  "link": "https://www.lkhibra.ma/Formation-Python-Softskills.pdf",
-  "img":"src/assets/images/ebook1.webp",
-  "cta": "انضمام "
-}
+        "title": "دليل مختصر للغات البرمجة",
+        "description":" احصل على نسختك الخاصة من دليل مختصر للغات البرمجة، واستفد من مقارنة شاملة بين أهم لغات البرمجة واختر الأنسب لمشروعك القادم.",
+        "link": "https://www.lkhibra.ma/Brief-guide-to-programming-languages-v1.2.4.pdf",
+        "img":"src/assets/images/Brief-guide-to-programming-languages.webp",
+        "cta": "تحميل"
+    }
       ],
 
 
