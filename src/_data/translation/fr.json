@@ -25,7 +25,8 @@
       "Design":"Design",
       "Programming":"Programmation",
       "Marketing":"Marketing",
-      "AI":"Intelligence Artificielle"
+      "AI":"Intelligence Artificielle",
+      "Library":"Bibliothèque"
     },
     "HeroHome": {
       "title": "Lancez votre carrière avec notre expertise !",

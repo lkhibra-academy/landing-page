@@ -35,8 +35,9 @@ layout: main.njk
             {% for resource in translation[page.lang].resourceList %}
             
             {% if resource.fr %}
-                <div class=" ">          
-                    {% image resource.img, resource.title, ["png","webp"], ["400px","400px"], "", {class:" object-cover bg-center bg-white h-80 w-full "} %} 
+                <div class="max-w-md mx-auto sm:max-w-none ">
+                    <div>         
+                    {% image resource.img, resource.title, ["png","webp"], ["400px","400px"], "", {class:" object-cover bg-center bg-white h-80 w-full"} %} </div> 
                     <div class="flex flex-col justify-center items-stretch pt-2 text-left px-2">
                             <h3 class="text-lg md:text-xl font-bold text-black-primary mb-2 ">{{ resource.title | i18n }}</h3>
                             <p class="text-base font-light text-gray-700 mb-3">{{ resource.description | i18n }}</p>
@@ -45,8 +46,9 @@ layout: main.njk
                     </div>
                 </div>
             {% else %}
-                <div class="">          
-                    {% image resource.img, resource.title, ["png","webp"], ["400px","400px"], "", {class:" object-cover bg-center bg-white h-80 w-full "} %} 
+                <div class="max-w-md mx-auto sm:max-w-none ">          
+                    <div>
+                    {% image resource.img, resource.title, ["png","webp"], ["400px","400px"], "", {class:" object-cover bg-center bg-white h-80 w-full "} %} </div>
                     <div class="flex flex-col justify-center items-stretch pt-2 text-right px-2">
                             <h3 class="text-lg md:text-xl font-bold text-black-primary mb-2 ">{{ resource.title | i18n }}</h3>
                             <p class="text-base font-light text-gray-700 mb-3">{{ resource.description | i18n }}</p>
