@@ -4,11 +4,7 @@
         "url": "/"
     },{
         "name": "Navigation.Trainings",
-        "items":  [
-          {
-            "label": "Navigation.Individual",
-            "url": "/Individual"
-          },        
+        "items":  [        
           {
             "label": "Navigation.Python",
             "url": "/Programming"
