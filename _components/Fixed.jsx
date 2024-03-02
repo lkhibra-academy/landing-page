@@ -36,14 +36,14 @@ exports.default = function ({ ctx }) {
       {/* Whatsapp BTN */}
       <a
         href="https://api.whatsapp.com/send?phone=212708983350"
-        className="whatsapp-button z-40"
         target="_blank"
+        onClick={() => fbq("track", "Contact")}
+        className="whatsapp-button z-40"
         style={{
           position: "fixed",
           right: "15px",
           bottom: "70px",
         }}
-        onClick={() => fbq("track", "Contact")}
       >
         <Image
           src="src/assets/images/whatsapp-button.png"

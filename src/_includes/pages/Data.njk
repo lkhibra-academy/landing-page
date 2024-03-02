@@ -38,8 +38,8 @@ layout: main.njk
           {{ hero.subtitle | i18n }}
         </p>
         <div class="mx-auto max-w-none flex justify-around items-center flex-col md:flex-row gap-2 md:gap-0" x-data >
-          <a href="#register"
-            class="btn text-white bg-red-primary w-full px-0  md:my-6 " x-cta="{training: {{ training | json }}}" >
+          <a href="#pricing"
+            class="btn text-white bg-red-primary w-full px-0  md:my-6 ">
             {{ hero.cta1 | i18n }}
             </a>
             <a href="https://www.lkhibra.ma/Formation-Python-Softskills.pdf" target="_blank"
@@ -175,59 +175,76 @@ layout: main.njk
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             
             <div class="flex flex-col justify-center items-start px-4">
-                <p class="text-2xl md:text-3xl font-bold text-right text-neutral-600 mb-2 md:mb-4">
+                <p class="text-2xl md:text-3xl font-bold text-right text-neutral-600 mb-2">
                     الاستثمار الذي سيغير حياتك للأبد !
                 </p>
-                <div class="flex flex-col justify-center items-start gap-1 md:gap-2">
-                    <div class="flex items-center gap-3">
+                <ul class="text-right space-y-1">
+                    <li class="flex items-start ml-auto gap-3">
                         <p class="text-lg text-[#4c4c4c]">
                             <i class="fas fa-users-rectangle"></i>
                         </p>
                         <p class="text-lg text-right text-[#4c4c4c]">
                          حصص برمجية
                         </p>
-                    </div>
-                    <div class="flex items-center gap-3">
+                    </li>
+                    {# <li class="flex items-start ml-auto gap-3">
                         <p class="text-lg text-[#4c4c4c]">
-                            <i class="fab fa-js"></i>
+                            <i class="fas fa-users"></i>
+                        </p>
+                        <p class="text-lg text-right text-[#4c4c4c]">
+                            حصص Soft skills
+                         </p>
+                    </li> #}
+                    <li class="flex items-start ml-auto gap-3">
+                        <p class="text-lg text-[#4c4c4c]">
+                            <p class="text-lg text-[#4c4c4c]">
+                                <i class="fas fa-award"></i>
+                            </p>
+                        <p class="text-lg text-right text-[#4c4c4c]">
+                        شهادة معتمدة
+                        </p>
+                    </li>
+                    <li class="flex items-start ml-auto gap-3">
+                        <p class="text-lg text-[#4c4c4c]">
+                            <i class="fab fa-python"></i>
                         </p>
                         <p class="text-lg text-right text-[#4c4c4c]">
                          مشاريع برمجية
                         </p>
-                    </div>
-                    <div class="flex items-center gap-3">
+                    </li>
+                    <li class="flex items-start ml-auto gap-3">
                         <p class="text-lg text-[#4c4c4c]">
                             <i class="fab fa-whatsapp"></i>
                         </p>
                         <p class="text-lg text-right text-[#4c4c4c]">
                             متابعة شخصية
                         </p>
-                    </div>
-                    <div class="flex items-center gap-3">
+                    </li>
+                    <li class="flex items-start ml-auto gap-3">
                         <p class="text-lg text-[#4c4c4c]">
                             <i class="fas fa-code"></i>
                         </p>
                         <p class="text-lg text-right text-[#4c4c4c]">
                             تمارين تطبيقية
                         </p>
-                    </div>
-                    <div class="flex items-center gap-3">
+                    </li>
+                    {# <li class="flex items-start ml-auto gap-3">
                         <p class="text-lg text-[#4c4c4c]">
                             <i class="fas fa-file-code"></i>
                         </p>
                         <p class="text-lg text-right text-[#4c4c4c]">
                             20+ ملفات دروس
                         </p>
-                    </div>
-                    <div class="flex items-center gap-3">
+                    </li> #}
+                    <li class="flex items-start ml-auto gap-3">
                         <p class="text-lg text-[#4c4c4c]">
-                            <i class="fas fa-file-code"></i>
+                            <i class="fas fa-video-camera"></i>
                         </p>
                         <p class="text-lg text-right text-[#4c4c4c]">
                             تسجيلات الحصص المباشرة
                         </p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
 
             <div class="flex flex-row justify-between items-center w-full gap-2 md:gap-4">
@@ -236,21 +253,26 @@ layout: main.njk
                                             أداء مرة واحدة
                     </p>
                     <p class="line-through text-2xl font-bold text-right text-white">
-                                    1650 درهم  
+                                    1100 درهم  
                     </p>
                     <div class="flex flex-row justify-center items-baseline">
                         <p class=" text-5xl md:text-6xl font-bold text-right text-white">
-                                            1050
+                                            750
                         </p>
-                        <p class="text-lg md:text-xl font-semibold text-right text-white ">
+                        <a class="text-lg md:text-xl font-semibold text-right text-white "
+                         >
                                             درهم
-                        </p> 
+                        </a> 
                                     
                     </div>
                             
-                    <p class="w-full py-1 rounded-md bg-white text-base md:text-lg font-medium text-center text-red-primary">
+                    <a 
+                    href="https://api.whatsapp.com/send?phone=212708983350&text=Je%20souhaite%20m'inscrire%20à%20la%20formation%20d'analyse%20de%20données."
+                        target="_blank"
+                        onClick="fbq('track', 'Lead')" 
+                        class="w-full py-1 rounded-md bg-white text-base md:text-lg font-medium text-center text-red-primary">
                                     تسجيل
-                    </p>
+                    </a>
                 </div> 
 
 
@@ -271,14 +293,16 @@ layout: main.njk
                                     
                     </div>
                             
-                    <p class="w-full py-1 rounded-md bg-red-primary text-base md:text-lg font-medium text-center text-white">
+                    <a href="https://api.whatsapp.com/send?phone=212708983350&text=Je%20souhaite%20m'inscrire%20à%20la%20formation%20d'analyse%20de%20données."
+                        target="_blank"
+                        onClick="fbq('track', 'Lead')" 
+                        class="w-full py-1 rounded-md bg-red-primary text-base md:text-lg font-medium text-center text-white">
                                     تسجيل
-                    </p>
+                    </a>
                 </div> 
             </div>              
         </div>
 </section>
     
-    {% jsx "FAQ", name="FAQData" %}
+{% jsx "FAQ", name="FAQData" %}
 </main>
-{% jsx "Fixed" %}

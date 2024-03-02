@@ -10,7 +10,11 @@
           <h2 class="text-2xl font-bold md:text-3xl md:block hidden mb-4">{{ "certification.title" | i18n }}</h2>
           <p class=" text-gray-600 text-lg mb-4 md:mb-0">{{ "certification.subtitle" | i18n}}</p>
           <div class="mx-auto max-w-none" x-data>
-            <a href="#register" class="btn text-white bg-red-primary max-w-fit md:my-6 " x-cta>{{ "HeroHome.cta1" | i18n}}</a>
+            <a 
+            href="https://api.whatsapp.com/send?phone=212708983350&text=Je%20suis%20intéressé%20par%20l'inscription%20à%20votre%20programme%20de%20formation%2C%20pourriez-vous%20m'en%20dire%20plus%20%3F"
+            target="_blank"
+            onClick="fbq('track', 'Lead')"
+             class="btn text-white bg-red-primary max-w-fit md:my-6 ">{{ "HeroHome.cta1" | i18n}}</a>
           </div>
         </div>
       

@@ -139,7 +139,7 @@
         "link": "/Programming",
         "content": [
           {
-            "tags": ["Python", "Algorithm","OOP","Data Structure"],
+            "tags": ["Python", "Algorithm","Data Structure","Project Management","Soft-Skills"],
             "title": "تدريب الخبرة في البرمجة",
             "desc": "اختصر الوقت وتعلم جميع أساسيات البرمجة عن طريق مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.",
             "cta": "اكتشف المزيد",
@@ -148,12 +148,12 @@
         ]
       },
       {
-        "link": "/Frontend",
+        "link": "/Data",
         "content": [
           {
-            "tags": ["HTML", "CSS","Javascript","Web Design","Figma"],
-            "title": "تدريب الخبرة في تطوير الويب",
-            "desc": "اختصر الوقت وتعلم جميع أساسيات تطوير الويب عن طريق مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.",
+            "tags": ["Python", "Data Analysis","Machine Learning","Data Visualization"],
+            "title": "تدريب الخبرة في تحليل البيانات",
+            "desc": "اختصر الوقت وتعلم جميع أساسيات تحليل البيانات عن طريق مشاريع تطبيقية،واحصل على شهادة معتمدة من أجل فتح فرص جديدة.",
             "cta": "اكتشف المزيد",
             "img":"/images/pythontraining.png"
           }
