@@ -258,17 +258,17 @@
   },  
 
   "HeroPython": {
-    "title": "تدريب الخبرة في البرمجة: احصل على المهارات اللازمة لتصبح مبرمج بايثون محترف",
-    "subtitle": "اختصر الوقت وتعلم جميع أساسيات البرمجة عن طريق مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة من أجل فتح فرص جديدة.",
+    "title": "تدريب الخبرة في البرمجة:  تعلم برمجة بايثون في 3 أشهر فقط من منزلك ",
+    "subtitle": "اختصر الوقت وتعلم جميع أساسيات البرمجة عن طريق مشاريع تطبيقية، في تلاث أشهر فقط واحصل على شهادة معتمدة.",
     "cta1": "بغيت نتعلم",
     "cta2": "تحميل الكتيب",
     "img":"python"
   },
   "IncludesPython": {
         "title": " يتضمن  هذا تدريب :",
-        "item1": "12 حصة برمجة (Google Meet)",
-        "item2": "6 حصص Soft skills",
-        "item3": "10 مشاريع برمجية",
+        "item1": "حصص برمجة (Google Meet)",
+        "item2": "حصص Soft skills",
+        "item3": "مشاريع برمجية",
         "item4": "شهادة معتمدة",
         "item5": "متابعة شخصية",
         "item6": "أكتر من 20 ملفات دروس"
@@ -276,44 +276,36 @@
   "LearnPython": {
         "title":"شنو غادي تعلم :"
   },
-  "LearnPythonContent": [
-        {
-          "itemAR": "الخوارزميات وهياكل البيانات",
-          "itemEN": "Algorithms and Data Structure"
-        },
-        {
-          "itemAR": "أساسيات البرمجة بلغة البايثون",
-          "itemEN": "Python Programming Language"
-        },
-        {
-          "itemAR": "أساسيات البرمجة كائنية التوجه",
-          "itemEN": "Object-Oriented Programming"
-        },
-        {
-          "itemAR": "كيفية استخدام مكتبات البايثون",
-          "itemEN": "Pandas, matplotlib, SciKitLearn"
-        },
-        {
-          "itemAR": "أساسيات الذكاء الإصطناعي",
-          "itemEN": "Basics of Machine Learning"
-        },
-        {
-          "itemAR": "تصاوب برامجك الخاصة",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "تنضم وقتك وتزيد انتاجيتك",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "تطور مهارة حل المشاكل",
-          "itemEN": ""
-        },
-        {
-          "itemAR": "تحسن التركيز ديالك و الإنضباط أثناء تعلم",
-          "itemEN": ""
-        }
-      ],
+    "LearnPythonContent": [
+      {
+        "itemAR": "الخوارزميات وهياكل البيانات",
+        "itemEN": "Algorithms and Data Structure"
+      },
+      {
+        "itemAR": "أساسيات البرمجة بلغة البايثون",
+        "itemEN": "Python Programming Language"
+      },    
+      {
+        "itemAR": "إدارة المشاريع الرشيقة",
+        "itemEN": "Agile Project Management"
+      },
+      {
+        "itemAR": "كيفية استخدام مكتبات البايثون",
+        "itemEN": "Pandas, matplotlib, Streamlit"
+      },
+      {
+        "itemAR": "تصاوب برامجك الخاصة",
+        "itemEN": "Build Your Own Programs"
+      },
+      {
+        "itemAR": "تنضم وقتك وتزيد انتاجيتك",
+        "itemEN": "Manage Your Time and Increase Productivity"
+      },
+      {
+        "itemAR": "تطور مهارة حل المشاكل",
+        "itemEN": "Develop Problem-Solving Skills"
+      }
+    ],  
   "ForWhoPython": {
         "title": "شكون ايستافد من التدريب",
         "profiles": [
@@ -358,109 +350,82 @@
       },
   "PythonContent":{
     "title":" محتوى تدريب :",
-    "modules": [
-      {
-        "title": "Algorithms & Python Basics",
-        "items": [
-          "- Variables",
-          "- Dynamic Typing",
-          "- Mutable and Immutable types",
-          "- Strings",
-          "- Escape Sequences",
-          "- Userful String Methods",
-          "- Formatted Strings",
-          "- Numbers",
-          "- Arithmetic Operators",
-          "- Type Conversion",
-          "- Conditional Operators",
-          "- Logical Operators",
-          "- Ternary Operator",
-          "- Loops (For,While)",
-          "- Arguments (xargs)",
-          "- Functions",
-          "- Scope"
-        ]
-      },
-      {
-        "title": "Data Structures",
-        "items": [
-          "- List",
-          "- Looping Over Lists",
-          "- Finding items",
-          "- Lambda Functions",
-          "- Sortings Lists",
-          "- Map Function",
-          "- Zip Function",
-          "- List Comprehensions",
-          "- Stacks",
-          "- Queues",
-          "- Tuples",
-          "- Arrays",
-          "- Sets",
-          "- Dictionaries",
-          "- Generator Expressions"
-        ]
-      },
-      {
-        "title": "Exceptions",
-        "items": [
-          "- Handling Exceptions",
-          "- Handling different Exceptions",
-          "- Raising Exceptions",
-          "- With Statement"
-        ]
-      },
-      {
-        "title": "Classes",
-        "items": [
-          "- Creating Classes",
-          "- Constructors",
-          "- Classes vs Instances",
-          "- Magic Methods",
-          "- Performing arithmetic operators with classes",
-          "- Inheritance",
-          "- Method Overriding",
-          "- Multiple Inheretence",
-          "- Abstract Base Classes",
-          "- Duck Typing"
-        ]
-      },
-      {
-        "title": "Modules",
-        "items": [
-          "- Creating Modules",
-          "- Compiled python files",
-          "- Module search",
-          "- Sub Packages",
-          "- Dir function"
-        ]
-      },
-      {
-        "title": "Machine Learning",
-        "items": [
-          "- What is Machine learning",
-          "- Machine Learning in action",
-          "- Libraries and tools for machine Learning",
-          "- Importing data sets",
-          "- Working on real machine learning problem",
-          "- Persisting Models"
-        ]
-      },
-      {
-        "title": "Soft Skills",
-        "items": [
-          "- How to learn",
-          "- Time management",
-          "- Problem-solving",
-          "- Motivation",
-          "- Focus",
-          "- Organisation",
-          "- Adaptability",
-          "- Teamwork",
-          "- Communication"
-        ]
-      }
-    ]
+      "modules": [
+        {
+          "title": "Fundamentals of Python Programming",
+          "items": [
+            "Syntax and Script Execution",
+            "Variables, Expressions, and Data Types",
+            "String Operations and Regular Expressions",
+            "Input and Output Operations",
+            "Error Handling and Exceptions"
+          ]
+        },
+        {
+          "title": "Control Structures and Functions in Python",
+          "items": [
+            "Conditional Statements (if, elif, else)",
+            "Looping Constructs (for loops, while loops)",
+            "Understanding Iterables and Iterators",
+            "Writing Functions and Passing Arguments",
+            "Scope and Lifetime of Variables",
+            "Lambda Functions and Higher-Order Functions"
+          ]
+        },
+        {
+          "title": "Data Structures in Python",
+          "items": [
+            "Lists and List Comprehensions",
+            "Tuples and Sequences",
+            "Dictionaries and Sets",
+            "Stacks, Queues, and Deques",
+            "Understanding Generators and Iterators"
+          ]
+        },
+        {
+          "title": "Introduction to Pandas",
+          "items": [
+            "Getting Started with Pandas",
+            "Series and DataFrames: Basics to Advanced",
+            "Data Cleaning and Preparation with Pandas",
+            "Data Analysis Techniques Using Pandas",
+            "Advanced Data Manipulation with Pandas"
+          ]
+        },
+        {
+          "title": "Visualizing Data with Matplotlib",
+          "items": [
+            "Basics of Matplotlib",
+            "Plotting with Matplotlib: Different Types of Plots",
+            "Customizing Graphs with Matplotlib",
+            "Integrating Pandas and Matplotlib",
+            "Advanced Visualization Techniques with Matplotlib"
+          ]
+        },
+        {
+          "title": "Building Interactive Apps with Streamlit",
+          "items": [
+            "Introduction to Streamlit",
+            "Designing Web Apps with Streamlit",
+            "Integrating Pandas and Matplotlib in Streamlit Apps",
+            "Advanced Features of Streamlit",
+            "Deploying Streamlit Apps"
+          ]
+        },
+        {
+          "title": "Agile Project Management",
+          "items": [
+            "Principles of Agile and Scrum Framework",
+            "Roles and Responsibilities in Agile Teams",
+            "Sprint Planning and Execution",
+            "Agile Estimating and Planning Techniques",
+            "Continuous Integration and Continuous Deployment (CI/CD)",
+            "Monitoring, Reviewing, and Adapting Processes",
+            "Effective Communication and Collaboration in Agile",
+            "Scaling Agile to Larger Projects"
+          ]
+        }
+      ]        
   },
   "MorePython": {
     "title": "أكثر من مجرد تدريب",
@@ -1066,22 +1031,48 @@
     }
       ],
 
-
+      "MoreData": {
+        "title": "أكثر من مجرد تدريب",
+        "content": [
+          {
+            "title": "متابعة شخصية",
+            "icon": "users",
+            "p": "المدرس كايبقى معاك على اتصال فمجموعة واتساب باش يحل مشاكل لي اتطيح فيهم أثناء تعلم"
+          },
+          {
+            "title": "شهادة معتمدة",
+            "icon": "graduation-cap",
+            "p": "الحصول على شهادة معتمدة بعد إتمام التدريب تفتح لك فرصًا جديدة في حياتك المهنية"
+          },
+          {
+            "title": "مشاريع برمجية",
+            "icon": "laptop-code",
+            "p": "تطبيق عملي 100٪ من أول حصة، حيث ستعمل على مشاريع برمجية تُفيدك في حياتك العملية"
+          },
+          {
+            "title": "تدريب شامل",
+            "icon": "graduate",
+            "p":"لا يركز التدريب على الجانب التقني فقط، بل يشمل أيضًا حصصًا تُركز على تنمية المهارات الشخصية والمهنية"
+          }
+        ]
+      },
       "FAQData": {
         "title": "أسئلة متكررة",
         "list": [
           {
-            "qst": "وقتاش ايبدا تدريب ؟",
+            "qst": "خطوات باش نتسجل فالتدريب ؟",
             "ans": [
-    "        التسجيل الآن مغلق",
-    "سوف يتم فتحه في الشهر القادم"]},
-              
-          
+              "تواصل معنا على الواتساب"
+            ]
+          },
+          {
+            "qst": "طرق الدفع المتاحة ؟",
+            "ans": ["عن طريق تحويل بنكي (virement bancaire)"]
+          },
           {
             "qst": "واش خاص نكون عارف شي حاجة من قبل ؟",
             "ans": [
-              "لا، المدربين ديالنا كايبداو معاك من صفر",
-              "وخا مايكون عندك حتى فكرة من قبل على البرمجة"
+              "نعم، يفضل أن يكون لديك خلفية في البرمجة"
             ]
           },
           {

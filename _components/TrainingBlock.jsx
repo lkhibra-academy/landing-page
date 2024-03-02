@@ -11,14 +11,7 @@ module.exports = function TrainingBlock({ title,items}) {
             py-3 px-4  border border-gray-300 border-b-0
             ">
                 {/*  -border-0 */}
-              <p className="text-base font-medium text-gray-800">
-              {title}
-              </p>
-              {/* <i className="fa fa-chevron-down
-              flex-shrink-0 p-1 text-center transition duration-300 group-open:hidden"></i>
-              <i className="fa fa-chevron-up
-              flex-shrink-0 p-1 text-center transition duration-300 hidden group-open:block"></i> */}
-            <svg
+                <svg
             className="flex-shrink-0 mx-1 w-5 h-5 transition duration-300 group-open:-rotate-180"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -32,6 +25,14 @@ module.exports = function TrainingBlock({ title,items}) {
               d="M19 9l-7 7-7-7"
             />
           </svg>
+          <p className="text-base font-medium text-gray-800">
+              {title}
+              </p>
+              {/* <i className="fa fa-chevron-down
+              flex-shrink-0 p-1 text-center transition duration-300 group-open:hidden"></i>
+              <i className="fa fa-chevron-up
+              flex-shrink-0 p-1 text-center transition duration-300 hidden group-open:block"></i> */}
+            
             </summary>
 
             <div dir="ltr" className="py-3 px-4 leading-relaxed text-gray-700 border border-gray-300 text-left">

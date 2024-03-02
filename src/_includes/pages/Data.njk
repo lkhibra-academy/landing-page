@@ -14,39 +14,30 @@ layout: main.njk
   {# hero section #}
   <div class="grid grid-cols-1 gap-1 lg:gap-10 md:grid-cols-2 pt-4 md:pb-2 pb-0 md:pt-8">
     {# picture #}
-    {% set offers = translation[page.lang].offersPython %}
-    {% if hero.img=="frontend" %}
       <div
       class="relative h-[340px] overflow-hidden rounded-lg my-auto max-h-72 md:max-h-full md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
       {% image "src/assets/images/heropic8.png", "woman smilling", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"}%}
       </div>
-    {% else %}
-      <div
-      class="relative h-[340px] overflow-hidden rounded-lg my-auto max-h-72 md:max-h-full md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
-      {% image "src/assets/images/heropic7.png", "woman smilling", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"}%}
-      </div>
-    {% endif %}
     {# texte #}
     <div
       class="md:order-last flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:col-start-1 md:row-start-1 row-start-2">
 
       <div class="text-center self-start md:text-right md:ltr:text-left">
         <h2 class="text-2xl font-bold sm:text-3xl ">
-          {{ hero.title | i18n }}
+        تدريب الخبرة في تحليل البيانات: ابدأ رحلتك نحو مستقبل مهني مُشرق
         </h2>
         <p class="mt-4 text-gray-600 text-lg mb-4 md:mb-0">
-          {{ hero.subtitle | i18n }}
+        اكتسب المهارات والخبرات اللازمة لتصبح محلل بيانات Data Analyst في 2 أشهر فقط عن بعد واحصل على شهادة معتمدة.
         </p>
         <div class="mx-auto max-w-none flex justify-around items-center flex-col md:flex-row gap-2 md:gap-0" x-data >
           <a href="#pricing"
             class="btn text-white bg-red-primary w-full px-0  md:my-6 ">
-            {{ hero.cta1 | i18n }}
-            </a>
+           بغيت نتعلم</a>
             <a href="https://www.lkhibra.ma/Formation-Python-Softskills.pdf" target="_blank"
             class="btn bg-white text-gray-700 shadow-lg border-b-1 border-gray-300 
             w-full px-0 md:my-6 mr-0 md:mr-4">
             <i class="fa-solid fa-download mx-2"></i>
-            <span>{{ hero.cta2 | i18n }}</span>
+            <span>تحميل الكتيب </span>
             </a>
         </div>
       </div>
@@ -67,7 +58,7 @@ layout: main.njk
                 22%
             </p>
             <p class=" text-base md:text-lg text-center text-gray-700">
-                مزيد من فرص العمل في علوم البيانات
+                فرص العمل الجديدة في مجال تحليل البيانات                
             </p>
         </div>
         <div class="flex flex-col justify-center items-center ">
@@ -83,22 +74,22 @@ layout: main.njk
                 +82M
             </p>
             <p class=" text-base md:text-lg text-center text-gray-700">
-                علماء البيانات في الست سنوات القادمة
-            </p>
+                وظيفة جديدة في مجال تحليل البيانات خلال الست سنوات القادمة          
+               </p>
         </div>
         <div class="flex flex-col justify-center items-center ">
             <p class="text-3xl md:text-4xl font-semibold text-left text-black-primary">
-                +82M
+                90%
             </p>
             <p class=" text-base md:text-lg text-center text-gray-700">
-                علماء البيانات في الست سنوات القادمة
-            </p>
+             من الشركات تعتمد حاليًا على تحليل البيانات لاتخاذ قرارات تجارية مهمة        
+                 </p>
         </div>
     </div>
     </div>
 </section>
 
-{{ More("MorePython") }}
+{{ More("MoreData") }}
 
 {# TRAINING CONTENT #}
 <section id="content" class="relative max-w-6xl md:mx-auto md:justify-center mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
