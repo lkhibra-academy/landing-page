@@ -6,18 +6,19 @@
         "name": "Navigation.Trainings",
         "items":  [        
           {
-            "label": "Navigation.Python",
-            "url": "/Programming"
-          },        
-          {
             "label": "Navigation.Data",
             "url": "/Data"
           },
           {
-            "label": "Navigation.Frontend",
-            "url": "/Frontend",
-            "closed": true
-          }
+              "label": "Navigation.Frontend",
+              "url": "/Frontend",
+              "closed": true
+            },
+          {
+            "label": "Navigation.Python",
+            "url": "/Programming",
+            "closed":true
+          }        
 
         ]
     },
