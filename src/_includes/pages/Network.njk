@@ -6,21 +6,30 @@ layout: main.njk
     
     {# <section class="relative flex flex-col overflow-hidden max-w-6xl  bg-red-primary">
         <div class="flex justify-center flex-col p-4 max-w-lg mx-auto bg-black-primary"> #}
-        <section dir="ltr" class="flex flex-col min-h-screen overflow-hidden mb-10 pt-16">
-        <div class="relative mx-auto max-w-screen-2xl px-4">
-            <h2 class="font-bold md:text-2xl text-xl text-center pb-5 text-gray-800">Bienvenue sur Lkhibra Network !</h2>
-            <h3 class="font-medium md:text-lg text-base text-center pb-5 text-gray-600 max-w-lg">Rejoignez-nous et accédez à des ateliers gratuits, des conseils d'experts et un réseau de professionnels passionnés par le numérique !</h3>
-            
-            <div class="flex flex-row justify-center items-center mt-4 min-w-[265px]">
-                <a href="https://chat.whatsapp.com/Fxurpbkphnn3KGWFRIXb03"
-                    class="flex items-center flex-row p-3 px-4 rounded-2xl bg-green-500 text-white w-fit"
-                    onClick="fbq('track', 'Contact')">
-                <i class="fa-brands fa-whatsapp text-2xl w-8 my-auto"></i>
-                  <p class="text-base font-medium">
-                  Group Whatsapp                  
-                  </p>
-              </a>
+    <section dir="ltr" class="flex flex-col min-h-screen overflow-hidden mb-10 pt-2">
+        <div class="relative flex flex-col mx-auto max-w-screen-2xl px-4">
+            <div class=" ">
+                {# <p class="text-center mb-2 font-semibold md:text-2xl text-sm text-red-primary">Prochaine événement</p> #}
+                <div
+                class="relative h-[340px] overflow-hidden rounded-lg max-h-72 md:max-h-full md:ltr:col-start-2 md:rtl:col-start-2 row-start-1 col-start-1">
+                {% image "src/assets/images/event.png", "Data Analytics Event", ["webp","png"], [300,600], "(min-width: 500px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"}%}
+                </div>
+            </div>
+            <div class=" ">
+                <p class="font-bold md:text-2xl text-xl text-center pb-1 text-gray-800">Bienvenue sur Lkhibra Network !</p>
+                <p class="font-base md:text-lg text-base text-center pb-1 text-gray-700 max-w-lg leading-5">Rejoignez-nous et accédez à des ateliers gratuits, des conseils d'experts et un réseau de professionnels passionnés par le Digital !</p>
+                
+                <div class="flex flex-row justify-center items-center mt-4 min-w-[265px]">
+                    <a href="https://chat.whatsapp.com/Fxurpbkphnn3KGWFRIXb03"
+                        class="flex items-center flex-row p-2 px-3 rounded-2xl bg-green-500 text-white w-fit"
+                        onClick="fbq('track', 'Contact')">
+                    <i class="fa-brands fa-whatsapp text-xl w-6 my-auto"></i>
+                    <p class="text-sm font-medium">
+                    Group Whatsapp                  
+                    </p>
+                </a>
+                </div>
             </div>
         </div>
-</section>
+    </section>
 </main>
