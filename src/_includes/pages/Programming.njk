@@ -22,7 +22,7 @@ plugins:
 
 
 {# PRICING #}
-<section id="pricing" class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
+{# <section id="pricing" class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             
             <div class="flex flex-col justify-center items-start px-4">
@@ -79,14 +79,14 @@ plugins:
                             تمارين تطبيقية
                         </p>
                     </li>
-                    {# <li class="flex items-start ml-auto gap-3">
+                    <li class="flex items-start ml-auto gap-3">
                         <p class="text-lg text-[#4c4c4c]">
                             <i class="fas fa-file-code"></i>
                         </p>
                         <p class="text-lg text-right text-[#4c4c4c]">
                             20+ ملفات دروس
                         </p>
-                    </li> #}
+                    </li>
                     <li class="flex items-start ml-auto gap-3">
                         <p class="text-lg text-[#4c4c4c]">
                             <i class="fas fa-video-camera"></i>
@@ -153,6 +153,8 @@ plugins:
                 </div> 
             </div>              
         </div>
-</section>
+</section> #}
+    {% include "partials/closed.njk" %}
+
     {% jsx "FAQ", name="FAQPython" %}
 </main>
