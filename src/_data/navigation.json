@@ -6,6 +6,10 @@
         "name": "Navigation.Trainings",
         "items":  [        
           {
+            "label": "Navigation.Individual",
+            "url": "/Individual"
+          },
+          {
             "label": "Navigation.Data",
             "url": "/Data"
           },
