@@ -1,5 +1,5 @@
 {% macro Dropdown(title, items) %}
-    <li class="relative " x-data="{open: false}" x-on:mouseover="$mobile || (open = true)"
+    <li class="relative z-50" x-data="{open: false}" x-on:mouseover="$mobile || (open = true)"
         x-on:mouseout="$mobile || (open = false)" x-on:focus="$mobile || (open = true)"
         x-on:blur="$mobile || (open = false)" x-on:click="$mobile && (open = !open)" @resize.window="open = false">
         <a class="hover:text-gray-900 py-2 flex items-center justify-center transition duration-150 ease-in-out " href="#0"
@@ -12,7 +12,7 @@
             </svg>
         </a>
         <ul x-show="open" x-cloak class="text-center origin-top-right"
-            x-bind:class="$mobile || 'absolute top-full right-0 z-10 w-72  ltr:text-left rtl:text-right origin-top-right'">
+            x-bind:class="$mobile || 'absolute top-full right-0 z-10 w-64 ltr:text-left rtl:text-right origin-top-right'">
             <div class="relative px-2 pb-1 rounded md:border border-gray-200 md:shadow-md bg-white w-fit">
                 {% for item in items %}
                     <li class="p-2 font-medium ">
@@ -38,13 +38,18 @@
                             </a>
                         {% endif %}
                         {% if item.soon %}
-                            <span class="text-xs font-bold text-white rounded bg-red-700 px-2 mr-2">
+                            <span class="text-xs font-bold text-white rounded bg-orange-600 px-2 mr-2">
                                 {{ 'soon' | i18n }}
                             </span>
                         {% endif %}
                         {% if item.closed %}
                             <span class="text-xs font-bold text-white rounded bg-red-700 px-2 mr-2">
                                 {{ 'closed' | i18n }}
+                            </span>
+                        {% endif %}
+                        {% if item.open %}
+                            <span class="text-xs font-bold text-white rounded bg-green-700 px-2 mr-2">
+                                {{ 'open' | i18n }}
                             </span>
                         {% endif %}
                     </li>

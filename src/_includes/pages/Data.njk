@@ -7,7 +7,7 @@ layout: main.njk
 {% from "partials/Training/DoubleSec.njk" import DoubleSec with context %}
 {% from "partials/Training/More.njk" import More with context %}
 {% include "partials/cta.njk" %}
-<main class="flex-grow">
+<main class="flex-grow pt-16">
 
 {# HERO #}
 <section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6 md:mb-0">
@@ -161,7 +161,7 @@ layout: main.njk
 </section>
 
 {# PRICING #}
-<section id="pricing" class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
+{# <section id="pricing" class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             
             <div class="flex flex-col justify-center items-start px-4">
@@ -177,14 +177,6 @@ layout: main.njk
                          حصص برمجية
                         </p>
                     </li>
-                    {# <li class="flex items-start ml-auto gap-3">
-                        <p class="text-lg text-[#4c4c4c]">
-                            <i class="fas fa-users"></i>
-                        </p>
-                        <p class="text-lg text-right text-[#4c4c4c]">
-                            حصص Soft skills
-                         </p>
-                    </li> #}
                     <li class="flex items-start ml-auto gap-3">
                         <p class="text-lg text-[#4c4c4c]">
                             <p class="text-lg text-[#4c4c4c]">
@@ -218,14 +210,6 @@ layout: main.njk
                             تمارين تطبيقية
                         </p>
                     </li>
-                    {# <li class="flex items-start ml-auto gap-3">
-                        <p class="text-lg text-[#4c4c4c]">
-                            <i class="fas fa-file-code"></i>
-                        </p>
-                        <p class="text-lg text-right text-[#4c4c4c]">
-                            20+ ملفات دروس
-                        </p>
-                    </li> #}
                     <li class="flex items-start ml-auto gap-3">
                         <p class="text-lg text-[#4c4c4c]">
                             <i class="fas fa-video-camera"></i>
@@ -292,7 +276,8 @@ layout: main.njk
                 </div> 
             </div>              
         </div>
-</section>
-    
+</section> #}
+        {% include "partials/closed.njk" %}
+
 {% jsx "FAQ", name="FAQData" %}
 </main>

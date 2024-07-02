@@ -12,7 +12,7 @@ plugins:
 {% from "partials/Training/DoubleSec.njk" import DoubleSec with context %}
 {% from "partials/Training/More.njk" import More with context %}
 {% include "partials/cta.njk" %}
-<main class="flex-grow">
+<main class="flex-grow pt-16">
     {% include "partials/Training/heroTraining.njk" %}
     {{ DoubleSec("IncludesPython","LearnPython","LearnPythonContent") }}
     {% jsx "ForWho", name="ForWhoPython" %}
@@ -20,9 +20,11 @@ plugins:
     {{ More("MorePython") }}
     
 
+    
 
 {# PRICING #}
-{# <section id="pricing" class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
+<section id="pricing" class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
+
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             
             <div class="flex flex-col justify-center items-start px-4">
@@ -97,64 +99,103 @@ plugins:
                     </li>
                 </ul>
             </div>
-
-            <div class="flex flex-row justify-between items-center w-full gap-2 md:gap-4">
-                <div class="flex flex-col justify-between items-start  h-60 md:h-72 w-full p-4 rounded-2xl bg-red-primary">
-                    <p class="text-sm font-medium text-right text-red-primary bg-white rounded-md w-fit px-2 py-1 mb-2">
-                                            أداء مرة واحدة
-                    </p>
-                    <p class="line-through text-2xl font-bold text-right text-white">
-                                    1650 درهم  
-                    </p>
-                    <div class="flex flex-row justify-center items-baseline">
-                        <p class=" text-5xl md:text-6xl font-bold text-right text-white">
-                                            1050
-                        </p>
-                        <a class="text-lg md:text-xl font-semibold text-right text-white "
-                         >
-                                            درهم
-                        </a> 
-                                    
+            <div class="grid grid-cols-1">
+                {# COUNTDOWN TIMER #}
+                <div id="countdown" class="relative max-w-6xl mx-auto mb-3 mt-4">
+                    <div class="flex flex-col items-center text-center">
+                        <p class="text-xl md:text-2xl font-bold text-red-primary">سارع بالتسجيل! العرض ينتهي في:</p>
+                        <div id="timer" class="text-2xl md:text-3xl font-bold text-gray-800"></div>
                     </div>
-                            
-                    <a 
-                    href="https://api.whatsapp.com/send?phone=212708983350&text=Je%20souhaite%20m'inscrire%20à%20la%20formation%20de%20programmation%20Python."
-                        target="_blank"
-                        onClick="fbq('track', 'Lead')" 
-                        class="w-full py-1 rounded-md bg-white text-base md:text-lg font-medium text-center text-red-primary">
-                                    تسجيل
-                    </a>
-                </div> 
-
-
-                <div class="flex flex-col justify-between items-start  h-60 md:h-72 w-full p-4 rounded-2xl border shadow-sm">
-                    <p class="text-sm font-medium text-right text-white bg-neutral-400 rounded-md w-fit px-2 py-1 mb-2">
-                    أداء كل شهر
-                    </p>
-                    <p class="line-through text-2xl font-bold text-right text-gray-600">
-                                    550 درهم  
-                    </p>
-                    <div class="flex flex-row justify-center items-baseline">
-                        <p class=" text-5xl md:text-6xl font-bold text-right text-gray-600">
-                                            450
+                </div>    
+                {# CARDS #}
+                <div class="flex flex-row justify-between items-center w-full gap-2 md:gap-4">
+                    <div class="flex flex-col justify-between items-start  h-70 md:h-80 w-full p-4 rounded-2xl bg-red-primary">
+                        <p class="text-sm font-medium text-right text-red-primary bg-white rounded-md w-fit px-2 py-1 mb-2">
+                                                أداء مرة واحدة
                         </p>
-                        <p class="text-lg md:text-xl font-semibold text-right text-gray-600 ">
-                                            درهم
-                        </p> 
-                                    
-                    </div>
-                            
-                    <a href="https://api.whatsapp.com/send?phone=212708983350&text=Je%20souhaite%20m'inscrire%20à%20la%20formation%20de%20programmation%20Python."
-                        target="_blank"
-                        onClick="fbq('track', 'Lead')" 
-                        class="w-full py-1 rounded-md bg-red-primary text-base md:text-lg font-medium text-center text-white">
-                                    تسجيل
-                    </a>
+                        <p class="line-through text-2xl font-bold text-right text-white">
+                                        1650 درهم  
+                        </p>
+                        <div class="flex flex-row justify-center items-baseline">
+                            <p class=" text-5xl md:text-6xl font-bold text-right text-white">
+                                                795
+                            </p>
+                            <a class="text-lg md:text-xl font-semibold text-right text-white "
+                            >
+                                                درهم
+                            </a> 
+                                        
+                        </div>
+                           <p class="text-sm text-white text-right mb-2">
+                        هذا العرض يمكنك من الاستفادة من التدريب كاملاً (3 أشهر) بدفع مرة واحدة.
+
+          </p>     
+                        <a href="https://api.whatsapp.com/send?phone=212708983350&text=بغيت%20نسجل%20ف%20التدريب%20ديال%20البرمجة%20بالعرض%20ديال%20ثلاثة%20شهور%20بـ%20795%20درهم."
+                            target="_blank"
+                            onClick="fbq('track', 'Lead')" 
+                            class="w-full py-1 rounded-md bg-white text-base md:text-lg font-medium text-center text-red-primary">
+                                        تسجيل
+                        </a>
+                    </div> 
+
+
+                    <div class="flex flex-col justify-between items-start  h-70 md:h-80 w-full p-4 rounded-2xl border shadow-sm">
+                        <p class="text-sm font-medium text-right text-white bg-neutral-400 rounded-md w-fit px-2 py-1 mb-2">
+                        أداء كل شهر
+                        </p>
+                        <p class="line-through text-2xl font-bold text-right text-gray-600">
+                                        550 درهم  
+                        </p>
+                        <div class="flex flex-row justify-center items-baseline">
+                            <p class=" text-5xl md:text-6xl font-bold text-right text-gray-600">
+                                                295
+                            </p>
+                            <p class="text-lg md:text-xl font-semibold text-right text-gray-600 ">
+                                                درهم
+                            </p> 
+                                        
+                        </div>
+                        <p class="text-sm text-gray-600 text-right mb-2">
+            هذا العرض يمكنك من الاستفادة من التدريب بدفع شهري.
+          </p>
+                                
+                        <a href="https://api.whatsapp.com/send?phone=212708983350&text=بغيت%20نسجل%20فالتدريب%20ديال%20البرمجة%20بالعرض%20ديال%20295%20درهم%20فالشهر."
+                            target="_blank"
+                            onClick="fbq('track', 'Lead')" 
+                            class="w-full py-1 rounded-md bg-red-primary text-base md:text-lg font-medium text-center text-white">
+                                        تسجيل
+                        </a>
+                    </div> 
                 </div> 
+         
             </div>              
         </div>
-</section> #}
-    {% include "partials/closed.njk" %}
+</section>
+
+
+    {# {% include "partials/closed.njk" %} #}
 
     {% jsx "FAQ", name="FAQPython" %}
 </main>
+
+<script>
+  // Countdown Timer
+  const countdownDate = new Date("Jul 12, 2024 23:59:59").getTime();
+
+  const countdownFunction = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+    if (distance < 0) {
+      clearInterval(countdownFunction);
+      document.getElementById("timer").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+</script>

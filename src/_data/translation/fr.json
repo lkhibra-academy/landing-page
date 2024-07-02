@@ -1,6 +1,8 @@
 {
     "soon": "Bientôt",
     "nojs": "Activez JavaScript pour continuer",
+    "open":"",
+    "closed":"",
     "CTA": {
       "strings": ["Meilleure offre", "Offre de base", "Offre de départ"],
       "discount": "(% de réduction)",
