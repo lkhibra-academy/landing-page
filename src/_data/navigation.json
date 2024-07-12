@@ -18,7 +18,7 @@
           {
             "label": "Navigation.Ai",
             "url": "/Ai",
-            "soon" : true
+            "open" : true
           },
           {
             "label": "Navigation.Data",

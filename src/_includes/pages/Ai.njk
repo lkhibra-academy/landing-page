@@ -9,20 +9,6 @@ layout: main.njk
 {% include "partials/cta.njk" %}
 <main class="flex-grow relative pt-16"> {# Added pt-16 to account for fixed navbar height #}
 
-{# Blur Overlay #}
-<div id="blur-overlay" class="absolute inset-0 bg-white bg-opacity-75 z-40"></div>
-
-{# Countdown Modal #}
-<div id="countdown-modal" class="fixed inset-0 flex items-center justify-center z-40">
-  <div class="bg-white rounded-xl p-8 text-center shadow-2xl max-w-sm mx-auto">
-    <h2 class="text-xl font-bold mb-4 text-red-primary">يفتح التسجيل في:</h2>
-    <div id="countdown" class="text-3xl font-extrabold mb-6 text-gray-900">00:00:00</div>
-    <a href="https://api.whatsapp.com/send?phone=212708983350&text=أود%20حجز%20مكان%20في%20تدريب%20مقدمة%20في%20الذكاء%20الاصطناعي." target="_blank" class="bg-red-primary text-white text-base font-medium px-8 py-3 rounded-lg shadow-md transition-transform transform hover:scale-105">
-      احجز مكانك الآن
-    </a>
-  </div>
-</div>
-
 {# HERO #}
 <section class="relative max-w-6xl mx-auto px-5 sm:px-6 mb-6 md:mb-0 z-30">
   <div class="grid grid-cols-1 gap-1 lg:gap-10 md:grid-cols-2 pt-4 md:pb-2 pb-0 md:pt-8">
@@ -31,98 +17,188 @@ layout: main.njk
     </div>
     <div class="md:order-last flex flex-col justify-center items-center flex-shrink-0 p-2 md:p-0 md:col-start-1 md:row-start-1 row-start-2">
       <div class="text-center self-start md:text-right md:ltr:text-left">
-        <h2 class="text-2xl font-bold sm:text-3xl">مقدمة في الذكاء الاصطناعي</h2>
+        <h2 class="text-2xl font-bold sm:text-3xl">تدريب الذكاء الاصطناعي للمطورين</h2>
         <p class="mt-4 text-gray-600 text-lg mb-4 md:mb-0">
-          انطلق في مسارك المهني باستخدام الذكاء الاصطناعي. اكتسب مهارات متقدمة تفتح لك أبواباً جديدة في سوق العمل وتجعل منك خبيراً في مجالك.
-        </p>
+تعلم كيفية تطبيق الذكاء الاصطناعي في مشاريعك، تحسين إنتاجيتك، وتعزيز مهاراتك المهنية بأحدث الأدوات والتقنيات. انضم الآن واكتشف كيف يمكن للذكاء الاصطناعي أن يغير حياتك.</p>
         <div class="mx-auto max-w-none flex justify-around items-center flex-col md:flex-row gap-2 md:gap-0" x-data>
           <a href="#pricing" class="btn text-white bg-red-primary w-full px-0 md:my-6">ابدأ الآن</a>
-          <a href="https://www.lkhibra.ma/Formation-AI.pdf" target="_blank" class="btn bg-white text-gray-700 shadow-lg border-b-1 border-gray-300 w-full px-0 md:my-6 mr-0 md:mr-4">
-            <i class="fa-solid fa-download mx-2"></i>
-            <span>تحميل الكتيب</span>
-          </a>
+          
+                    {# <a 
+            class="btn text-white bg-red-primary w-full px-0  md:my-6 " 
+            href="#pricing" >
+            {{ hero.cta1 | i18n }}
+            </a>
+            <a 
+            class="btn bg-white text-gray-900 shadow-lg border-b-1 border-gray-300 
+            w-full px-0 md:my-6 mr-0 md:mr-4 " 
+            href="#content" >
+محتوى تدريب            </a> #}
         </div>
       </div>
     </div>
   </div>
 </section>
 
-{# TRAINING CONTENT #}
-<section id="content" class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8 z-30">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="relative">
-      <p class="px-2 pb-5 font-bold text-2xl md:text-3xl text-right ltr:text-left">ماذا ستتعلم؟</p>
-      <ul class="list-disc text-right pr-5 space-y-2">
-        <li>فهم أساسيات الذكاء الاصطناعي وكيفية تطبيقها</li>
-        <li>تنفيذ مشاريع برمجية باستخدام الذكاء الاصطناعي</li>
-        <li>تحسين مهاراتك الشخصية والمهنية باستخدام AI</li>
-        <li>زيادة إنتاجيتك والتعلم بسرعة باستخدام أدوات الذكاء الاصطناعي</li>
-      </ul>
-    </div>
-    <div class="relative">
-      <p class="px-2 pb-5 font-bold text-2xl md:text-3xl text-right ltr:text-left">فوائد الدورة</p>
-      <ul class="list-disc text-right pr-5 space-y-2">
-        <li>زيادة فرصك في الحصول على وظائف متقدمة</li>
-        <li>اكتساب مهارات تقنية حديثة تلبي احتياجات السوق</li>
-        <li>رفع مستوى دخلك بفضل المهارات الجديدة</li>
-        <li>بناء سمعة قوية كمحترف في الذكاء الاصطناعي</li>
-      </ul>
-    </div>
-  </div>
-</section>
+{{ DoubleSec("IncludesAi","LearnAi","LearnAiContent") }}
 
-{# TRUST AND CREDIBILITY #}
-<section class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8 z-30">
+<div class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
+    <p class='text-center text-2xl md:text-3xl font-bold mb-2'>
+AI كيدير الخدمة، وأنت كتخلص    </p>
+    <div class="grid grid-cols-1 gap-4 mt-6 md:gap-6 md:mt-8 md:grid-cols-2 lg:grid-cols-4">
+        <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto">
+            <div class="mx-4">
+                <p class="text-lg font-semibold leading-tight">
+                    زيادة الإنتاجية
+                </p>
+                <p class="mt-1 text-base font-normal">
+                    الذكاء الاصطناعي يقوم بأتمتة المهام الروتينية، مما يتيح لك التركيز على الأمور الأكثر أهمية واستراتيجية.
+                </p>
+            </div>
+            <div class='flex-shrink-0 bg-white rounded-lg outline outline-1 outline-red-primary p-3 w-10 h-10 flex justify-center items-center'>
+                <i class="fa fa-tasks text-red-primary text-center" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto">
+            <div class="mx-4">
+                <p class="text-lg font-semibold leading-tight">
+                    تحسين الجودة
+                </p>
+                <p class="mt-1 text-base font-normal">
+                    باستخدام أدوات الذكاء الاصطناعي، يمكنك تحسين جودة عملك وتقليل الأخطاء بشكل كبير.
+                </p>
+            </div>
+            <div class='flex-shrink-0 bg-white rounded-lg outline outline-1 outline-red-primary p-3 w-10 h-10 flex justify-center items-center'>
+                <i class="fa fa-check-circle text-red-primary text-center" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto">
+            <div class="mx-4">
+                <p class="text-lg font-semibold leading-tight">
+                    توفير الوقت
+                </p>
+                <p class="mt-1 text-base font-normal">
+                    الذكاء الاصطناعي يساعدك على إنجاز المزيد من العمل في وقت أقل، مما يعني وقتاً أطول للراحة أو لتحقيق مشاريع أخرى.
+                </p>
+            </div>
+            <div class='flex-shrink-0 bg-white rounded-lg outline outline-1 outline-red-primary p-3 w-10 h-10 flex justify-center items-center'>
+                <i class="fa fa-clock text-red-primary text-center" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="flex flex-row-reverse items-start text-right ltr:text-left ml-auto">
+            <div class="mx-4">
+                <p class="text-lg font-semibold leading-tight">
+                    زيادة الدخل
+                </p>
+                <p class="mt-1 text-base font-normal">
+                    بفضل الكفاءة العالية التي يوفرها الذكاء الاصطناعي، يمكنك تقديم خدمات أفضل لعملائك والحصول على أجر أعلى.
+                </p>
+            </div>
+            <div class='flex-shrink-0 bg-white rounded-lg outline outline-1 outline-red-primary p-3 w-10 h-10 flex justify-center items-center'>
+                <i class="fa fa-dollar-sign text-red-primary text-center" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="max-w-6xl mx-auto py-8 px-6 sm:px-12">
+  <h2 class="text-center  text-2xl md:text-3xl font-bold mb-2">علاش خاصك تسجل دابا؟</h2>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <div class="flex flex-col items-center text-center">
-      <i class="fa-solid fa-certificate text-4xl text-red-primary mb-2"></i>
-      <p class="text-2xl md:text-3xl font-bold mb-4">شهادة معتمدة</p>
-      <p class="text-lg md:text-xl text-gray-700">احصل على شهادة معتمدة ومعترف بها دولياً تضيف قيمة حقيقية إلى سيرتك الذاتية.</p>
-    </div>
-    <div class="flex flex-col items-center text-center">
-      <i class="fa-solid fa-user-shield text-4xl text-red-primary mb-2"></i>
-      <p class="text-2xl md:text-3xl font-bold mb-4">مدربون محترفون</p>
-      <p class="text-lg md:text-xl text-gray-700">تدرب على أيدي خبراء معترف بهم في مجال الذكاء الاصطناعي وتعلم من الأفضل.</p>
-    </div>
+
+      <div class="relative h-[340px] overflow-hidden rounded-lg my-auto max-h-72 md:max-h-full ">
+        {% image "src/assets/images/heropic55.png","AI training", ["webp","png"], [300,600], "(min-width: 780px) 360px, 259px", {class:"absolute inset-0 h-full mx-auto w-fit object-contain"} %}
+      </div>
+
+      <div class="flex flex-col justify-center space-y-4">
+        <ul class="grid gap-6">
+          <li>
+            <div class="grid gap-1 text-center">
+              <h3 class="text-xl font-bold">Don't Get Behind</h3>
+              <p class="text-gray-700">
+          ما تبقاش متأخر، سجل دابا وكون من الأوائل لي كيتعلمو أحدث تقنيات AI
+              </p>
+            </div>
+          </li>
+          {# <li>
+            <div class="grid gap-1 text-center">
+              <h3 class="text-xl font-bold">Become Super Developer</h3>
+              <p class="text-gray-700">
+                زيد من مهاراتك وولا مطور خارق مع هذا التدريب في الذكاء الاصطناعي. كن دايما متقدم!
+              </p>
+            </div>
+          </li> #}
+          <li>
+            <div class="grid gap-1 text-center">
+              <h3 class="text-xl font-bold">Do More in Less Time</h3>
+              <p class="text-gray-700">
+                استغل الذكاء الاصطناعي باش تدير أكثر في وقت أقل.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="grid gap-1 text-center">
+              <h3 class="text-xl font-bold">Boost Your Career</h3>
+              <p class="text-gray-700">
+                زيد من قيمة سيرتك الذاتية وفتح فرص جديدة في مجال AI
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+<div id="pricing">
   </div>
-</section>
+
+  </div>
+</div>
+
 
 {# PRICING #}
-<section id="pricing" class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
-  <div class="flex flex-col items-center text-center">
-    <p class="text-2xl md:text-3xl font-bold mb-4">استثمار بسيط لمستقبل مشرق!</p>
+<section  class="relative  text-centermax-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
+
+                {# COUNTDOWN TIMER #}
+                <div id="countdown" class="relative max-w-6xl mx-auto mb-4 mt-4 border border-red-primary shadow px-4 py-2 w-fit">
+                    <div class="flex flex-col items-center text-center">
+                        <p class="text-lg md:text-xl font-bold text-red-primary">سارع بالتسجيل! العرض ينتهي في:</p>
+                        <div id="timer" class="text-xl md:text-2xl font-bold text-gray-800"></div>
+                    </div>
+                </div>  
+
+  <div class="flex flex-col items-center">
+    <p class="text-2xl md:text-3xl font-bold mb-4 text-center">الاستثمار الذي سيغير حياتك !</p>
     <div class="flex flex-col items-center">
       <p class="text-xl md:text-2xl line-through text-gray-600">550 درهم</p>
       <p class="text-4xl md:text-5xl font-bold text-red-600">345 درهم</p>
       <p class="text-lg md:text-xl text-gray-700 mb-4">أداء مرة واحدة فقط</p>
-      <a href="https://api.whatsapp.com/send?phone=212708983350&text=أود%20التسجيل%20في%20تدريب%20مقدمة%20في%20الذكاء%20الاصطناعي." target="_blank" class="w-full py-2 rounded-md bg-red-primary text-white text-lg md:text-xl font-medium text-center">سجل الآن</a>
+      <a href="https://api.whatsapp.com/send?phone=212708983350&text=أود%20التسجيل%20في%20تدريب%20الذكاء%20الاصطناعي." target="_blank" class="w-full py-2 rounded-md bg-red-primary text-white text-lg md:text-xl font-medium text-center">سجل الآن</a>
     </div>
   </div>
 </section>
+    {% jsx "FAQ", name="FAQAi" %}
 
 </main>
 
-<script>
-  // Countdown timer to a specific future date and time
-  const countDownDate = new Date("Jul 13, 2024 00:00:00").getTime();
-  const countdownElement = document.getElementById("countdown");
 
-  const x = setInterval(function() {
+
+<script>
+  // Countdown Timer
+  const countdownDate = new Date("Jul 19, 2024 23:59:59").getTime();
+
+  const countdownFunction = setInterval(() => {
     const now = new Date().getTime();
-    const distance = countDownDate - now;
+    const distance = countdownDate - now;
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    countdownElement.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
     if (distance < 0) {
-      clearInterval(x);
-      countdownElement.innerHTML = "التسجيل مفتوح الآن!";
-      document.getElementById("countdown-modal").classList.add("hidden");
-      document.getElementById("blur-overlay").classList.add("hidden");
+      clearInterval(countdownFunction);
+      document.getElementById("timer").innerHTML = "EXPIRED";
     }
   }, 1000);
 </script>
