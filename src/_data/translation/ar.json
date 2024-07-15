@@ -969,6 +969,13 @@
           "cta": "انضم"
       },{
         "fr":true,
+        "title": "Ai For Developers",
+        "description": "احصل على نسختك الخاصة من كتاب AI-Powered Developer Tools، واستفد من أفضل الأدوات المدعومة بالذكاء الاصطناعي التي تساعد المطورين",
+        "link": "https://www.lkhibra.ma/Ai_For_Developers.pdf",
+        "img":"src/assets/images/Ai_For_Developers.png",
+        "cta": "تحميل"
+    },{
+        "fr":true,
         "title": "Clean Code",
         "description": " احصل على نسختك الخاصة من كتاب Clean Code للمبرمج الشهير Robert C. Martin، واستفد من أفضل الممارسات في كتابة الكود النظيف والقابل للصيانة.",
         "link": "https://www.lkhibra.ma/clean-code.pdf",
