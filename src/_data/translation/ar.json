@@ -137,7 +137,7 @@
     "Title": "تدريباتنا",
     "Trainings": [
       {
-        "link": "/Programming",
+        "link": "/programming",
         "content": [
           {
             "tags": ["Python", "Algorithm","Data Structure","Project Management","Soft-Skills"],
@@ -149,7 +149,7 @@
         ]
       },
       {
-        "link": "/Data",
+        "link": "/data",
         "content": [
           {
             "tags": ["Python", "Data Analysis","Machine Learning","Data Visualization"],

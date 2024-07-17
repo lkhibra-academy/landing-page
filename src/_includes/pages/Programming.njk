@@ -19,7 +19,7 @@ plugins:
     {% jsx "TrainingContent", name="PythonContent" %}
     {{ More("MorePython") }}
 {# PRICING #}
-<section class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
+{# <section class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             
@@ -96,14 +96,12 @@ plugins:
                 </ul>
             </div>
             <div class="grid grid-cols-1">
-                {# COUNTDOWN TIMER #}
                 <div id="countdown" class="relative max-w-6xl mx-auto mb-3 mt-4">
                     <div class="flex flex-col items-center text-center">
                         <p class="text-xl md:text-2xl font-bold text-red-primary">سارع بالتسجيل! العرض ينتهي في:</p>
                         <div id="timer" class="text-2xl md:text-3xl font-bold text-gray-800"></div>
                     </div>
                 </div>    
-                {# CARDS #}
                 <div class="flex flex-row justify-between items-center w-full gap-2 md:gap-4">
                     <div class="flex flex-col justify-between items-start  h-70 md:h-80 w-full p-4 rounded-2xl bg-red-primary">
                         <p class="text-sm font-medium text-right text-red-primary bg-white rounded-md w-fit px-2 py-1 mb-2">
@@ -166,10 +164,10 @@ plugins:
          
             </div>              
         </div>
-</section>
+</section> #}
 
 
-    {# {% include "partials/closed.njk" %} #}
+    {% include "partials/closed.njk" %}
 
     {% jsx "FAQ", name="FAQPython" %}
 </main>
