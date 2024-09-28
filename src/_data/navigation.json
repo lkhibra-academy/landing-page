@@ -11,9 +11,14 @@
             "open":true
           },
           {
+            "label": "Navigation.Python",
+            "url": "/Programming",
+            "open": true
+          },
+          {
             "label": "Navigation.Ai",
             "url": "/Ai",
-            "open" : true
+            "closed" : true
           },
           {
             "label": "Navigation.Data",
@@ -24,11 +29,6 @@
           {
             "label": "Navigation.Frontend",
             "url": "/Frontend",
-            "closed": true
-          },
-          {
-            "label": "Navigation.Python",
-            "url": "/Programming",
             "closed": true
           }
         ]

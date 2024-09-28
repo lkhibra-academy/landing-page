@@ -19,7 +19,7 @@ plugins:
     {% jsx "TrainingContent", name="PythonContent" %}
     {{ More("MorePython") }}
 {# PRICING #}
-{# <section class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
+<section class="relative max-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             
@@ -164,17 +164,17 @@ plugins:
          
             </div>              
         </div>
-</section> #}
+</section>
 
 
-    {% include "partials/closed.njk" %}
+    {# {% include "partials/closed.njk" %} #}
 
     {% jsx "FAQ", name="FAQPython" %}
 </main>
 
 <script>
   // Countdown Timer
-  const countdownDate = new Date("Jul 16, 2024 23:59:59").getTime();
+  const countdownDate = new Date("Oct 10, 2024 23:59:59").getTime();
 
   const countdownFunction = setInterval(() => {
     const now = new Date().getTime();

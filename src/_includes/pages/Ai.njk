@@ -153,9 +153,7 @@ layout: main.njk
 
 
 {# PRICING #}
-<section  class="relative  text-centermax-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
-
-                {# COUNTDOWN TIMER #}
+{# <section  class="relative  text-centermax-w-6xl mx-auto py-6 px-5 sm:px-12 mb-4 md:py-8">
                 <div id="countdown" class="relative max-w-6xl mx-auto mb-4 mt-4 border border-red-primary shadow px-4 py-2 w-fit">
                     <div class="flex flex-col items-center text-center">
                         <p class="text-lg md:text-xl font-bold text-red-primary">سارع بالتسجيل! العرض ينتهي في:</p>
@@ -173,7 +171,10 @@ layout: main.njk
        class="w-full py-2 rounded-md bg-red-primary text-white text-lg md:text-xl font-medium text-center">سجل الآن</a>
     </div>
   </div>
-</section>
+</section> #}
+
+    {% include "partials/closed.njk" %}
+
     {% jsx "FAQ", name="FAQAi" %}
 
 </main>
