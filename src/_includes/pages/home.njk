@@ -10,17 +10,8 @@
 {% include "partials/cta.njk" %}
 {% from "partials/Training/More.njk" import More with context %}
 <main class="flex-grow pt-16">
-        <!-- Fixed Button -->
-<div class="fixed bottom-0 right-0 mb-6 mr-6 z-50 md:hidden">
-    <a href="https://chat.whatsapp.com/Fxurpbkphnn3KGWFRIXb03"
-     onClick="fbq('track', 'Contact')"  class="flex items-center justify-center flex-row bg-green-500 text-white px-3 py-2 rounded-lg w-fit">
-        <i class="fa-brands fa-whatsapp w-4 h-4"></i>
-            <p class="text-sm font-medium pr-1">
-المزيد في مجموعة الواتساب
-            </p>
-  </a>
+    {% include "partials/fixed.njk" %}
 
-</div>
     {% include "partials/Home/heroHome.njk" %}
     {% include "partials/Home/partners.njk" %}
     {# {% include "partials/accomplishment.njk" %} #}
