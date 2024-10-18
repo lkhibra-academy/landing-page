@@ -41,9 +41,6 @@
     ,{
         "name": "Navigation.Aboutus",
         "url": "/Aboutus"
-    },{
-      "name": "Navigation.Network",
-      "url": "/Network"
-  }
+    }
 
 ]
