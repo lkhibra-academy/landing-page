@@ -1,8 +1,8 @@
 {
     "soon": "Bientôt",
     "nojs": "Activez JavaScript pour continuer",
-    "open":"",
-    "closed":"",
+    "open": "Ouvert",
+    "closed": "Fermé",
     "CTA": {
       "strings": ["Meilleure offre", "Offre de base", "Offre de départ"],
       "discount": "(% de réduction)",
@@ -269,6 +269,42 @@
       },
       
       "LearnPythonContent": [
+        {
+          "itemAR": "Algorithmes et structures de données",
+          "itemEN": "Algorithms and data structures"
+        },
+        {
+          "itemAR": "Bases de la programmation Python",
+          "itemEN": "Python programming basics"
+        },
+        {
+          "itemAR": "Programmation orientée objet",
+          "itemEN": "Object-oriented programming"
+        },
+        {
+          "itemAR": "Utilisation des bibliothèques Python",
+          "itemEN": "Using Python libraries"
+        },
+        {
+          "itemAR": "Fondements de l'apprentissage automatique",
+          "itemEN": "Machine learning foundations"
+        },
+        {
+          "itemAR": "Développez vos propres programmes",
+          "itemEN": "Develop your own programs"
+        },
+        {
+          "itemAR": "Gestion de votre temps et augmentation de votre productivité",
+          "itemEN": "Time management and productivity"
+        },
+        {
+          "itemAR": "Amélioration de vos compétences en résolution de problèmes",
+          "itemEN": "Improve your problem-solving skills"
+        },
+        {
+          "itemAR": "Amélioration de la concentration et de la discipline lors de l'apprentissage",
+          "itemEN": "Enhancing focus and discipline while learning"
+        },      
         {
           "itemAR": "Algorithmes et structures de données",
           "itemEN": ""
@@ -541,6 +577,34 @@
       },
       
       "LearnFrontendContent": [
+        {
+          "itemAR": "Comment penser en tant que designer web : Design Thinking",
+          "itemEN": "How to think like a web designer: Design Thinking"
+        },
+        {
+          "itemAR": "Comment penser en tant que designer web : Design Thinking",
+          "itemEN": "How to think like a web designer: Design Thinking"
+        },
+        {
+          "itemAR": "Comment penser en tant que designer web : Design Thinking",
+          "itemEN": "How to think like a web designer: Design Thinking"
+        },
+        {
+          "itemAR": "Comment penser en tant que designer web : Design Thinking",
+          "itemEN": "How to think like a web designer: Design Thinking"
+        },
+        {
+          "itemAR": "Les bases du design web et des théories de couleurs et de polices",
+          "itemEN": "The fundamentals of web design, color theory, and typography"
+        },
+        {
+          "itemAR": "Les bases de la conception de sites web dans Figma",
+          "itemEN": "Figma basics for web design"
+        },
+        {
+          "itemAR": "Comment créer des wireframes et des prototypes",
+          "itemEN": "How to create wireframes and prototypes"
+        },      
         {
           "itemAR": "Construire des sites web selon votre propre style et de manière appropriée pour vous",
           "itemEN": ""
@@ -1036,10 +1100,6 @@
 "cta": "انضمام "
 }
   ]
-
-
-
-
 
 
 }
